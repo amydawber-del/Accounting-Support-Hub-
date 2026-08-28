@@ -1,0 +1,38 @@
+name: Sync Rocketlane data
+
+on:
+  schedule:
+    - cron: '*/45 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Rocketlane sync
+        env:
+          ROCKETLANE_API_KEY: ${{ secrets.ROCKETLANE_API_KEY }}
+        run: node scripts/sync-rocketlane.js
+
+      - name: Commit and push updated data, if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/support-clients.json
+          if git diff --cached --quiet; then
+            echo "No changes to data/support-clients.json — nothing to commit."
+          else
+            git commit -m "Sync Rocketlane data [skip ci]"
+            git push
+          fi
