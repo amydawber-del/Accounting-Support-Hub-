@@ -1,82 +1,149 @@
 {
-  "generatedAt": "2026-08-28T11:45:00Z",
-  "note": "Placeholder sample data. This file is overwritten automatically by scripts/sync-rocketlane.js every time .github/workflows/sync-rocketlane.yml runs.",
+  "generatedAt": "2026-08-28T12:40:41.213Z",
   "companies": [
     {
-      "companyId": "demo-abc",
-      "companyName": "ABC Estate Agents",
-      "networkId": "12345",
-      "units": 245,
-      "branches": 3,
-      "segment": "Enterprise & Strategic",
-      "streetStatus": "Live",
-      "accountingOwner": "Amy Dawber",
-      "csm": "Priya Shah",
-      "agentLiveWithAccounting": true,
-      "goLiveDate": "2026-05-02",
+      "companyId": 194757,
+      "companyName": "Currans Homes",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
       "internalStatusTag": "Client Accounting Reconciliation",
       "redFlag": false,
       "optOut": null,
-      "reconciliation": {
-        "status": "In Progress",
-        "route": "Reconciliation Reset",
-        "specialist": "Hayley Seabrook",
-        "dateRaised": "2026-08-20",
-        "reviewCallBooked": "Booked",
-        "currentDifference": "\u00a31,204.50",
-        "outcome": "Pending",
-        "notes": "Client attempted a manual bank rec correction before raising \u2014 historic transactions may need review before any further changes."
-      },
-      "restart": {
-        "status": "Recently restarted",
-        "route": "Reconciliation Reset",
-        "reason": "Reconciliation Issue",
-        "date": "2026-08-14",
-        "notes": "Full accounting reset agreed with client after reconciliation issue found in bank feed."
-      },
+      "reconciliation": null,
+      "restart": null,
       "training": {
-        "status": "Completed",
-        "completed": true,
-        "lastDate": "2026-04-18",
-        "trainer": "Max",
-        "modules": "Bank Rec, Invoicing",
-        "formats": "Remote"
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
       "internalNotes": {
-        "accounting": "Client is finance-savvy but prefers phone contact over Live Chat for anything reconciliation related.",
-        "onboarding": "",
+        "accounting": null,
+        "onboarding": null,
         "gapAnalysis": ""
       },
+      "recentMessages": null,
       "rocketlaneLinks": {
         "accountingProject": null,
         "reconciliationProject": null,
         "trainingProject": null
-      },
-      "recentMessages": [
-        {
-          "content": "Thanks for looking into this \u2014 let me know once the difference is tracked down.",
-          "createdAt": "2026-08-21T09:12:00Z",
-          "author": null
-        },
-        {
-          "content": "We've flagged the reconciliation issue and started a reset on the affected accounts.",
-          "createdAt": "2026-08-20T15:40:00Z",
-          "author": null
-        }
-      ],
-      "csmStreet": "Priya Shah"
+      }
     },
     {
-      "companyId": "demo-maple",
-      "companyName": "Maple & Co Lettings",
-      "networkId": "20981",
-      "units": 88,
-      "branches": 1,
+      "companyId": 207192,
+      "companyName": "Oakland Estates Ltd",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
       "segment": "SMB",
-      "streetStatus": "Onboarding",
-      "accountingOwner": "Jess",
-      "csm": "Priya Shah",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 210435,
+      "companyName": "Shepherd Cullen",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 213071,
+      "companyName": "CWB Property",
+      "networkId": null,
+      "units": 70,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting OB Call Booking",
@@ -85,201 +152,86 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Referred",
+        "status": "Not recorded",
         "completed": false,
         "lastDate": null,
-        "trainer": "\u2014",
-        "modules": "\u2014",
-        "formats": "\u2014"
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": "2026-09-10",
-        "openingBalanceBooked": true,
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
         "clientAccountingEnabled": false,
-        "notes": "Client is behind on providing opening balances \u2014 chasing weekly. Flag raised as go-live date at risk."
+        "notes": null
       },
       "internalNotes": {
-        "accounting": "",
-        "onboarding": "Opening balance call booked twice, client rescheduled both.",
+        "accounting": null,
+        "onboarding": null,
         "gapAnalysis": ""
       },
+      "recentMessages": null,
       "rocketlaneLinks": {
         "accountingProject": null,
         "reconciliationProject": null,
         "trainingProject": null
-      },
-      "csmStreet": "Priya Shah"
+      }
     },
     {
-      "companyId": "demo-thornfield",
-      "companyName": "Thornfield Residential",
-      "networkId": "30442",
-      "units": 132,
-      "branches": 2,
-      "segment": "SMB",
-      "streetStatus": "Live",
-      "accountingOwner": "Amy Dawber",
-      "csm": "Dan Okafor",
-      "agentLiveWithAccounting": true,
-      "goLiveDate": "2026-08-15",
-      "internalStatusTag": "30 Days Post Go-Live Support",
-      "redFlag": false,
-      "optOut": null,
-      "reconciliation": null,
-      "restart": null,
-      "training": {
-        "status": "Completed",
-        "completed": true,
-        "lastDate": "2026-08-01",
-        "trainer": "Amy",
-        "modules": "Full Accounting Suite",
-        "formats": "Onsite"
-      },
-      "onboardingProject": {
-        "targetGoLive": "2026-08-15",
-        "openingBalanceBooked": true,
-        "clientAccountingEnabled": true,
-        "notes": "Went live on schedule, no issues at handover."
-      },
-      "internalNotes": {
-        "accounting": "",
-        "onboarding": "Smooth onboarding, client very engaged.",
-        "gapAnalysis": ""
-      },
-      "rocketlaneLinks": {
-        "accountingProject": null,
-        "reconciliationProject": null,
-        "trainingProject": null
-      },
-      "csmStreet": "Dan Okafor"
-    },
-    {
-      "companyId": "demo-greywren",
-      "companyName": "Grey & Wren",
-      "networkId": "18820",
-      "units": 41,
-      "branches": 1,
-      "segment": "SMB",
-      "streetStatus": "At Risk",
-      "accountingOwner": "\u2014",
-      "csm": "Dan Okafor",
+      "companyId": 213075,
+      "companyName": "Warren Property Matters",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": "Onboarding",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Opt-Out Confirmed / Archive",
+      "internalStatusTag": null,
       "redFlag": false,
-      "optOut": {
-        "type": "Client Declined",
-        "reason": "Decided to stay with existing accounting software following a board decision \u2014 may revisit in 2027."
-      },
+      "optOut": null,
       "reconciliation": null,
       "restart": null,
       "training": {
         "status": "Not recorded",
         "completed": false,
         "lastDate": null,
-        "trainer": "\u2014",
-        "modules": "\u2014",
-        "formats": "\u2014"
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
       "internalNotes": {
-        "accounting": "Opted out after Opening Balance call \u2014 do not re-offer onboarding without checking with Account Owner first.",
-        "onboarding": "",
+        "accounting": null,
+        "onboarding": null,
         "gapAnalysis": ""
       },
+      "recentMessages": null,
       "rocketlaneLinks": {
         "accountingProject": null,
         "reconciliationProject": null,
         "trainingProject": null
-      },
-      "csmStreet": "Dan Okafor"
+      }
     },
     {
-      "companyId": "demo-harborview",
-      "companyName": "Harborview Sales",
-      "networkId": "27710",
-      "units": 310,
-      "branches": 4,
+      "companyId": 225924,
+      "companyName": "Nested",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
       "segment": "Enterprise & Strategic",
-      "streetStatus": "Live",
-      "accountingOwner": "Jess",
-      "csm": "Priya Shah",
-      "agentLiveWithAccounting": true,
-      "goLiveDate": "2025-11-03",
-      "internalStatusTag": "Live / Archive",
-      "redFlag": false,
-      "optOut": null,
-      "reconciliation": null,
-      "restart": null,
-      "training": {
-        "status": "Completed",
-        "completed": true,
-        "lastDate": "2025-11-10",
-        "trainer": "Jess",
-        "modules": "Bank Rec, Reporting",
-        "formats": "Remote"
-      },
-      "onboardingProject": null,
-      "internalNotes": {
-        "accounting": "",
-        "onboarding": "",
-        "gapAnalysis": ""
-      },
-      "rocketlaneLinks": {
-        "accountingProject": null,
-        "reconciliationProject": null,
-        "trainingProject": null
-      },
-      "csmStreet": "Priya Shah"
-    },
-    {
-      "companyId": "demo-fieldsfrost",
-      "companyName": "Fields & Frost",
-      "networkId": "33107",
-      "units": 19,
-      "branches": 1,
-      "segment": "SMB",
-      "streetStatus": "At Risk",
-      "accountingOwner": "Amy Dawber",
-      "csm": "Dan Okafor",
-      "agentLiveWithAccounting": true,
-      "goLiveDate": "2025-06-20",
-      "internalStatusTag": "Slow Mover",
-      "redFlag": false,
-      "optOut": null,
-      "reconciliation": null,
-      "restart": null,
-      "training": {
-        "status": "Not recorded",
-        "completed": false,
-        "lastDate": null,
-        "trainer": "\u2014",
-        "modules": "\u2014",
-        "formats": "\u2014"
-      },
-      "onboardingProject": null,
-      "internalNotes": {
-        "accounting": "Small office, low Accounting usage \u2014 may benefit from a refresher session.",
-        "onboarding": "",
-        "gapAnalysis": ""
-      },
-      "rocketlaneLinks": {
-        "accountingProject": null,
-        "reconciliationProject": null,
-        "trainingProject": null
-      },
-      "csmStreet": "Dan Okafor"
-    },
-    {
-      "companyId": "demo-oakridge",
-      "companyName": "Oakridge Property Group",
-      "networkId": "40118",
-      "units": 64,
-      "branches": 2,
-      "segment": "SMB",
-      "streetStatus": "Onboarding",
-      "accountingOwner": "Max",
-      "csm": "Dan Okafor",
+      "streetStatus": "Active",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -291,41 +243,42 @@
         "status": "Not recorded",
         "completed": false,
         "lastDate": null,
-        "trainer": "\u2014",
-        "modules": "\u2014",
-        "formats": "\u2014"
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": "2026-10-01",
+        "targetGoLive": null,
         "openingBalanceBooked": false,
         "clientAccountingEnabled": false,
-        "notes": "Signed up for Accounting last week \u2014 intro call not yet scheduled."
+        "notes": null
       },
       "internalNotes": {
-        "accounting": "",
-        "onboarding": "Client keen to get started, chase this week for intro call slot.",
+        "accounting": null,
+        "onboarding": null,
         "gapAnalysis": ""
       },
+      "recentMessages": null,
       "rocketlaneLinks": {
         "accountingProject": null,
         "reconciliationProject": null,
         "trainingProject": null
-      },
-      "csmStreet": "Dan Okafor"
+      }
     },
     {
-      "companyId": "demo-westbourne",
-      "companyName": "Westbourne Lettings",
-      "networkId": "15502",
-      "units": 52,
-      "branches": 1,
+      "companyId": 241762,
+      "companyName": "Oxfordshire Properties Limited T/A Oxhome",
+      "networkId": null,
+      "units": 91,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
       "segment": "SMB",
-      "streetStatus": "Churned",
-      "accountingOwner": "\u2014",
-      "csm": "Priya Shah",
+      "streetStatus": "Active",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Churned / Archived",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -334,22 +287,6231 @@
         "status": "Not recorded",
         "completed": false,
         "lastDate": null,
-        "trainer": "\u2014",
-        "modules": "\u2014",
-        "formats": "\u2014"
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
       "internalNotes": {
-        "accounting": "Client left Street Accounting after 4 months \u2014 moved back to previous provider. Do not re-offer without checking with Account Owner.",
-        "onboarding": "",
+        "accounting": null,
+        "onboarding": null,
         "gapAnalysis": ""
       },
+      "recentMessages": null,
       "rocketlaneLinks": {
         "accountingProject": null,
         "reconciliationProject": null,
         "trainingProject": null
+      }
+    },
+    {
+      "companyId": 245340,
+      "companyName": "Preferential Properties",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Client Accounting Reconciliation",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
-      "csmStreet": "Priya Shah"
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 245940,
+      "companyName": "Oscar Richards",
+      "networkId": null,
+      "units": 39,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 255725,
+      "companyName": "R K Lucas",
+      "networkId": null,
+      "units": 130,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-07-20",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-07-20",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 259806,
+      "companyName": " Trust Sales & Lettings",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 264829,
+      "companyName": "Alex Jones",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 266179,
+      "companyName": "Partners Real Estate",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Client Accounting Reconciliation",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 270076,
+      "companyName": "Keith Ian LTD",
+      "networkId": null,
+      "units": 0,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-08-27",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-08-27",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 276792,
+      "companyName": "M & C Farrell Limited (Also known as Diamond Estates)",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Client Accounting Reconciliation",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 297221,
+      "companyName": "Briscombe (ID:1)",
+      "networkId": null,
+      "units": 250,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 318478,
+      "companyName": "All Aspects Letting Services Ltd",
+      "networkId": null,
+      "units": 122,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-07-22",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-07-22",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 319072,
+      "companyName": "Neighbour (ID:711)",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Client Accounting Reconciliation",
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-08-31",
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 397413,
+      "companyName": "Hancock Sales and Letting (ID:755)",
+      "networkId": null,
+      "units": 170,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-07-31",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-07-31",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 402799,
+      "companyName": "Mi Homes Lettings",
+      "networkId": null,
+      "units": 118,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 412151,
+      "companyName": "Trading Places",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 426416,
+      "companyName": "Thomas Jackson Estate Agents",
+      "networkId": null,
+      "units": 104,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 426850,
+      "companyName": "Leighton Snow Estate Agents",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Client Accounting Reconciliation",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 426874,
+      "companyName": "Number One Property Management",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Client Accounting Reconciliation",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 426906,
+      "companyName": "Whitlocks Estate Agents",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Client Accounting Reconciliation",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 445549,
+      "companyName": "Dalton Lettings & Property Management",
+      "networkId": null,
+      "units": 1,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting OB Call Booking",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 451855,
+      "companyName": "Celtic Property Lettings & Estate Agents",
+      "networkId": null,
+      "units": 200,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-08-24",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-08-24",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 453260,
+      "companyName": "Joseph Property Agency (ID:308)",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 457820,
+      "companyName": "Wise Properties Sales and Lettings",
+      "networkId": null,
+      "units": 300,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting OB Call Booking",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 461694,
+      "companyName": "Bracketts LLP",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Client Accounting Reconciliation",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 479992,
+      "companyName": "Simone Young Estates LTD",
+      "networkId": null,
+      "units": 6,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": "Natalie Woodward",
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-05-20",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-05-20",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 483214,
+      "companyName": "Chas R Lowe Estates",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 489848,
+      "companyName": "Hibbert Homes Hale",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Client Accounting Reconciliation",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 519563,
+      "companyName": "Stepping Stones",
+      "networkId": null,
+      "units": 140,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Onboarding in Progress",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-09-15",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 537258,
+      "companyName": "OwnMyHouse",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 539327,
+      "companyName": "The Gilbert Group",
+      "networkId": null,
+      "units": 22,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting OB Call Booking",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 539764,
+      "companyName": "Arins Property Services",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 553306,
+      "companyName": "Greenacre Estate Agents Ltd t/a Neill's Letting Agent",
+      "networkId": null,
+      "units": 7,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-07-17",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": "2026-10-06",
+        "trainer": null,
+        "modules": "2",
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-07-16",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 560437,
+      "companyName": "Bartons",
+      "networkId": null,
+      "units": 200,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 564043,
+      "companyName": "Heywoods",
+      "networkId": null,
+      "units": 400,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Onboarding in Progress",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-10-19",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 574437,
+      "companyName": "Farrar & Forbes Estate Agents",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Client Accounting Reconciliation",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 581254,
+      "companyName": "Abode Group",
+      "networkId": null,
+      "units": 430,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": "Jacob Templeman",
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-05-20",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-05-20",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 593962,
+      "companyName": "Camella Estate Agents",
+      "networkId": null,
+      "units": 1,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 593985,
+      "companyName": "Ivy Gate ",
+      "networkId": null,
+      "units": 195,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 601435,
+      "companyName": "X1 Sales & Lettings",
+      "networkId": null,
+      "units": 4900,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-07-21",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-07-21",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 601512,
+      "companyName": "Charles Rose ",
+      "networkId": null,
+      "units": 89,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 603539,
+      "companyName": "Berkley Estate & Letting Agents ",
+      "networkId": null,
+      "units": 600,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-07-31",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-07-31",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 606414,
+      "companyName": "CitiLand Home",
+      "networkId": null,
+      "units": 164,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 606584,
+      "companyName": "Chandlers Estate Agents",
+      "networkId": null,
+      "units": 95,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-07-31",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-07-31",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 609299,
+      "companyName": "Snapes Estate Agents",
+      "networkId": null,
+      "units": 115,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-07-29",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-07-29",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 609317,
+      "companyName": "Indigo Sales and Lettings",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting OB Call Booking",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 609958,
+      "companyName": "JP Harll",
+      "networkId": null,
+      "units": 1,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-09-16",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 618154,
+      "companyName": "Arron James ",
+      "networkId": null,
+      "units": 125,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 618304,
+      "companyName": "Christian Reid Estate Agents",
+      "networkId": null,
+      "units": 180,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Onboarding in Progress",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-09-10",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 618701,
+      "companyName": "Michael Poole",
+      "networkId": null,
+      "units": 770,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Bridge Second Cut",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 621499,
+      "companyName": "Godfrey Short & Squire",
+      "networkId": null,
+      "units": 350,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 621540,
+      "companyName": "Burrows Residential Sales & Lettings Ltd",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Client Accounting Reconciliation",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 624323,
+      "companyName": "Ronald Ross",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 625109,
+      "companyName": "Newton Fallowell Telford",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-09-08",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 625113,
+      "companyName": "Newton Fallowell Burton-on-Trent",
+      "networkId": null,
+      "units": 442,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-07-23",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-07-23",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 625115,
+      "companyName": "Newton Fallowell Walsall",
+      "networkId": null,
+      "units": 430,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-06-24",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-06-24",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 625194,
+      "companyName": "Taylor Ross",
+      "networkId": null,
+      "units": 13,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": "2026-06-22",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-07-22",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 625988,
+      "companyName": "Newton Fallowell Worksop",
+      "networkId": null,
+      "units": 11,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-09-15",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 625997,
+      "companyName": "Newton Fallowell Bingham",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 626035,
+      "companyName": "Fairgroves Estate Agents / previously Bunked",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-08-18",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-08-18",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 626153,
+      "companyName": "Charles Louis Homes",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 627130,
+      "companyName": "Robinson Jackson",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 629058,
+      "companyName": "Newton Fallowell Retford",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 629061,
+      "companyName": "Newton Fallowell Oadby",
+      "networkId": null,
+      "units": 360,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Onboarding in Progress",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-09-08",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 629069,
+      "companyName": "Newton Fallowell Brownhills T/A Goodchilds Brownhills (ID:1162)",
+      "networkId": null,
+      "units": 161,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-07-08",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-07-08",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 629076,
+      "companyName": "Newton Fallowell Brigg",
+      "networkId": null,
+      "units": 73,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 629088,
+      "companyName": "Newton Fallowell Grantham",
+      "networkId": null,
+      "units": 450,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting OB Call Booking",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 632784,
+      "companyName": "Alexander Hudson Estates",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": "1,2,3",
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 633335,
+      "companyName": "Coapt",
+      "networkId": null,
+      "units": 425,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-07-17",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-07-16",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 633905,
+      "companyName": "Elite Property",
+      "networkId": null,
+      "units": 175,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Onboarding in Progress",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-09-02",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 635631,
+      "companyName": "Portfolio Letting Experts ",
+      "networkId": null,
+      "units": 150,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": "Diana Culea",
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-06-24",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-06-24",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 638759,
+      "companyName": "Spire Property Group: Estate Agents & Consultants",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting OB Call Booking",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 641411,
+      "companyName": "Woods Homes",
+      "networkId": null,
+      "units": 400,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 642114,
+      "companyName": "Bacon and Company",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 642204,
+      "companyName": "Grisdales Estate Agents",
+      "networkId": null,
+      "units": 360,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Onboarding in Progress",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": "1,2,3,4",
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-09-10",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 644850,
+      "companyName": "Finest Properties",
+      "networkId": null,
+      "units": 16,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-08-11",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Completed",
+        "completed": true,
+        "lastDate": "2026-08-19",
+        "trainer": null,
+        "modules": "1",
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-08-11",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 647484,
+      "companyName": "Net Lettings",
+      "networkId": null,
+      "units": 180,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting OB Call Booking",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 648582,
+      "companyName": "Marlborough Homes",
+      "networkId": null,
+      "units": null,
+      "branches": 1,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 649308,
+      "companyName": "Stephenson Browne Estate Agents",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": "1,2,3",
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 649643,
+      "companyName": "TW Property",
+      "networkId": null,
+      "units": 350,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-08-17",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": "1,2,3,4",
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-08-17",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 651338,
+      "companyName": "Bridges Property Management",
+      "networkId": null,
+      "units": 1,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 663722,
+      "companyName": "Shelton & Lines ",
+      "networkId": null,
+      "units": 174,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 663778,
+      "companyName": "Jackson Green and Preston Estate Agents and Property Management Limited",
+      "networkId": null,
+      "units": 900,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Bridge Second Cut",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 665526,
+      "companyName": "IL Properties ",
+      "networkId": null,
+      "units": 10,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Onboarding in Progress",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-09-10",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 667570,
+      "companyName": "Charles Knight Estate Agents",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 672007,
+      "companyName": "Hall & Home Lettings Limited",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting OB Call Booking",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 673167,
+      "companyName": "Hatfield Shaw & Co",
+      "networkId": null,
+      "units": 10,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-08-13",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-08-13",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 674058,
+      "companyName": "3D Lets",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 681372,
+      "companyName": "Q Sales & Lettings LTD",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 681513,
+      "companyName": "Midland House Management Ltd ",
+      "networkId": null,
+      "units": 40,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 681565,
+      "companyName": "J M Properties",
+      "networkId": null,
+      "units": 70,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-08-20",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-08-20",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 682807,
+      "companyName": "Milne Moser Estate Agents",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting OB Call Booking",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 682821,
+      "companyName": "Knights Property Services",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 683008,
+      "companyName": "Partridge Homes",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 685823,
+      "companyName": "MA-Residential",
+      "networkId": null,
+      "units": 1,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-08-25",
+      "internalStatusTag": "30 Days Post Go-Live Support",
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-08-25",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 690903,
+      "companyName": "Bryan & Keegan ",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 691010,
+      "companyName": "Meliora Property Management",
+      "networkId": null,
+      "units": 50,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 692659,
+      "companyName": "Newspace Lettings",
+      "networkId": null,
+      "units": 180,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting OB Call Booking",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 692763,
+      "companyName": "White ande Guard",
+      "networkId": null,
+      "units": 250,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Onboarding in Progress",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-09-02",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 695451,
+      "companyName": "Jacobs Steel",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": "2,3",
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 697167,
+      "companyName": "The Home Club",
+      "networkId": null,
+      "units": 150,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": "2,3,4",
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 698112,
+      "companyName": "100 Key Properties",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 700587,
+      "companyName": "CastleBrae ",
+      "networkId": null,
+      "units": 597,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Onboarding in Progress",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-09-08",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 700597,
+      "companyName": "Lovelle - Lincoln / Market Rasen",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 702745,
+      "companyName": "Highgates",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 704402,
+      "companyName": "John Sharples Lettings",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 705119,
+      "companyName": "Samuel Estates",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 705211,
+      "companyName": "Lovelle - Gainsborough / Hykeham",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 706784,
+      "companyName": "Century 21 Fine Homes & Estates",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting OB Call Booking",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 710617,
+      "companyName": "Victoria Allman Lettings",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 711667,
+      "companyName": "hapi.space ",
+      "networkId": null,
+      "units": 200,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 712110,
+      "companyName": "Aura Property Partners Ltd",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 712179,
+      "companyName": "Riverside Residential Property Services Ltd",
+      "networkId": null,
+      "units": 180,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Onboarding in Progress",
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-10-01",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 712318,
+      "companyName": "Origin Estate Agents",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 714387,
+      "companyName": "John Payne Estate Agents",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 715377,
+      "companyName": "Tuckerman Residential",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Bridge Second Cut",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 715521,
+      "companyName": "Sarah Mains Residential (ID:1034)",
+      "networkId": null,
+      "units": 700,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 716827,
+      "companyName": "Matthew Anthony incorporating Stafford Johnson",
+      "networkId": null,
+      "units": 180,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 717511,
+      "companyName": "Jacobs Properties ",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 718405,
+      "companyName": "Mo Move Newquay",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 719176,
+      "companyName": "Jackson Grundy Estate Agents",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 720017,
+      "companyName": "Lords Property",
+      "networkId": null,
+      "units": 130,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 721518,
+      "companyName": "Baytt",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 722278,
+      "companyName": "Homecare Estates",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 722850,
+      "companyName": "Jaks & Co",
+      "networkId": null,
+      "units": 30,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 722867,
+      "companyName": "Oliver Rayns Estate Agents",
+      "networkId": null,
+      "units": 180,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 724665,
+      "companyName": "Phillip Laurence Estate Agents",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 729597,
+      "companyName": "Lixing",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Bridge Second Cut",
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 730180,
+      "companyName": "Bonds of Essex Ltd",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 730784,
+      "companyName": "Howell and Co",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 730972,
+      "companyName": "Relio",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Onboarding in Progress",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-09-02",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 731552,
+      "companyName": "Lynn Thompson Sales and Lettings",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Training Phase",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 736658,
+      "companyName": "Victoria Poole Estates",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 737318,
+      "companyName": "Jeffries and Dibbens Estate and Lettings Agents",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 739391,
+      "companyName": "Alexandria Hamilton Estate Agents",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 739934,
+      "companyName": "Webbs Estate Agents",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 740515,
+      "companyName": "Coastline Properties (NW) Ltd",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 741328,
+      "companyName": "R L Morris Estate Agents",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 742463,
+      "companyName": "POWELLS",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 742907,
+      "companyName": "Monopoly Estates",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 745372,
+      "companyName": "Charles Head",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 746802,
+      "companyName": "Horler & Associates",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 747759,
+      "companyName": "Cousins Estates",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": "Onboarding",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Booked",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "accounting": null,
+        "onboarding": null,
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ]
 }
