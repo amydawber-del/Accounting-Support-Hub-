@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T15:03:50.310Z",
+  "generatedAt": "2026-08-28T22:43:58.812Z",
   "companies": [
     {
       "companyId": 122281,
@@ -3811,7 +3811,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Verified"
       },
       "csm": null,
       "csmStreet": null,
@@ -4456,7 +4456,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Not started"
       },
       "csm": null,
       "csmStreet": null,
@@ -6593,7 +6593,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Not started"
       },
       "csm": null,
       "csmStreet": null,
@@ -7687,7 +7687,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Verified"
       },
       "csm": null,
       "csmStreet": null,
@@ -11604,7 +11604,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Verified"
       },
       "csm": null,
       "csmStreet": null,
@@ -12602,7 +12602,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Pending"
       },
       "csm": null,
       "csmStreet": null,
@@ -17122,7 +17122,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Verified"
       },
       "csm": null,
       "csmStreet": null,
@@ -19253,7 +19253,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Pending"
       },
       "csm": null,
       "csmStreet": null,
@@ -20576,7 +20576,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Not started"
       },
       "csm": null,
       "csmStreet": null,
@@ -20625,7 +20625,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Not started"
       },
       "csm": null,
       "csmStreet": null,
@@ -21281,7 +21281,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Pending"
       },
       "csm": null,
       "csmStreet": null,
@@ -22035,7 +22035,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Verified"
       },
       "csm": null,
       "csmStreet": null,
@@ -22133,7 +22133,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Verified"
       },
       "csm": null,
       "csmStreet": null,
@@ -28630,7 +28630,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Verified"
       },
       "csm": null,
       "csmStreet": null,
@@ -32832,7 +32832,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Verified"
       },
       "csm": null,
       "csmStreet": null,
@@ -35251,7 +35251,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Not started"
       },
       "csm": null,
       "csmStreet": null,
@@ -37370,7 +37370,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Verified"
       },
       "csm": null,
       "csmStreet": null,
@@ -37536,7 +37536,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Verified"
       },
       "csm": null,
       "csmStreet": null,
@@ -41574,7 +41574,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training, Street Hosted Open Training Event, Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-07-31",
@@ -44466,8 +44466,8 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
-      "accountingStatus": null,
+      "onboardingSpecialist": "Liam Sorah",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -44476,10 +44476,10 @@
       "csm": null,
       "csmStreet": null,
       "segment": null,
-      "streetStatus": null,
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "S, L, LPM",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": null,
@@ -48173,55 +48173,6 @@
     {
       "companyId": 656090,
       "companyName": "McGlashans Property Services",
-      "networkId": null,
-      "units": null,
-      "branches": null,
-      "accountingOwner": null,
-      "onboardingSpecialist": null,
-      "accountingStatus": null,
-      "clientAccountingEnabled": false,
-      "streetPayments": {
-        "customer": null,
-        "verificationStatus": null
-      },
-      "csm": null,
-      "csmStreet": null,
-      "segment": null,
-      "streetStatus": null,
-      "agentLiveWithStreet": false,
-      "streetGoLiveDate": null,
-      "streetUsage": null,
-      "agentLiveWithAccounting": false,
-      "goLiveDate": null,
-      "internalStatusTag": null,
-      "redFlag": false,
-      "optOut": null,
-      "reconciliation": null,
-      "restart": null,
-      "training": {
-        "status": "Not recorded",
-        "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
-      },
-      "onboardingProject": null,
-      "internalNotes": {
-        "accounting": "",
-        "onboarding": "",
-        "gapAnalysis": ""
-      },
-      "recentMessages": null,
-      "rocketlaneLinks": {
-        "accountingProject": null,
-        "reconciliationProject": null,
-        "trainingProject": null
-      }
-    },
-    {
-      "companyId": 658416,
-      "companyName": "Fortuna & Co",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -53229,7 +53180,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Not started"
       },
       "csm": null,
       "csmStreet": null,
@@ -54222,7 +54173,7 @@
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": true,
-        "verificationStatus": null
+        "verificationStatus": "Not started"
       },
       "csm": null,
       "csmStreet": null,
@@ -56519,7 +56470,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Max Hornby",
       "onboardingSpecialist": null,
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -56888,7 +56839,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Max Hornby",
       "onboardingSpecialist": null,
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -57226,6 +57177,55 @@
       "restart": null,
       "training": {
         "status": "Request Received",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "accounting": "",
+        "onboarding": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 749287,
+      "companyName": "sales@lukeshevels.co.uk",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
         "completed": false,
         "lastDate": null,
         "trainer": null,
