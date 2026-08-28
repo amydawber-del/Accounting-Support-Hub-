@@ -225,7 +225,7 @@ function renderResults(){
 
   const matches = companies.filter(c=>{
     const routing = getRouting(c);
-    const searchOk = !q || c.name.toLowerCase().includes(q) || c.networkId.includes(q) || c.accountingOwner.toLowerCase().includes(q);
+    const searchOk = !q || c.companyName.toLowerCase().includes(q) || c.networkId.includes(q) || c.accountingOwner.toLowerCase().includes(q);
     return searchOk && matchesFilter(c, routing);
   });
 
@@ -238,22 +238,25 @@ function renderResults(){
     const routing = getRouting(c);
     const card = document.createElement('div');
     card.className = 'result-card';
-    card.onclick = ()=>showDetail(c.id);
+    card.onclick = ()=>showDetail(c.companyId);
 
     let badges = `<span class="badge ${routing.badgeClass}">${routing.label}</span>`;
     if(c.redFlag) badges += `<span class="badge badge--flag">🚩 Additional Support</span>`;
     if(c.training.status!=='Completed') badges += `<span class="badge badge--optout">Training gap</span>`;
+    if(c.segment) badges += `<span class="badge badge--segment">${c.segment}</span>`;
 
     card.innerHTML = `
       <div class="result-top">
         <div>
-          <div class="result-name">${c.name}</div>
+          <div class="result-name">${c.companyName}</div>
           <div class="result-sub">Network ID ${c.networkId} · ${c.branches} branch${c.branches>1?'es':''}</div>
         </div>
         <span class="view-link">View client →</span>
       </div>
       <div class="badge-row">${badges}</div>
       <div class="result-meta">
+        <div class="meta-item"><div class="meta-label">Street Status</div><div class="meta-value">${c.streetStatus || '—'}</div></div>
+        <div class="meta-item"><div class="meta-label">Accounting Status</div><div class="meta-value">${c.internalStatusTag || '—'}</div></div>
         <div class="meta-item"><div class="meta-label">Accounting Owner</div><div class="meta-value">${c.accountingOwner}</div></div>
         <div class="meta-item"><div class="meta-label">Network ID</div><div class="meta-value">${c.networkId}</div></div>
         <div class="meta-item"><div class="meta-label">Portfolio</div><div class="meta-value">${c.units} managed units</div></div>
@@ -265,7 +268,7 @@ function renderResults(){
 
 /* ---------------- render: detail view ---------------- */
 function showDetail(id){
-  const c = companies.find(x=>x.id===id);
+  const c = companies.find(x=>x.companyId===id);
   const routing = getRouting(c);
   const content = document.getElementById('detailContent');
 
@@ -286,7 +289,7 @@ function showDetail(id){
   let html = `
     <div class="detail-head">
       <div>
-        <h2>${c.name}</h2>
+        <h2>${c.companyName}</h2>
         <div class="result-sub">Network ID ${c.networkId} · ${c.units} managed units · CSM ${c.csm}</div>
       </div>
     </div>
@@ -304,6 +307,8 @@ function showDetail(id){
     <div class="panel-grid">
       <div class="panel">
         <h3>Client Overview</h3>
+        <div class="field-row"><span class="field-label">Street Status</span><span class="field-value">${c.streetStatus || '—'}</span></div>
+        <div class="field-row"><span class="field-label">Segment</span><span class="field-value">${c.segment || '—'}</span></div>
         <div class="field-row"><span class="field-label">Account Owner</span><span class="field-value">${c.accountingOwner}</span></div>
         <div class="field-row"><span class="field-label">CSM</span><span class="field-value">${c.csm}</span></div>
         <div class="field-row"><span class="field-label">Branches</span><span class="field-value">${c.branches}</span></div>
@@ -366,7 +371,23 @@ function showDetail(id){
         <div class="field-row"><span class="field-label">Modules Completed</span><span class="field-value">${c.training.modules}</span></div>
       </div>
     </div>
+  `;
 
+  if(c.recentMessages && c.recentMessages.length){
+    html += `
+      <div class="conversation-section">
+        <h3 class="conversation-title">Recent client conversation</h3>
+        ${c.recentMessages.map(m => `
+          <div class="conversation-message">
+            <div class="conversation-message-date">${m.createdAt ? fmtDate(m.createdAt) : ''}</div>
+            <div class="conversation-message-body">${m.content || '(no content)'}</div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  html += `
     <div class="notes-section">
   `;
 
