@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Street Accounting Support Hub</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="hub-header">
+  <div>
+    <span class="brand-eyebrow">Street</span>
+    <h1>Accounting Support Hub</h1>
+    <p>Quickly check a client's Accounting onboarding, reconciliation and training status &mdash; read-only, no Rocketlane access needed.</p>
+  </div>
+  <div class="sync-pill">
+    <button class="btn-refresh" onclick="refreshData()">↻ Refresh data</button>
+    <span class="sync-time" id="syncTime">Last synced: loading…</span>
+  </div>
+</header>
+
+<div class="shell">
+
+  <section id="lookup-view">
+    <div class="search-wrap">
+      <div class="search-box">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="searchInput" type="text" placeholder="Search client, Network ID or contact…" oninput="renderResults()">
+      </div>
+      <div class="chips" id="chipRow"></div>
+    </div>
+
+    <div class="results" id="resultsList">
+      <div class="empty-state">Loading Support Hub data…</div>
+    </div>
+  </section>
+
+  <section id="detail-view">
+    <button class="back-link" onclick="showLookup()">← Back to search</button>
+    <div id="detailContent"></div>
+  </section>
+
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
