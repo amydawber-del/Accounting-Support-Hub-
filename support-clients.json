@@ -3,102 +3,353 @@
   "note": "Placeholder sample data. This file is overwritten automatically by scripts/sync-rocketlane.js every time .github/workflows/sync-rocketlane.yml runs.",
   "companies": [
     {
-      "companyId": "demo-abc", "companyName": "ABC Estate Agents", "networkId": "12345", "units": 245, "branches": 3,
-      "accountingOwner": "Amy Dawber", "csm": "Priya Shah",
-      "agentLiveWithAccounting": true, "goLiveDate": "2026-05-02",
+      "companyId": "demo-abc",
+      "companyName": "ABC Estate Agents",
+      "networkId": "12345",
+      "units": 245,
+      "branches": 3,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Live",
+      "accountingOwner": "Amy Dawber",
+      "csm": "Priya Shah",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-05-02",
       "internalStatusTag": "Client Accounting Reconciliation",
-      "redFlag": false, "optOut": null,
-      "reconciliation": {"status": "In Progress", "route": "Reconciliation Reset", "specialist": "Hayley Seabrook", "dateRaised": "2026-08-20", "reviewCallBooked": "Booked", "currentDifference": "£1,204.50", "outcome": "Pending", "notes": "Client attempted a manual bank rec correction before raising — historic transactions may need review before any further changes."},
-      "restart": {"status": "Recently restarted", "route": "Reconciliation Reset", "reason": "Reconciliation Issue", "date": "2026-08-14", "notes": "Full accounting reset agreed with client after reconciliation issue found in bank feed."},
-      "training": {"status": "Completed", "completed": true, "lastDate": "2026-04-18", "trainer": "Max", "modules": "Bank Rec, Invoicing", "formats": "Remote"},
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": {
+        "status": "In Progress",
+        "route": "Reconciliation Reset",
+        "specialist": "Hayley Seabrook",
+        "dateRaised": "2026-08-20",
+        "reviewCallBooked": "Booked",
+        "currentDifference": "\u00a31,204.50",
+        "outcome": "Pending",
+        "notes": "Client attempted a manual bank rec correction before raising \u2014 historic transactions may need review before any further changes."
+      },
+      "restart": {
+        "status": "Recently restarted",
+        "route": "Reconciliation Reset",
+        "reason": "Reconciliation Issue",
+        "date": "2026-08-14",
+        "notes": "Full accounting reset agreed with client after reconciliation issue found in bank feed."
+      },
+      "training": {
+        "status": "Completed",
+        "completed": true,
+        "lastDate": "2026-04-18",
+        "trainer": "Max",
+        "modules": "Bank Rec, Invoicing",
+        "formats": "Remote"
+      },
       "onboardingProject": null,
-      "internalNotes": {"accounting": "Client is finance-savvy but prefers phone contact over Live Chat for anything reconciliation related.", "onboarding": "", "gapAnalysis": ""},
-      "rocketlaneLinks": {"accountingProject": null, "reconciliationProject": null, "trainingProject": null}
+      "internalNotes": {
+        "accounting": "Client is finance-savvy but prefers phone contact over Live Chat for anything reconciliation related.",
+        "onboarding": "",
+        "gapAnalysis": ""
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      },
+      "recentMessages": [
+        {
+          "content": "Thanks for looking into this \u2014 let me know once the difference is tracked down.",
+          "createdAt": "2026-08-21T09:12:00Z",
+          "author": null
+        },
+        {
+          "content": "We've flagged the reconciliation issue and started a reset on the affected accounts.",
+          "createdAt": "2026-08-20T15:40:00Z",
+          "author": null
+        }
+      ],
+      "csmStreet": "Priya Shah"
     },
     {
-      "companyId": "demo-maple", "companyName": "Maple & Co Lettings", "networkId": "20981", "units": 88, "branches": 1,
-      "accountingOwner": "Jess", "csm": "Priya Shah",
-      "agentLiveWithAccounting": false, "goLiveDate": null,
+      "companyId": "demo-maple",
+      "companyName": "Maple & Co Lettings",
+      "networkId": "20981",
+      "units": 88,
+      "branches": 1,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "accountingOwner": "Jess",
+      "csm": "Priya Shah",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
       "internalStatusTag": "Awaiting OB Call Booking",
-      "redFlag": true, "optOut": null,
-      "reconciliation": null, "restart": null,
-      "training": {"status": "Referred", "completed": false, "lastDate": null, "trainer": "—", "modules": "—", "formats": "—"},
-      "onboardingProject": {"targetGoLive": "2026-09-10", "openingBalanceBooked": true, "clientAccountingEnabled": false, "notes": "Client is behind on providing opening balances — chasing weekly. Flag raised as go-live date at risk."},
-      "internalNotes": {"accounting": "", "onboarding": "Opening balance call booked twice, client rescheduled both.", "gapAnalysis": ""},
-      "rocketlaneLinks": {"accountingProject": null, "reconciliationProject": null, "trainingProject": null}
+      "redFlag": true,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Referred",
+        "completed": false,
+        "lastDate": null,
+        "trainer": "\u2014",
+        "modules": "\u2014",
+        "formats": "\u2014"
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-09-10",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": false,
+        "notes": "Client is behind on providing opening balances \u2014 chasing weekly. Flag raised as go-live date at risk."
+      },
+      "internalNotes": {
+        "accounting": "",
+        "onboarding": "Opening balance call booked twice, client rescheduled both.",
+        "gapAnalysis": ""
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      },
+      "csmStreet": "Priya Shah"
     },
     {
-      "companyId": "demo-thornfield", "companyName": "Thornfield Residential", "networkId": "30442", "units": 132, "branches": 2,
-      "accountingOwner": "Amy Dawber", "csm": "Dan Okafor",
-      "agentLiveWithAccounting": true, "goLiveDate": "2026-08-15",
+      "companyId": "demo-thornfield",
+      "companyName": "Thornfield Residential",
+      "networkId": "30442",
+      "units": 132,
+      "branches": 2,
+      "segment": "SMB",
+      "streetStatus": "Live",
+      "accountingOwner": "Amy Dawber",
+      "csm": "Dan Okafor",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-08-15",
       "internalStatusTag": "30 Days Post Go-Live Support",
-      "redFlag": false, "optOut": null,
-      "reconciliation": null, "restart": null,
-      "training": {"status": "Completed", "completed": true, "lastDate": "2026-08-01", "trainer": "Amy", "modules": "Full Accounting Suite", "formats": "Onsite"},
-      "onboardingProject": {"targetGoLive": "2026-08-15", "openingBalanceBooked": true, "clientAccountingEnabled": true, "notes": "Went live on schedule, no issues at handover."},
-      "internalNotes": {"accounting": "", "onboarding": "Smooth onboarding, client very engaged.", "gapAnalysis": ""},
-      "rocketlaneLinks": {"accountingProject": null, "reconciliationProject": null, "trainingProject": null}
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Completed",
+        "completed": true,
+        "lastDate": "2026-08-01",
+        "trainer": "Amy",
+        "modules": "Full Accounting Suite",
+        "formats": "Onsite"
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-08-15",
+        "openingBalanceBooked": true,
+        "clientAccountingEnabled": true,
+        "notes": "Went live on schedule, no issues at handover."
+      },
+      "internalNotes": {
+        "accounting": "",
+        "onboarding": "Smooth onboarding, client very engaged.",
+        "gapAnalysis": ""
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      },
+      "csmStreet": "Dan Okafor"
     },
     {
-      "companyId": "demo-greywren", "companyName": "Grey & Wren", "networkId": "18820", "units": 41, "branches": 1,
-      "accountingOwner": "—", "csm": "Dan Okafor",
-      "agentLiveWithAccounting": false, "goLiveDate": null,
+      "companyId": "demo-greywren",
+      "companyName": "Grey & Wren",
+      "networkId": "18820",
+      "units": 41,
+      "branches": 1,
+      "segment": "SMB",
+      "streetStatus": "At Risk",
+      "accountingOwner": "\u2014",
+      "csm": "Dan Okafor",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
       "internalStatusTag": "Opt-Out Confirmed / Archive",
       "redFlag": false,
-      "optOut": {"type": "Client Declined", "reason": "Decided to stay with existing accounting software following a board decision — may revisit in 2027."},
-      "reconciliation": null, "restart": null,
-      "training": {"status": "Not recorded", "completed": false, "lastDate": null, "trainer": "—", "modules": "—", "formats": "—"},
+      "optOut": {
+        "type": "Client Declined",
+        "reason": "Decided to stay with existing accounting software following a board decision \u2014 may revisit in 2027."
+      },
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": "\u2014",
+        "modules": "\u2014",
+        "formats": "\u2014"
+      },
       "onboardingProject": null,
-      "internalNotes": {"accounting": "Opted out after Opening Balance call — do not re-offer onboarding without checking with Account Owner first.", "onboarding": "", "gapAnalysis": ""},
-      "rocketlaneLinks": {"accountingProject": null, "reconciliationProject": null, "trainingProject": null}
+      "internalNotes": {
+        "accounting": "Opted out after Opening Balance call \u2014 do not re-offer onboarding without checking with Account Owner first.",
+        "onboarding": "",
+        "gapAnalysis": ""
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      },
+      "csmStreet": "Dan Okafor"
     },
     {
-      "companyId": "demo-harborview", "companyName": "Harborview Sales", "networkId": "27710", "units": 310, "branches": 4,
-      "accountingOwner": "Jess", "csm": "Priya Shah",
-      "agentLiveWithAccounting": true, "goLiveDate": "2025-11-03",
+      "companyId": "demo-harborview",
+      "companyName": "Harborview Sales",
+      "networkId": "27710",
+      "units": 310,
+      "branches": 4,
+      "segment": "Enterprise & Strategic",
+      "streetStatus": "Live",
+      "accountingOwner": "Jess",
+      "csm": "Priya Shah",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2025-11-03",
       "internalStatusTag": "Live / Archive",
-      "redFlag": false, "optOut": null,
-      "reconciliation": null, "restart": null,
-      "training": {"status": "Completed", "completed": true, "lastDate": "2025-11-10", "trainer": "Jess", "modules": "Bank Rec, Reporting", "formats": "Remote"},
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Completed",
+        "completed": true,
+        "lastDate": "2025-11-10",
+        "trainer": "Jess",
+        "modules": "Bank Rec, Reporting",
+        "formats": "Remote"
+      },
       "onboardingProject": null,
-      "internalNotes": {"accounting": "", "onboarding": "", "gapAnalysis": ""},
-      "rocketlaneLinks": {"accountingProject": null, "reconciliationProject": null, "trainingProject": null}
+      "internalNotes": {
+        "accounting": "",
+        "onboarding": "",
+        "gapAnalysis": ""
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      },
+      "csmStreet": "Priya Shah"
     },
     {
-      "companyId": "demo-fieldsfrost", "companyName": "Fields & Frost", "networkId": "33107", "units": 19, "branches": 1,
-      "accountingOwner": "Amy Dawber", "csm": "Dan Okafor",
-      "agentLiveWithAccounting": true, "goLiveDate": "2025-06-20",
+      "companyId": "demo-fieldsfrost",
+      "companyName": "Fields & Frost",
+      "networkId": "33107",
+      "units": 19,
+      "branches": 1,
+      "segment": "SMB",
+      "streetStatus": "At Risk",
+      "accountingOwner": "Amy Dawber",
+      "csm": "Dan Okafor",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2025-06-20",
       "internalStatusTag": "Slow Mover",
-      "redFlag": false, "optOut": null,
-      "reconciliation": null, "restart": null,
-      "training": {"status": "Not recorded", "completed": false, "lastDate": null, "trainer": "—", "modules": "—", "formats": "—"},
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": "\u2014",
+        "modules": "\u2014",
+        "formats": "\u2014"
+      },
       "onboardingProject": null,
-      "internalNotes": {"accounting": "Small office, low Accounting usage — may benefit from a refresher session.", "onboarding": "", "gapAnalysis": ""},
-      "rocketlaneLinks": {"accountingProject": null, "reconciliationProject": null, "trainingProject": null}
+      "internalNotes": {
+        "accounting": "Small office, low Accounting usage \u2014 may benefit from a refresher session.",
+        "onboarding": "",
+        "gapAnalysis": ""
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      },
+      "csmStreet": "Dan Okafor"
     },
     {
-      "companyId": "demo-oakridge", "companyName": "Oakridge Property Group", "networkId": "40118", "units": 64, "branches": 2,
-      "accountingOwner": "Max", "csm": "Dan Okafor",
-      "agentLiveWithAccounting": false, "goLiveDate": null,
+      "companyId": "demo-oakridge",
+      "companyName": "Oakridge Property Group",
+      "networkId": "40118",
+      "units": 64,
+      "branches": 2,
+      "segment": "SMB",
+      "streetStatus": "Onboarding",
+      "accountingOwner": "Max",
+      "csm": "Dan Okafor",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
-      "redFlag": false, "optOut": null,
-      "reconciliation": null, "restart": null,
-      "training": {"status": "Not recorded", "completed": false, "lastDate": null, "trainer": "—", "modules": "—", "formats": "—"},
-      "onboardingProject": {"targetGoLive": "2026-10-01", "openingBalanceBooked": false, "clientAccountingEnabled": false, "notes": "Signed up for Accounting last week — intro call not yet scheduled."},
-      "internalNotes": {"accounting": "", "onboarding": "Client keen to get started, chase this week for intro call slot.", "gapAnalysis": ""},
-      "rocketlaneLinks": {"accountingProject": null, "reconciliationProject": null, "trainingProject": null}
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": "\u2014",
+        "modules": "\u2014",
+        "formats": "\u2014"
+      },
+      "onboardingProject": {
+        "targetGoLive": "2026-10-01",
+        "openingBalanceBooked": false,
+        "clientAccountingEnabled": false,
+        "notes": "Signed up for Accounting last week \u2014 intro call not yet scheduled."
+      },
+      "internalNotes": {
+        "accounting": "",
+        "onboarding": "Client keen to get started, chase this week for intro call slot.",
+        "gapAnalysis": ""
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      },
+      "csmStreet": "Dan Okafor"
     },
     {
-      "companyId": "demo-westbourne", "companyName": "Westbourne Lettings", "networkId": "15502", "units": 52, "branches": 1,
-      "accountingOwner": "—", "csm": "Priya Shah",
-      "agentLiveWithAccounting": false, "goLiveDate": null,
+      "companyId": "demo-westbourne",
+      "companyName": "Westbourne Lettings",
+      "networkId": "15502",
+      "units": 52,
+      "branches": 1,
+      "segment": "SMB",
+      "streetStatus": "Churned",
+      "accountingOwner": "\u2014",
+      "csm": "Priya Shah",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
       "internalStatusTag": "Churned / Archived",
-      "redFlag": false, "optOut": null,
-      "reconciliation": null, "restart": null,
-      "training": {"status": "Not recorded", "completed": false, "lastDate": null, "trainer": "—", "modules": "—", "formats": "—"},
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": "\u2014",
+        "modules": "\u2014",
+        "formats": "\u2014"
+      },
       "onboardingProject": null,
-      "internalNotes": {"accounting": "Client left Street Accounting after 4 months — moved back to previous provider. Do not re-offer without checking with Account Owner.", "onboarding": "", "gapAnalysis": ""},
-      "rocketlaneLinks": {"accountingProject": null, "reconciliationProject": null, "trainingProject": null}
+      "internalNotes": {
+        "accounting": "Client left Street Accounting after 4 months \u2014 moved back to previous provider. Do not re-offer without checking with Account Owner.",
+        "onboarding": "",
+        "gapAnalysis": ""
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      },
+      "csmStreet": "Priya Shah"
     }
   ]
 }
