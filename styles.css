@@ -115,6 +115,7 @@
   .badge--optout{background:var(--card-light-grey); color:var(--text--dark--30); border:1px solid var(--light-grey);}
   .badge--flag{background:var(--brand-accent--mandarin-light); color:#7a3a0c;}
   .badge--slow{background:var(--brand-accent--cream); color:#6b4a24;}
+  .badge--segment{background:var(--white); color:var(--text--dark--40); border:1px solid var(--light-grey);}
 
   /* ---------- result cards ---------- */
   .results{display:flex; flex-direction:column; gap:12px; margin-top:20px;}
@@ -142,8 +143,17 @@
 
   /* ---------- detail view ---------- */
   #detail-view{display:none;}
-  .back-link{display:inline-flex; align-items:center; gap:6px; color:var(--text--dark--30); font-size:13px; margin:20px 0 16px; cursor:pointer; background:none; border:none; padding:0;}
-  .back-link:hover{color:var(--action-primary-blue);}
+  .back-link{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--white); border:1px solid var(--ui--underline--light-grey);
+    color:var(--text--dark--50); font-size:14px; font-weight:700;
+    padding:10px 20px; border-radius:999px; cursor:pointer;
+    box-shadow:var(--shadow-card);
+    margin:20px 0 16px;
+    position:sticky; top:16px; z-index:20;
+  }
+  .back-link:hover{border-color:var(--action-primary-blue); color:var(--action-primary-blue); background:var(--accent-blue--50);}
+  .back-link svg{flex-shrink:0;}
 
   .status-banner{
     border-radius:var(--radius-lg); padding:22px 24px; margin-bottom:20px;
@@ -194,7 +204,45 @@
   .field-row .field-label{color:var(--text--dark--30);}
   .field-row .field-value{color:var(--text--dark--50); font-weight:600; text-align:right;}
 
+  .conversation-section{
+    background:var(--card-light-grey); border:1px solid var(--ui--underline--light-grey);
+    border-radius:var(--radius-lg); padding:16px 20px; margin-top:20px;
+  }
+  .conversation-title{font-size:13px; text-transform:uppercase; letter-spacing:.05em; color:var(--text--dark--30); margin-bottom:10px;}
+  .conversation-message{padding:10px 0; border-bottom:1px solid var(--ui--underline--light-grey);}
+  .conversation-message:last-child{border-bottom:none; padding-bottom:0;}
+  .conversation-message-date{font-size:11px; color:var(--text--dark--30); margin-bottom:3px;}
+  .conversation-message-body{font-size:13.5px; color:var(--text--dark--50);}
+
   .notes-section{margin-top:16px;}
+
+  /* ---------- password gate ---------- */
+  #gate-overlay{
+    position:fixed; inset:0; background:var(--white); z-index:1000;
+    display:flex; align-items:center; justify-content:center; padding:20px;
+  }
+  .gate-card{
+    max-width:340px; width:100%; text-align:center;
+    background:var(--card-light-grey); border:1px solid var(--ui--underline--light-grey);
+    border-radius:var(--radius-lg); padding:32px 28px; box-shadow:var(--shadow-card);
+  }
+  .gate-card .brand-eyebrow{display:block; margin-bottom:6px;}
+  .gate-card h2{font-size:18px; margin-bottom:6px;}
+  .gate-card p{color:var(--text--dark--30); font-size:13px; margin-bottom:18px;}
+  .gate-card input{
+    width:100%; box-sizing:border-box; padding:10px 14px; border-radius:var(--radius-md);
+    border:1px solid var(--ui--underline--light-grey); font-size:14px; margin-bottom:10px;
+    text-align:center;
+  }
+  .gate-card input:focus{outline:none; border-color:var(--action-primary-blue);}
+  .gate-card button{
+    width:100%; padding:10px 14px; border-radius:var(--radius-md); border:none;
+    background:var(--action-primary-blue); color:var(--white); font-weight:700;
+    font-size:14px; cursor:pointer;
+  }
+  .gate-card button:hover{opacity:.9;}
+  .gate-error{color:#8a1f2f; font-size:12.5px; margin-top:10px; min-height:16px;}
+  #app-content{display:none;}
   details.note{
     background:var(--white); border:1px solid var(--ui--underline--light-grey); border-radius:var(--radius-md);
     padding:0; margin-bottom:8px; overflow:hidden;
@@ -205,7 +253,7 @@
   }
   details.note summary::-webkit-details-marker{display:none;}
   details.note summary::after{content:"+"; color:var(--text--dark--30); font-weight:400; font-size:16px;}
-  details.note[open] summary::after{content:"–";}
+  details.note[open] summary::after{content:"â€“";}
   details.note .note-body{padding:0 16px 14px; font-size:13.5px; color:var(--text--dark--40);}
 
   .project-links{display:flex; gap:10px; flex-wrap:wrap; margin-top:18px;}
