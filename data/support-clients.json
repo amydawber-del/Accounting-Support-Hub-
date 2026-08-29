@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T03:56:10.191Z",
+  "generatedAt": "2026-08-29T11:00:28.457Z",
   "companies": [
     {
       "companyId": 122281,
@@ -49912,7 +49912,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-08-20",
@@ -57248,12 +57248,12 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1146,
-    "projectsFetchedFromRocketlane": 428,
+    "projectsFetchedFromRocketlane": 429,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 150,
       "reconciliation": 0,
-      "training": 275,
+      "training": 276,
       "unknown": 3
     },
     "companiesWrittenToSupportHub": 1146,
