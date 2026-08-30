@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T13:21:12.739Z",
+  "generatedAt": "2026-08-30T17:48:20.880Z",
   "companies": [
     {
       "companyId": 122281,
@@ -53592,7 +53592,7 @@
       "companyId": 715377,
       "companyName": "Tuckerman Residential",
       "networkId": null,
-      "units": null,
+      "units": 60,
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Tracy Kettle",
@@ -53622,7 +53622,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Bespoke Branch Training, Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
         "targetGoLive": null,
