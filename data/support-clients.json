@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T17:48:20.880Z",
+  "generatedAt": "2026-08-30T20:57:28.946Z",
   "companies": [
     {
       "companyId": 122281,
@@ -51540,7 +51540,7 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": null,
+        "modules": "Lettings Front-End, Lettings Property Management, Accounting",
         "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
