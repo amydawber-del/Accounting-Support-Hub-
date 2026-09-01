@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T11:19:41.921Z",
+  "generatedAt": "2026-09-01T12:05:17.900Z",
   "companies": [
     {
       "companyId": 122281,
@@ -26571,7 +26571,7 @@
       "agentLiveWithAccounting": true,
       "goLiveDate": "2026-08-24",
       "internalStatusTag": "30 Days Post Go-Live Support",
-      "redFlag": false,
+      "redFlag": true,
       "optOut": null,
       "reconciliation": null,
       "restart": null,
@@ -50163,7 +50163,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -50173,8 +50173,8 @@
       "csm": null,
       "csmStreet": null,
       "segment": "SMB",
-      "streetStatus": "Onboarding",
-      "agentLiveWithStreet": false,
+      "streetStatus": "Active",
+      "agentLiveWithStreet": true,
       "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
@@ -54281,7 +54281,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Tracy Kettle",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -54294,7 +54294,7 @@
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "A, L, LPM, S",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": null,
@@ -55971,8 +55971,8 @@
       "csm": null,
       "csmStreet": null,
       "segment": null,
-      "streetStatus": "Onboarding",
-      "agentLiveWithStreet": false,
+      "streetStatus": "Active",
+      "agentLiveWithStreet": true,
       "streetGoLiveDate": null,
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
@@ -57003,7 +57003,7 @@
     },
     {
       "companyId": 748321,
-      "companyName": "hello@lintelhomes.co.uk",
+      "companyName": "Lintel Homes",
       "networkId": null,
       "units": null,
       "branches": null,
