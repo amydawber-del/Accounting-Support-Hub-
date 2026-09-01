@@ -531,13 +531,27 @@ function showDetail(id){
     `;
   }
 
+  if(c.recentEngagementNotes && c.recentEngagementNotes.length){
+    html += `
+      <div class="conversation-section">
+        <h3 class="conversation-title">Recent engagements</h3>
+        ${c.recentEngagementNotes.map(n => `
+          <div class="conversation-message">
+            <div class="conversation-message-date">${n.createdAt ? fmtDate(n.createdAt) : ''}${n.title ? ' · ' + n.title : ''}</div>
+            <div class="conversation-message-body">${n.text || '(no content)'}</div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
   html += `
     <div class="notes-section">
   `;
 
   const noteEntries = [
     ['Notes', c.internalNotes.general],
-    ['Accounting Restart Notes', c.restart ? c.restart.notes : ''],
+    ['Reconciliation Notes', c.reconciliation ? c.reconciliation.notes : ''],
     ['Opt-Out Reason', c.optOut ? c.optOut.reason : '']
   ].filter(([,val])=>val);
 
