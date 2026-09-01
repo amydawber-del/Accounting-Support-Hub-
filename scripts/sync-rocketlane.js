@@ -117,9 +117,14 @@ const PROJECT_FIELD_LABELS = {
   // from the Training Completed Yes/No field.
   trainingInternalStatusTag: 'Training Internal Status Tag',
   // Notes (NOTE fields)
-  accountingNote: 'Street Client Accounting Note',
-  reconciliationNotes: 'Client Accounting Reconciliation Notes',
-  onboardingNotes: 'Onboarding Notes',
+  // FIXED 28 Aug 2026 — none of the three previous guesses
+  // (accountingNote/onboardingNotes/reconciliationNotes) ever matched a real
+  // field; confirmed live there's only one plain free-text field, literally
+  // labelled "Notes " (trailing space) — no dedicated Accounting/Onboarding/
+  // Reconciliation notes fields exist. All three had been silently empty
+  // since the first build. Collapsed to one shared field; see
+  // buildCompanyRecord for how each project object's own Notes value is used.
+  notes: 'Notes',
 };
 
 // Company/Account-level fields. streetStatus/networkId/branches/csmStreet
@@ -544,7 +549,7 @@ async function buildCompanyRecord(company, projects, projectFieldIds, companyFie
     internalStatusTag,
     redFlag: Boolean(redFlag),
     optOut: internalStatusTag && /Opt-Out|Closed \/ None Responder/.test(internalStatusTag)
-      ? { type: internalStatusTag, reason: onboarding ? getNoteField(onboarding, projectFieldIds.onboardingNotes) : null }
+      ? { type: internalStatusTag, reason: onboarding ? getNoteField(onboarding, projectFieldIds.notes) : null }
       : null,
     reconciliation: reconciliation
       ? {
@@ -555,7 +560,14 @@ async function buildCompanyRecord(company, projects, projectFieldIds, companyFie
           reviewCallBooked: getChoiceField(reconciliation, projectFieldIds.reconciliationReviewCallBooked),
           currentDifference: getNoteField(reconciliation, projectFieldIds.reconciliationCurrentDifference),
           outcome: getChoiceField(reconciliation, projectFieldIds.reconciliationOutcome),
-          notes: onboarding ? getNoteField(onboarding, projectFieldIds.reconciliationNotes) : null,
+          // FIXED alongside the notes-field consolidation: now reads Notes
+          // from the RECONCILIATION project object specifically, not always
+          // onboarding. For most clients these are the same underlying
+          // project (per the multi-group classification fix), so this rarely
+          // changes the value in practice — but it's the semantically
+          // correct source, and matters for any client whose reconciliation
+          // genuinely sits on a separate project record.
+          notes: getNoteField(reconciliation, projectFieldIds.notes),
         }
       : null,
     // MOVED to Company-sourced reads 28 Aug 2026, per Amy's correction —
@@ -597,12 +609,15 @@ async function buildCompanyRecord(company, projects, projectFieldIds, companyFie
           // above) per Amy's correction. This nested object is no longer
           // displayed anywhere in the UI; kept only for targetGoLive/
           // openingBalanceBooked in case a future tile wants them back.
-          notes: getNoteField(onboarding, projectFieldIds.onboardingNotes),
+          notes: getNoteField(onboarding, projectFieldIds.notes),
         }
       : null,
+    // FIXED alongside the notes-field consolidation above — accounting and
+    // onboarding used to be two separately-guessed (and both wrong) fields;
+    // there's genuinely only one Notes field on the project, so both would
+    // have shown identical text anyway. Collapsed to one.
     internalNotes: {
-      accounting: onboarding ? getNoteField(onboarding, projectFieldIds.accountingNote) : '',
-      onboarding: onboarding ? getNoteField(onboarding, projectFieldIds.onboardingNotes) : '',
+      general: onboarding ? getNoteField(onboarding, projectFieldIds.notes) : '',
       gapAnalysis: '',
     },
     // Last few messages from the client-visible ("general") conversation on the
