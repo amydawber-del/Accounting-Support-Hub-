@@ -181,6 +181,16 @@ const COMPANY_FIELD_LABELS = {
   restartRoute: 'Accounting Restart Route',
   restartReason: 'Accounting Restart Reason',
   restartDate: 'Last Accounting Restart Date',
+  // ADDED 1 Sep 2026, per Amy directly — this is a NOTE-type custom field on
+  // the Company object (Rocketlane's "Create a note for a company" API frames
+  // NOTE fields as holding multiple dated entries, not one plain string like a
+  // TEXT field — see getCompanyNoteEntries() below). Label given verbatim by
+  // Amy, NOT yet cross-checked against a live buildFieldIndex('COMPANY') run.
+  // If the first sync logs a "Missing field mapping" warning for this key,
+  // check case/whitespace/trailing punctuation against the real field first
+  // (see the Street Network ID trailing-colon lesson above) before assuming
+  // the wording itself is wrong.
+  recentEngagementNotes: 'Recent Engagements Notes',
 };
 
 // ---------------------------------------------------------------------------
@@ -278,6 +288,42 @@ function getChoiceField(entity, fieldDef) {
 }
 function getNoteField(entity, fieldDef) {
   return getTextField(entity, fieldDef);
+}
+
+/**
+ * UNCONFIRMED SHAPE — could not be tested against live data. Every other
+ * getter in this file was verified against real synced output before being
+ * trusted; this one couldn't be, because the tooling available during
+ * development can't query NOTE-type Company fields (get_fields refuses
+ * objectType COMPANY entirely, and the equivalent MCP company-lookup tool's
+ * includeFields list doesn't offer `notes`).
+ *
+ * What this is based on instead: Rocketlane's own API docs list `notes` as a
+ * distinct includeFields value on GET /companies — separate from the
+ * includeAllFields toggle that returns ordinary custom-field values — and the
+ * "Create a note for a company" endpoint takes fieldId/noteTitle/noteText/
+ * tagIds, implying a NOTE-type field holds a list of dated entries rather than
+ * one string. Best guess: `company.notes` is an array of entries each
+ * carrying at least a `fieldId` (so multiple NOTE fields on one company don't
+ * collide) plus `noteText`/`noteTitle`/`createdAt`.
+ *
+ * CHECK THE FIRST REAL SYNC RUN'S RAW COMPANY OUTPUT for a `notes` property
+ * before trusting this — if the shape differs, adjust the property names
+ * below (or console.warn once here temporarily to inspect it live). If
+ * `company.notes` isn't present at all, add `notes` wasn't actually returned
+ * by includeAllFields as hoped — see fetchCompanies().
+ */
+function getCompanyNoteEntries(company, fieldDef) {
+  if (!fieldDef || !Array.isArray(company.notes)) return [];
+  return company.notes
+    .filter((n) => n.fieldId === fieldDef.fieldId)
+    .sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0))
+    .slice(0, 5)
+    .map((n) => ({
+      title: n.noteTitle || null,
+      text: n.noteText || '',
+      createdAt: n.createdAt || null,
+    }));
 }
 
 /** Multiple-choice fields return an array of option VALUEs — resolve each to
@@ -386,8 +432,15 @@ async function fetchCompanies() {
   // includeAllFields:true is required to get custom field values back on the
   // company object at all (confirmed via the MCP tool's equivalent parameter) —
   // the allowlist is still applied later, at JSON-write time, not here.
+  //
+  // `notes` ADDED 1 Sep 2026, explicitly, alongside includeAllFields — per
+  // Rocketlane's docs this is a separate includeFields value on GET
+  // /companies (the only other one listed being companyUrl), not something
+  // includeAllFields is confirmed to sweep in on its own. UNCONFIRMED against
+  // live data — see getCompanyNoteEntries() above for what to check on the
+  // first real run.
   return fetchAllPages('/companies', {
-    includeFields: 'companyId,companyName,accountOwner',
+    includeFields: 'companyId,companyName,accountOwner,notes',
     includeAllFields: 'true',
   });
 }
@@ -580,7 +633,11 @@ async function buildCompanyRecord(company, projects, projectFieldIds, companyFie
             route: getChoiceField(company, companyFieldIds.restartRoute),
             reason: getNoteField(company, companyFieldIds.restartReason),
             date: getDateField(company, companyFieldIds.restartDate),
-            notes: null,
+            // No confirmed "Restart Notes" field exists on Company or Project —
+            // only "Accounting Restart Reason" above (already shown in the
+            // Restart panel). Previously hardcoded to null and referenced by
+            // app.js's note list, which meant that note-list entry could never
+            // fire. Removed the key entirely rather than leaving dead null.
           }
         : null,
     training: {
@@ -616,14 +673,30 @@ async function buildCompanyRecord(company, projects, projectFieldIds, companyFie
     // onboarding used to be two separately-guessed (and both wrong) fields;
     // there's genuinely only one Notes field on the project, so both would
     // have shown identical text anyway. Collapsed to one.
+    //
+    // FIXED 1 Sep 2026 — this only ever read the `onboarding` project. For a
+    // client with no onboarding project record (already past onboarding, only
+    // a reconciliation or training project exists), the same shared Notes
+    // field on THAT project was never checked, so its notes silently
+    // disappeared from the Hub. Now falls back through whichever project
+    // object actually exists for this company.
     internalNotes: {
-      general: onboarding ? getNoteField(onboarding, projectFieldIds.notes) : '',
+      general:
+        (onboarding && getNoteField(onboarding, projectFieldIds.notes)) ||
+        (reconciliation && getNoteField(reconciliation, projectFieldIds.notes)) ||
+        (training && getNoteField(training, projectFieldIds.notes)) ||
+        '',
       gapAnalysis: '',
     },
     // Last few messages from the client-visible ("general") conversation on the
     // Accounting Onboarding project. null if unavailable — see INCLUDE_CLIENT_CONVERSATION
     // warning at the top of this file for why that might be the case right now.
     recentMessages,
+    // Account-level "Recent Engagements Notes" — see getCompanyNoteEntries()
+    // above for why this is unconfirmed against live data. Empty array (not
+    // null) when the field has no entries or couldn't be read, so app.js can
+    // treat it the same way as recentMessages.
+    recentEngagementNotes: getCompanyNoteEntries(company, companyFieldIds.recentEngagementNotes),
     // Never fabricated — filled in only once you confirm Rocketlane's real project URL
     // pattern (open a project in the browser and paste the URL structure here).
     rocketlaneLinks: {
