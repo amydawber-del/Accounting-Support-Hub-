@@ -536,9 +536,8 @@ function showDetail(id){
   `;
 
   const noteEntries = [
-    ['Street Client Accounting Note', c.internalNotes.accounting],
+    ['Notes', c.internalNotes.general],
     ['Accounting Restart Notes', c.restart ? c.restart.notes : ''],
-    ['Onboarding Notes', c.internalNotes.onboarding],
     ['Opt-Out Reason', c.optOut ? c.optOut.reason : '']
   ].filter(([,val])=>val);
 
