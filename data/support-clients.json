@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T14:21:49.502Z",
+  "generatedAt": "2026-09-02T18:08:47.560Z",
   "companies": [
     {
       "companyId": 122281,
@@ -7242,12 +7242,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-10-13",
+        "trainer": "Max Hornby",
+        "modules": "Sales Modules",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -19184,11 +19184,16 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": true,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -20629,12 +20634,12 @@
         "date": null
       },
       "training": {
-        "status": "Not recorded",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-10-20",
+        "trainer": "Hayley Seabrook",
+        "modules": "Accounting",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -42734,26 +42739,26 @@
       "companyId": 609299,
       "companyName": "Snapes Estate Agents",
       "networkId": null,
-      "units": 115,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Jess Benjamin Smith",
+      "accountingOwner": null,
       "onboardingSpecialist": null,
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
       "csmStreet": null,
-      "segment": "SMB",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-04-20",
+      "streetGoLiveDate": null,
       "streetUsage": "A",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-07-29",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -42766,11 +42771,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": "2026-07-29",
-        "openingBalanceBooked": true,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -46212,12 +46213,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
-        "formats": "Not Sure – Help Me Choose"
+        "lastDate": "2026-10-20",
+        "trainer": "Hayley Seabrook",
+        "modules": "Accounting",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -49726,7 +49727,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -49896,12 +49897,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-10-06",
+        "trainer": "Maria Duffy",
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -51221,11 +51222,11 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Awaiting Client Response",
         "completed": false,
         "lastDate": null,
-        "trainer": null,
-        "modules": "Lettings Front-End, Lettings Property Management",
+        "trainer": "Jess Benjamin Smith",
+        "modules": null,
         "formats": "Bespoke Branch Training"
       },
       "onboardingProject": {
@@ -53572,7 +53573,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Bespoke Branch Training, Accounting Training & Go-Live Support"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -55345,7 +55346,7 @@
       "branches": null,
       "accountingOwner": "Max Hornby",
       "onboardingSpecialist": "Sophie Saunders",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
@@ -55356,11 +55357,11 @@
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": null,
+      "streetGoLiveDate": "2026-09-02",
       "streetUsage": "S, L, LPM, A",
-      "agentLiveWithAccounting": false,
-      "goLiveDate": null,
-      "internalStatusTag": "Onboarding in Progress",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-09-02",
+      "internalStatusTag": "30 Days Post Go-Live Support",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -55490,7 +55491,7 @@
     },
     {
       "companyId": 731512,
-      "companyName": "Derek J Rolls Estate Agents Ltd",
+      "companyName": "Derek J Rolls Estate Agents Ltd ",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -56965,7 +56966,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": null,
-      "accountingStatus": null,
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -56977,14 +56978,19 @@
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -56993,7 +56999,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -57013,7 +57023,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -57026,7 +57036,7 @@
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "A",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -57072,7 +57082,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": "Tracy Kettle",
-      "accountingStatus": null,
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -57084,14 +57094,19 @@
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -57100,7 +57115,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -57142,12 +57161,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-10-06",
+        "trainer": "Maria Duffy",
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -57365,8 +57384,8 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
-      "accountingStatus": null,
+      "onboardingSpecialist": "Sophie Saunders",
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -57378,14 +57397,19 @@
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -57394,7 +57418,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -57508,16 +57536,16 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1151,
-    "projectsFetchedFromRocketlane": 431,
+    "projectsFetchedFromRocketlane": 434,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 153,
+      "onboarding": 155,
       "reconciliation": 0,
-      "training": 276,
+      "training": 277,
       "unknown": 2
     },
     "companiesWrittenToSupportHub": 1151,
-    "companiesWithNoAccountingProjectFound": 825,
+    "companiesWithNoAccountingProjectFound": 826,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
 }
