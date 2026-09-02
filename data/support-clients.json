@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T05:09:00.052Z",
+  "generatedAt": "2026-09-02T09:57:51.224Z",
   "companies": [
     {
       "companyId": 122281,
@@ -39308,7 +39308,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -42461,7 +42461,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": "Jess Benjamin Smith",
+      "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": null,
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -47170,7 +47170,7 @@
       "companyId": 642114,
       "companyName": "Bacon and Company",
       "networkId": null,
-      "units": null,
+      "units": 450,
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Lucie de Lison",
@@ -51076,9 +51076,9 @@
     {
       "companyId": 692763,
       "companyName": "White ande Guard",
-      "networkId": null,
+      "networkId": 199,
       "units": 250,
-      "branches": null,
+      "branches": 6,
       "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": null,
       "accountingStatus": "Onboarding",
@@ -51088,12 +51088,12 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Alex Wilson",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-08-18",
-      "streetUsage": "A",
+      "streetUsage": "A, S, L, LPM",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Onboarding in Progress",
@@ -52661,7 +52661,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Request Received",
         "completed": false,
         "lastDate": null,
         "trainer": null,
@@ -55980,7 +55980,7 @@
       },
       "csm": null,
       "csmStreet": null,
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-09-01",
@@ -56973,7 +56973,7 @@
     },
     {
       "companyId": 748116,
-      "companyName": "Head Office",
+      "companyName": "BRH",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -57026,7 +57026,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": null,
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -57178,7 +57178,7 @@
     },
     {
       "companyId": 749287,
-      "companyName": "sales@lukeshevels.co.uk",
+      "companyName": "Luke Shevels",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -57420,19 +57420,68 @@
         "reconciliationProject": null,
         "trainingProject": null
       }
+    },
+    {
+      "companyId": 751609,
+      "companyName": "Lune Valley Estates - Caton",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1150,
-    "projectsFetchedFromRocketlane": 428,
+    "companiesFetchedFromRocketlane": 1151,
+    "projectsFetchedFromRocketlane": 430,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 153,
       "reconciliation": 0,
-      "training": 273,
+      "training": 275,
       "unknown": 2
     },
-    "companiesWrittenToSupportHub": 1150,
+    "companiesWrittenToSupportHub": 1151,
     "companiesWithNoAccountingProjectFound": 826,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
