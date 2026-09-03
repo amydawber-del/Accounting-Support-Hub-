@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T15:16:24.748Z",
+  "generatedAt": "2026-09-03T18:54:34.906Z",
   "companies": [
     {
       "companyId": 122281,
@@ -3869,7 +3869,7 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -49746,8 +49746,8 @@
         "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
+        "targetGoLive": "2026-11-20",
+        "openingBalanceBooked": true,
         "notes": null
       },
       "internalNotes": {
@@ -53547,7 +53547,7 @@
       "companyId": 715521,
       "companyName": "Sarah Mains Residential (ID:1034)",
       "networkId": 1034,
-      "units": 700,
+      "units": 626,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": null,
@@ -53577,7 +53577,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose, Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -54375,9 +54375,9 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": null,
       "onboardingSpecialist": null,
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -54392,7 +54392,7 @@
       "streetUsage": "S, LPM, L, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -54410,11 +54410,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -57189,7 +57185,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": null,
-      "accountingStatus": null,
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -57201,14 +57197,19 @@
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -57217,7 +57218,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -57238,7 +57243,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": null,
-      "accountingStatus": null,
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -57250,14 +57255,19 @@
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -57266,7 +57276,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -57437,13 +57451,13 @@
     },
     {
       "companyId": 751764,
-      "companyName": "Blueleaf Property Lettings",
+      "companyName": "Blueleaf Property",
       "networkId": null,
       "units": null,
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": null,
-      "accountingStatus": null,
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -57455,14 +57469,19 @@
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -57471,7 +57490,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -57585,10 +57608,10 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1152,
-    "projectsFetchedFromRocketlane": 435,
+    "projectsFetchedFromRocketlane": 437,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 155,
+      "onboarding": 157,
       "reconciliation": 0,
       "training": 278,
       "unknown": 2
