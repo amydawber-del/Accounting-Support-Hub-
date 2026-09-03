@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T18:54:34.906Z",
+  "generatedAt": "2026-09-03T21:39:49.924Z",
   "companies": [
     {
       "companyId": 122281,
@@ -57604,10 +57604,59 @@
         "reconciliationProject": null,
         "trainingProject": null
       }
+    },
+    {
+      "companyId": 752503,
+      "companyName": "StudentDigz ",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1152,
+    "companiesFetchedFromRocketlane": 1153,
     "projectsFetchedFromRocketlane": 437,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
@@ -57616,7 +57665,7 @@
       "training": 278,
       "unknown": 2
     },
-    "companiesWrittenToSupportHub": 1152,
+    "companiesWrittenToSupportHub": 1153,
     "companiesWithNoAccountingProjectFound": 827,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
