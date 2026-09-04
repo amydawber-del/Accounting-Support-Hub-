@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T06:34:13.917Z",
+  "generatedAt": "2026-09-04T11:19:55.809Z",
   "companies": [
     {
       "companyId": 122281,
@@ -28235,12 +28235,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-09-09",
+        "trainer": "Maria Duffy",
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Bespoke Branch Training"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -30845,7 +30845,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": null,
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
@@ -30862,10 +30862,19 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Client Accounting Reconciliation",
       "redFlag": false,
       "optOut": null,
-      "reconciliation": null,
+      "reconciliation": {
+        "status": "Investigating",
+        "route": "Not Yet Confirmed",
+        "specialist": null,
+        "dateRaised": "2026-09-04",
+        "reviewCallBooked": null,
+        "currentDifference": null,
+        "outcome": null,
+        "notes": null
+      },
       "restart": null,
       "training": {
         "status": "Not recorded",
@@ -30875,7 +30884,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -39283,7 +39296,7 @@
       "companyId": 592486,
       "companyName": "Coleman Estates",
       "networkId": null,
-      "units": null,
+      "units": 274,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Liam Sorah",
@@ -39302,7 +39315,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -47355,7 +47368,7 @@
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Sam Howat",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
@@ -47368,9 +47381,9 @@
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-09-03",
       "streetUsage": "A, L, LPM",
-      "agentLiveWithAccounting": false,
-      "goLiveDate": null,
-      "internalStatusTag": "Onboarding in Progress",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-09-04",
+      "internalStatusTag": "30 Days Post Go-Live Support",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -47381,7 +47394,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-04",
@@ -47521,7 +47534,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -48671,7 +48684,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": "Liam Sorah",
-      "accountingStatus": "Not Started",
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -48679,18 +48692,23 @@
       },
       "csm": null,
       "csmStreet": null,
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -48699,7 +48717,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -54735,55 +54757,6 @@
       }
     },
     {
-      "companyId": 725405,
-      "companyName": "Seymours Godalming",
-      "networkId": null,
-      "units": null,
-      "branches": null,
-      "accountingOwner": null,
-      "onboardingSpecialist": null,
-      "accountingStatus": null,
-      "clientAccountingEnabled": false,
-      "streetPayments": {
-        "customer": null,
-        "verificationStatus": null
-      },
-      "csm": null,
-      "csmStreet": null,
-      "segment": null,
-      "streetStatus": null,
-      "agentLiveWithStreet": false,
-      "streetGoLiveDate": null,
-      "streetUsage": null,
-      "agentLiveWithAccounting": false,
-      "goLiveDate": null,
-      "internalStatusTag": null,
-      "redFlag": false,
-      "optOut": null,
-      "reconciliation": null,
-      "restart": null,
-      "training": {
-        "status": "Ready for Delivery ⭐",
-        "completed": false,
-        "lastDate": "2026-09-09",
-        "trainer": "Maria Duffy",
-        "modules": "Lettings Front-End, Lettings Property Management",
-        "formats": "Bespoke Branch Training"
-      },
-      "onboardingProject": null,
-      "internalNotes": {
-        "general": "",
-        "gapAnalysis": ""
-      },
-      "recentMessages": null,
-      "recentEngagementNotes": [],
-      "rocketlaneLinks": {
-        "accountingProject": null,
-        "reconciliationProject": null,
-        "trainingProject": null
-      }
-    },
-    {
       "companyId": 725408,
       "companyName": "Jenkins Property",
       "networkId": null,
@@ -56854,7 +56827,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -56867,7 +56840,7 @@
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "A",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -57613,7 +57586,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": null,
-      "accountingStatus": null,
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -57623,6 +57596,64 @@
       "csmStreet": null,
       "segment": null,
       "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": "A",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 753013,
+      "companyName": "Fine & Country Stockport and Saddleworth",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": null,
@@ -57657,16 +57688,16 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1153,
-    "projectsFetchedFromRocketlane": 437,
+    "projectsFetchedFromRocketlane": 439,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 157,
+      "onboarding": 160,
       "reconciliation": 0,
-      "training": 278,
+      "training": 277,
       "unknown": 2
     },
     "companiesWrittenToSupportHub": 1153,
-    "companiesWithNoAccountingProjectFound": 827,
+    "companiesWithNoAccountingProjectFound": 825,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
 }
