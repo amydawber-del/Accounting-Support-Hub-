@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T11:19:55.809Z",
+  "generatedAt": "2026-09-04T11:46:50.537Z",
   "companies": [
     {
       "companyId": 122281,
@@ -30866,16 +30866,21 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "Investigating",
+        "status": "New",
         "route": "Not Yet Confirmed",
-        "specialist": null,
+        "specialist": "Hayley Seabrook",
         "dateRaised": "2026-09-04",
-        "reviewCallBooked": null,
+        "reviewCallBooked": "Not Yet Booked",
         "currentDifference": null,
         "outcome": null,
         "notes": null
       },
-      "restart": null,
+      "restart": {
+        "status": "Restart Requested",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -48208,7 +48213,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": null,
