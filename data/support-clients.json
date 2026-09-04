@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T11:46:50.537Z",
+  "generatedAt": "2026-09-04T16:15:33.168Z",
   "companies": [
     {
       "companyId": 122281,
@@ -26053,7 +26053,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Request Received",
         "completed": false,
         "lastDate": null,
         "trainer": null,
@@ -36493,7 +36493,7 @@
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": null,
+      "streetGoLiveDate": "2026-09-04",
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
@@ -42466,7 +42466,7 @@
       },
       "csm": null,
       "csmStreet": null,
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
@@ -47399,7 +47399,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-04",
@@ -48687,7 +48687,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -50120,7 +50120,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -50130,8 +50130,8 @@
       "csm": null,
       "csmStreet": null,
       "segment": null,
-      "streetStatus": "Onboarding",
-      "agentLiveWithStreet": false,
+      "streetStatus": "Active",
+      "agentLiveWithStreet": true,
       "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
@@ -51453,7 +51453,7 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Lettings Front-End, Lettings Property Management, Accounting",
+        "modules": null,
         "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
@@ -56301,7 +56301,7 @@
     },
     {
       "companyId": 742463,
-      "companyName": "POWELLS",
+      "companyName": "POWELLS (123 Reg)",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -57689,20 +57689,69 @@
         "reconciliationProject": null,
         "trainingProject": null
       }
+    },
+    {
+      "companyId": 753085,
+      "companyName": "Gibbins Richards",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Request Received",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1153,
-    "projectsFetchedFromRocketlane": 439,
+    "companiesFetchedFromRocketlane": 1154,
+    "projectsFetchedFromRocketlane": 445,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 160,
       "reconciliation": 0,
-      "training": 277,
+      "training": 283,
       "unknown": 2
     },
-    "companiesWrittenToSupportHub": 1153,
-    "companiesWithNoAccountingProjectFound": 825,
+    "companiesWrittenToSupportHub": 1154,
+    "companiesWithNoAccountingProjectFound": 824,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
 }
