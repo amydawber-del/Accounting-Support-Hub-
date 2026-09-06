@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T06:33:04.288Z",
+  "generatedAt": "2026-09-06T11:23:38.941Z",
   "companies": [
     {
       "companyId": 122281,
@@ -53152,7 +53152,7 @@
       "companyId": 712110,
       "companyName": "Aura Property Partners Ltd",
       "networkId": 1443,
-      "units": null,
+      "units": 100,
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Sally Finnigan",
@@ -53182,7 +53182,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": null,
