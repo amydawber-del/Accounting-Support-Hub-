@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T18:31:00.218Z",
+  "generatedAt": "2026-09-08T21:28:54.780Z",
   "companies": [
     {
       "companyId": 122281,
@@ -50037,7 +50037,7 @@
       "companyId": 682807,
       "companyName": "Milne Moser Estate Agents",
       "networkId": null,
-      "units": null,
+      "units": 151,
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": null,
@@ -50067,7 +50067,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
