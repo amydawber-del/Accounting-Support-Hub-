@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T14:49:53.583Z",
+  "generatedAt": "2026-09-08T18:31:00.218Z",
   "companies": [
     {
       "companyId": 122281,
@@ -36050,7 +36050,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": "Lucie de Lison",
-      "accountingStatus": "Not Started",
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -36061,15 +36061,20 @@
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": null,
+      "streetGoLiveDate": "2026-09-08",
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -36078,7 +36083,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -42498,7 +42507,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -52640,14 +52649,14 @@
       },
       "csm": null,
       "csmStreet": null,
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -52665,7 +52674,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -56368,7 +56381,7 @@
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -57768,7 +57781,7 @@
         "status": "Awaiting Client Response",
         "completed": false,
         "lastDate": null,
-        "trainer": null,
+        "trainer": "Jess Benjamin Smith",
         "modules": null,
         "formats": null
       },
@@ -58183,13 +58196,13 @@
     "projectsFetchedFromRocketlane": 451,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 164,
+      "onboarding": 166,
       "reconciliation": 0,
-      "training": 285,
+      "training": 283,
       "unknown": 2
     },
     "companiesWrittenToSupportHub": 1162,
-    "companiesWithNoAccountingProjectFound": 824,
+    "companiesWithNoAccountingProjectFound": 826,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
 }
