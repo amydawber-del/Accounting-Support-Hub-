@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T05:20:47.702Z",
+  "generatedAt": "2026-09-08T10:07:17.319Z",
   "companies": [
     {
       "companyId": 122281,
@@ -42498,7 +42498,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -43778,7 +43778,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Onboarding in Progress",
+      "internalStatusTag": "Awaiting OB Call Booking",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -47252,8 +47252,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management, Accounting",
-        "formats": "Bespoke Branch Training"
+        "modules": null,
+        "formats": "Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-10",
@@ -47723,8 +47723,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management, Accounting",
-        "formats": "Bespoke Branch Training"
+        "modules": null,
+        "formats": "Remote Refresher Training, Bespoke Branch Training"
       },
       "onboardingProject": {
         "targetGoLive": "2026-08-17",
@@ -49401,7 +49401,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": null,
-      "accountingStatus": null,
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -49409,18 +49409,23 @@
       },
       "csm": null,
       "csmStreet": null,
-      "segment": null,
-      "streetStatus": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetGoLiveDate": "2026-09-08",
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -49429,7 +49434,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -49933,12 +49942,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Ready for Delivery ⭐",
+        "status": "Not recorded",
         "completed": false,
-        "lastDate": "2026-10-06",
-        "trainer": "Maria Duffy",
-        "modules": "Lettings Front-End, Lettings Property Management",
-        "formats": "Street Hosted Open Training Event"
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -52064,7 +52073,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Remote Refresher Training"
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-22",
@@ -53249,7 +53258,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Remote Refresher Training"
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-01",
@@ -53565,7 +53574,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Bespoke Branch Training, Accounting Training & Go-Live Support"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -53917,7 +53926,12 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -55028,7 +55042,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": null,
-      "accountingStatus": "Not Started",
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -55036,18 +55050,23 @@
       },
       "csm": null,
       "csmStreet": null,
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -55056,7 +55075,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -56169,7 +56192,7 @@
       },
       "csm": null,
       "csmStreet": null,
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
@@ -56855,7 +56878,7 @@
       },
       "csm": null,
       "csmStreet": null,
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
@@ -58000,7 +58023,56 @@
     },
     {
       "companyId": 754238,
-      "companyName": "bart@dawsonbarker.com",
+      "companyName": "DawsonBarker",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 754394,
+      "companyName": "Urban & Rural",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -58049,17 +58121,17 @@
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1160,
-    "projectsFetchedFromRocketlane": 447,
+    "companiesFetchedFromRocketlane": 1161,
+    "projectsFetchedFromRocketlane": 450,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 161,
+      "onboarding": 163,
       "reconciliation": 0,
-      "training": 284,
+      "training": 285,
       "unknown": 2
     },
-    "companiesWrittenToSupportHub": 1160,
-    "companiesWithNoAccountingProjectFound": 825,
+    "companiesWrittenToSupportHub": 1161,
+    "companiesWithNoAccountingProjectFound": 824,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
 }
