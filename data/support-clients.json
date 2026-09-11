@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T06:40:20.418Z",
+  "generatedAt": "2026-09-11T11:51:41.887Z",
   "companies": [
     {
       "companyId": 122281,
@@ -22888,12 +22888,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-10-06",
+        "trainer": "Maria Duffy",
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -35924,7 +35924,7 @@
         "date": null
       },
       "training": {
-        "status": "Prep in Progress",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
         "lastDate": "2026-10-06",
         "trainer": "Maria Duffy",
@@ -44675,7 +44675,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -47680,8 +47680,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
-        "formats": "Bespoke Branch Training, Street Hosted Open Training Event"
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -50058,7 +50058,7 @@
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Training Phase",
-      "redFlag": false,
+      "redFlag": true,
       "optOut": null,
       "reconciliation": null,
       "restart": null,
@@ -57079,7 +57079,7 @@
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "A",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -57880,7 +57880,7 @@
         "status": "Ready for Delivery ⭐",
         "completed": false,
         "lastDate": "2026-10-13",
-        "trainer": null,
+        "trainer": "Max Hornby",
         "modules": "Lettings Front-End, Lettings Property Management",
         "formats": "Street Hosted Open Training Event"
       },
@@ -58027,7 +58027,7 @@
         "status": "Ready for Delivery ⭐",
         "completed": false,
         "lastDate": "2026-10-06",
-        "trainer": null,
+        "trainer": "Maria Duffy",
         "modules": "Lettings Front-End, Lettings Property Management",
         "formats": "Street Hosted Open Training Event"
       },
@@ -58217,7 +58217,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": null,
-      "accountingStatus": null,
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -58229,14 +58229,19 @@
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -58245,7 +58250,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -58336,12 +58345,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-10-13",
+        "trainer": "Max Hornby",
+        "modules": "Sales Modules",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -58385,12 +58394,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-10-06",
+        "trainer": "Maria Duffy",
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -58453,19 +58462,73 @@
         "reconciliationProject": null,
         "trainingProject": null
       }
+    },
+    {
+      "companyId": 756482,
+      "companyName": "Heron Thomas",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": "Onboarding",
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": "A",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1167,
-    "projectsFetchedFromRocketlane": 452,
+    "companiesFetchedFromRocketlane": 1168,
+    "projectsFetchedFromRocketlane": 454,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 167,
+      "onboarding": 168,
       "reconciliation": 0,
-      "training": 283,
+      "training": 284,
       "unknown": 2
     },
-    "companiesWrittenToSupportHub": 1167,
+    "companiesWrittenToSupportHub": 1168,
     "companiesWithNoAccountingProjectFound": 831,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
