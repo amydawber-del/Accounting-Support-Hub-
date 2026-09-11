@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T19:20:14.160Z",
+  "generatedAt": "2026-09-11T22:00:38.552Z",
   "companies": [
     {
       "companyId": 122281,
@@ -50944,12 +50944,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Follow-Up in Progress",
-        "completed": true,
-        "lastDate": "2026-08-12",
-        "trainer": "Jess Benjamin Smith",
-        "modules": "Sales Modules",
-        "formats": "Bespoke Branch Training"
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": null,
       "internalNotes": {
