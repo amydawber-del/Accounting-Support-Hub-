@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T09:38:08.551Z",
+  "generatedAt": "2026-09-12T13:11:29.218Z",
   "companies": [
     {
       "companyId": 122281,
@@ -15357,41 +15357,55 @@
       "companyId": 318478,
       "companyName": "All Aspects Letting Services Ltd",
       "networkId": 709,
-      "units": 122,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Jess Benjamin Smith",
+      "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": null,
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
       "csmStreet": null,
-      "segment": "SMB",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-07-22",
+      "streetGoLiveDate": null,
       "streetUsage": "A",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-07-22",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "internalStatusTag": "Client Accounting Reconciliation",
       "redFlag": false,
       "optOut": null,
-      "reconciliation": null,
-      "restart": null,
+      "reconciliation": {
+        "status": "New",
+        "route": null,
+        "specialist": "Hayley Seabrook",
+        "dateRaised": "2026-09-12",
+        "reviewCallBooked": "Not Yet Booked",
+        "currentDifference": null,
+        "outcome": null,
+        "notes": null
+      },
+      "restart": {
+        "status": "Restart Requested",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training"
+        "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": "2026-07-22",
-        "openingBalanceBooked": true,
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
         "notes": null
       },
       "internalNotes": {
@@ -38041,30 +38055,44 @@
       "companyId": 581254,
       "companyName": "Abode Group",
       "networkId": 1205,
-      "units": 430,
+      "units": null,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": null,
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
-      "csm": "Jacob Templeman",
+      "csm": null,
       "csmStreet": null,
-      "segment": "SMB",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-05-15",
+      "streetGoLiveDate": null,
       "streetUsage": "A, LPM",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-05-20",
-      "internalStatusTag": "30 Days Post Go-Live Support",
-      "redFlag": true,
+      "internalStatusTag": "Client Accounting Reconciliation",
+      "redFlag": false,
       "optOut": null,
-      "reconciliation": null,
-      "restart": null,
+      "reconciliation": {
+        "status": "New",
+        "route": null,
+        "specialist": "Hayley Seabrook",
+        "dateRaised": "2026-09-12",
+        "reviewCallBooked": "Not Yet Booked",
+        "currentDifference": null,
+        "outcome": null,
+        "notes": null
+      },
+      "restart": {
+        "status": "Restart Requested",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -38074,8 +38102,8 @@
         "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": "2026-05-20",
-        "openingBalanceBooked": true,
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
         "notes": null
       },
       "internalNotes": {
@@ -58614,10 +58642,10 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1170,
-    "projectsFetchedFromRocketlane": 455,
+    "projectsFetchedFromRocketlane": 457,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 167,
+      "onboarding": 169,
       "reconciliation": 0,
       "training": 286,
       "unknown": 2
