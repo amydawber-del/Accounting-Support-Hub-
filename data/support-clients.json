@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T01:22:21.571Z",
+  "generatedAt": "2026-09-15T06:47:08.334Z",
   "companies": [
     {
       "companyId": 122281,
@@ -53288,7 +53288,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-01",
