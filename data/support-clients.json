@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T17:19:56.157Z",
+  "generatedAt": "2026-09-15T20:29:35.930Z",
   "companies": [
     {
       "companyId": 122281,
@@ -56207,7 +56207,7 @@
       "companyId": 740515,
       "companyName": "Coastline Properties (NW) Ltd",
       "networkId": null,
-      "units": null,
+      "units": 350,
       "branches": null,
       "accountingOwner": "Max Hornby",
       "onboardingSpecialist": null,
@@ -56242,7 +56242,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
