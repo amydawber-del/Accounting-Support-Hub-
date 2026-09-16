@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T06:53:07.823Z",
+  "generatedAt": "2026-09-16T12:33:58.624Z",
   "companies": [
     {
       "companyId": 122281,
@@ -15366,8 +15366,8 @@
         "status": "New",
         "route": null,
         "specialist": "Hayley Seabrook",
-        "dateRaised": "2026-09-12",
-        "reviewCallBooked": "Not Yet Booked",
+        "dateRaised": "2026-07-27",
+        "reviewCallBooked": "Booked",
         "currentDifference": null,
         "outcome": null,
         "notes": null
@@ -26588,7 +26588,7 @@
         "route": "Manual Reconciliation",
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-09-14",
-        "reviewCallBooked": "Not Yet Booked",
+        "reviewCallBooked": "Booked",
         "currentDifference": null,
         "outcome": null,
         "notes": null
@@ -43793,7 +43793,7 @@
       "agentLiveWithAccounting": true,
       "goLiveDate": "2026-09-14",
       "internalStatusTag": "30 Days Post Go-Live Support",
-      "redFlag": false,
+      "redFlag": true,
       "optOut": null,
       "reconciliation": null,
       "restart": null,
@@ -47616,7 +47616,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE), Post Go-Live Support Day"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -48287,7 +48287,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-21",
@@ -48512,7 +48512,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": "Hayley Seabrook",
+      "accountingOwner": "Max Hornby",
       "onboardingSpecialist": null,
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -48529,7 +48529,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Client Accounting Reconciliation",
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
@@ -50079,7 +50079,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -53289,7 +53289,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Remote Refresher Training"
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-01",
@@ -54104,7 +54104,7 @@
       "accountingOwner": "Max Hornby",
       "onboardingSpecialist": null,
       "accountingStatus": "Onboarding",
-      "clientAccountingEnabled": false,
+      "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
@@ -54112,13 +54112,13 @@
       "csm": null,
       "csmStreet": null,
       "segment": "SMB",
-      "streetStatus": "Onboarding",
-      "agentLiveWithStreet": false,
-      "streetGoLiveDate": null,
+      "streetStatus": "Active",
+      "agentLiveWithStreet": true,
+      "streetGoLiveDate": "2026-09-16",
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting OB Call Booking",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -54132,8 +54132,8 @@
         "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
+        "targetGoLive": "2026-09-29",
+        "openingBalanceBooked": true,
         "notes": null
       },
       "internalNotes": {
@@ -54539,7 +54539,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -54992,12 +54992,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Ready for Delivery ⭐",
+        "status": "Not recorded",
         "completed": false,
-        "lastDate": "2026-10-20",
+        "lastDate": null,
         "trainer": null,
-        "modules": "Accounting",
-        "formats": "Street Hosted Open Training Event"
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -56847,7 +56847,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -57555,7 +57555,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Max Hornby",
       "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -58830,9 +58830,9 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Max Hornby",
       "onboardingSpecialist": null,
-      "accountingStatus": null,
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -58844,14 +58844,19 @@
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -58860,7 +58865,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -59019,19 +59028,68 @@
         "reconciliationProject": null,
         "trainingProject": null
       }
+    },
+    {
+      "companyId": 759109,
+      "companyName": "Open Door Property Limited",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1178,
-    "projectsFetchedFromRocketlane": 454,
+    "companiesFetchedFromRocketlane": 1179,
+    "projectsFetchedFromRocketlane": 456,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 159,
+      "onboarding": 160,
       "reconciliation": 0,
-      "training": 293,
+      "training": 294,
       "unknown": 2
     },
-    "companiesWrittenToSupportHub": 1178,
+    "companiesWrittenToSupportHub": 1179,
     "companiesWithNoAccountingProjectFound": 845,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
