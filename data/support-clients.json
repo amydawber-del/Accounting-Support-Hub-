@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T06:47:13.648Z",
+  "generatedAt": "2026-09-17T12:34:20.508Z",
   "companies": [
     {
       "companyId": 122281,
@@ -26831,10 +26831,10 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Awaiting Client Response",
         "completed": false,
         "lastDate": null,
-        "trainer": null,
+        "trainer": "Jess Benjamin Smith",
         "modules": null,
         "formats": null
       },
@@ -30877,7 +30877,7 @@
     {
       "companyId": 505733,
       "companyName": "Verity Frearson Harrogate",
-      "networkId": null,
+      "networkId": 1041,
       "units": null,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
@@ -30901,18 +30901,18 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "New",
-        "route": "Not Yet Confirmed",
+        "status": "Waiting On Client",
+        "route": "Manual Reconciliation",
         "specialist": "Hayley Seabrook",
-        "dateRaised": "2026-09-04",
-        "reviewCallBooked": "Not Yet Booked",
+        "dateRaised": "2026-08-26",
+        "reviewCallBooked": "Booked",
         "currentDifference": null,
         "outcome": null,
         "notes": null
       },
       "restart": {
-        "status": "Restart Requested",
-        "route": null,
+        "status": "Restart In Progress",
+        "route": "Manual Reconcilation - Client Led",
         "reason": null,
         "date": null
       },
@@ -39736,11 +39736,11 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Awaiting Client Response",
         "completed": false,
         "lastDate": null,
-        "trainer": null,
-        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
+        "trainer": "Max Hornby",
+        "modules": null,
         "formats": null
       },
       "onboardingProject": null,
@@ -45105,7 +45105,7 @@
         "formats": "Remote Refresher Training"
       },
       "onboardingProject": {
-        "targetGoLive": "2026-09-15",
+        "targetGoLive": null,
         "openingBalanceBooked": true,
         "notes": null
       },
@@ -45260,7 +45260,7 @@
         "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": null,
+        "targetGoLive": "2026-08-18",
         "openingBalanceBooked": true,
         "notes": null
       },
@@ -45305,7 +45305,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Not recorded",
         "completed": false,
         "lastDate": null,
         "trainer": null,
@@ -46107,7 +46107,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting OB Call Booking",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -47429,7 +47429,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-04",
@@ -47753,8 +47753,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": null,
-        "formats": "Remote Refresher Training, Bespoke Branch Training"
+        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management, Accounting",
+        "formats": "Bespoke Branch Training"
       },
       "onboardingProject": {
         "targetGoLive": "2026-08-17",
@@ -49058,7 +49058,7 @@
       "companyId": 672007,
       "companyName": "Hall & Home Lettings Limited",
       "networkId": null,
-      "units": null,
+      "units": 250,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Emma Cockcroft",
@@ -49077,7 +49077,7 @@
       "streetUsage": "A, L, LPM",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting OB Call Booking",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -49088,7 +49088,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -51329,8 +51329,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Lettings Front-End, Lettings Property Management",
-        "formats": "Bespoke Branch Training"
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -53029,7 +53029,7 @@
       "companyId": 710617,
       "companyName": "Victoria Allman Lettings",
       "networkId": null,
-      "units": null,
+      "units": 100,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Emma Cockcroft",
@@ -53048,7 +53048,7 @@
       "streetUsage": "A, L, LPM",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -53621,7 +53621,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Onboarding in Progress",
+      "internalStatusTag": "Awaiting OB Call Booking",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -53632,7 +53632,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Bespoke Branch Training, Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -55094,9 +55094,9 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": "Max Hornby",
       "onboardingSpecialist": null,
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -55924,7 +55924,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": null,
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -56287,7 +56287,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -57614,7 +57614,7 @@
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "A",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -59042,7 +59042,7 @@
       "csm": null,
       "csmStreet": null,
       "segment": null,
-      "streetStatus": null,
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": "A",
@@ -59161,10 +59161,10 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Awaiting Client Response",
         "completed": false,
         "lastDate": null,
-        "trainer": null,
+        "trainer": "Jess Benjamin Smith",
         "modules": null,
         "formats": null
       },
