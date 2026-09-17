@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T17:18:50.763Z",
+  "generatedAt": "2026-09-17T20:35:59.176Z",
   "companies": [
     {
       "companyId": 122281,
@@ -17345,9 +17345,9 @@
       "companyId": 402799,
       "companyName": "Mi Homes Lettings",
       "networkId": null,
-      "units": null,
+      "units": 118,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Max Hornby",
       "onboardingSpecialist": null,
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
@@ -17357,14 +17357,14 @@
       },
       "csm": null,
       "csmStreet": null,
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
-      "streetGoLiveDate": null,
+      "streetGoLiveDate": "2026-06-18",
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -17375,9 +17375,13 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Remote Refresher Training"
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -59295,16 +59299,16 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1182,
-    "projectsFetchedFromRocketlane": 466,
+    "projectsFetchedFromRocketlane": 467,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 166,
+      "onboarding": 167,
       "reconciliation": 0,
       "training": 298,
       "unknown": 2
     },
     "companiesWrittenToSupportHub": 1182,
-    "companiesWithNoAccountingProjectFound": 841,
+    "companiesWithNoAccountingProjectFound": 840,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
 }
