@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T12:34:20.508Z",
+  "generatedAt": "2026-09-17T17:18:50.763Z",
   "companies": [
     {
       "companyId": 122281,
@@ -28270,12 +28270,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Prep in Progress",
         "completed": false,
-        "lastDate": null,
+        "lastDate": "2026-09-30",
         "trainer": null,
-        "modules": null,
-        "formats": null
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Bespoke Branch Training"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -34063,7 +34063,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -39394,11 +39394,11 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
+        "targetGoLive": "2026-10-01",
+        "openingBalanceBooked": true,
         "notes": null
       },
       "internalNotes": {
@@ -42539,7 +42539,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -46543,7 +46543,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": null,
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
@@ -46560,10 +46560,19 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": "2026-06-24",
-      "internalStatusTag": null,
+      "internalStatusTag": "Client Accounting Reconciliation",
       "redFlag": false,
       "optOut": null,
-      "reconciliation": null,
+      "reconciliation": {
+        "status": "New",
+        "route": null,
+        "specialist": "Hayley Seabrook",
+        "dateRaised": "2026-09-17",
+        "reviewCallBooked": "Booked",
+        "currentDifference": null,
+        "outcome": null,
+        "notes": null
+      },
       "restart": {
         "status": "Restart Requested",
         "route": null,
@@ -46578,7 +46587,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -47643,7 +47656,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE), Post Go-Live Support Day"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -49063,7 +49076,7 @@
       "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
-      "clientAccountingEnabled": false,
+      "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
@@ -49071,13 +49084,13 @@
       "csm": null,
       "csmStreet": null,
       "segment": "SMB",
-      "streetStatus": "Active",
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-09-11",
       "streetUsage": "A, L, LPM",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -49091,8 +49104,8 @@
         "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
+        "targetGoLive": "2026-09-24",
+        "openingBalanceBooked": true,
         "notes": null
       },
       "internalNotes": {
@@ -49833,7 +49846,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -49849,7 +49862,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-20",
@@ -50106,7 +50119,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -50276,7 +50289,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -51329,8 +51342,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": null,
-        "formats": null
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Bespoke Branch Training"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -51529,7 +51542,7 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Lettings Front-End, Lettings Property Management, Accounting",
+        "modules": null,
         "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
@@ -52198,7 +52211,7 @@
       "companyId": 700597,
       "companyName": "Lovelle - Lincoln / Market Rasen",
       "networkId": null,
-      "units": null,
+      "units": 500,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": null,
@@ -52228,7 +52241,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -52571,7 +52584,7 @@
       "companyId": 705211,
       "companyName": "Lovelle - Gainsborough / Hykeham",
       "networkId": null,
-      "units": null,
+      "units": 300,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": null,
@@ -53635,7 +53648,7 @@
         "formats": "Bespoke Branch Training, Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
-        "targetGoLive": null,
+        "targetGoLive": "2026-09-22",
         "openingBalanceBooked": true,
         "notes": null
       },
@@ -53991,12 +54004,12 @@
         "date": null
       },
       "training": {
-        "status": "Not recorded",
-        "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "status": "Training Delivered",
+        "completed": true,
+        "lastDate": "2026-09-16",
+        "trainer": "Maria Duffy",
+        "modules": "Sales Modules",
+        "formats": "Bespoke Branch Training"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -59229,20 +59242,69 @@
         "reconciliationProject": null,
         "trainingProject": null
       }
+    },
+    {
+      "companyId": 759900,
+      "companyName": "Seymour godalming",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Request Received",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1181,
-    "projectsFetchedFromRocketlane": 463,
+    "companiesFetchedFromRocketlane": 1182,
+    "projectsFetchedFromRocketlane": 466,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 165,
+      "onboarding": 166,
       "reconciliation": 0,
-      "training": 296,
+      "training": 298,
       "unknown": 2
     },
-    "companiesWrittenToSupportHub": 1181,
-    "companiesWithNoAccountingProjectFound": 843,
+    "companiesWrittenToSupportHub": 1182,
+    "companiesWithNoAccountingProjectFound": 841,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
 }
