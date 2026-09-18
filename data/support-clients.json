@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T06:43:38.238Z",
+  "generatedAt": "2026-09-18T11:54:47.497Z",
   "companies": [
     {
       "companyId": 122281,
@@ -21470,7 +21470,7 @@
     {
       "companyId": 426879,
       "companyName": "Pear Properties",
-      "networkId": null,
+      "networkId": 288,
       "units": null,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
@@ -21494,20 +21494,20 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "Investigating",
-        "route": null,
+        "status": "Reconciliation in Progress",
+        "route": "Clear Accounting & Restart",
         "specialist": "Hayley Seabrook",
-        "dateRaised": "2026-09-16",
+        "dateRaised": "2026-09-18",
         "reviewCallBooked": "Booked",
         "currentDifference": null,
         "outcome": null,
         "notes": null
       },
       "restart": {
-        "status": "Restart Requested",
-        "route": null,
+        "status": "Restart In Progress",
+        "route": "Nuke / restart of Accounting",
         "reason": null,
-        "date": null
+        "date": "2026-09-18"
       },
       "training": {
         "status": "Not recorded",
@@ -30910,8 +30910,8 @@
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-08-26",
         "reviewCallBooked": "Booked",
-        "currentDifference": null,
-        "outcome": null,
+        "currentDifference": "<p>Two incorrect transfers totalling £1,220 and one unlinked deposit of £865 have been identified; client confirmation is required before the records can be corrected Based on the figures provided, the current bank balance of <strong>£759,026.51</strong> is <strong>£2,383 higher</strong> than the Deposits Held figure of <strong>£756,643.51</strong>.</p>",
+        "outcome": "User Error",
         "notes": null
       },
       "restart": {
@@ -39398,7 +39398,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-01",
@@ -42543,7 +42543,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -42865,7 +42865,7 @@
       "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": null,
       "accountingStatus": "Onboarding",
-      "clientAccountingEnabled": false,
+      "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
@@ -42879,7 +42879,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting OB Call Booking",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -42893,8 +42893,8 @@
         "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
+        "targetGoLive": "2026-10-06",
+        "openingBalanceBooked": true,
         "notes": null
       },
       "internalNotes": {
@@ -46544,7 +46544,7 @@
     {
       "companyId": 635631,
       "companyName": "Portfolio Letting Experts ",
-      "networkId": null,
+      "networkId": 1321,
       "units": null,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
@@ -48304,7 +48304,7 @@
       "units": 900,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -48314,8 +48314,8 @@
       "csm": null,
       "csmStreet": null,
       "segment": "Enterprise & Strategic",
-      "streetStatus": "Onboarding",
-      "agentLiveWithStreet": false,
+      "streetStatus": "Active",
+      "agentLiveWithStreet": true,
       "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
@@ -50263,7 +50263,7 @@
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
-      "clientAccountingEnabled": false,
+      "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
@@ -50271,13 +50271,13 @@
       "csm": null,
       "csmStreet": null,
       "segment": "SMB",
-      "streetStatus": "Active",
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-09-01",
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -50296,8 +50296,8 @@
         "formats": "Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
+        "targetGoLive": "2026-09-30",
+        "openingBalanceBooked": true,
         "notes": null
       },
       "internalNotes": {
@@ -52440,7 +52440,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -54008,12 +54008,12 @@
         "date": null
       },
       "training": {
-        "status": "Training Delivered",
-        "completed": true,
-        "lastDate": "2026-09-16",
-        "trainer": "Maria Duffy",
-        "modules": "Sales Modules",
-        "formats": "Bespoke Branch Training"
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -56429,7 +56429,7 @@
       "companyId": 742463,
       "companyName": "POWELLS (123 Reg)",
       "networkId": null,
-      "units": null,
+      "units": 0,
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Sophie Saunders",
@@ -56459,7 +56459,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -57032,7 +57032,7 @@
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -59049,7 +59049,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -59062,7 +59062,7 @@
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "A",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -59276,7 +59276,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Not recorded",
         "completed": false,
         "lastDate": null,
         "trainer": null,
@@ -59348,16 +59348,16 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1183,
-    "projectsFetchedFromRocketlane": 468,
+    "projectsFetchedFromRocketlane": 467,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 167,
       "reconciliation": 0,
-      "training": 299,
+      "training": 298,
       "unknown": 2
     },
     "companiesWrittenToSupportHub": 1183,
-    "companiesWithNoAccountingProjectFound": 840,
+    "companiesWithNoAccountingProjectFound": 841,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
 }
