@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T09:45:28.761Z",
+  "generatedAt": "2026-09-19T13:31:23.247Z",
   "companies": [
     {
       "companyId": 122281,
@@ -54000,12 +54000,12 @@
         "date": null
       },
       "training": {
-        "status": "Follow-Up in Progress",
-        "completed": true,
-        "lastDate": "2026-09-16",
-        "trainer": "Maria Duffy",
-        "modules": "Sales Modules",
-        "formats": "Bespoke Branch Training"
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
