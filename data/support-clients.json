@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T05:28:30.603Z",
+  "generatedAt": "2026-09-20T10:08:54.840Z",
   "companies": [
     {
       "companyId": 122281,
@@ -57001,7 +57001,7 @@
       "companyId": 748116,
       "companyName": "BRH",
       "networkId": null,
-      "units": null,
+      "units": 280,
       "branches": null,
       "accountingOwner": "Max Hornby",
       "onboardingSpecialist": "Sally Finnigan",
@@ -57036,7 +57036,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
