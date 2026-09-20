@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T10:08:54.840Z",
+  "generatedAt": "2026-09-20T14:22:32.972Z",
   "companies": [
     {
       "companyId": 122281,
@@ -47656,7 +47656,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE), Post Go-Live Support Day"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -50119,7 +50119,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -53140,7 +53140,7 @@
       "companyId": 711667,
       "companyName": "hapi.space ",
       "networkId": null,
-      "units": 200,
+      "units": 220,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": null,
@@ -53325,7 +53325,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-01",
@@ -57036,7 +57036,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -59341,19 +59341,68 @@
         "reconciliationProject": null,
         "trainingProject": null
       }
+    },
+    {
+      "companyId": 761216,
+      "companyName": "202 Bath Street, G2 4HW",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1183,
-    "projectsFetchedFromRocketlane": 463,
+    "companiesFetchedFromRocketlane": 1184,
+    "projectsFetchedFromRocketlane": 464,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 165,
       "reconciliation": 0,
-      "training": 296,
+      "training": 297,
       "unknown": 2
     },
-    "companiesWrittenToSupportHub": 1183,
+    "companiesWrittenToSupportHub": 1184,
     "companiesWithNoAccountingProjectFound": 843,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
