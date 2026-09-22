@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T19:16:35.381Z",
+  "generatedAt": "2026-09-22T22:27:23.098Z",
   "companies": [
     {
       "companyId": 122281,
@@ -47869,7 +47869,7 @@
       "companyId": 650069,
       "companyName": "Prism",
       "networkId": null,
-      "units": 40,
+      "units": 43,
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": null,
@@ -47888,7 +47888,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -47904,7 +47904,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -56429,7 +56429,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
