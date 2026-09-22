@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T15:13:13.521Z",
+  "generatedAt": "2026-09-22T19:16:35.381Z",
   "companies": [
     {
       "companyId": 122281,
@@ -26840,7 +26840,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Confirmed & Scheduled",
+        "status": "Prep in Progress",
         "completed": false,
         "lastDate": "2026-09-27",
         "trainer": "Jess Benjamin Smith",
@@ -43951,7 +43951,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -46545,9 +46545,9 @@
       "networkId": 1321,
       "units": null,
       "branches": null,
-      "accountingOwner": "Hayley Seabrook",
+      "accountingOwner": null,
       "onboardingSpecialist": null,
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -46562,24 +46562,15 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": "2026-06-24",
-      "internalStatusTag": "Client Accounting Reconciliation",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
-      "reconciliation": {
-        "status": "New",
-        "route": "Clear Accounting & Restart",
-        "specialist": "Hayley Seabrook",
-        "dateRaised": "2026-09-17",
-        "reviewCallBooked": "Booked",
-        "currentDifference": null,
-        "outcome": null,
-        "notes": null
-      },
+      "reconciliation": null,
       "restart": {
-        "status": "Restart Requested",
-        "route": null,
+        "status": "Restart Completed",
+        "route": "Manual Reconcilation - Client Led",
         "reason": null,
-        "date": null
+        "date": "2026-09-22"
       },
       "training": {
         "status": "Not recorded",
@@ -46589,11 +46580,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -48268,7 +48255,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -51323,11 +51310,11 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": "Lettings Front-End, Lettings Property Management",
+        "lastDate": "2026-10-20",
+        "trainer": "Jess Benjamin Smith",
+        "modules": "Sales Modules",
         "formats": "Bespoke Branch Training"
       },
       "onboardingProject": {
@@ -52667,7 +52654,7 @@
       "companyId": 706601,
       "companyName": "Hannon Holmes Limited",
       "networkId": null,
-      "units": null,
+      "units": 380,
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": null,
@@ -53568,7 +53555,7 @@
         "date": null
       },
       "training": {
-        "status": "Request Received",
+        "status": "Not recorded",
         "completed": false,
         "lastDate": null,
         "trainer": null,
@@ -56426,18 +56413,23 @@
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -57103,7 +57095,7 @@
       "companyId": 748335,
       "companyName": "Hamiltons",
       "networkId": null,
-      "units": null,
+      "units": 60,
       "branches": null,
       "accountingOwner": "Max Hornby",
       "onboardingSpecialist": "Tracy Kettle",
@@ -59151,7 +59143,7 @@
         "status": "Awaiting Client Response",
         "completed": false,
         "lastDate": null,
-        "trainer": "Jess Benjamin Smith",
+        "trainer": "Max Hornby",
         "modules": null,
         "formats": null
       },
@@ -59626,20 +59618,69 @@
         "reconciliationProject": null,
         "trainingProject": null
       }
+    },
+    {
+      "companyId": 762515,
+      "companyName": "Roundtree Real Estate",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1189,
+    "companiesFetchedFromRocketlane": 1190,
     "projectsFetchedFromRocketlane": 459,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 159,
+      "onboarding": 158,
       "reconciliation": 0,
-      "training": 298,
+      "training": 299,
       "unknown": 2
     },
-    "companiesWrittenToSupportHub": 1189,
-    "companiesWithNoAccountingProjectFound": 849,
+    "companiesWrittenToSupportHub": 1190,
+    "companiesWithNoAccountingProjectFound": 850,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
 }
