@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T05:27:54.623Z",
+  "generatedAt": "2026-09-22T10:23:24.154Z",
   "companies": [
     {
       "companyId": 122281,
@@ -28274,7 +28274,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Prep in Progress",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
         "lastDate": "2026-09-30",
         "trainer": "Maria Duffy",
@@ -28739,26 +28739,26 @@
       "companyId": 479992,
       "companyName": "Simone Young Estates LTD (SY Estates)",
       "networkId": 1001,
-      "units": 6,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": null,
       "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
-      "csm": "Natalie Woodward",
+      "csm": null,
       "csmStreet": "Diana Culea",
-      "segment": "SMB",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2025-10-08",
+      "streetGoLiveDate": null,
       "streetUsage": "A",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-05-20",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -28776,11 +28776,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": "2026-05-20",
-        "openingBalanceBooked": true,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -39391,7 +39387,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Bridge Second Cut",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": true,
       "optOut": null,
       "reconciliation": null,
@@ -43950,7 +43946,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -45310,10 +45306,10 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Awaiting Client Response",
         "completed": false,
         "lastDate": null,
-        "trainer": null,
+        "trainer": "Jess Benjamin Smith",
         "modules": null,
         "formats": null
       },
@@ -47916,7 +47912,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -48267,7 +48263,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -48320,7 +48316,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -49085,7 +49081,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-24",
@@ -50092,7 +50088,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting OB Call Booking",
+      "internalStatusTag": "Training Phase",
       "redFlag": true,
       "optOut": null,
       "reconciliation": null,
@@ -51126,7 +51122,7 @@
         "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": "2026-09-28",
+        "targetGoLive": "2026-09-24",
         "openingBalanceBooked": true,
         "notes": null
       },
@@ -51326,8 +51322,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": null,
-        "formats": null
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Bespoke Branch Training"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -52097,7 +52093,7 @@
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Sally Finnigan",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
@@ -52106,13 +52102,13 @@
       "csm": null,
       "csmStreet": null,
       "segment": "SMB",
-      "streetStatus": "Onboarding",
+      "streetStatus": "Active",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
-      "agentLiveWithAccounting": false,
-      "goLiveDate": "2026-09-21",
-      "internalStatusTag": "Onboarding in Progress",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-09-22",
+      "internalStatusTag": "30 Days Post Go-Live Support",
       "redFlag": true,
       "optOut": null,
       "reconciliation": null,
@@ -53393,7 +53389,7 @@
       },
       "csm": null,
       "csmStreet": null,
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
@@ -53599,7 +53595,7 @@
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Tracy Kettle",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
@@ -53612,9 +53608,9 @@
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-09-21",
       "streetUsage": "A, L, LPM, S",
-      "agentLiveWithAccounting": false,
-      "goLiveDate": "2026-09-21",
-      "internalStatusTag": "Onboarding in Progress",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-09-22",
+      "internalStatusTag": "30 Days Post Go-Live Support",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -53853,7 +53849,7 @@
       "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": null,
       "accountingStatus": "Onboarding",
-      "clientAccountingEnabled": false,
+      "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
@@ -53867,7 +53863,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": true,
       "optOut": null,
       "reconciliation": null,
@@ -53881,8 +53877,8 @@
         "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
+        "targetGoLive": "2026-09-29",
+        "openingBalanceBooked": true,
         "notes": null
       },
       "internalNotes": {
@@ -53954,7 +53950,7 @@
       "companyId": 718405,
       "companyName": "Mo Move Newquay",
       "networkId": null,
-      "units": null,
+      "units": 55,
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": null,
@@ -53989,7 +53985,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-05",
@@ -56436,7 +56432,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -57050,9 +57046,9 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": null,
       "onboardingSpecialist": "Sophie Saunders",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -57067,7 +57063,7 @@
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -57085,11 +57081,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -58582,7 +58574,7 @@
       "csm": null,
       "csmStreet": null,
       "segment": null,
-      "streetStatus": null,
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": null,
@@ -59584,16 +59576,16 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1188,
-    "projectsFetchedFromRocketlane": 461,
+    "projectsFetchedFromRocketlane": 457,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 161,
+      "onboarding": 159,
       "reconciliation": 0,
-      "training": 298,
+      "training": 296,
       "unknown": 2
     },
     "companiesWrittenToSupportHub": 1188,
-    "companiesWithNoAccountingProjectFound": 845,
+    "companiesWithNoAccountingProjectFound": 848,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
 }
