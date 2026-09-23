@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T05:52:35.330Z",
+  "generatedAt": "2026-09-23T11:23:52.033Z",
   "companies": [
     {
       "companyId": 122281,
@@ -4440,7 +4440,7 @@
       "networkId": 479,
       "units": 70,
       "branches": null,
-      "accountingOwner": "Max Hornby",
+      "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": null,
       "accountingStatus": "Live",
       "clientAccountingEnabled": true,
@@ -4460,7 +4460,16 @@
       "internalStatusTag": "30 Days Post Go-Live Support",
       "redFlag": true,
       "optOut": null,
-      "reconciliation": null,
+      "reconciliation": {
+        "status": "Closed",
+        "route": "Clear Accounting & Restart",
+        "specialist": "Hayley Seabrook",
+        "dateRaised": "2026-08-11",
+        "reviewCallBooked": "Completed",
+        "currentDifference": null,
+        "outcome": "Setup Issue",
+        "notes": null
+      },
       "restart": {
         "status": "Restart Completed",
         "route": "Nuke / restart of Accounting",
@@ -39408,10 +39417,10 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": "2026-10-01",
+        "targetGoLive": "2026-09-30",
         "openingBalanceBooked": true,
         "notes": null
       },
@@ -39750,11 +39759,11 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Awaiting Client Response",
+        "status": "Not recorded",
         "completed": false,
         "lastDate": null,
-        "trainer": "Max Hornby",
-        "modules": null,
+        "trainer": null,
+        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
         "formats": null
       },
       "onboardingProject": null,
@@ -39799,7 +39808,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Request Received",
         "completed": false,
         "lastDate": null,
         "trainer": null,
@@ -46094,7 +46103,7 @@
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": null,
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
@@ -46103,13 +46112,13 @@
       "csm": null,
       "csmStreet": null,
       "segment": "Enterprise & Strategic",
-      "streetStatus": "Onboarding",
+      "streetStatus": "Active",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": "2026-05-19",
       "streetUsage": "A, L, LPM, S",
-      "agentLiveWithAccounting": false,
-      "goLiveDate": null,
-      "internalStatusTag": "Onboarding in Progress",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-09-23",
+      "internalStatusTag": "30 Days Post Go-Live Support",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -48531,7 +48540,7 @@
       "companyId": 665647,
       "companyName": "Property Foundations Group (PFG)",
       "networkId": null,
-      "units": 300,
+      "units": 301,
       "branches": null,
       "accountingOwner": "Max Hornby",
       "onboardingSpecialist": null,
@@ -48566,7 +48575,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -49073,7 +49082,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-24",
@@ -50091,7 +50100,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-01",
@@ -52306,14 +52315,14 @@
       },
       "csm": null,
       "csmStreet": null,
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": true,
       "optOut": null,
       "reconciliation": null,
@@ -53244,7 +53253,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -56889,7 +56898,7 @@
       "csm": null,
       "csmStreet": null,
       "segment": null,
-      "streetStatus": null,
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": null,
@@ -57638,7 +57647,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Tracy Kettle",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -59474,7 +59483,7 @@
     },
     {
       "companyId": 761574,
-      "companyName": "Collins Sarwar Estates Harrow Sales",
+      "companyName": "Collins Sarwar Estates Ltd",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -59667,20 +59676,69 @@
         "reconciliationProject": null,
         "trainingProject": null
       }
+    },
+    {
+      "companyId": 763033,
+      "companyName": "The Agricultural Centre, Standerwick, Somerset, BA11 2QB",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1190,
-    "projectsFetchedFromRocketlane": 459,
+    "companiesFetchedFromRocketlane": 1191,
+    "projectsFetchedFromRocketlane": 460,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 158,
       "reconciliation": 0,
-      "training": 299,
+      "training": 300,
       "unknown": 2
     },
-    "companiesWrittenToSupportHub": 1190,
-    "companiesWithNoAccountingProjectFound": 850,
+    "companiesWrittenToSupportHub": 1191,
+    "companiesWithNoAccountingProjectFound": 849,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
 }
