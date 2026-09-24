@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T17:36:07.780Z",
+  "generatedAt": "2026-09-24T20:49:40.079Z",
   "companies": [
     {
       "companyId": 122281,
@@ -3857,7 +3857,7 @@
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Training Phase",
-      "redFlag": false,
+      "redFlag": true,
       "optOut": null,
       "reconciliation": null,
       "restart": null,
