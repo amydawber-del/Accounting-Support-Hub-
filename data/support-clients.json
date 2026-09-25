@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T04:43:37.804Z",
+  "generatedAt": "2026-09-25T09:51:33.188Z",
   "companies": [
     {
       "companyId": 122281,
@@ -26869,7 +26869,7 @@
       "training": {
         "status": "Prep in Progress",
         "completed": false,
-        "lastDate": "2026-09-27",
+        "lastDate": "2026-10-27",
         "trainer": "Jess Benjamin Smith",
         "modules": "Sales Modules, Lettings Front-End, Lettings Property Management, Accounting",
         "formats": "Bespoke Branch Training"
@@ -48323,8 +48323,8 @@
       "streetGoLiveDate": "2026-09-24",
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": true,
-      "goLiveDate": "2026-09-24",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "goLiveDate": "2026-09-25",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -48335,7 +48335,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -60149,19 +60149,117 @@
         "reconciliationProject": null,
         "trainingProject": null
       }
+    },
+    {
+      "companyId": 764654,
+      "companyName": "Lovelle Lincoln/Market Rasen",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Request Received",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 764684,
+      "companyName": "nicolemarie@coveestateagency.co.uk",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1199,
-    "projectsFetchedFromRocketlane": 473,
+    "companiesFetchedFromRocketlane": 1201,
+    "projectsFetchedFromRocketlane": 474,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 160,
       "reconciliation": 0,
-      "training": 311,
+      "training": 312,
       "unknown": 2
     },
-    "companiesWrittenToSupportHub": 1199,
+    "companiesWrittenToSupportHub": 1201,
     "companiesWithNoAccountingProjectFound": 850,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
