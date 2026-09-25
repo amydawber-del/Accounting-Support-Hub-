@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T09:51:33.188Z",
+  "generatedAt": "2026-09-25T15:09:21.765Z",
   "companies": [
     {
       "companyId": 122281,
@@ -25376,7 +25376,7 @@
       "companyId": 442154,
       "companyName": "The Wye Partnership",
       "networkId": null,
-      "units": 270,
+      "units": 250,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": null,
@@ -25411,7 +25411,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -36017,7 +36017,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -36058,7 +36058,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -36066,7 +36066,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -36115,7 +36115,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -36214,7 +36214,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -36222,7 +36222,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Lena Dottori-Marchand",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -36263,7 +36263,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -36271,7 +36271,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -36321,7 +36321,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -36329,7 +36329,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -36566,7 +36566,7 @@
       "units": 200,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -36574,7 +36574,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -36766,7 +36766,7 @@
       "units": 400,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -36774,7 +36774,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -36974,7 +36974,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -37113,7 +37113,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -37121,7 +37121,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -37162,7 +37162,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Karolina Pawlowicz",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -37170,7 +37170,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Alex Wilson",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -37211,7 +37211,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -37219,7 +37219,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -37358,7 +37358,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Karolina Pawlowicz",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -37366,7 +37366,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -37407,7 +37407,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -37415,7 +37415,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -37456,7 +37456,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -37464,7 +37464,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -37523,7 +37523,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -37531,7 +37531,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -37621,7 +37621,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -37629,7 +37629,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -37719,7 +37719,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -37727,7 +37727,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -37915,7 +37915,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Karolina Pawlowicz",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -37923,7 +37923,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -38111,7 +38111,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -38119,7 +38119,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -38178,7 +38178,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -38186,7 +38186,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -38276,7 +38276,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -38284,7 +38284,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -38374,7 +38374,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -38382,7 +38382,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -38423,7 +38423,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -38431,7 +38431,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Lena Dottori-Marchand",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -38529,7 +38529,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -38570,7 +38570,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Karolina Pawlowicz",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -38578,7 +38578,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -38619,7 +38619,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -38627,7 +38627,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -38913,7 +38913,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -38921,7 +38921,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -39060,7 +39060,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -39068,7 +39068,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -39158,7 +39158,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Karolina Pawlowicz",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -39166,7 +39166,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -39207,7 +39207,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -39215,7 +39215,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -39305,7 +39305,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -39313,7 +39313,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -39411,7 +39411,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -39469,7 +39469,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -39755,7 +39755,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -39763,7 +39763,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -39812,7 +39812,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -39853,7 +39853,7 @@
       "units": 195,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -39861,7 +39861,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -39955,7 +39955,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Tracy Kettle",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -39963,7 +39963,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -40151,7 +40151,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -40159,7 +40159,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -40200,7 +40200,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -40208,7 +40208,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -40298,7 +40298,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -40306,7 +40306,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -40352,7 +40352,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -40360,7 +40360,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -40548,7 +40548,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -40703,7 +40703,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -40744,7 +40744,7 @@
       "units": 4900,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Karolina Pawlowicz",
       "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -40797,7 +40797,7 @@
       "units": 89,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -40805,7 +40805,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -41590,7 +41590,7 @@
       "units": 600,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -41598,7 +41598,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -41657,7 +41657,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -41665,7 +41665,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -41755,7 +41755,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -41763,7 +41763,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -41902,7 +41902,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Tracy Kettle",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -42000,7 +42000,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -42008,7 +42008,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -42098,7 +42098,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -42106,7 +42106,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -42196,7 +42196,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -42204,7 +42204,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": false,
@@ -42343,7 +42343,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Karolina Pawlowicz",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -42351,7 +42351,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -42441,7 +42441,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -42449,7 +42449,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -42495,7 +42495,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -42503,7 +42503,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -42552,7 +42552,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -42855,7 +42855,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -42896,7 +42896,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -42904,7 +42904,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -43153,7 +43153,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -43301,7 +43301,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -43309,7 +43309,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -43407,7 +43407,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -43693,7 +43693,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -43701,7 +43701,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -43901,7 +43901,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -44004,7 +44004,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -44012,7 +44012,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -44102,7 +44102,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Karolina Pawlowicz",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -44110,7 +44110,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -44249,7 +44249,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Tracy Kettle",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -44257,7 +44257,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -44306,7 +44306,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -44400,7 +44400,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -44408,7 +44408,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -44601,7 +44601,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -44609,7 +44609,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -44699,7 +44699,7 @@
       "units": 100,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Karolina Pawlowicz",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -44707,7 +44707,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -44757,7 +44757,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -44765,7 +44765,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -44855,7 +44855,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Tracy Kettle",
       "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -44961,7 +44961,7 @@
       "units": 430,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -44983,12 +44983,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Request Received",
         "completed": false,
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-06-24",
@@ -45014,7 +45014,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -45022,7 +45022,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -45112,7 +45112,7 @@
       "units": 11,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Tracy Kettle",
       "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -45214,7 +45214,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -45267,7 +45267,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -45275,7 +45275,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -45373,7 +45373,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -45463,7 +45463,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -45471,7 +45471,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -45761,7 +45761,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -45814,7 +45814,7 @@
       "units": 360,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -45916,7 +45916,7 @@
       "units": 161,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Tracy Kettle",
       "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -45969,7 +45969,7 @@
       "units": 73,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -46120,7 +46120,7 @@
       "units": 450,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -46222,7 +46222,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -46230,7 +46230,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -46271,7 +46271,7 @@
       "units": 60,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -46279,7 +46279,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -46324,7 +46324,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -46332,7 +46332,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -46373,7 +46373,7 @@
       "units": 175,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -46381,7 +46381,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -46573,7 +46573,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -46581,7 +46581,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -46676,7 +46676,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -46684,7 +46684,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": true,
@@ -46786,7 +46786,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -46974,7 +46974,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -46982,7 +46982,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -47023,7 +47023,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -47031,7 +47031,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -47080,7 +47080,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -47231,7 +47231,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Lena Dottori-Marchand",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -47276,7 +47276,7 @@
       "units": 360,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -47284,7 +47284,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -47386,7 +47386,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -47586,7 +47586,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -47632,7 +47632,7 @@
       "units": 882,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -47640,7 +47640,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -47664,7 +47664,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE), Post Go-Live Support Day"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -47748,7 +47748,7 @@
       "units": 350,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -47756,7 +47756,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -47801,7 +47801,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -47809,7 +47809,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -47899,7 +47899,7 @@
       "units": 43,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -47907,7 +47907,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -47965,7 +47965,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -48263,7 +48263,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -48322,9 +48322,9 @@
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-09-24",
       "streetUsage": "A, L, LPM, S",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-09-25",
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": "Awaiting OB Call Booking",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -48335,7 +48335,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -48361,7 +48361,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -48369,7 +48369,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -48459,7 +48459,7 @@
       "units": 10,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Karolina Pawlowicz",
       "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -48467,7 +48467,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -48561,23 +48561,23 @@
       "units": 301,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
-      "clientAccountingEnabled": false,
+      "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
-      "agentLiveWithStreet": false,
-      "streetGoLiveDate": null,
+      "agentLiveWithStreet": true,
+      "streetGoLiveDate": "2026-09-25",
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -48596,8 +48596,8 @@
         "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
+        "targetGoLive": "2026-10-05",
+        "openingBalanceBooked": true,
         "notes": null
       },
       "internalNotes": {
@@ -48627,7 +48627,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -48717,7 +48717,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -48725,7 +48725,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -48774,7 +48774,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -48922,7 +48922,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -48930,7 +48930,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -49081,7 +49081,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -49100,7 +49100,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-24",
@@ -49134,7 +49134,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -49179,7 +49179,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -49187,7 +49187,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -49228,7 +49228,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -49236,7 +49236,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -49277,7 +49277,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -49285,7 +49285,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -49473,7 +49473,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -49481,7 +49481,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -49539,7 +49539,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -49633,7 +49633,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -49641,7 +49641,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -49780,7 +49780,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -49829,7 +49829,7 @@
       "units": 250,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -49837,7 +49837,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -49887,7 +49887,7 @@
       "units": 40,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -49940,7 +49940,7 @@
       "units": 70,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -49948,7 +49948,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -49993,7 +49993,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -50001,7 +50001,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -50042,7 +50042,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -50050,7 +50050,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -50091,7 +50091,7 @@
       "units": 85,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -50099,7 +50099,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -50144,7 +50144,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -50152,7 +50152,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -50206,7 +50206,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -50264,7 +50264,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": true,
@@ -50314,7 +50314,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -50322,7 +50322,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -50417,7 +50417,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -50425,7 +50425,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -50474,7 +50474,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -50613,7 +50613,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -50670,7 +50670,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -50768,7 +50768,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -50809,7 +50809,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -50817,7 +50817,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -50866,7 +50866,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -51009,7 +51009,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -51017,7 +51017,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -51058,7 +51058,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -51066,7 +51066,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Lena Dottori-Marchand",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -51270,7 +51270,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -51337,8 +51337,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Lettings Front-End, Lettings Property Management",
-        "formats": "Bespoke Branch Training"
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -51364,7 +51364,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -51372,7 +51372,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -51519,7 +51519,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -51537,7 +51537,7 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Lettings Front-End, Lettings Property Management, Accounting",
+        "modules": null,
         "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
@@ -51662,7 +51662,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Liv Marsden",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -51760,7 +51760,7 @@
       "units": 74,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -51768,7 +51768,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -51911,7 +51911,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -51919,7 +51919,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -52009,7 +52009,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -52115,7 +52115,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -52160,7 +52160,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -52209,7 +52209,7 @@
       "units": 500,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -52262,7 +52262,7 @@
       "units": 45,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -52270,7 +52270,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -52294,7 +52294,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -52328,7 +52328,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -52378,7 +52378,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -52386,7 +52386,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -52476,7 +52476,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -52484,7 +52484,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -52578,7 +52578,7 @@
       "units": 300,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Tracy Kettle",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -52680,7 +52680,7 @@
       "units": 380,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -52688,7 +52688,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -52738,9 +52738,9 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Onboarding",
-      "clientAccountingEnabled": false,
+      "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
@@ -52748,13 +52748,13 @@
       "csm": null,
       "csmStreet": null,
       "segment": "SMB",
-      "streetStatus": "Active",
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-07-21",
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting OB Call Booking",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -52768,8 +52768,8 @@
         "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
+        "targetGoLive": "2026-10-02",
+        "openingBalanceBooked": true,
         "notes": null
       },
       "internalNotes": {
@@ -52840,7 +52840,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -52848,7 +52848,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -52938,7 +52938,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -52946,7 +52946,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -53044,7 +53044,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -53138,7 +53138,7 @@
       "units": 220,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -53146,7 +53146,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -53191,7 +53191,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -53199,7 +53199,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -53248,7 +53248,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": true,
@@ -53301,7 +53301,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -53395,7 +53395,7 @@
       "units": 50,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -53403,7 +53403,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -53469,7 +53469,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -53506,7 +53506,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -53514,7 +53514,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -53555,7 +53555,7 @@
       "units": 650,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Tracy Kettle",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -53563,7 +53563,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -53621,7 +53621,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -53674,7 +53674,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "Enterprise & Strategic",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -53866,7 +53866,7 @@
       "units": 180,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -53874,7 +53874,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -53919,7 +53919,7 @@
       "units": 60,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -53927,7 +53927,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -53972,7 +53972,7 @@
       "units": 55,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -53980,7 +53980,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -54030,7 +54030,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -54137,7 +54137,7 @@
       "units": 130,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -54145,7 +54145,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -54190,7 +54190,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -54198,7 +54198,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -54305,7 +54305,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -54354,7 +54354,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -54493,7 +54493,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Tracy Kettle",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -54501,7 +54501,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -54547,7 +54547,7 @@
       "units": 30,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -54555,7 +54555,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -54649,7 +54649,7 @@
       "units": 180,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
@@ -54657,11 +54657,11 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": "Active",
-      "agentLiveWithStreet": false,
-      "streetGoLiveDate": null,
+      "agentLiveWithStreet": true,
+      "streetGoLiveDate": "2026-09-25",
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": true,
       "goLiveDate": "2026-09-24",
@@ -54800,7 +54800,7 @@
       "units": 40,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -54808,7 +54808,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -54858,7 +54858,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -54866,7 +54866,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -55013,7 +55013,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -55103,7 +55103,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -55111,7 +55111,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -55169,7 +55169,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -55227,7 +55227,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -55321,7 +55321,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -55329,7 +55329,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -55382,7 +55382,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -55582,7 +55582,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -55622,24 +55622,24 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
-      "accountingStatus": "Onboarding",
+      "accountingOwner": null,
+      "onboardingSpecialist": "Emma Cockcroft",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
-      "segment": "SMB",
+      "csmStreet": "Adam Jennings",
+      "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -55652,11 +55652,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -55684,7 +55680,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -55777,9 +55773,9 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": null,
       "onboardingSpecialist": "Tracy Kettle",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -55794,7 +55790,7 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -55812,11 +55808,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -55893,7 +55885,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -55938,7 +55930,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -55946,7 +55938,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -56004,7 +55996,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -56161,7 +56153,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -56169,7 +56161,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -56268,7 +56260,7 @@
       "units": 350,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -56276,7 +56268,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -56300,7 +56292,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -56326,7 +56318,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -56334,7 +56326,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -56482,7 +56474,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -56490,7 +56482,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -56638,7 +56630,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -56646,7 +56638,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -56749,7 +56741,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -56807,7 +56799,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -56865,7 +56857,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -56972,7 +56964,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -57030,7 +57022,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -57088,7 +57080,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -57142,7 +57134,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -57298,7 +57290,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -57356,15 +57348,15 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
-      "segment": null,
+      "csmStreet": "Adam Jennings",
+      "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -57463,7 +57455,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -57570,7 +57562,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -57628,7 +57620,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -57731,7 +57723,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -58132,7 +58124,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -58231,7 +58223,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -58239,7 +58231,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "Enterprise & Strategic",
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -58297,7 +58289,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -58547,7 +58539,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -58895,7 +58887,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -59051,7 +59043,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -59207,7 +59199,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -59511,7 +59503,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -59519,7 +59511,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -59863,7 +59855,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -59873,7 +59865,7 @@
       "csm": null,
       "csmStreet": null,
       "segment": null,
-      "streetStatus": null,
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": null,
@@ -59922,7 +59914,7 @@
       "csm": null,
       "csmStreet": null,
       "segment": null,
-      "streetStatus": null,
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": null,
@@ -60179,12 +60171,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-10-13",
+        "trainer": "Hayley Seabrook",
+        "modules": "Accounting",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -60247,20 +60239,167 @@
         "reconciliationProject": null,
         "trainingProject": null
       }
+    },
+    {
+      "companyId": 764739,
+      "companyName": "Cooper and Tanner",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Awaiting Client Response",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 764766,
+      "companyName": "Test Agent",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 764807,
+      "companyName": "Head Office",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1201,
+    "companiesFetchedFromRocketlane": 1204,
     "projectsFetchedFromRocketlane": 474,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 160,
+      "onboarding": 158,
       "reconciliation": 0,
-      "training": 312,
+      "training": 314,
       "unknown": 2
     },
-    "companiesWrittenToSupportHub": 1201,
-    "companiesWithNoAccountingProjectFound": 850,
+    "companiesWrittenToSupportHub": 1204,
+    "companiesWithNoAccountingProjectFound": 851,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
 }
