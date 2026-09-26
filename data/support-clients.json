@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T06:41:31.391Z",
+  "generatedAt": "2026-09-26T11:52:04.467Z",
   "companies": [
     {
       "companyId": 122281,
@@ -36260,7 +36260,7 @@
       "companyId": 555737,
       "companyName": "Premier Lettings Northants/Rosevale Unique Homes",
       "networkId": null,
-      "units": null,
+      "units": 140,
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Saskia Kirkham",
@@ -36295,7 +36295,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -52291,7 +52291,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
