@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T17:20:40.402Z",
+  "generatedAt": "2026-09-27T20:28:27.223Z",
   "companies": [
     {
       "companyId": 122281,
@@ -50267,9 +50267,9 @@
       "csm": null,
       "csmStreet": "Diana Culea",
       "segment": "SMB",
-      "streetStatus": "Onboarding",
+      "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-09-01",
+      "streetGoLiveDate": "2026-09-27",
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": "2026-09-21",
