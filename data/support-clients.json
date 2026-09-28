@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T02:02:24.804Z",
+  "generatedAt": "2026-09-28T09:00:03.965Z",
   "companies": [
     {
       "companyId": 122281,
@@ -39777,11 +39777,11 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Awaiting Client Response",
         "completed": false,
         "lastDate": null,
-        "trainer": null,
-        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
+        "trainer": "Max Hornby",
+        "modules": null,
         "formats": null
       },
       "onboardingProject": null,
@@ -53317,7 +53317,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-01",
@@ -56445,7 +56445,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -60337,7 +60337,7 @@
     },
     {
       "companyId": 764807,
-      "companyName": "Head Office",
+      "companyName": "DM & Co. Homes",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -60436,12 +60436,12 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1205,
-    "projectsFetchedFromRocketlane": 473,
+    "projectsFetchedFromRocketlane": 475,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 156,
       "reconciliation": 0,
-      "training": 315,
+      "training": 317,
       "unknown": 2
     },
     "companiesWrittenToSupportHub": 1205,
