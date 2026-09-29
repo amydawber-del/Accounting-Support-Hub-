@@ -199,6 +199,44 @@ const COMPANY_FIELD_LABELS = {
 };
 
 // ---------------------------------------------------------------------------
+// ADDED 29 Sep 2026, per Amy: extra Account-level details for the Support team.
+// Unlike the maps above, the exact Rocketlane labels for these have NOT been
+// confirmed yet, so each one lists a few likely spellings and is matched
+// tolerantly (ignoring case, extra spaces and trailing punctuation like the
+// "Street Network ID:" colon). The first candidate that exists wins.
+//
+// The field TYPE isn't known either (text vs dropdown vs person), so these are
+// read with getAnyField(), which works it out from the field definition.
+//
+// AFTER THE FIRST RUN: check syncDiagnostics.extraFieldMappings in
+// data/support-clients.json. It shows which label matched for each field, or
+// "NOT FOUND" plus any similar-looking labels that do exist, so a wrong guess
+// is a one-line fix here.
+// ---------------------------------------------------------------------------
+const COMPANY_EXTRA_FIELD_CANDIDATES = {
+  bdm: ['Business Development Manager (Sales)', 'Business Development Manager', 'BDM'],
+  previousSoftware: ['Previous CRM / Accounting Software', 'Previous CRM/Accounting Software', 'Previous CRM & Accounting Software', 'Previous Software', 'Previous Provider'],
+  previousCrm: ['Previous CRM', 'Previous CRM Software', 'Previous CRM Provider'],
+  previousAccountingSoftware: ['Previous Accounting Software', 'Previous Accounting Provider', 'Previous Accounting System'],
+  approxMrr: ['Approximate MRR', 'Approx MRR', 'Approx. MRR', 'MRR', 'Approximate MRR (£)', 'MRR (£)'],
+  migration: ['Migration', 'Migration Type', 'Data Migration', 'Migration Info', 'Migration Information'],
+  bankProvider: ['Bank Provider', 'Banking Provider', 'Bank'],
+};
+// Migration fallback: if it isn't filled in on the Account, Amy says it's
+// sometimes picked on the project instead, under "Customer Type".
+const PROJECT_EXTRA_FIELD_CANDIDATES = {
+  customerType: ['Customer Type'],
+};
+// Words used to spot near-miss labels for the diagnostics above.
+const EXTRA_FIELD_HINT_WORDS = ['crm', 'software', 'mrr', 'business development', 'bdm', 'migration', 'bank', 'customer type'];
+
+// MRR is commercial information. See the note in the README / chat: the data
+// file is only protected by the password gate, which doesn't stop someone
+// fetching the JSON directly if they know the URL. Set to false to stop MRR
+// being written to the file at all.
+const INCLUDE_MRR = true;
+
+// ---------------------------------------------------------------------------
 // Low-level fetch helpers
 // ---------------------------------------------------------------------------
 
@@ -281,6 +319,83 @@ function resolveFieldIds(fieldIndex, labelConfig) {
     console.warn('[sync] Missing field mapping(s) — these will show as "Not recorded" in the Hub:\n  ' + missing.join('\n  '));
   }
   return resolved;
+}
+
+/** Lower-case, collapse spaces, drop emoji and trailing punctuation (e.g. "Bank Provider: " -> "bank provider"). */
+function normaliseLabel(label) {
+  return String(label || '')
+    .replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}\u{FE0F}]/gu, '')
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/[\s:;.,\-–]+$/, '')
+    .trim();
+}
+
+/**
+ * Tolerant resolver for the NEW extra fields only (existing mappings keep the
+ * strict exact match above). Tries each candidate label as an exact match
+ * first, then as a normalised match. Never matches on a substring, so the
+ * "three fields all contain 'Internal Status Tag'" trap can't happen here.
+ * Returns { ids, report } where report goes into syncDiagnostics.
+ */
+function resolveExtraFieldIds(fieldIndex, candidateConfig, objectType) {
+  const byNormalised = new Map();
+  for (const [label, def] of fieldIndex) {
+    const n = normaliseLabel(label);
+    if (!byNormalised.has(n)) byNormalised.set(n, def);
+  }
+  const ids = {};
+  const report = {};
+  for (const [key, candidates] of Object.entries(candidateConfig)) {
+    let def = null;
+    for (const c of candidates) {
+      def = fieldIndex.get(c.trim()) || byNormalised.get(normaliseLabel(c)) || null;
+      if (def) break;
+    }
+    if (def) {
+      ids[key] = def;
+      report[key] = `${objectType}: "${(def.fieldLabel || '').trim()}" (${def.fieldType || 'type unknown'})`;
+    } else {
+      const nearMisses = [...fieldIndex.keys()].filter((l) =>
+        EXTRA_FIELD_HINT_WORDS.some((w) => normaliseLabel(l).includes(w))
+      );
+      report[key] = `${objectType}: NOT FOUND` + (nearMisses.length ? `. Similar labels: ${nearMisses.slice(0, 12).join(' | ')}` : '');
+    }
+  }
+  console.log(`[sync] Extra ${objectType} field mappings:\n  ` + Object.entries(report).map(([k, v]) => `${k} -> ${v}`).join('\n  '));
+  return { ids, report };
+}
+
+/**
+ * Reads a field whose type we haven't confirmed. Works out how to read it from
+ * the field definition first, then from the shape of the value itself:
+ *   person fields -> name via /users, dropdowns -> option label,
+ *   multi-selects -> "A, B", yes/no -> "Yes"/"No", anything else -> text.
+ */
+function getAnyField(entity, fieldDef, userIndex) {
+  const raw = findRawField(entity, fieldDef);
+  if (raw === undefined || raw === null || raw === '') return null;
+  const type = String(fieldDef.fieldType || '').toUpperCase();
+
+  if (type.includes('USER')) {
+    const list = Array.isArray(raw) ? raw : [raw];
+    const names = list
+      .map((u) => (typeof u === 'object' ? u.userId ?? u.id : u))
+      .map((id) => userIndex.get(id) || null)
+      .filter(Boolean);
+    return names.length ? names.join(', ') : null;
+  }
+  if (Array.isArray(raw) || type.includes('MULTI')) {
+    return fieldDef.fieldOptions ? getMultiChoiceField(entity, fieldDef) : [].concat(raw).join(', ');
+  }
+  if (fieldDef.fieldOptions && fieldDef.fieldOptions.length) {
+    const label = getChoiceField(entity, fieldDef);
+    if (label) return label;
+  }
+  if (typeof raw === 'boolean') return raw ? 'Yes' : 'No';
+  if (typeof raw === 'object') return raw.name ?? raw.label ?? raw.value ?? null;
+  return String(raw);
 }
 
 // ---------------------------------------------------------------------------
@@ -555,7 +670,7 @@ function groupProjectsByCompany(projects, projectFieldIds) {
 // never referenced, and never appear below — by omission, not by exclusion.
 // ---------------------------------------------------------------------------
 
-async function buildCompanyRecord(company, projects, projectFieldIds, companyFieldIds, userIndex) {
+async function buildCompanyRecord(company, projects, projectFieldIds, companyFieldIds, userIndex, extraIds = { company: {}, project: {} }) {
   const onboarding = projects.onboarding;
   const reconciliation = projects.reconciliation;
   const training = projects.training;
@@ -726,6 +841,9 @@ async function buildCompanyRecord(company, projects, projectFieldIds, companyFie
     // null) when the field has no entries or couldn't be read, so app.js can
     // treat it the same way as recentMessages.
     recentEngagementNotes: getCompanyNoteEntries(company, companyFieldIds.recentEngagementNotes),
+    // ADDED 29 Sep 2026: Account-level details for the Support team. See
+    // COMPANY_EXTRA_FIELD_CANDIDATES for why these are read tolerantly.
+    account: buildAccountDetails(company, projects, extraIds, userIndex),
     // Never fabricated — filled in only once you confirm Rocketlane's real project URL
     // pattern (open a project in the browser and paste the URL structure here).
     rocketlaneLinks: {
@@ -734,6 +852,44 @@ async function buildCompanyRecord(company, projects, projectFieldIds, companyFie
       trainingProject: null,
     },
   };
+}
+
+/** Account-level extras. Migration falls back to the project's "Customer Type". */
+function buildAccountDetails(company, projects, extraIds, userIndex) {
+  const c = extraIds.company || {};
+  const read = (key) => (c[key] ? getAnyField(company, c[key], userIndex) : null);
+
+  let migration = read('migration');
+  let migrationSource = migration ? 'account' : null;
+  if (!migration && extraIds.project && extraIds.project.customerType) {
+    for (const p of [projects.onboarding, projects.training, projects.reconciliation]) {
+      if (!p) continue;
+      const v = getAnyField(p, extraIds.project.customerType, userIndex);
+      if (v) { migration = v; migrationSource = 'project'; break; }
+    }
+  }
+
+  return {
+    bdm: read('bdm'),
+    previousSoftware: read('previousSoftware'),
+    previousCrm: read('previousCrm'),
+    previousAccountingSoftware: read('previousAccountingSoftware'),
+    approxMrr: INCLUDE_MRR ? read('approxMrr') : null,
+    migration,
+    migrationSource,
+    bankProvider: read('bankProvider'),
+  };
+}
+
+function countExtraFields(records) {
+  const counts = {};
+  for (const r of records) {
+    for (const [k, v] of Object.entries(r.account || {})) {
+      if (k === 'migrationSource') continue;
+      counts[k] = (counts[k] || 0) + (v ? 1 : 0);
+    }
+  }
+  return counts;
 }
 
 // ---------------------------------------------------------------------------
@@ -746,6 +902,9 @@ async function main() {
   const projectFieldIds = resolveFieldIds(projectFieldIndex, PROJECT_FIELD_LABELS);
   const companyFieldIndex = await buildFieldIndex('COMPANY');
   const companyFieldIds = resolveFieldIds(companyFieldIndex, COMPANY_FIELD_LABELS);
+  const companyExtra = resolveExtraFieldIds(companyFieldIndex, COMPANY_EXTRA_FIELD_CANDIDATES, 'Account');
+  const projectExtra = resolveExtraFieldIds(projectFieldIndex, PROJECT_EXTRA_FIELD_CANDIDATES, 'Project');
+  const extraIds = { company: companyExtra.ids, project: projectExtra.ids };
 
   console.log('[sync] Fetching companies…');
   const companies = await fetchCompanies();
@@ -796,7 +955,7 @@ async function main() {
     }
     // Sequential, not Promise.all — this now makes an extra conversation/messages
     // call per company, and staying sequential keeps us well clear of any rate limit.
-    output.companies.push(await buildCompanyRecord(company, linkedProjects, projectFieldIds, companyFieldIds, userIndex));
+    output.companies.push(await buildCompanyRecord(company, linkedProjects, projectFieldIds, companyFieldIds, userIndex, extraIds));
   }
 
   const skippedNoAccountingProject = companiesWithNoAccountingRelationship; // kept for the log/diagnostics code below, unchanged
@@ -821,6 +980,9 @@ async function main() {
     companiesWrittenToSupportHub: output.companies.length,
     companiesWithNoAccountingProjectFound: skippedNoAccountingProject.length,
     companiesWithOnboardingProjectButNoInternalStatusTag: missingStatusDespiteOnboarding,
+    // Which Rocketlane label each new Account field matched (or didn't). Check after the first run.
+    extraFieldMappings: { ...companyExtra.report, ...projectExtra.report },
+    extraFieldsFilledIn: countExtraFields(output.companies),
   };
 
   if (missingStatusDespiteOnboarding > 0) {
