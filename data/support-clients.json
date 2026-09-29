@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T02:21:48.536Z",
+  "generatedAt": "2026-09-29T09:06:44.600Z",
   "companies": [
     {
       "companyId": 122281,
@@ -9766,7 +9766,7 @@
     },
     {
       "companyId": 261519,
-      "companyName": "Andrews",
+      "companyName": "Andrews (Test)",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -11187,7 +11187,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": "Hayley Seabrook",
+      "accountingOwner": null,
       "onboardingSpecialist": "Rob Kenyon",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
@@ -11197,26 +11197,17 @@
       },
       "csm": null,
       "csmStreet": "Adam Jennings",
-      "segment": "SMB",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
       "streetGoLiveDate": null,
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Client Accounting Reconciliation",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
-      "reconciliation": {
-        "status": "Investigating",
-        "route": null,
-        "specialist": "Hayley Seabrook",
-        "dateRaised": "2026-08-21",
-        "reviewCallBooked": "Not Yet Booked",
-        "currentDifference": null,
-        "outcome": null,
-        "notes": null
-      },
+      "reconciliation": null,
       "restart": {
         "status": "Restart Requested",
         "route": null,
@@ -11231,11 +11222,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -39386,7 +39373,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-30",
@@ -39728,11 +39715,11 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Awaiting Client Response",
+        "status": "Not recorded",
         "completed": false,
         "lastDate": null,
-        "trainer": "Max Hornby",
-        "modules": null,
+        "trainer": null,
+        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
         "formats": null
       },
       "onboardingProject": null,
@@ -42523,7 +42510,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -43920,7 +43907,7 @@
         "date": "2026-03-31"
       },
       "training": {
-        "status": "Prep in Progress",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
         "lastDate": "2026-11-02",
         "trainer": "Maria Duffy",
@@ -52074,7 +52061,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-22",
@@ -58839,7 +58826,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -59092,7 +59079,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Prep in Progress",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
         "lastDate": "2026-10-20",
         "trainer": "Maria Duffy",
@@ -59377,7 +59364,7 @@
     },
     {
       "companyId": 761477,
-      "companyName": "Andrews Head Office ",
+      "companyName": "Andrews",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -59534,7 +59521,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -59934,7 +59921,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -60430,16 +60417,16 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1205,
-    "projectsFetchedFromRocketlane": 471,
+    "projectsFetchedFromRocketlane": 470,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 152,
+      "onboarding": 151,
       "reconciliation": 0,
       "training": 317,
       "unknown": 2
     },
     "companiesWrittenToSupportHub": 1205,
-    "companiesWithNoAccountingProjectFound": 855,
+    "companiesWithNoAccountingProjectFound": 856,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 2
   }
 }
