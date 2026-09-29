@@ -448,3 +448,11 @@
   .fv:hover .badge{box-shadow:0 0 0 2px var(--accent-blue--100);}
   .fv--block{display:block;}
   .fv--block:hover{box-shadow:0 0 0 6px var(--accent-blue--50);}
+
+  /* ---------- alignment fixes (29 Sep 2026) ---------- */
+  /* Go-to contact tag: same place on every team card, lined up with the name. */
+  .team-card .current-tag{display:inline-block; margin:7px 0 0 0; vertical-align:baseline;}
+  .team-card .avatar{margin-top:1px;}
+  /* Key facts box: pull the box outwards so the labels and values inside line up
+     exactly with the rows underneath it. */
+  .key-facts{margin:0 -13px 10px; padding:4px 12px;} /* -13 = 12px padding + 1px border */
