@@ -609,24 +609,28 @@ function showDetail(id, {keepScroll=false} = {}){
         ${row('Bank Provider', val(acct(c).bankProvider))}
       </div>
       <div class="panel">
-        <h3>Street</h3>
-        ${row('Street Status', val(c.streetStatus))}
-        ${row('Live with Street', yesNo(c.agentLiveWithStreet))}
-        ${row('Street Go Live Date', val(fmtDate(c.streetGoLiveDate)))}
-        ${row('Street Usage', val(c.streetUsage))}
+        ${panelHead('Street', c.agentLiveWithStreet, 'Live with Street')}
+        <div class="key-facts">
+          ${row('Street Status', statusPill(c.streetStatus, street.tone))}
+          ${row('Live with Street', livePill(c.agentLiveWithStreet))}
+          ${row('Street Go Live Date', val(fmtDate(c.streetGoLiveDate)))}
+        </div>
         ${row('Street Network ID', val(c.networkId))}
+        ${row('Street Usage', val(c.streetUsage))}
         ${row('Segment / Business Size', val(c.segment))}
-        ${row('Street Payments Client', yesNo(c.streetPayments && c.streetPayments.customer))}
-        ${c.streetPayments && c.streetPayments.customer ? row('Street Payments Verification', val(c.streetPayments.verificationStatus)) : ''}
       </div>
       <div class="panel">
-        <h3>Accounting</h3>
-        ${row('Accounting Status', val(c.accountingStatus))}
+        ${panelHead('Accounting', c.agentLiveWithAccounting, 'Live with Accounting')}
+        <div class="key-facts">
+          ${row('Accounting Status', statusPill(c.accountingStatus, accountingStatusTone(c.accountingStatus)))}
+          ${row('Live with Accounting', livePill(c.agentLiveWithAccounting))}
+          ${row('Accounting Go Live Date', val(fmtDate(c.goLiveDate)))}
+          ${c.onboardingProject && c.onboardingProject.targetGoLive ? row('Target Go Live Date', esc(fmtDate(c.onboardingProject.targetGoLive))) : ''}
+        </div>
         ${row('Internal Accounting Status', val(c.internalStatusTag))}
-        ${row('Live with Accounting', yesNo(c.agentLiveWithAccounting))}
-        ${row('Accounting Go Live Date', val(fmtDate(c.goLiveDate)))}
-        ${c.onboardingProject && c.onboardingProject.targetGoLive ? row('Target Go Live Date', esc(fmtDate(c.onboardingProject.targetGoLive))) : ''}
         ${row('Client Accounting Enabled', yesNo(c.clientAccountingEnabled))}
+        ${row('Street Payments Client', yesNo(c.streetPayments && c.streetPayments.customer))}
+        ${c.streetPayments && c.streetPayments.customer ? row('Street Payments Verification', val(c.streetPayments.verificationStatus)) : ''}
         ${row('Accounting Restart', val(c.restart && c.restart.status))}
       </div>
   `;
@@ -723,6 +727,25 @@ function showDetail(id, {keepScroll=false} = {}){
   document.getElementById('lookup-view').style.display = 'none';
   document.getElementById('detail-view').style.display = 'block';
   if(!keepScroll) window.scrollTo(0,0);
+}
+
+/* Panel title with a "Live" / "Not live yet" pill so it's visible at a glance. */
+function panelHead(title, isLive, liveText){
+  return `<div class="panel-head">
+      <h3>${title}</h3>
+      <span class="live-pill ${isLive ? 'is-live' : 'is-not-live'}">${isLive ? '✓ ' + liveText : 'Not live yet'}</span>
+    </div>`;
+}
+function livePill(isLive){
+  return `<span class="live-pill live-pill--sm ${isLive ? 'is-live' : 'is-not-live'}">${isLive ? 'Yes' : 'No'}</span>`;
+}
+function statusPill(text, tone){
+  return has(text) ? `<span class="badge ${TONE_BADGE[tone] || 'badge--segment'}">${esc(text)}</span>` : val(null);
+}
+function accountingStatusTone(s){
+  if(s === 'Live') return 'live';
+  if(s === 'Onboarding') return 'onboarding';
+  return 'neutral';
 }
 
 function row(label, valueHtml){
