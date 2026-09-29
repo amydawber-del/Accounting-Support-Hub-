@@ -338,76 +338,182 @@ function teamNames(c){
   return [c.accountingOwner, c.onboardingSpecialist, c.csmStreet, c.csm, c.reconciliation && c.reconciliation.specialist, c.training && c.training.trainer, acct(c).bdm].filter(has);
 }
 
+/* ---------------- filters for every field on the client card ----------------
+   Each def: key, group, label, type, getValue(c).
+   Types: 'dynamic' (dropdown of values found in the data, plus "Not recorded"),
+          'boolean' (Yes / No), 'bands' (fixed ranges), 'presence' (Recorded / Not recorded),
+          'people' (anyone on the client team). */
+const NONE = '__none__';
+const UNIT_BANDS = ['1 to 99','100 to 249','250 to 499','500 to 999','1,000+'];
+const BRANCH_BANDS = ['1 branch','2 to 5 branches','6+ branches'];
+function unitBand(u){
+  if(!has(u)) return null; const n = Number(u); if(!Number.isFinite(n) || n <= 0) return null;
+  return n < 100 ? UNIT_BANDS[0] : n < 250 ? UNIT_BANDS[1] : n < 500 ? UNIT_BANDS[2] : n < 1000 ? UNIT_BANDS[3] : UNIT_BANDS[4];
+}
+function branchBand(b){
+  if(!has(b)) return null; const n = Number(b); if(!Number.isFinite(n) || n <= 0) return null;
+  return n === 1 ? BRANCH_BANDS[0] : n <= 5 ? BRANCH_BANDS[1] : BRANCH_BANDS[2];
+}
+
 const ADV_FILTER_DEFS = [
-  { key:'person', label:'Team member', type:'people' },
-  { key:'streetStatus', label:'Street Status', type:'dynamic', getValue:c=>c.streetStatus },
-  { key:'internalStatusTag', label:'Accounting Status', type:'dynamic', getValue:c=>c.internalStatusTag },
-  { key:'segment', label:'Segment', type:'dynamic', getValue:c=>c.segment },
-  { key:'bankProvider', label:'Bank Provider', type:'dynamic', getValue:c=>acct(c).bankProvider },
-  { key:'previousSoftware', label:'Previous Software', type:'dynamic', getValue:c=>previousSoftwareText(c) },
-  { key:'migration', label:'Migration', type:'dynamic', getValue:c=>acct(c).migration },
-  { key:'agentLiveWithStreet', label:'Live with Street', type:'boolean', getValue:c=>c.agentLiveWithStreet },
-  { key:'agentLiveWithAccounting', label:'Live with Accounting', type:'boolean', getValue:c=>c.agentLiveWithAccounting },
-  { key:'streetPaymentsClient', label:'Street Payments', type:'boolean', getValue:c=>c.streetPayments && c.streetPayments.customer },
-  { key:'clientAccountingEnabled', label:'Client Accounting Enabled', type:'boolean', getValue:c=>c.clientAccountingEnabled },
+  // Street
+  { key:'streetStatus', group:'Street', label:'Street Status', type:'dynamic', getValue:c=>c.streetStatus },
+  { key:'streetContact', group:'Street', label:'Street go-to contact', type:'dynamic', getValue:c=>{ const s = getStreetLane(c); return s.contact ? s.contact.name : null; } },
+  { key:'agentLiveWithStreet', group:'Street', label:'Live with Street', type:'boolean', getValue:c=>c.agentLiveWithStreet },
+  { key:'segment', group:'Street', label:'Segment', type:'dynamic', getValue:c=>c.segment },
+  { key:'units', group:'Street', label:'Managed units', type:'bands', options:UNIT_BANDS, getValue:c=>unitBand(c.units) },
+  { key:'branches', group:'Street', label:'Branches', type:'bands', options:BRANCH_BANDS, getValue:c=>branchBand(c.branches) },
+  { key:'networkId', group:'Street', label:'Network ID', type:'presence', getValue:c=>has(c.networkId) },
+  // Accounting
+  { key:'accountingStatus', group:'Accounting', label:'Accounting Status', type:'dynamic', noNone:true, getValue:c=>getRouting(c).label },
+  { key:'accountingContact', group:'Accounting', label:'Accounting go-to contact', type:'dynamic', getValue:c=>{ const r = getRouting(c); if(r.empty) return null; const a = getAccountingContact(c, r); return a ? a.name : null; } },
+  { key:'agentLiveWithAccounting', group:'Accounting', label:'Live with Accounting', type:'boolean', getValue:c=>c.agentLiveWithAccounting },
+  { key:'clientAccountingEnabled', group:'Accounting', label:'Client Accounting Enabled', type:'boolean', getValue:c=>c.clientAccountingEnabled },
+  { key:'streetPaymentsClient', group:'Accounting', label:'Street Payments', type:'boolean', getValue:c=>c.streetPayments && c.streetPayments.customer },
+  { key:'redFlag', group:'Accounting', label:'Red flag (additional support)', type:'boolean', getValue:c=>c.redFlag },
+  // Account & team
+  { key:'person', group:'Account & team', label:'Anyone on the client team', type:'people' },
+  { key:'previousSoftware', group:'Account & team', label:'Previous software', type:'dynamic', getValue:c=>previousSoftwareText(c) },
+  { key:'migration', group:'Account & team', label:'Migration', type:'dynamic', getValue:c=>acct(c).migration },
+  { key:'bankProvider', group:'Account & team', label:'Bank Provider', type:'dynamic', getValue:c=>acct(c).bankProvider },
 ];
+const FILTER_GROUPS = ['Street', 'Accounting', 'Account & team'];
 let advFilters = {};
+let filterPanelOpen = (()=>{ try { return localStorage.getItem('supportHubFiltersOpen') === '1'; } catch(e){ return false; } })();
+
+function filterDef(key){ return ADV_FILTER_DEFS.find(d=>d.key===key); }
+
+function optionText(def, value){
+  if(value === NONE) return 'Not recorded';
+  if(def.type === 'boolean') return value === 'yes' ? 'Yes' : 'No';
+  if(def.type === 'presence') return value === 'yes' ? 'Recorded' : 'Not recorded';
+  return value;
+}
+
+function setFilter(key, value){
+  advFilters[key] = value || '';
+  resetPaging();
+  renderAdvFilters();
+  renderResults();
+}
 
 function renderAdvFilters(){
   const row = document.getElementById('advFilterRow');
   if(!row) return;
   row.innerHTML = '';
 
-  ADV_FILTER_DEFS.forEach(def=>{
-    const select = document.createElement('select');
-    select.setAttribute('aria-label', def.label);
-    const add = (value, text)=>{ const o = document.createElement('option'); o.value = value; o.textContent = text; select.appendChild(o); };
-    add('', def.label + ': All');
+  const activeKeys = Object.keys(advFilters).filter(k=>advFilters[k]);
 
-    if(def.type === 'boolean'){
-      add('yes', def.label + ': Yes');
-      add('no', def.label + ': No');
-    } else {
-      const values = new Set();
-      companies.forEach(c=>{
-        if(def.type === 'people') teamNames(c).forEach(n=>values.add(n));
-        else { const v = def.getValue(c); if(v) values.add(v); }
-      });
-      if(!values.size) return; // nothing synced for this field yet, so don't show an empty dropdown
-      Array.from(values).sort().forEach(v=>add(v, v));
-    }
+  // ---- top bar: toggle, active filter pills, clear ----
+  const bar = document.createElement('div');
+  bar.className = 'filter-bar';
+  const toggle = document.createElement('button');
+  toggle.className = 'filter-toggle' + (filterPanelOpen ? ' is-open' : '');
+  toggle.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="4" y1="6" x2="20" y2="6"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="10" y1="18" x2="14" y2="18"/></svg>
+    ${filterPanelOpen ? 'Hide filters' : 'More filters'}${activeKeys.length ? ` <span class="filter-count">${activeKeys.length}</span>` : ''}`;
+  toggle.onclick = ()=>{
+    filterPanelOpen = !filterPanelOpen;
+    try { localStorage.setItem('supportHubFiltersOpen', filterPanelOpen ? '1' : '0'); } catch(e){}
+    renderAdvFilters();
+  };
+  bar.appendChild(toggle);
 
-    select.value = advFilters[def.key] || '';
-    select.classList.toggle('active', !!select.value);
-    select.onchange = ()=>{
-      advFilters[def.key] = select.value;
-      resetPaging();
-      renderAdvFilters();
-      renderResults();
-    };
-    row.appendChild(select);
+  activeKeys.forEach(k=>{
+    const def = filterDef(k); if(!def) return;
+    const pill = document.createElement('button');
+    pill.className = 'active-filter';
+    pill.title = 'Remove this filter';
+    pill.innerHTML = `<span class="active-filter-label">${esc(def.label)}:</span> ${esc(optionText(def, advFilters[k]))} <span class="active-filter-x" aria-hidden="true">×</span>`;
+    pill.onclick = ()=>setFilter(k, '');
+    bar.appendChild(pill);
   });
 
-  if(Object.values(advFilters).some(v=>v)){
+  if(activeKeys.length){
     const clearBtn = document.createElement('button');
     clearBtn.className = 'adv-filters-clear';
-    clearBtn.textContent = 'Clear filters';
+    clearBtn.textContent = 'Clear all';
     clearBtn.onclick = ()=>{ advFilters = {}; resetPaging(); renderAdvFilters(); renderResults(); };
-    row.appendChild(clearBtn);
+    bar.appendChild(clearBtn);
+  } else {
+    const hint = document.createElement('span');
+    hint.className = 'filter-hint';
+    hint.textContent = 'Tip: click any status, person or detail on a client card to filter by it.';
+    bar.appendChild(hint);
   }
+  row.appendChild(bar);
+
+  if(!filterPanelOpen) return;
+
+  // ---- expanded panel, grouped ----
+  const panel = document.createElement('div');
+  panel.className = 'filter-panel';
+  FILTER_GROUPS.forEach(group=>{
+    const groupEl = document.createElement('div');
+    groupEl.className = 'filter-group';
+    groupEl.innerHTML = `<div class="filter-group-title">${esc(group)}</div>`;
+    const fields = document.createElement('div');
+    fields.className = 'filter-fields';
+
+    ADV_FILTER_DEFS.filter(d=>d.group===group).forEach(def=>{
+      const select = document.createElement('select');
+      const add = (value, text)=>{ const o = document.createElement('option'); o.value = value; o.textContent = text; select.appendChild(o); };
+      add('', 'All');
+
+      if(def.type === 'boolean'){ add('yes','Yes'); add('no','No'); }
+      else if(def.type === 'presence'){ add('yes','Recorded'); add(NONE,'Not recorded'); }
+      else {
+        let values;
+        if(def.type === 'bands') values = def.options;
+        else {
+          const set = new Set();
+          companies.forEach(c=>{
+            if(def.type === 'people') teamNames(c).forEach(n=>set.add(n));
+            else { const v = def.getValue(c); if(has(v)) set.add(v); }
+          });
+          values = Array.from(set).sort((a,b)=>String(a).localeCompare(String(b),'en-GB'));
+        }
+        if(!values.length && def.type !== 'bands') return; // nothing synced for this field yet
+        values.forEach(v=>add(v, v));
+        if(!def.noNone) add(NONE, 'Not recorded');
+      }
+
+      select.value = advFilters[def.key] || '';
+      select.classList.toggle('active', !!select.value);
+      select.onchange = ()=>setFilter(def.key, select.value);
+
+      const wrap = document.createElement('label');
+      wrap.className = 'filter-field';
+      wrap.innerHTML = `<span>${esc(def.label)}</span>`;
+      wrap.appendChild(select);
+      fields.appendChild(wrap);
+    });
+
+    groupEl.appendChild(fields);
+    panel.appendChild(groupEl);
+  });
+  row.appendChild(panel);
 }
 
 function matchesAdvFilters(c){
   return ADV_FILTER_DEFS.every(def=>{
     const selected = advFilters[def.key];
     if(!selected) return true;
-    if(def.type === 'people') return teamNames(c).includes(selected);
-    if(def.type === 'boolean'){
-      const isYes = !!def.getValue(c);
-      return selected === 'yes' ? isYes : !isYes;
+    if(def.type === 'people'){
+      const names = teamNames(c);
+      return selected === NONE ? names.length === 0 : names.includes(selected);
     }
-    return def.getValue(c) === selected;
+    const v = def.getValue(c);
+    if(def.type === 'boolean') return selected === 'yes' ? !!v : !v;
+    if(def.type === 'presence') return selected === 'yes' ? !!v : !v;
+    if(selected === NONE) return !has(v);
+    return v === selected;
   });
+}
+
+/* A clickable value on a client card: clicking it applies that filter instead of opening the client. */
+function fv(key, value, html, extraClass=''){
+  if(!has(value)) return html;
+  return `<button type="button" class="fv ${extraClass}" data-fk="${esc(key)}" data-fv="${esc(value)}" title="Filter by this">${html}</button>`;
 }
 
 /* ---------------- shared bits of markup ---------------- */
@@ -451,7 +557,7 @@ function renderResults(){
     : '';
 
   if(matches.length===0){
-    list.innerHTML = `<div class="empty-state">No matching client found. Try a different name, Network ID or team member.</div>`;
+    list.innerHTML = `<div class="empty-state">No matching client found. Try a different search, or remove a filter or two.</div>`;
     return;
   }
 
@@ -463,10 +569,14 @@ function renderResults(){
     card.className = 'result-card';
     card.tabIndex = 0;
     card.setAttribute('role','button');
-    card.onclick = ()=>showDetail(c.companyId);
-    card.onkeydown = e=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); showDetail(c.companyId); } };
+    card.onclick = e=>{
+      const f = e.target.closest('.fv');
+      if(f){ setFilter(f.dataset.fk, f.dataset.fv); return; }
+      showDetail(c.companyId);
+    };
+    card.onkeydown = e=>{ if(e.target !== card) return; if(e.key==='Enter' || e.key===' '){ e.preventDefault(); showDetail(c.companyId); } };
 
-    const sub = subLine(c);
+    const sub = cardSubLine(c);
     card.innerHTML = `
       <div class="result-top">
         <div class="result-title">
@@ -474,14 +584,14 @@ function renderResults(){
           ${sub ? `<div class="result-sub">${sub}</div>` : ''}
         </div>
         <div class="result-actions">
-          ${c.redFlag ? `<span class="badge badge--flag">🚩 Additional support</span>` : ''}
+          ${c.redFlag ? fv('redFlag', 'yes', `<span class="badge badge--flag">🚩 Additional support</span>`) : ''}
           <span class="view-link">View client →</span>
         </div>
       </div>
       ${accountLine(c)}
       <div class="lanes lanes--compact">
-        ${laneCompact('Street', street.label, street.tone, street.contact, street.empty)}
-        ${laneCompact('Accounting', routing.label, routing.tone, accContact, routing.empty)}
+        ${laneCompact('Street', street.label, street.tone, street.contact, street.empty, 'streetStatus', c.streetStatus, 'streetContact')}
+        ${laneCompact('Accounting', routing.label, routing.tone, accContact, routing.empty, 'accountingStatus', routing.label, 'accountingContact')}
       </div>
     `;
     list.appendChild(card);
@@ -496,23 +606,35 @@ function renderResults(){
   }
 }
 
+function cardSubLine(c){
+  const bits = [];
+  if(c.segment) bits.push(fv('segment', c.segment, esc(c.segment)));
+  if(has(c.units)) bits.push(fv('units', unitBand(c.units), `${Number(c.units).toLocaleString('en-GB')} managed units`));
+  if(has(c.branches)) bits.push(fv('branches', branchBand(c.branches), `${c.branches} branch${c.branches>1?'es':''}`));
+  if(has(c.networkId)) bits.push(fv('networkId', 'yes', `Network ID ${esc(c.networkId)}`));
+  return bits.join(' · ');
+}
+
 function accountLine(c){
   const a = acct(c);
   const bits = [];
   const prev = previousSoftwareText(c);
-  if(prev) bits.push(`<span><b>Previously:</b> ${esc(prev)}</span>`);
-  if(has(a.migration)) bits.push(`<span><b>Migration:</b> ${esc(a.migration)}</span>`);
-  if(has(a.bankProvider)) bits.push(`<span><b>Bank:</b> ${esc(a.bankProvider)}</span>`);
+  if(prev) bits.push(`<span><b>Previously:</b> ${fv('previousSoftware', prev, esc(prev))}</span>`);
+  if(has(a.migration)) bits.push(`<span><b>Migration:</b> ${fv('migration', a.migration, esc(a.migration))}</span>`);
+  if(has(a.bankProvider)) bits.push(`<span><b>Bank:</b> ${fv('bankProvider', a.bankProvider, esc(a.bankProvider))}</span>`);
   return bits.length ? `<div class="account-line">${bits.join('')}</div>` : '';
 }
 
-function laneCompact(title, label, tone, contact, empty){
+function laneCompact(title, label, tone, contact, empty, statusKey, statusValue, contactKey){
+  const pill = `<span class="badge ${TONE_BADGE[tone]}">${esc(label)}</span>`;
+  const statusHtml = has(statusValue) ? fv(statusKey, statusValue, pill) : fv(statusKey, NONE, pill);
+  const personBlock = empty ? '' : (contact ? fv(contactKey, contact.name, personHtml(contact), 'fv--block') : fv(contactKey, NONE, personHtml(null), 'fv--block'));
   return `<div class="lane-compact ${empty ? 'is-empty' : ''}">
       <div class="lane-head">
         <span class="lane-label">${title}</span>
-        <span class="badge ${TONE_BADGE[tone]}">${esc(label)}</span>
+        ${statusHtml}
       </div>
-      ${empty ? '' : personHtml(contact)}
+      ${personBlock}
     </div>`;
 }
 
