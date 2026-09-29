@@ -709,8 +709,9 @@ function showDetail(id, {keepScroll=false} = {}){
         <div class="team-card ${p.current ? 'is-current' : ''}">
           <span class="avatar">${esc(initials(p.name))}</span>
           <div class="team-text">
-            <div class="person-name">${esc(p.name)} ${p.current ? '<span class="current-tag">Go-to contact</span>' : ''}</div>
+            <div class="person-name">${esc(p.name)}</div>
             <div class="person-role">${p.roles.map(esc).join('<br>')}</div>
+            ${p.current ? '<span class="current-tag">Go-to contact</span>' : ''}
           </div>
         </div>`).join('')}
     </div>` : `<div class="empty-inline">No team members recorded in Rocketlane for this client.</div>`}
