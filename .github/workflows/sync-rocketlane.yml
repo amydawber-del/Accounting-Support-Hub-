@@ -2,15 +2,27 @@ name: Sync Rocketlane data
 
 on:
   schedule:
-    - cron: '*/45 * * * *'
+    # Twice an hour, at 7 and 37 minutes past (times are UTC).
+    # Why not on the hour: GitHub delays or silently drops scheduled runs most
+    # often at :00, when everyone's jobs fire at once. The old '*/45' actually
+    # meant ":00 and :45", so one of its two slots was the worst time of the hour.
+    # Why twice: GitHub treats schedules as "best effort", so a second slot means
+    # the Hub still refreshes at least hourly even if one run gets dropped.
+    - cron: '7,37 * * * *'
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
+# Never let two syncs run at once (they'd both try to push and one would fail).
+concurrency:
+  group: rocketlane-sync
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
@@ -25,14 +37,27 @@ jobs:
           ROCKETLANE_API_KEY: ${{ secrets.ROCKETLANE_API_KEY }}
         run: node scripts/sync-rocketlane.js
 
+      # NOTE: no "[skip ci]" in the commit message any more. On GitHub, that tag
+      # can also stop the GitHub Pages rebuild, meaning fresh data got committed
+      # but the live site didn't update until someone pushed something else.
+      # This workflow only runs on a schedule or manually, so there's no risk
+      # of it triggering itself in a loop.
       - name: Commit and push updated data, if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/support-clients.json
           if git diff --cached --quiet; then
-            echo "No changes to data/support-clients.json — nothing to commit."
-          else
-            git commit -m "Sync Rocketlane data [skip ci]"
-            git push
+            echo "No changes to data/support-clients.json, nothing to commit."
+            exit 0
           fi
+          git commit -m "Sync Rocketlane data"
+          # Pick up anything pushed since checkout (e.g. a code change) before pushing,
+          # and retry a couple of times rather than failing the whole run.
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash && git push && exit 0
+            echo "Push attempt $attempt failed, retrying in 10s..."
+            sleep 10
+          done
+          echo "Could not push after 3 attempts."
+          exit 1
