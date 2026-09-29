@@ -25,11 +25,14 @@
   <div>
     <span class="brand-eyebrow">Street</span>
     <h1>Support Hub</h1>
-    <p>Quickly check a client's onboarding status, including Accounting reconciliation and training status &mdash; read-only, no Rocketlane access needed.</p>
+    <p>Look up any client to see where they are with Street and Accounting, and who's looking after them. Read-only, no Rocketlane access needed.</p>
   </div>
   <div class="sync-pill">
-    <button class="btn-refresh" onclick="refreshData()">↻ Refresh data</button>
-    <span class="sync-time" id="syncTime">Last synced: loading…</span>
+    <div class="sync-status" id="syncStatus">
+      <span class="sync-dot"></span>
+      <span class="sync-time" id="syncTime">Loading…</span>
+    </div>
+    <button class="btn-refresh" onclick="refreshData()">↻ Refresh</button>
   </div>
 </header>
 
@@ -39,15 +42,17 @@
     <div class="search-wrap">
       <div class="search-box">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input id="searchInput" type="text" placeholder="Search client, Network ID or contact…" oninput="renderResults()">
+        <input id="searchInput" type="text" placeholder="Search client name, Network ID or a team member's name…" oninput="resetPaging(); renderResults()">
       </div>
       <div class="chips" id="chipRow"></div>
       <div class="adv-filters" id="advFilterRow"></div>
     </div>
 
+    <div class="results-count" id="resultsCount"></div>
     <div class="results" id="resultsList">
       <div class="empty-state">Loading Support Hub data…</div>
     </div>
+    <div class="show-more-wrap" id="showMoreWrap"></div>
   </section>
 
   <section id="detail-view">
