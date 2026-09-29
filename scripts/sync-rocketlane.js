@@ -42,7 +42,12 @@ if (!API_KEY) {
 // that confirms this route isn't available this way, and this feature should come
 // out (or be revisited via whatever access Rocketlane support actually recommends).
 // Every call below is wrapped so a failure here can never take down the rest of the sync.
-const INCLUDE_CLIENT_CONVERSATION = true;
+// TURNED OFF 29 Sep 2026: the latest synced data (1,206 companies) had
+// recentMessages empty for every single client, so these endpoints aren't
+// returning anything via the API key. Leaving it on just added ~150 wasted
+// calls to every run, slowing the sync and eating into Rocketlane's rate limit.
+// Flip back to true if Rocketlane support confirms a working route.
+const INCLUDE_CLIENT_CONVERSATION = false;
 const MAX_CONVERSATION_MESSAGES = 5;
 
 // The exact field labels this sync depends on. Keys are our internal names;
@@ -202,12 +207,36 @@ async function rocketlaneGet(path, params = {}) {
   for (const [k, v] of Object.entries(params)) {
     if (v !== undefined && v !== null) url.searchParams.set(k, v);
   }
-  const res = await fetch(url, { headers: { 'api-key': API_KEY, accept: 'application/json' } });
-  if (!res.ok) {
+  // ADDED 29 Sep 2026: retry on rate limiting (429) and temporary server errors
+  // (5xx / network blips). Previously a single hiccup on any core call
+  // (companies, projects, fields) failed the WHOLE hourly run, so the Hub just
+  // kept showing the last good sync. 404s etc. still fail straight away.
+  const MAX_ATTEMPTS = 4;
+  for (let attempt = 1; ; attempt++) {
+    let res;
+    try {
+      res = await fetch(url, { headers: { 'api-key': API_KEY, accept: 'application/json' } });
+    } catch (networkErr) {
+      if (attempt >= MAX_ATTEMPTS) throw networkErr;
+      await sleep(2000 * attempt);
+      continue;
+    }
+    if (res.ok) return res.json();
+    const retryable = res.status === 429 || res.status >= 500;
+    if (retryable && attempt < MAX_ATTEMPTS) {
+      const retryAfter = Number(res.headers.get('retry-after'));
+      const waitMs = Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1000 : 3000 * attempt;
+      console.warn(`[sync] ${path} returned ${res.status}, retrying in ${Math.round(waitMs / 1000)}s (attempt ${attempt}/${MAX_ATTEMPTS})`);
+      await sleep(waitMs);
+      continue;
+    }
     const body = await res.text().catch(() => '');
-    throw new Error(`Rocketlane ${path} failed: ${res.status} ${res.statusText} — ${body.slice(0, 300)}`);
+    throw new Error(`Rocketlane ${path} failed: ${res.status} ${res.statusText}: ${body.slice(0, 300)}`);
   }
-  return res.json();
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 /** Fetches every page of a paginated endpoint and concatenates the `data` arrays. */
