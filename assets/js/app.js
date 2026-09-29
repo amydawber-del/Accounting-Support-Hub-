@@ -38,6 +38,18 @@ function timeAgo(date){
   const days = Math.floor(hrs/24);
   return `${days} day${days===1?'':'s'} ago`;
 }
+function acct(c){ return c.account || {}; }
+function fmtMoney(v){
+  if(!has(v)) return null;
+  const n = Number(String(v).replace(/[£,\s]/g,''));
+  return Number.isFinite(n) && String(v).trim() !== '' ? '£' + n.toLocaleString('en-GB', {maximumFractionDigits:0}) : String(v);
+}
+/* Previous CRM / Accounting software may come from one combined field or two separate ones. */
+function previousSoftwareText(c){
+  const a = acct(c);
+  const parts = [a.previousSoftware, a.previousCrm, a.previousAccountingSoftware].filter(has);
+  return parts.length ? Array.from(new Set(parts)).join(', ') : null;
+}
 function hasRealRestart(c){
   return !!(c.restart && c.restart.status && c.restart.status !== 'Never Restarted');
 }
@@ -273,6 +285,7 @@ function getClientTeam(c, streetContact, accountingContact){
     [c.csm, 'Customer Success Manager', 'Accounting'],
     [c.reconciliation && c.reconciliation.specialist, 'Reconciliation Specialist', 'Accounting'],
     [c.training && c.training.trainer, 'Last Trainer', 'Training'],
+    [acct(c).bdm, 'Business Development Manager', 'Sales'],
   ];
   const byName = new Map();
   roles.forEach(([name, role, area])=>{
@@ -322,7 +335,7 @@ function matchesFilter(c, routing){
 }
 
 function teamNames(c){
-  return [c.accountingOwner, c.onboardingSpecialist, c.csmStreet, c.csm, c.reconciliation && c.reconciliation.specialist, c.training && c.training.trainer].filter(has);
+  return [c.accountingOwner, c.onboardingSpecialist, c.csmStreet, c.csm, c.reconciliation && c.reconciliation.specialist, c.training && c.training.trainer, acct(c).bdm].filter(has);
 }
 
 const ADV_FILTER_DEFS = [
@@ -330,6 +343,9 @@ const ADV_FILTER_DEFS = [
   { key:'streetStatus', label:'Street Status', type:'dynamic', getValue:c=>c.streetStatus },
   { key:'internalStatusTag', label:'Accounting Status', type:'dynamic', getValue:c=>c.internalStatusTag },
   { key:'segment', label:'Segment', type:'dynamic', getValue:c=>c.segment },
+  { key:'bankProvider', label:'Bank Provider', type:'dynamic', getValue:c=>acct(c).bankProvider },
+  { key:'previousSoftware', label:'Previous Software', type:'dynamic', getValue:c=>previousSoftwareText(c) },
+  { key:'migration', label:'Migration', type:'dynamic', getValue:c=>acct(c).migration },
   { key:'agentLiveWithStreet', label:'Live with Street', type:'boolean', getValue:c=>c.agentLiveWithStreet },
   { key:'agentLiveWithAccounting', label:'Live with Accounting', type:'boolean', getValue:c=>c.agentLiveWithAccounting },
   { key:'streetPaymentsClient', label:'Street Payments', type:'boolean', getValue:c=>c.streetPayments && c.streetPayments.customer },
@@ -357,6 +373,7 @@ function renderAdvFilters(){
         if(def.type === 'people') teamNames(c).forEach(n=>values.add(n));
         else { const v = def.getValue(c); if(v) values.add(v); }
       });
+      if(!values.size) return; // nothing synced for this field yet, so don't show an empty dropdown
       Array.from(values).sort().forEach(v=>add(v, v));
     }
 
@@ -461,6 +478,7 @@ function renderResults(){
           <span class="view-link">View client →</span>
         </div>
       </div>
+      ${accountLine(c)}
       <div class="lanes lanes--compact">
         ${laneCompact('Street', street.label, street.tone, street.contact, street.empty)}
         ${laneCompact('Accounting', routing.label, routing.tone, accContact, routing.empty)}
@@ -476,6 +494,16 @@ function renderResults(){
     btn.onclick = ()=>{ visibleCount += PAGE_SIZE; renderResults(); };
     moreWrap.appendChild(btn);
   }
+}
+
+function accountLine(c){
+  const a = acct(c);
+  const bits = [];
+  const prev = previousSoftwareText(c);
+  if(prev) bits.push(`<span><b>Previously:</b> ${esc(prev)}</span>`);
+  if(has(a.migration)) bits.push(`<span><b>Migration:</b> ${esc(a.migration)}</span>`);
+  if(has(a.bankProvider)) bits.push(`<span><b>Bank:</b> ${esc(a.bankProvider)}</span>`);
+  return bits.length ? `<div class="account-line">${bits.join('')}</div>` : '';
 }
 
 function laneCompact(title, label, tone, contact, empty){
@@ -567,6 +595,19 @@ function showDetail(id, {keepScroll=false} = {}){
 
     <h3 class="section-title">Full details</h3>
     <div class="panel-grid">
+      <div class="panel panel--account">
+        <h3>Account details</h3>
+        ${row('Business Development Manager (Sales)', val(acct(c).bdm))}
+        ${row('Approximate MRR', val(fmtMoney(acct(c).approxMrr)))}
+        ${has(acct(c).previousSoftware) || (!has(acct(c).previousCrm) && !has(acct(c).previousAccountingSoftware))
+            ? row('Previous CRM / Accounting Software', val(acct(c).previousSoftware)) : ''}
+        ${has(acct(c).previousCrm) ? row('Previous CRM', esc(acct(c).previousCrm)) : ''}
+        ${has(acct(c).previousAccountingSoftware) ? row('Previous Accounting Software', esc(acct(c).previousAccountingSoftware)) : ''}
+        ${row('Migration', has(acct(c).migration)
+            ? esc(acct(c).migration) + (acct(c).migrationSource === 'project' ? ' <span class="muted">(from project Customer Type)</span>' : '')
+            : val(null))}
+        ${row('Bank Provider', val(acct(c).bankProvider))}
+      </div>
       <div class="panel">
         <h3>Street</h3>
         ${row('Street Status', val(c.streetStatus))}
