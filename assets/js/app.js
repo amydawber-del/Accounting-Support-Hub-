@@ -1,4 +1,4 @@
-/* Street Accounting Support Hub — front-end logic.
+/* Street Accounting Support Hub: front-end logic.
    Data comes from data/support-clients.json, produced by scripts/sync-rocketlane.js
    running on a schedule via .github/workflows/sync-rocketlane.yml. This file never
    talks to Rocketlane directly and never sees an API key. */
@@ -7,23 +7,67 @@ const today = new Date();
 let companies = [];
 let lastGeneratedAt = null;
 let syncDiagnostics = null;
+let currentDetailId = null;
 
-async function loadData(){
+const PAGE_SIZE = 50;
+let visibleCount = PAGE_SIZE;
+const AUTO_REFRESH_MS = 10 * 60 * 1000; // re-check for new data every 10 minutes while the page is open
+const STALE_AFTER_HOURS = 2;            // show an amber warning if the last sync is older than this
+
+/* ---------------- helpers ---------------- */
+function esc(v){
+  return String(v ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+}
+function has(v){ return v !== null && v !== undefined && v !== '' && v !== 'null'; }
+function val(v, fallback='Not recorded'){ return has(v) ? esc(v) : `<span class="muted">${fallback}</span>`; }
+function yesNo(b){ return b ? 'Yes' : 'No'; }
+function initials(name){
+  return String(name||'').split(/\s+/).filter(Boolean).slice(0,2).map(p=>p[0].toUpperCase()).join('');
+}
+function fmtDate(d){
+  if(!d) return null;
+  return new Date(d).toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'});
+}
+function daysBetween(a,b){ return Math.floor((b-a)/(1000*60*60*24)); }
+function timeAgo(date){
+  const mins = Math.round((Date.now() - date.getTime()) / 60000);
+  if(mins < 1) return 'just now';
+  if(mins < 60) return `${mins} min${mins===1?'':'s'} ago`;
+  const hrs = Math.floor(mins/60);
+  if(hrs < 24) return `${hrs} hour${hrs===1?'':'s'} ago`;
+  const days = Math.floor(hrs/24);
+  return `${days} day${days===1?'':'s'} ago`;
+}
+function hasRealRestart(c){
+  return !!(c.restart && c.restart.status && c.restart.status !== 'Never Restarted');
+}
+
+/* ---------------- data loading + auto refresh ---------------- */
+async function loadData({silent=false} = {}){
   const resultsList = document.getElementById('resultsList');
   try {
-    const res = await fetch('./data/support-clients.json', {cache:'no-store'});
+    // Cache-buster: GitHub Pages' CDN can otherwise serve a copy up to 10 minutes old.
+    const res = await fetch('./data/support-clients.json?t=' + Date.now(), {cache:'no-store'});
     if(!res.ok) throw new Error('HTTP ' + res.status);
     const payload = await res.json();
-    companies = payload.companies || [];
+    const changed = payload.generatedAt !== lastGeneratedAt;
+    companies = (payload.companies || []).slice().sort((a,b)=>(a.companyName||'').localeCompare(b.companyName||'', 'en-GB'));
     lastGeneratedAt = payload.generatedAt || null;
     syncDiagnostics = payload.syncDiagnostics || null;
     updateSyncTime();
-    renderDiagnostics();
+    if(silent && !changed) return;
+
     renderChips();
     renderAdvFilters();
+    if(currentDetailId !== null){
+      // Keep the person on the client they were looking at, just with fresher data.
+      if(companies.some(c=>c.companyId===currentDetailId)) showDetail(currentDetailId, {keepScroll:true});
+    }
     renderResults();
   } catch(err){
-    document.getElementById('syncTime').textContent = 'Last synced: unable to load data';
+    if(silent) return; // don't wipe the screen if a background check fails
+    document.getElementById('syncTime').textContent = 'Unable to load data';
+    document.getElementById('syncStatus').className = 'sync-status is-stale';
     resultsList.innerHTML = `<div class="empty-state">Unable to load Support Hub data.<br>
       Check that data/support-clients.json exists and that the last sync ran successfully.</div>`;
     console.error('Support Hub data load failed:', err);
@@ -32,9 +76,23 @@ async function loadData(){
 
 function updateSyncTime(){
   const el = document.getElementById('syncTime');
-  if(!lastGeneratedAt){ el.textContent = 'Last synced: unknown'; return; }
+  const wrap = document.getElementById('syncStatus');
+  if(!lastGeneratedAt){ el.textContent = 'Last synced: unknown'; wrap.className = 'sync-status is-stale'; return; }
   const d = new Date(lastGeneratedAt);
-  el.textContent = 'Last synced: ' + d.toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'}) + ', ' + d.toLocaleTimeString('en-GB', {hour:'2-digit', minute:'2-digit'});
+  const stamp = d.toLocaleDateString('en-GB', {day:'numeric', month:'short'}) + ', ' + d.toLocaleTimeString('en-GB', {hour:'2-digit', minute:'2-digit'});
+  const hoursOld = (Date.now() - d.getTime()) / 36e5;
+  const stale = hoursOld > STALE_AFTER_HOURS;
+  wrap.className = 'sync-status ' + (stale ? 'is-stale' : 'is-fresh');
+  el.textContent = `Updated ${timeAgo(d)} (${stamp})` + (stale ? ' · may be out of date' : '');
+  wrap.title = syncDiagnosticsText();
+}
+
+function syncDiagnosticsText(){
+  const d = syncDiagnostics;
+  if(!d) return 'Syncs from Rocketlane automatically, roughly every 30 to 60 minutes.';
+  const withAccounting = d.companiesFetchedFromRocketlane - d.companiesWithNoAccountingProjectFound;
+  return `Syncs from Rocketlane automatically, roughly every 30 to 60 minutes.\n` +
+    `${d.companiesWrittenToSupportHub} companies synced, ${withAccounting} with Accounting data.`;
 }
 
 function refreshData(){
@@ -42,110 +100,57 @@ function refreshData(){
   loadData();
 }
 
-/* Small counts strip under the sync pill so "how many pulled through" is
-   answerable at a glance, without digging through GitHub Action logs.
-   Created here rather than in index.html so older cached HTML still gets it
-   automatically the next time app.js loads. */
-function renderDiagnostics(){
-  const syncPill = document.querySelector('.sync-pill');
-  if(!syncPill) return;
-
-  let el = document.getElementById('syncDiagnostics');
-  if(!el){
-    el = document.createElement('div');
-    el.id = 'syncDiagnostics';
-    el.style.cssText = 'font-size:11px; color:var(--text--dark--30); text-align:right; margin-top:2px; cursor:pointer;';
-    syncPill.appendChild(el);
-  }
-
-  if(!syncDiagnostics){
-    el.textContent = '';
-    return;
-  }
-
-  const d = syncDiagnostics;
-  const missing = d.companiesWithNoAccountingProjectFound;
-  const unknownProjects = d.projectsByClassification ? d.projectsByClassification.unknown : 0;
-
-  // Every company is included now (Accounting-only fields simply blank for
-  // those with no Accounting relationship), so "X of Y synced" stopped being
-  // a useful signal — the count that actually matters day-to-day is how many
-  // have real Accounting data at all.
-  el.innerHTML = `${d.companiesWrittenToSupportHub} companies · ${d.companiesFetchedFromRocketlane - missing} with Accounting data` +
-    (unknownProjects ? ` · ${unknownProjects} project(s) unclassified` : '') +
-    ' <span style="text-decoration:underline;">details</span>';
-
-  el.onclick = () => {
-    alert(
-      'Support Hub sync diagnostics\n\n' +
-      `Companies fetched from Rocketlane: ${d.companiesFetchedFromRocketlane}\n` +
-      `Projects fetched from Rocketlane: ${d.projectsFetchedFromRocketlane}\n` +
-      (d.projectsWithNoCompanyLink ? `Projects with no resolvable company link: ${d.projectsWithNoCompanyLink}\n` : '') +
-      `\nProjects classified as:\n` +
-      `  Onboarding: ${d.projectsByClassification.onboarding}\n` +
-      `  Reconciliation: ${d.projectsByClassification.reconciliation}\n` +
-      `  Training: ${d.projectsByClassification.training}\n` +
-      `  Unknown (not synced): ${d.projectsByClassification.unknown}\n` +
-      `\nCompanies written to this Hub: ${d.companiesWrittenToSupportHub}\n` +
-      `Companies with no Accounting relationship (still included, Accounting fields blank): ${missing}\n\n` +
-      'Full breakdown (including a sample of company names with no Accounting ' +
-      'relationship) is in the GitHub Action run logs under Actions → Sync Rocketlane data.'
-    );
-  };
-}
+setInterval(()=>loadData({silent:true}), AUTO_REFRESH_MS);
+setInterval(updateSyncTime, 60 * 1000); // keep "Updated X mins ago" ticking
+document.addEventListener('visibilitychange', ()=>{ if(!document.hidden) loadData({silent:true}); });
 
 
 /* ---------------- (ACCOUNTING) 🏷️ Internal Status Tag mapping ---------------- */
 /* Maps Rocketlane's "Internal Status Tag" choice field straight onto tone + guidance.
-   This is the master status where the tag is set — the other computed rules (reconciliation
-   object, restart object, red flag, day-count) still drive the detail panels and the CTA links,
-   but the tag decides which banner/label/tone wins.
-   NOTE: the two "Nuking and Accounting Reset" options were truncated in the field screenshot,
-   so these match on the stable prefix rather than the full label — safe against the exact
-   wording of "Option 1"/"Option 2" once you confirm it from Rocketlane. */
+   The tag is the master Accounting status where it's set. */
 const STATUS_TAG_CONFIG = [
-  { match:'Awaiting Intro Call', tone:'onboarding', badgeClass:'badge--onboarding',
-    guidance:'Client has signed up for Accounting but hasn\u2019t had their intro call yet. Onboarding hasn\u2019t formally started — route any setup questions to the Onboarding Specialist rather than answering them directly.' },
-  { match:'Training Phase', tone:'onboarding', badgeClass:'badge--onboarding',
-    guidance:'Client is in Accounting product training. Direct workflow/setup questions back to their onboarding project rather than teaching baseline Accounting concepts over Live Chat.' },
-  { match:'Awaiting Bridge Second Cut', tone:'onboarding', badgeClass:'badge--onboarding',
-    guidance:'Client is waiting on their second data migration cut. Don\u2019t advise on data that may still change \u2014 route migration questions to the Onboarding Specialist.' },
-  { match:'Awaiting OB Call Booking', tone:'onboarding', badgeClass:'badge--onboarding',
-    guidance:'Client still needs their Opening Balance call booked. Direct Accounting setup, configuration and onboarding workflow questions back to their Accounting project board.' },
-  { match:'Onboarding in Progress', tone:'onboarding', badgeClass:'badge--onboarding',
-    guidance:'This client is currently going through Accounting Onboarding. Direct Accounting setup, configuration and onboarding workflow questions back to their Accounting project board.' },
-  { match:'30 Days Post Go-Live Support', tone:'recent', badgeClass:'badge--recent', useDayCounter:true,
-    guidance:'This client is still within their 30-day Accounting post-go-live support period. For onboarding-related workflow queries, direct them back to their Accounting project.' },
-  { match:'Live / Archive', tone:'live', badgeClass:'badge--live',
-    guidance:'This client is outside their Accounting onboarding support period. Support can assist with normal Street Accounting product/workflow queries.' },
-  { match:'Opt-Out Confirmed / Archive', tone:'optout', badgeClass:'badge--optout',
-    guidance:'This client is not proceeding with Street Accounting. No onboarding routing applies \u2014 refer only to the opt-out reason if the client raises it again.' },
-  { match:'Churned / Archived', tone:'optout', badgeClass:'badge--optout',
-    guidance:'This client has churned from Street Accounting. No onboarding routing applies \u2014 check internal notes before any Accounting discussion.' },
-  { match:'Nuking and Accounting Reset / Option 1: Manual Reconciliation', tone:'restart', badgeClass:'badge--restart',
-    guidance:'This client\u2019s Accounting setup is being reset (manual reconciliation route). Check their current onboarding or reconciliation status before giving advice based on historical Accounting data.' },
-  { match:'Nuking and Accounting Reset / Option 2: Clear Accounting & Restart', tone:'restart', badgeClass:'badge--restart',
-    guidance:'This client\u2019s Accounting setup is being reset (clear account route). Check their current onboarding or reconciliation status before giving advice based on historical Accounting data.' },
-  { match:'Closed / None Responder', tone:'optout', badgeClass:'badge--optout',
-    guidance:'Client has gone unresponsive during Accounting onboarding. No active routing applies \u2014 check internal notes before re-engaging.' },
-  { match:'Slow Mover', tone:'slow', badgeClass:'badge--slow',
-    guidance:'This client is live but using Accounting lightly. Support can handle normal product/workflow queries \u2014 flag to the Accounting Owner if the client would benefit from a refresher session.' },
-  { match:'Client Accounting Reconciliation', tone:'recon', badgeClass:'badge--recon',
-    guidance:'This client is currently working with the Accounting team on a reconciliation issue. Check the reconciliation summary before advising them to reverse, delete, void or alter historic Accounting transactions.' }
+  { match:'Awaiting Intro Call', tone:'onboarding',
+    guidance:'Client has signed up for Accounting but hasn’t had their intro call yet. Route any setup questions to their Accounting Owner rather than answering them directly.' },
+  { match:'Training Phase', tone:'onboarding',
+    guidance:'Client is in Accounting product training. Direct workflow and setup questions back to their onboarding project rather than teaching baseline Accounting concepts over Live Chat.' },
+  { match:'Awaiting Bridge Second Cut', tone:'onboarding',
+    guidance:'Client is waiting on their second data migration cut. Don’t advise on data that may still change. Route migration questions to their Accounting Owner.' },
+  { match:'Awaiting OB Call Booking', tone:'onboarding',
+    guidance:'Client still needs their Opening Balance call booked. Direct Accounting setup, configuration and onboarding questions back to their Accounting project board.' },
+  { match:'Onboarding in Progress', tone:'onboarding',
+    guidance:'Client is going through Accounting onboarding. Direct Accounting setup, configuration and onboarding questions back to their Accounting project board.' },
+  { match:'30 Days Post Go-Live Support', tone:'recent', useDayCounter:true,
+    guidance:'Client is still within their 30-day post-go-live support period. For onboarding-related workflow queries, direct them back to their Accounting project.' },
+  { match:'Live / Archive', tone:'live',
+    guidance:'Client is outside their Accounting onboarding support period. Support can help with normal Street Accounting product and workflow queries.' },
+  { match:'Opt-Out Confirmed / Archive', tone:'optout',
+    guidance:'Client is not proceeding with Street Accounting. No onboarding routing applies. Only refer to the opt-out reason if the client raises it again.' },
+  { match:'Churned / Archived', tone:'optout',
+    guidance:'Client has churned from Street Accounting. No onboarding routing applies. Check internal notes before any Accounting discussion.' },
+  { match:'Nuking and Accounting Reset / Option 1: Manual Reconciliation', tone:'restart',
+    guidance:'Client’s Accounting setup is being reset (manual reconciliation route). Check their current status before giving advice based on historical Accounting data.' },
+  { match:'Nuking and Accounting Reset / Option 2: Clear Accounting & Restart', tone:'restart',
+    guidance:'Client’s Accounting setup is being reset (clear account route). Check their current status before giving advice based on historical Accounting data.' },
+  { match:'Closed / None Responder', tone:'optout',
+    guidance:'Client went unresponsive during Accounting onboarding. No active routing applies. Check internal notes before re-engaging.' },
+  { match:'Slow Mover', tone:'slow',
+    guidance:'Client is live but using Accounting lightly. Support can handle normal queries. Flag to the Accounting Owner if a refresher session would help.' },
+  { match:'Client Accounting Reconciliation', tone:'recon',
+    guidance:'Client is working with the Accounting team on a reconciliation issue. Check the reconciliation details below before advising them to reverse, delete, void or alter historic transactions.' }
 ];
+
+const TONE_BADGE = {
+  live:'badge--live', onboarding:'badge--onboarding', recent:'badge--recent', recon:'badge--recon',
+  restart:'badge--restart', optout:'badge--optout', slow:'badge--slow', neutral:'badge--segment', none:'badge--none'
+};
 
 function lookupStatusTag(tag){
   if(!tag) return null;
   return STATUS_TAG_CONFIG.find(t => tag === t.match) || null;
 }
 
-/* ---------------- routing logic (Rules 1–7) ---------------- */
-function daysBetween(a,b){ return Math.floor((b-a)/(1000*60*60*24)); }
-
+/* ---------------- Accounting routing (Rules 1–7) ---------------- */
 function getRouting(c){
-  // Internal Status Tag (Rocketlane field) is the master status where it's set.
-  // Reconciliation/restart detail objects still supply the extra fields shown in the
-  // panels below and the CTA link — the tag just decides which banner/label/tone wins.
   const tagConfig = lookupStatusTag(c.internalStatusTag);
   if(tagConfig){
     let detail = '';
@@ -153,90 +158,131 @@ function getRouting(c){
     if(tagConfig.useDayCounter && c.goLiveDate){
       dayNum = daysBetween(new Date(c.goLiveDate), today);
       detail = `Day ${dayNum} of 30 · Went live ${fmtDate(c.goLiveDate)}`;
-    } else if(c.reconciliation){
-      detail = `Route: ${c.reconciliation.route} · Raised ${fmtDate(c.reconciliation.dateRaised)}`;
-    } else if(c.restart){
-      detail = `${c.restart.route} · Restarted ${fmtDate(c.restart.date)}`;
-    } else if(c.onboardingProject){
+    } else if(tagConfig.tone==='recon' && c.reconciliation){
+      detail = [c.reconciliation.route && `Route: ${c.reconciliation.route}`, c.reconciliation.dateRaised && `Raised ${fmtDate(c.reconciliation.dateRaised)}`].filter(Boolean).join(' · ');
+    } else if(hasRealRestart(c)){
+      detail = [c.restart.route, c.restart.date && `Restarted ${fmtDate(c.restart.date)}`].filter(Boolean).join(' · ');
+    } else if(c.onboardingProject && c.onboardingProject.targetGoLive){
       detail = `Target go-live: ${fmtDate(c.onboardingProject.targetGoLive)}`;
     } else if(c.goLiveDate){
       detail = `Went live ${fmtDate(c.goLiveDate)}`;
-    } else if(c.optOut){
-      detail = c.optOut.type;
     }
     let cta = null;
     if(tagConfig.tone==='recon') cta = 'Open Reconciliation Project';
-    else if(tagConfig.tone==='restart' || tagConfig.tone==='onboarding' || tagConfig.tone==='recent') cta = 'Open Accounting Project';
-    return {
-      tone:tagConfig.tone, badgeClass:tagConfig.badgeClass, label:c.internalStatusTag,
-      detail, guidance:tagConfig.guidance, cta, dayNum
-    };
+    else if(['restart','onboarding','recent'].includes(tagConfig.tone)) cta = 'Open Accounting Project';
+    return { tone:tagConfig.tone, label:c.internalStatusTag, detail, guidance:tagConfig.guidance, cta, dayNum };
   }
 
-  // Fallback: no Internal Status Tag recorded — derive from the raw fields instead.
-  // Rule 4 — reconciliation overrides everything visually
-  if(c.reconciliation){
+  // Fallback: no Internal Status Tag recorded, so derive from the raw fields instead.
+  if(c.reconciliation && c.reconciliation.status !== 'Closed'){
     return {
-      tone:'recon', badgeClass:'badge--recon', label:'Accounting Reconciliation Active',
-      detail:`Route: ${c.reconciliation.route} · Raised ${fmtDate(c.reconciliation.dateRaised)}`,
-      guidance:`This client is currently working with the Accounting team on a reconciliation issue. Check the reconciliation summary before advising them to reverse, delete, void or alter historic Accounting transactions. Escalate to ${c.reconciliation.specialist}.`,
+      tone:'recon', label:'Accounting Reconciliation Active',
+      detail:[c.reconciliation.route && `Route: ${c.reconciliation.route}`, c.reconciliation.dateRaised && `Raised ${fmtDate(c.reconciliation.dateRaised)}`].filter(Boolean).join(' · '),
+      guidance:'Client is working with the Accounting team on a reconciliation issue. Check the reconciliation details below before advising them to reverse, delete, void or alter historic transactions.',
       cta:'Open Reconciliation Project'
     };
   }
-  // Rule 5 — restart/reset
-  if(c.restart){
+  if(hasRealRestart(c) && c.restart.status !== 'Restart Completed'){
     return {
-      tone:'restart', badgeClass:'badge--restart', label:'Accounting Restart / Reset',
-      detail:`${c.restart.route} · Restarted ${fmtDate(c.restart.date)}`,
-      guidance:`This client's Accounting setup has recently been restarted/reset. Check their current onboarding or reconciliation status before giving advice based on historical Accounting data.`,
+      tone:'restart', label:'Accounting Restart / Reset',
+      detail:[c.restart.route, c.restart.date && `Restarted ${fmtDate(c.restart.date)}`].filter(Boolean).join(' · '),
+      guidance:'Client’s Accounting setup has recently been restarted or reset. Check their current status before giving advice based on historical Accounting data.',
       cta:'Open Accounting Project'
     };
   }
-  // Rule 7 — opted out
   if(c.optOut){
     return {
-      tone:'optout', badgeClass:'badge--optout', label:'Accounting Opted Out',
-      detail:`${c.optOut.type}`,
-      guidance:`This client is not proceeding with Street Accounting. No onboarding routing applies — refer only to the opt-out reason if the client raises it again.`,
+      tone:'optout', label:'Accounting Opted Out', detail:c.optOut.type,
+      guidance:'Client is not proceeding with Street Accounting. No onboarding routing applies. Only refer to the opt-out reason if the client raises it again.',
       cta:null
     };
   }
-  // Rule 1 — active onboarding
   if(!c.agentLiveWithAccounting && c.onboardingProject){
     return {
-      tone:'onboarding', badgeClass:'badge--onboarding', label:'Accounting Onboarding',
-      detail:`Target go-live: ${fmtDate(c.onboardingProject.targetGoLive)}`,
-      guidance:`This client is currently going through Accounting Onboarding. Direct Accounting setup, configuration and onboarding workflow questions back to their Accounting project board.`,
+      tone:'onboarding', label:'Accounting Onboarding',
+      detail:c.onboardingProject.targetGoLive ? `Target go-live: ${fmtDate(c.onboardingProject.targetGoLive)}` : '',
+      guidance:'Client is going through Accounting onboarding. Direct Accounting setup, configuration and onboarding questions back to their Accounting project board.',
       cta:'Open Accounting Project'
     };
   }
-  // Rule 2 — recently live
   if(c.agentLiveWithAccounting && c.goLiveDate){
     const dayNum = daysBetween(new Date(c.goLiveDate), today);
     if(dayNum>=0 && dayNum<=30){
       return {
-        tone:'recent', badgeClass:'badge--recent', label:'Post-Go-Live Support',
+        tone:'recent', label:'Post-Go-Live Support',
         detail:`Day ${dayNum} of 30 · Went live ${fmtDate(c.goLiveDate)}`,
-        guidance:`This client is still within their 30-day Accounting post-go-live support period. For onboarding-related workflow queries, direct them back to their Accounting project.`,
+        guidance:'Client is still within their 30-day post-go-live support period. For onboarding-related workflow queries, direct them back to their Accounting project.',
         cta:'Open Accounting Project', dayNum
       };
     }
   }
-  // Rule 3 — standard live
-  if(c.agentLiveWithAccounting){
+  if(c.agentLiveWithAccounting || c.accountingStatus === 'Live'){
     return {
-      tone:'live', badgeClass:'badge--live', label:'Live with Accounting',
+      tone:'live', label:'Live with Accounting',
       detail:c.goLiveDate ? `Went live ${fmtDate(c.goLiveDate)}` : '',
-      guidance:`This client is outside their Accounting onboarding support period. Support can assist with normal Street Accounting product/workflow queries.`,
+      guidance:'Client is outside their Accounting onboarding support period. Support can help with normal Street Accounting product and workflow queries.',
       cta:null
     };
   }
-  return {tone:'optout', badgeClass:'badge--optout', label:'No Accounting Data', detail:'', guidance:'No Accounting record found for this client yet.', cta:null};
+  if(c.accountingStatus){
+    return { tone:'neutral', label:`Accounting: ${c.accountingStatus}`, detail:'', guidance:'', cta:null };
+  }
+  return { tone:'none', label:'No Accounting record', detail:'', guidance:'', cta:null, empty:true };
 }
 
-function fmtDate(d){
-  if(!d) return '—';
-  return new Date(d).toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'});
+/* ---------------- "who's dealing with it" ---------------- */
+/* These rules decide which ONE person shows as the go-to contact in each lane.
+   Everyone else involved still appears in the Client team section on the detail page. */
+function getAccountingContact(c, routing){
+  if(routing.tone==='recon' && c.reconciliation && c.reconciliation.specialist){
+    return { name:c.reconciliation.specialist, role:'Reconciliation Specialist' };
+  }
+  if(c.accountingOwner) return { name:c.accountingOwner, role:'Accounting Owner' };
+  if(c.csm) return { name:c.csm, role:'Customer Success Manager (Accounting)' };
+  return null;
+}
+
+function getStreetLane(c){
+  const status = c.streetStatus;
+  const onboarding = status === 'Onboarding' || (!status && !c.agentLiveWithStreet && c.onboardingSpecialist);
+  let tone = 'neutral';
+  if(status === 'Active') tone = 'live';
+  else if(status === 'Onboarding') tone = 'onboarding';
+  else if(status === 'Test Account') tone = 'optout';
+
+  let contact = null;
+  if(onboarding && c.onboardingSpecialist) contact = { name:c.onboardingSpecialist, role:'Onboarding Specialist' };
+  else if(c.csmStreet) contact = { name:c.csmStreet, role:'Customer Success Manager' };
+  else if(c.onboardingSpecialist) contact = { name:c.onboardingSpecialist, role:'Onboarding Specialist' };
+
+  let guidance = '';
+  if(status === 'Onboarding') guidance = 'Still onboarding with Street. Send setup and go-live questions to their Onboarding Specialist.';
+  else if(status === 'Active') guidance = 'Live with Street. Support can help with day-to-day product questions. Account or commercial queries go to their Customer Success Manager.';
+  else if(status === 'Test Account') guidance = 'This is a test account, not a live client.';
+
+  const detail = c.streetGoLiveDate ? `Went live ${fmtDate(c.streetGoLiveDate)}` : '';
+  const empty = !status && !contact;
+  return { tone: empty ? 'none' : tone, label: status || (empty ? 'No Street status' : 'Status not recorded'), contact, guidance, detail, empty };
+}
+
+function getClientTeam(c, streetContact, accountingContact){
+  const roles = [
+    [c.onboardingSpecialist, 'Onboarding Specialist', 'Street'],
+    [c.csmStreet, 'Customer Success Manager', 'Street'],
+    [c.accountingOwner, 'Accounting Owner', 'Accounting'],
+    [c.csm, 'Customer Success Manager', 'Accounting'],
+    [c.reconciliation && c.reconciliation.specialist, 'Reconciliation Specialist', 'Accounting'],
+    [c.training && c.training.trainer, 'Last Trainer', 'Training'],
+  ];
+  const byName = new Map();
+  roles.forEach(([name, role, area])=>{
+    if(!has(name)) return;
+    if(!byName.has(name)) byName.set(name, { name, roles:[] });
+    byName.get(name).roles.push(`${role} (${area})`);
+  });
+  const current = new Set([streetContact && streetContact.name, accountingContact && accountingContact.name].filter(Boolean));
+  return Array.from(byName.values()).map(p=>({ ...p, current:current.has(p.name) }))
+    .sort((a,b)=>Number(b.current)-Number(a.current));
 }
 
 /* ---------------- filters ---------------- */
@@ -248,11 +294,13 @@ const filters = [
   {key:'restart', label:'Restarted'},
   {key:'flag', label:'Red Flag'},
   {key:'slow', label:'Slow Mover'},
-  {key:'training', label:'Training Required'},
+  {key:'streetOnboarding', label:'Street Onboarding'},
   {key:'live', label:'Live Accounting'},
   {key:'optout', label:'Opted Out'}
 ];
 let activeFilter = 'all';
+
+function resetPaging(){ visibleCount = PAGE_SIZE; }
 
 function renderChips(){
   const row = document.getElementById('chipRow');
@@ -261,7 +309,7 @@ function renderChips(){
     const el = document.createElement('button');
     el.className = 'chip' + (activeFilter===f.key ? ' active' : '');
     el.textContent = f.label;
-    el.onclick = ()=>{ activeFilter = f.key; renderChips(); renderResults(); };
+    el.onclick = ()=>{ activeFilter = f.key; resetPaging(); renderChips(); renderResults(); };
     row.appendChild(el);
   });
 }
@@ -269,21 +317,25 @@ function renderChips(){
 function matchesFilter(c, routing){
   if(activeFilter==='all') return true;
   if(activeFilter==='flag') return c.redFlag;
-  if(activeFilter==='training') return !c.training.completed;
-  return routing.tone===activeFilter || (activeFilter==='optout' && routing.tone==='optout');
+  if(activeFilter==='streetOnboarding') return c.streetStatus === 'Onboarding';
+  return routing.tone===activeFilter;
 }
 
-/* ---------------- advanced filters (dropdowns under the search bar) ---------------- */
+function teamNames(c){
+  return [c.accountingOwner, c.onboardingSpecialist, c.csmStreet, c.csm, c.reconciliation && c.reconciliation.specialist, c.training && c.training.trainer].filter(has);
+}
+
 const ADV_FILTER_DEFS = [
+  { key:'person', label:'Team member', type:'people' },
   { key:'streetStatus', label:'Street Status', type:'dynamic', getValue:c=>c.streetStatus },
-  { key:'segment', label:'Client Segment', type:'dynamic', getValue:c=>c.segment },
-  { key:'agentLiveWithStreet', label:'Agent Live with Street', type:'boolean', getValue:c=>c.agentLiveWithStreet },
-  { key:'internalStatusTag', label:'Internal Accounting Status', type:'dynamic', getValue:c=>c.internalStatusTag },
-  { key:'agentLiveWithAccounting', label:'Agent Live with Accounting', type:'boolean', getValue:c=>c.agentLiveWithAccounting },
-  { key:'streetPaymentsClient', label:'Street Payments Client', type:'boolean', getValue:c=>c.streetPayments && c.streetPayments.customer },
+  { key:'internalStatusTag', label:'Accounting Status', type:'dynamic', getValue:c=>c.internalStatusTag },
+  { key:'segment', label:'Segment', type:'dynamic', getValue:c=>c.segment },
+  { key:'agentLiveWithStreet', label:'Live with Street', type:'boolean', getValue:c=>c.agentLiveWithStreet },
+  { key:'agentLiveWithAccounting', label:'Live with Accounting', type:'boolean', getValue:c=>c.agentLiveWithAccounting },
+  { key:'streetPaymentsClient', label:'Street Payments', type:'boolean', getValue:c=>c.streetPayments && c.streetPayments.customer },
   { key:'clientAccountingEnabled', label:'Client Accounting Enabled', type:'boolean', getValue:c=>c.clientAccountingEnabled },
 ];
-let advFilters = {}; // key -> '' (all) | 'yes' | 'no' | a literal dynamic value
+let advFilters = {};
 
 function renderAdvFilters(){
   const row = document.getElementById('advFilterRow');
@@ -292,49 +344,38 @@ function renderAdvFilters(){
 
   ADV_FILTER_DEFS.forEach(def=>{
     const select = document.createElement('select');
-
-    const allOpt = document.createElement('option');
-    allOpt.value = '';
-    allOpt.textContent = def.label + ': All';
-    select.appendChild(allOpt);
+    select.setAttribute('aria-label', def.label);
+    const add = (value, text)=>{ const o = document.createElement('option'); o.value = value; o.textContent = text; select.appendChild(o); };
+    add('', def.label + ': All');
 
     if(def.type === 'boolean'){
-      const yes = document.createElement('option'); yes.value = 'yes'; yes.textContent = def.label + ': Yes'; select.appendChild(yes);
-      const no = document.createElement('option'); no.value = 'no'; no.textContent = def.label + ': No'; select.appendChild(no);
+      add('yes', def.label + ': Yes');
+      add('no', def.label + ': No');
     } else {
       const values = new Set();
-      companies.forEach(c=>{ const v = def.getValue(c); if(v) values.add(v); });
-      Array.from(values).sort().forEach(v=>{
-        const opt = document.createElement('option');
-        opt.value = v;
-        opt.textContent = v;
-        select.appendChild(opt);
+      companies.forEach(c=>{
+        if(def.type === 'people') teamNames(c).forEach(n=>values.add(n));
+        else { const v = def.getValue(c); if(v) values.add(v); }
       });
+      Array.from(values).sort().forEach(v=>add(v, v));
     }
 
     select.value = advFilters[def.key] || '';
     select.classList.toggle('active', !!select.value);
-
     select.onchange = ()=>{
       advFilters[def.key] = select.value;
-      select.classList.toggle('active', !!select.value);
-      renderAdvFilters(); // to refresh the Clear filters link visibility
-      renderResults();
-    };
-
-    row.appendChild(select);
-  });
-
-  const anyActive = Object.values(advFilters).some(v=>v);
-  if(anyActive){
-    const clearBtn = document.createElement('button');
-    clearBtn.className = 'adv-filters-clear';
-    clearBtn.textContent = 'Clear filters';
-    clearBtn.onclick = ()=>{
-      advFilters = {};
+      resetPaging();
       renderAdvFilters();
       renderResults();
     };
+    row.appendChild(select);
+  });
+
+  if(Object.values(advFilters).some(v=>v)){
+    const clearBtn = document.createElement('button');
+    clearBtn.className = 'adv-filters-clear';
+    clearBtn.textContent = 'Clear filters';
+    clearBtn.onclick = ()=>{ advFilters = {}; resetPaging(); renderAdvFilters(); renderResults(); };
     row.appendChild(clearBtn);
   }
 }
@@ -343,6 +384,7 @@ function matchesAdvFilters(c){
   return ADV_FILTER_DEFS.every(def=>{
     const selected = advFilters[def.key];
     if(!selected) return true;
+    if(def.type === 'people') return teamNames(c).includes(selected);
     if(def.type === 'boolean'){
       const isYes = !!def.getValue(c);
       return selected === 'yes' ? isYes : !isYes;
@@ -351,168 +393,245 @@ function matchesAdvFilters(c){
   });
 }
 
+/* ---------------- shared bits of markup ---------------- */
+function personHtml(contact, emptyText='No one assigned'){
+  if(!contact) return `<div class="person person--empty"><span class="avatar avatar--empty">?</span><div><div class="person-name muted">${emptyText}</div></div></div>`;
+  return `<div class="person">
+      <span class="avatar">${esc(initials(contact.name))}</span>
+      <div><div class="person-name">${esc(contact.name)}</div><div class="person-role">${esc(contact.role)}</div></div>
+    </div>`;
+}
+
+function subLine(c){
+  const bits = [];
+  if(c.segment) bits.push(esc(c.segment));
+  if(has(c.units)) bits.push(`${Number(c.units).toLocaleString('en-GB')} managed units`);
+  if(has(c.branches)) bits.push(`${c.branches} branch${c.branches>1?'es':''}`);
+  if(has(c.networkId)) bits.push(`Network ID ${esc(c.networkId)}`);
+  return bits.join(' · ');
+}
+
 /* ---------------- render: results list ---------------- */
 function renderResults(){
   const q = document.getElementById('searchInput').value.trim().toLowerCase();
   const list = document.getElementById('resultsList');
+  const countEl = document.getElementById('resultsCount');
+  const moreWrap = document.getElementById('showMoreWrap');
   list.innerHTML = '';
+  moreWrap.innerHTML = '';
 
   const matches = companies.filter(c=>{
     const routing = getRouting(c);
-    const searchOk = !q || c.companyName.toLowerCase().includes(q) || String(c.networkId || '').includes(q) || (c.accountingOwner || '').toLowerCase().includes(q);
+    const searchOk = !q ||
+      (c.companyName||'').toLowerCase().includes(q) ||
+      String(c.networkId ?? '').includes(q) ||
+      teamNames(c).some(n=>n.toLowerCase().includes(q));
     return searchOk && matchesFilter(c, routing) && matchesAdvFilters(c);
   });
 
+  countEl.textContent = matches.length
+    ? `${matches.length.toLocaleString('en-GB')} client${matches.length===1?'':'s'}` + (matches.length > visibleCount ? `, showing the first ${visibleCount}` : '')
+    : '';
+
   if(matches.length===0){
-    list.innerHTML = `<div class="empty-state">No matching client found. Try a different name or Network ID.</div>`;
+    list.innerHTML = `<div class="empty-state">No matching client found. Try a different name, Network ID or team member.</div>`;
     return;
   }
 
-  matches.forEach(c=>{
+  matches.slice(0, visibleCount).forEach(c=>{
     const routing = getRouting(c);
+    const street = getStreetLane(c);
+    const accContact = getAccountingContact(c, routing);
     const card = document.createElement('div');
     card.className = 'result-card';
+    card.tabIndex = 0;
+    card.setAttribute('role','button');
     card.onclick = ()=>showDetail(c.companyId);
+    card.onkeydown = e=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); showDetail(c.companyId); } };
 
-    let badges = `<span class="badge ${routing.badgeClass}">${routing.label}</span>`;
-    if(c.redFlag) badges += `<span class="badge badge--flag">🚩 Additional Support</span>`;
-    if(c.segment) badges += `<span class="badge badge--segment">${c.segment}</span>`;
-
+    const sub = subLine(c);
     card.innerHTML = `
       <div class="result-top">
-        <div>
-          <div class="result-name">${c.companyName}</div>
-          <div class="result-sub">Network ID ${c.networkId ?? '—'} · ${c.branches ?? '—'} branch${c.branches>1?'es':''}</div>
+        <div class="result-title">
+          <div class="result-name">${esc(c.companyName)}</div>
+          ${sub ? `<div class="result-sub">${sub}</div>` : ''}
         </div>
-        <span class="view-link">View client →</span>
+        <div class="result-actions">
+          ${c.redFlag ? `<span class="badge badge--flag">🚩 Additional support</span>` : ''}
+          <span class="view-link">View client →</span>
+        </div>
       </div>
-      <div class="badge-row">${badges}</div>
-      <div class="result-meta">
-        <div class="meta-item"><div class="meta-label">Street Status</div><div class="meta-value">${c.streetStatus || '—'}</div></div>
-        <div class="meta-item"><div class="meta-label">Accounting Status</div><div class="meta-value">${c.internalStatusTag || '—'}</div></div>
-        <div class="meta-item"><div class="meta-label">Accounting Owner</div><div class="meta-value">${c.accountingOwner || '—'}</div></div>
-        <div class="meta-item"><div class="meta-label">Network ID</div><div class="meta-value">${c.networkId ?? '—'}</div></div>
-        <div class="meta-item"><div class="meta-label">Portfolio</div><div class="meta-value">${c.units ?? '—'} managed units</div></div>
+      <div class="lanes lanes--compact">
+        ${laneCompact('Street', street.label, street.tone, street.contact, street.empty)}
+        ${laneCompact('Accounting', routing.label, routing.tone, accContact, routing.empty)}
       </div>
     `;
     list.appendChild(card);
   });
+
+  if(matches.length > visibleCount){
+    const btn = document.createElement('button');
+    btn.className = 'show-more';
+    btn.textContent = `Show more (${(matches.length - visibleCount).toLocaleString('en-GB')} left)`;
+    btn.onclick = ()=>{ visibleCount += PAGE_SIZE; renderResults(); };
+    moreWrap.appendChild(btn);
+  }
+}
+
+function laneCompact(title, label, tone, contact, empty){
+  return `<div class="lane-compact ${empty ? 'is-empty' : ''}">
+      <div class="lane-head">
+        <span class="lane-label">${title}</span>
+        <span class="badge ${TONE_BADGE[tone]}">${esc(label)}</span>
+      </div>
+      ${empty ? '' : personHtml(contact)}
+    </div>`;
 }
 
 /* ---------------- render: detail view ---------------- */
-function showDetail(id){
+function showDetail(id, {keepScroll=false} = {}){
   const c = companies.find(x=>x.companyId===id);
+  if(!c) return;
+  currentDetailId = id;
   const routing = getRouting(c);
+  const street = getStreetLane(c);
+  const accContact = getAccountingContact(c, routing);
+  const team = getClientTeam(c, street.contact, routing.empty ? null : accContact);
   const content = document.getElementById('detailContent');
 
   let progressBar = '';
   if(routing.dayNum!==undefined){
-    const pct = Math.min(100, Math.round((routing.dayNum/30)*100));
+    const pct = Math.max(0, Math.min(100, Math.round((routing.dayNum/30)*100)));
     progressBar = `<div class="banner-progress"><div class="banner-progress-fill" style="width:${pct}%"></div></div>`;
   }
 
   const projectUrl = getRocketlaneProjectUrl(c, routing.tone);
-  let ctaHtml = '';
-  if(routing.cta && projectUrl){
-    ctaHtml = `<a class="banner-cta" href="${projectUrl}" target="_blank" rel="noopener">${routing.cta} ↗</a>`;
-  } else if(routing.cta){
-    ctaHtml = `<span class="banner-cta" style="opacity:.6; cursor:default;" title="No Rocketlane link recorded for this project">${routing.cta} (link unavailable)</span>`;
-  }
+  const ctaHtml = (routing.cta && projectUrl)
+    ? `<a class="banner-cta" href="${esc(projectUrl)}" target="_blank" rel="noopener">${routing.cta} ↗</a>` : '';
+
+  const sub = subLine(c);
 
   let html = `
     <div class="detail-head">
       <div>
-        <h2>${c.companyName}</h2>
-        <div class="result-sub">Network ID ${c.networkId ?? '—'} · ${c.units ?? '—'} managed units · CSM ${c.csm || '—'}</div>
+        <h2>${esc(c.companyName)}</h2>
+        ${sub ? `<div class="result-sub">${sub}</div>` : ''}
       </div>
     </div>
 
-    ${c.redFlag ? `<div class="flag-strip">🚩 Additional support required — see notes below.</div>` : ''}
+    ${c.redFlag ? `<div class="flag-strip">🚩 Additional support required. Check the notes below before responding.</div>` : ''}
 
-    <div class="status-banner tone-${routing.tone}">
-      <div class="status-title">${routing.label}</div>
-      ${routing.detail ? `<div class="status-detail">${routing.detail}</div>` : ''}
-      ${progressBar}
-      <div class="whattodo"><strong>What should you do?</strong>${routing.guidance}</div>
-      ${ctaHtml}
+    <h3 class="section-title">Where they are and who to speak to</h3>
+    <div class="lanes lanes--detail">
+      <div class="lane-card tone-${street.tone}">
+        <div class="lane-card-top">
+          <span class="lane-label">Street</span>
+          <div class="lane-status">${esc(street.label)}</div>
+          ${street.detail ? `<div class="lane-detail">${esc(street.detail)}</div>` : ''}
+        </div>
+        <div class="lane-contact">
+          <div class="lane-contact-label">Go-to contact</div>
+          ${personHtml(street.contact)}
+        </div>
+        ${street.guidance ? `<div class="whattodo"><strong>What should you do?</strong>${esc(street.guidance)}</div>` : ''}
+      </div>
+
+      <div class="lane-card tone-${routing.tone}">
+        <div class="lane-card-top">
+          <span class="lane-label">Accounting</span>
+          <div class="lane-status">${esc(routing.label)}</div>
+          ${routing.detail ? `<div class="lane-detail">${esc(routing.detail)}</div>` : ''}
+          ${progressBar}
+        </div>
+        ${routing.empty ? `<div class="whattodo">No Accounting record found for this client. Treat any Accounting questions as a new enquiry.</div>` : `
+        <div class="lane-contact">
+          <div class="lane-contact-label">Go-to contact</div>
+          ${personHtml(accContact)}
+        </div>
+        ${routing.guidance ? `<div class="whattodo"><strong>What should you do?</strong>${esc(routing.guidance)}</div>` : ''}
+        ${ctaHtml}`}
+      </div>
     </div>
 
+    <h3 class="section-title">Client team</h3>
+    ${team.length ? `<div class="team-grid">
+      ${team.map(p=>`
+        <div class="team-card ${p.current ? 'is-current' : ''}">
+          <span class="avatar">${esc(initials(p.name))}</span>
+          <div class="team-text">
+            <div class="person-name">${esc(p.name)} ${p.current ? '<span class="current-tag">Go-to contact</span>' : ''}</div>
+            <div class="person-role">${p.roles.map(esc).join('<br>')}</div>
+          </div>
+        </div>`).join('')}
+    </div>` : `<div class="empty-inline">No team members recorded in Rocketlane for this client.</div>`}
+
+    <h3 class="section-title">Full details</h3>
     <div class="panel-grid">
       <div class="panel">
-        <h3>Client Overview</h3>
-        <div class="field-row"><span class="field-label">Street Network ID</span><span class="field-value">${c.networkId ?? '—'}</span></div>
-        <div class="field-row"><span class="field-label">Street Status</span><span class="field-value">${c.streetStatus || '—'}</span></div>
-        <div class="field-row"><span class="field-label">Client Segment / Business Size</span><span class="field-value">${c.segment || '—'}</span></div>
-        <div class="field-row"><span class="field-label">Customer Success Manager (Street)</span><span class="field-value">${c.csmStreet || '—'}</span></div>
-        <div class="field-row"><span class="field-label">Onboarding Specialist</span><span class="field-value">${c.onboardingSpecialist || '—'}</span></div>
+        <h3>Street</h3>
+        ${row('Street Status', val(c.streetStatus))}
+        ${row('Live with Street', yesNo(c.agentLiveWithStreet))}
+        ${row('Street Go Live Date', val(fmtDate(c.streetGoLiveDate)))}
+        ${row('Street Usage', val(c.streetUsage))}
+        ${row('Street Network ID', val(c.networkId))}
+        ${row('Segment / Business Size', val(c.segment))}
+        ${row('Street Payments Client', yesNo(c.streetPayments && c.streetPayments.customer))}
+        ${c.streetPayments && c.streetPayments.customer ? row('Street Payments Verification', val(c.streetPayments.verificationStatus)) : ''}
       </div>
       <div class="panel">
-        <h3>Street Onboarding &amp; Adoption</h3>
-        <div class="field-row"><span class="field-label">Agent Live with Street</span><span class="field-value">${c.agentLiveWithStreet ? 'Yes' : 'No'}</span></div>
-        <div class="field-row"><span class="field-label">Street Go Live Date</span><span class="field-value">${fmtDate(c.streetGoLiveDate)}</span></div>
-        <div class="field-row"><span class="field-label">Street Usage</span><span class="field-value">${c.streetUsage || '—'}</span></div>
-      </div>
-      <div class="panel">
-        <h3>Accounting Overview</h3>
-        <div class="field-row"><span class="field-label">Accounting Owner</span><span class="field-value">${c.accountingOwner || '—'}</span></div>
-        <div class="field-row"><span class="field-label">Accounting Status</span><span class="field-value">${c.accountingStatus || '—'}</span></div>
-        <div class="field-row"><span class="field-label">Internal Accounting Status</span><span class="field-value">${c.internalStatusTag || '—'}</span></div>
-        <div class="field-row"><span class="field-label">Agent Live with Accounting</span><span class="field-value">${c.agentLiveWithAccounting ? 'Yes' : 'No'}</span></div>
-        <div class="field-row"><span class="field-label">Accounting Go Live Date</span><span class="field-value">${fmtDate(c.goLiveDate)}</span></div>
-        <div class="field-row"><span class="field-label">Client Accounting Enabled</span><span class="field-value">${c.clientAccountingEnabled ? 'Yes' : 'No'}</span></div>
-      </div>
-      <div class="panel">
-        <h3>Street Payments</h3>
-        <div class="field-row"><span class="field-label">Street Payments Client</span><span class="field-value">${c.streetPayments && c.streetPayments.customer ? 'Yes' : 'No'}</span></div>
-        <div class="field-row"><span class="field-label">Verification Status</span><span class="field-value">${(c.streetPayments && c.streetPayments.verificationStatus) || '—'}</span></div>
+        <h3>Accounting</h3>
+        ${row('Accounting Status', val(c.accountingStatus))}
+        ${row('Internal Accounting Status', val(c.internalStatusTag))}
+        ${row('Live with Accounting', yesNo(c.agentLiveWithAccounting))}
+        ${row('Accounting Go Live Date', val(fmtDate(c.goLiveDate)))}
+        ${c.onboardingProject && c.onboardingProject.targetGoLive ? row('Target Go Live Date', esc(fmtDate(c.onboardingProject.targetGoLive))) : ''}
+        ${row('Client Accounting Enabled', yesNo(c.clientAccountingEnabled))}
+        ${row('Accounting Restart', val(c.restart && c.restart.status))}
       </div>
   `;
 
   if(c.reconciliation){
+    const r = c.reconciliation;
     html += `
       <div class="panel">
-        <h3>Accounting Reconciliation</h3>
-        <div class="field-row"><span class="field-label">Status</span><span class="field-value">${c.reconciliation.status}</span></div>
-        <div class="field-row"><span class="field-label">Route</span><span class="field-value">${c.reconciliation.route}</span></div>
-        <div class="field-row"><span class="field-label">Owner</span><span class="field-value">${c.reconciliation.specialist || '—'}</span></div>
-        <div class="field-row"><span class="field-label">Date Raised</span><span class="field-value">${fmtDate(c.reconciliation.dateRaised)}</span></div>
-        <div class="field-row"><span class="field-label">Review Call</span><span class="field-value">${c.reconciliation.reviewCallBooked}</span></div>
-        <div class="field-row"><span class="field-label">Current Difference</span><span class="field-value">${c.reconciliation.currentDifference}</span></div>
-        <div class="field-row"><span class="field-label">Outcome</span><span class="field-value">${c.reconciliation.outcome}</span></div>
-        ${c.reconciliation.notes ? `
-        <div class="field-row" style="display:block; border-bottom:none;">
-          <span class="field-label" style="display:block; margin-bottom:4px;">Notes</span>
-          <span class="field-value" style="display:block; text-align:left; font-weight:400;">${c.reconciliation.notes}</span>
-        </div>` : ''}
+        <h3>Reconciliation</h3>
+        ${row('Status', val(r.status))}
+        ${row('Route', val(r.route))}
+        ${row('Specialist', val(r.specialist))}
+        ${row('Date Raised', val(fmtDate(r.dateRaised)))}
+        ${row('Review Call', val(r.reviewCallBooked))}
+        ${row('Current Difference', val(r.currentDifference))}
+        ${row('Outcome', val(r.outcome))}
       </div>`;
   }
-  if(c.restart){
+  if(hasRealRestart(c)){
     html += `
       <div class="panel">
         <h3>Accounting Restart</h3>
-        <div class="field-row"><span class="field-label">Status</span><span class="field-value">${c.restart.status}</span></div>
-        <div class="field-row"><span class="field-label">Route</span><span class="field-value">${c.restart.route}</span></div>
-        <div class="field-row"><span class="field-label">Reason</span><span class="field-value">${c.restart.reason}</span></div>
-        <div class="field-row"><span class="field-label">Restart Date</span><span class="field-value">${fmtDate(c.restart.date)}</span></div>
+        ${row('Status', val(c.restart.status))}
+        ${row('Route', val(c.restart.route))}
+        ${row('Reason', val(c.restart.reason))}
+        ${row('Restart Date', val(fmtDate(c.restart.date)))}
       </div>`;
   }
   if(c.optOut){
     html += `
       <div class="panel">
         <h3>Opt-Out</h3>
-        <div class="field-row"><span class="field-label">Type</span><span class="field-value">${c.optOut.type}</span></div>
+        ${row('Type', val(c.optOut.type))}
       </div>`;
   }
 
+  const t = c.training || {};
   html += `
       <div class="panel">
         <h3>Product Training</h3>
-        <div class="field-row"><span class="field-label">Last Assigned Trainer</span><span class="field-value">${c.training.trainer || '—'}</span></div>
-        <div class="field-row"><span class="field-label">Product Training Status</span><span class="field-value">${c.training.status}</span></div>
-        <div class="field-row"><span class="field-label">Last Product Training Date</span><span class="field-value">${fmtDate(c.training.lastDate)}</span></div>
-        <div class="field-row"><span class="field-label">Product Training Completed</span><span class="field-value">${c.training.completed ? 'Yes' : 'No'}</span></div>
-        <div class="field-row"><span class="field-label">Training Modules Completed</span><span class="field-value">${c.training.modules || '—'}</span></div>
-        <div class="field-row"><span class="field-label">Training Formats Used</span><span class="field-value">${c.training.formats || '—'}</span></div>
+        ${row('Training Status', val(t.status === 'Not recorded' ? null : t.status))}
+        ${row('Last Trainer', val(t.trainer))}
+        ${row('Last Training Date', val(fmtDate(t.lastDate)))}
+        ${row('Training Completed', yesNo(t.completed))}
+        ${row('Modules Covered', val(t.modules))}
+        ${row('Training Formats', val(t.formats))}
       </div>
     </div>
   `;
@@ -527,8 +646,7 @@ function showDetail(id){
             <div class="conversation-message-body">${m.content || '(no content)'}</div>
           </div>
         `).join('')}
-      </div>
-    `;
+      </div>`;
   }
 
   if(c.recentEngagementNotes && c.recentEngagementNotes.length){
@@ -537,51 +655,50 @@ function showDetail(id){
         <h3 class="conversation-title">Recent engagements</h3>
         ${c.recentEngagementNotes.map(n => `
           <div class="conversation-message">
-            <div class="conversation-message-date">${n.createdAt ? fmtDate(n.createdAt) : ''}${n.title ? ' · ' + n.title : ''}</div>
+            <div class="conversation-message-date">${n.createdAt ? fmtDate(n.createdAt) : ''}${n.title ? ' · ' + esc(n.title) : ''}</div>
             <div class="conversation-message-body">${n.text || '(no content)'}</div>
           </div>
         `).join('')}
-      </div>
-    `;
+      </div>`;
   }
-
-  html += `
-    <div class="notes-section">
-  `;
 
   const noteEntries = [
-    ['Notes', c.internalNotes.general],
+    ['Notes', c.internalNotes && c.internalNotes.general],
     ['Reconciliation Notes', c.reconciliation ? c.reconciliation.notes : ''],
     ['Opt-Out Reason', c.optOut ? c.optOut.reason : '']
-  ].filter(([,val])=>val);
+  ].filter(([,v])=>has(v));
 
+  html += `<h3 class="section-title">Internal notes</h3><div class="notes-section">`;
   if(noteEntries.length){
-    noteEntries.forEach(([label,val])=>{
-      html += `<details class="note"><summary>${label}</summary><div class="note-body">${val}</div></details>`;
+    noteEntries.forEach(([label,v])=>{
+      html += `<details class="note" open><summary>${label}</summary><div class="note-body">${v}</div></details>`;
     });
   } else {
-    html += `<div class="result-sub">No internal notes recorded.</div>`;
+    html += `<div class="empty-inline">No internal notes recorded.</div>`;
   }
-
   html += `</div>`;
 
   content.innerHTML = html;
   document.getElementById('lookup-view').style.display = 'none';
   document.getElementById('detail-view').style.display = 'block';
-  window.scrollTo(0,0);
+  if(!keepScroll) window.scrollTo(0,0);
+}
+
+function row(label, valueHtml){
+  return `<div class="field-row"><span class="field-label">${label}</span><span class="field-value">${valueHtml}</span></div>`;
 }
 
 function showLookup(){
+  currentDetailId = null;
   document.getElementById('detail-view').style.display = 'none';
   document.getElementById('lookup-view').style.display = 'block';
 }
 
 
-/* Rocketlane doesn't publish a documented customer-facing project URL format, and the
-   spec is explicit that we must never fabricate one. Once you confirm the real pattern
-   (open any project in Rocketlane and copy its URL structure), fill it in here -- the
-   sync script can then attach the right link per project type in rocketlaneLinks. Until
-   then this returns null and the UI shows "(link unavailable)" instead of a dead link. */
+/* Rocketlane doesn't publish a documented project URL format, and we must never
+   fabricate one. Once the real pattern is confirmed, the sync script can fill in
+   rocketlaneLinks and the "Open ... Project" button appears automatically. Until then
+   the button is simply hidden rather than showing a dead "(link unavailable)" button. */
 function getRocketlaneProjectUrl(company, tone){
   if(!company.rocketlaneLinks) return null;
   if(tone === 'recon') return company.rocketlaneLinks.reconciliationProject || null;
