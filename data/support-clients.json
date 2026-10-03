@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T22:08:55.756Z",
+  "generatedAt": "2026-10-03T01:11:14.630Z",
   "companies": [
     {
       "companyId": 122281,
@@ -56043,7 +56043,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-30",
