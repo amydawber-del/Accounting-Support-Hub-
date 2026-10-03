@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:28:51.263Z",
+  "generatedAt": "2026-10-03T16:40:56.198Z",
   "companies": [
     {
       "companyId": 122281,
@@ -51342,8 +51342,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
-        "formats": "Not Sure – Help Me Choose"
+        "modules": null,
+        "formats": "Not Sure – Help Me Choose, Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
