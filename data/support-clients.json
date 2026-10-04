@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T08:45:04.384Z",
+  "generatedAt": "2026-10-04T14:46:55.081Z",
   "companies": [
     {
       "companyId": 122281,
@@ -60308,7 +60308,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-01",
