@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T16:15:14.953Z",
+  "generatedAt": "2026-10-06T21:13:18.513Z",
   "companies": [
     {
       "companyId": 122281,
@@ -44181,12 +44181,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Awaiting Client Response",
+        "status": "Prep in Progress",
         "completed": false,
-        "lastDate": null,
+        "lastDate": "2026-12-01",
         "trainer": "Max Hornby",
-        "modules": null,
-        "formats": null
+        "modules": "Lettings Front-End, Lettings Property Management, Accounting",
+        "formats": "Bespoke Branch Training"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -58875,7 +58875,7 @@
       "accountingOwner": "Max Hornby",
       "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Onboarding",
-      "clientAccountingEnabled": false,
+      "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
@@ -58889,7 +58889,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting OB Call Booking",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -58903,7 +58903,7 @@
         "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": null,
+        "targetGoLive": "2026-11-02",
         "openingBalanceBooked": true,
         "notes": null
       },
@@ -61739,7 +61739,7 @@
       "csm": null,
       "csmStreet": "Adam Jennings",
       "segment": "SMB",
-      "streetStatus": "Active",
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-09-24",
       "streetUsage": "S, L, LPM, A",
@@ -61764,8 +61764,8 @@
         "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
+        "targetGoLive": "2026-10-14",
+        "openingBalanceBooked": true,
         "notes": null
       },
       "internalNotes": {
