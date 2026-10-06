@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T09:23:03.882Z",
+  "generatedAt": "2026-10-06T16:15:14.953Z",
   "companies": [
     {
       "companyId": 122281,
@@ -4250,11 +4250,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -32881,7 +32877,7 @@
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "L, LPM, A",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -47588,7 +47584,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting OB Call Booking",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -47602,7 +47598,7 @@
         "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": null,
+        "targetGoLive": "2026-10-16",
         "openingBalanceBooked": true,
         "notes": null
       },
@@ -50195,12 +50191,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Prep in Progress",
+        "status": "Not recorded",
         "completed": false,
-        "lastDate": "2026-11-11",
-        "trainer": "Jess Benjamin Smith",
-        "modules": "Sales Modules",
-        "formats": "Bespoke Branch Training"
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -52978,7 +52974,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE), Post Go-Live Support Day"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -57300,7 +57296,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Lena Dottori-Marchand",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -58312,7 +58308,7 @@
       "branches": null,
       "accountingOwner": "Max Hornby",
       "onboardingSpecialist": "Sophie Saunders",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
@@ -58325,9 +58321,9 @@
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-10-05",
       "streetUsage": "A, L, LPM, S",
-      "agentLiveWithAccounting": false,
-      "goLiveDate": null,
-      "internalStatusTag": "Onboarding in Progress",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-10-06",
+      "internalStatusTag": "30 Days Post Go-Live Support",
       "redFlag": true,
       "optOut": null,
       "reconciliation": null,
@@ -58841,7 +58837,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -61735,9 +61731,9 @@
       "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": "Tracy Kettle",
       "accountingStatus": "Onboarding",
-      "clientAccountingEnabled": false,
+      "clientAccountingEnabled": true,
       "streetPayments": {
-        "customer": null,
+        "customer": true,
         "verificationStatus": null
       },
       "csm": null,
@@ -61749,7 +61745,7 @@
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting OB Call Booking",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": true,
       "optOut": null,
       "reconciliation": null,
@@ -63066,7 +63062,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -63956,7 +63952,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -64088,7 +64084,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -66307,12 +66303,12 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "A",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -66345,11 +66341,11 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Andy Fisher",
         "previousSoftware": null,
-        "previousCrm": null,
-        "previousAccountingSoftware": null,
-        "approxMrr": null,
+        "previousCrm": "Rezi",
+        "previousAccountingSoftware": "Rezi",
+        "approxMrr": "730",
         "migration": null,
         "migrationSource": null,
         "bankProvider": null
@@ -66811,12 +66807,12 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Lena Dottori-Marchand",
       "segment": "Enterprise & Strategic",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "A",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -66849,11 +66845,11 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Emma Peake",
         "previousSoftware": null,
-        "previousCrm": null,
-        "previousAccountingSoftware": null,
-        "approxMrr": null,
+        "previousCrm": "Dezrez",
+        "previousAccountingSoftware": "Dezrez",
+        "approxMrr": "5555.7",
         "migration": "Bridge",
         "migrationSource": "account",
         "bankProvider": null
@@ -67188,7 +67184,7 @@
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "A",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -67792,7 +67788,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Maria Duffy",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -67978,7 +67974,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -68165,7 +68161,7 @@
       "csm": null,
       "csmStreet": "Adam Jennings",
       "segment": null,
-      "streetStatus": null,
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": null,
@@ -68197,8 +68193,8 @@
         "previousCrm": "Expert Agent",
         "previousAccountingSoftware": "Expert Agent",
         "approxMrr": "500",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual",
+        "migrationSource": "account",
         "bankProvider": null
       },
       "rocketlaneLinks": {
@@ -68281,9 +68277,9 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
-      "onboardingSpecialist": null,
-      "accountingStatus": null,
+      "accountingOwner": "Jess Benjamin Smith",
+      "onboardingSpecialist": "Emma Cockcroft",
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -68295,14 +68291,19 @@
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -68311,7 +68312,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -68341,7 +68346,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -68354,7 +68359,7 @@
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "A",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -68596,7 +68601,7 @@
       "csm": null,
       "csmStreet": null,
       "segment": null,
-      "streetStatus": null,
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": null,
@@ -68628,8 +68633,8 @@
         "previousCrm": null,
         "previousAccountingSoftware": null,
         "approxMrr": null,
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual",
+        "migrationSource": "account",
         "bankProvider": null
       },
       "rocketlaneLinks": {
@@ -68704,7 +68709,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Karolina Pawlowicz",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -68712,7 +68717,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -68741,11 +68746,11 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Lewis Bliss",
         "previousSoftware": null,
-        "previousCrm": null,
-        "previousAccountingSoftware": null,
-        "approxMrr": null,
+        "previousCrm": "MRI",
+        "previousAccountingSoftware": "MRI",
+        "approxMrr": "650",
         "migration": null,
         "migrationSource": null,
         "bankProvider": null
@@ -68759,6 +68764,74 @@
     {
       "companyId": 770688,
       "companyName": "NO5 Real Estate",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": "Onboarding",
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": "Diana Culea",
+      "segment": null,
+      "streetStatus": "Onboarding",
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": "A",
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": "Awaiting Intro Call",
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": "Lee Fleming",
+        "previousSoftware": null,
+        "previousCrm": null,
+        "previousAccountingSoftware": null,
+        "approxMrr": "650",
+        "migration": "Manual",
+        "migrationSource": "account",
+        "bankProvider": null
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 771494,
+      "companyName": "Handy Lettings",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -68817,18 +68890,18 @@
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1141,
-    "projectsFetchedFromRocketlane": 495,
+    "companiesFetchedFromRocketlane": 1142,
+    "projectsFetchedFromRocketlane": 497,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 157,
+      "onboarding": 158,
       "reconciliation": 0,
       "training": 336,
-      "unknown": 2
+      "unknown": 3
     },
-    "companiesWrittenToSupportHub": 1141,
-    "companiesWithNoAccountingProjectFound": 797,
-    "companiesWithOnboardingProjectButNoInternalStatusTag": 2,
+    "companiesWrittenToSupportHub": 1142,
+    "companiesWithNoAccountingProjectFound": 798,
+    "companiesWithOnboardingProjectButNoInternalStatusTag": 1,
     "extraFieldMappings": {
       "bdm": "Account: \"Business Development Manager (Sales)\" (TEXT)",
       "previousSoftware": "Account: NOT FOUND. Similar labels: Migration Type | Previous CRM Software | Business Development Manager (Sales) | Migration Info | Approximate MRR | Previous Accounting Software | Bank Provider",
@@ -68840,12 +68913,12 @@
       "customerType": "Project: \"Customer Type\" (SINGLE_CHOICE)"
     },
     "extraFieldsFilledIn": {
-      "bdm": 487,
+      "bdm": 491,
       "previousSoftware": 0,
-      "previousCrm": 439,
-      "previousAccountingSoftware": 457,
-      "approxMrr": 564,
-      "migration": 150,
+      "previousCrm": 442,
+      "previousAccountingSoftware": 460,
+      "approxMrr": 568,
+      "migration": 153,
       "bankProvider": 396
     }
   }
