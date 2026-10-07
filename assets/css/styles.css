@@ -456,3 +456,9 @@
   /* Key facts box: pull the box outwards so the labels and values inside line up
      exactly with the rows underneath it. */
   .key-facts{margin:0 -13px 10px; padding:4px 12px;} /* -13 = 12px padding + 1px border */
+
+  /* ---------- Spectre tile (added 7 Oct 2026) ---------- */
+  .badge--spectre{background:#cfe9f7; color:#0b4a66;}
+  .panel--spectre{border-top:3px solid #4aa8d8;}
+  .ext-link{color:var(--action-primary-blue); text-decoration:none; font-weight:600;}
+  .ext-link:hover{text-decoration:underline;}
