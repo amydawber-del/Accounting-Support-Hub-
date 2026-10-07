@@ -127,6 +127,26 @@ A few things worth knowing before extending this further:
   `getProjectCompanyId()` reads `project.customer.companyId` first, with
   `project.company.companyId` kept only as a defensive fallback.
 
+## Spectre tile (added 7 Oct 2026)
+
+Each client page has a Spectre tile showing these Account-level fields from
+Rocketlane: Spectre Client, Customer Success Manager (Spectre), Spectre
+products (summary), Spectre Sales, Spectre Lettings, Spectre Social, Spectre
+Email, Spectre Property Reports and HubSpot record (Spectre Deal). Spectre
+clients also get a badge on their search card, a "Spectre Clients" quick
+filter and a Spectre group under More filters, and the Spectre CSM appears in
+the client team and in name search.
+
+**The labels are unconfirmed.** They're matched tolerantly (ignoring case,
+spacing and trailing punctuation) against a few likely spellings in
+`COMPANY_SPECTRE_FIELD_CANDIDATES` in `scripts/sync-rocketlane.js`. After the
+first run, check `syncDiagnostics.spectreFieldMappings` in
+`data/support-clients.json`: it shows which label matched for each field, or
+"NOT FOUND" plus any similar Spectre/HubSpot labels that do exist.
+`spectreFieldsFilledIn` shows how many clients have each one filled in. The
+HubSpot record only becomes a link if Rocketlane holds a full URL; it's never
+built from an ID.
+
 ## Client conversation on the detail page
 
 Each client's page can show the last few messages from the general (client-
