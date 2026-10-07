@@ -50,6 +50,25 @@ function previousSoftwareText(c){
   const parts = [a.previousSoftware, a.previousCrm, a.previousAccountingSoftware].filter(has);
   return parts.length ? Array.from(new Set(parts)).join(', ') : null;
 }
+/* Spectre details come from the Account record. Field types weren't confirmed when
+   this was built, so values may be Yes/No, a dropdown label or free text. */
+function spec(c){ return c.spectre || {}; }
+function isYesValue(v){ return has(v) && /^(yes|true|y)$/i.test(String(v).trim()); }
+function isNoValue(v){ return has(v) && /^(no|false|n)$/i.test(String(v).trim()); }
+function isSpectreClient(c){ return isYesValue(spec(c).spectreClient); }
+function spectrePill(v){
+  if(!has(v)) return val(null);
+  if(isYesValue(v)) return `<span class="live-pill live-pill--sm is-live">Yes</span>`;
+  if(isNoValue(v)) return `<span class="live-pill live-pill--sm is-not-live">No</span>`;
+  return `<span class="badge badge--segment">${esc(v)}</span>`;
+}
+/* Only ever links to a real URL that's stored in Rocketlane. Never builds one. */
+function hubspotHtml(v){
+  if(!has(v)) return val(null);
+  const s = String(v).trim();
+  if(/^https?:\/\/\S+$/i.test(s)) return `<a class="ext-link" href="${esc(s)}" target="_blank" rel="noopener">Open in HubSpot ↗</a>`;
+  return esc(s);
+}
 function hasRealRestart(c){
   return !!(c.restart && c.restart.status && c.restart.status !== 'Never Restarted');
 }
@@ -286,6 +305,7 @@ function getClientTeam(c, streetContact, accountingContact){
     [c.reconciliation && c.reconciliation.specialist, 'Reconciliation Specialist', 'Accounting'],
     [c.training && c.training.trainer, 'Last Trainer', 'Training'],
     [acct(c).bdm, 'Business Development Manager', 'Sales'],
+    [spec(c).csmSpectre, 'Customer Success Manager', 'Spectre'],
   ];
   const byName = new Map();
   roles.forEach(([name, role, area])=>{
@@ -309,7 +329,8 @@ const filters = [
   {key:'slow', label:'Slow Mover'},
   {key:'streetOnboarding', label:'Street Onboarding'},
   {key:'live', label:'Live Accounting'},
-  {key:'optout', label:'Opted Out'}
+  {key:'optout', label:'Opted Out'},
+  {key:'spectre', label:'Spectre Clients'}
 ];
 let activeFilter = 'all';
 
@@ -331,11 +352,12 @@ function matchesFilter(c, routing){
   if(activeFilter==='all') return true;
   if(activeFilter==='flag') return c.redFlag;
   if(activeFilter==='streetOnboarding') return c.streetStatus === 'Onboarding';
+  if(activeFilter==='spectre') return isSpectreClient(c);
   return routing.tone===activeFilter;
 }
 
 function teamNames(c){
-  return [c.accountingOwner, c.onboardingSpecialist, c.csmStreet, c.csm, c.reconciliation && c.reconciliation.specialist, c.training && c.training.trainer, acct(c).bdm].filter(has);
+  return [c.accountingOwner, c.onboardingSpecialist, c.csmStreet, c.csm, c.reconciliation && c.reconciliation.specialist, c.training && c.training.trainer, acct(c).bdm, spec(c).csmSpectre].filter(has);
 }
 
 /* ---------------- filters for every field on the client card ----------------
@@ -371,13 +393,21 @@ const ADV_FILTER_DEFS = [
   { key:'clientAccountingEnabled', group:'Accounting', label:'Client Accounting Enabled', type:'boolean', getValue:c=>c.clientAccountingEnabled },
   { key:'streetPaymentsClient', group:'Accounting', label:'Street Payments', type:'boolean', getValue:c=>c.streetPayments && c.streetPayments.customer },
   { key:'redFlag', group:'Accounting', label:'Red flag (additional support)', type:'boolean', getValue:c=>c.redFlag },
+  // Spectre
+  { key:'spectreClient', group:'Spectre', label:'Spectre Client', type:'boolean', getValue:c=>isSpectreClient(c) },
+  { key:'csmSpectre', group:'Spectre', label:'Customer Success Manager (Spectre)', type:'dynamic', getValue:c=>spec(c).csmSpectre },
+  { key:'spectreSales', group:'Spectre', label:'Spectre Sales', type:'dynamic', getValue:c=>spec(c).sales },
+  { key:'spectreLettings', group:'Spectre', label:'Spectre Lettings', type:'dynamic', getValue:c=>spec(c).lettings },
+  { key:'spectreSocial', group:'Spectre', label:'Spectre Social', type:'dynamic', getValue:c=>spec(c).social },
+  { key:'spectreEmail', group:'Spectre', label:'Spectre Email', type:'dynamic', getValue:c=>spec(c).email },
+  { key:'spectrePropertyReports', group:'Spectre', label:'Spectre Property Reports', type:'dynamic', getValue:c=>spec(c).propertyReports },
   // Account & team
   { key:'person', group:'Account & team', label:'Anyone on the client team', type:'people' },
   { key:'previousSoftware', group:'Account & team', label:'Previous software', type:'dynamic', getValue:c=>previousSoftwareText(c) },
   { key:'migration', group:'Account & team', label:'Migration', type:'dynamic', getValue:c=>acct(c).migration },
   { key:'bankProvider', group:'Account & team', label:'Bank Provider', type:'dynamic', getValue:c=>acct(c).bankProvider },
 ];
-const FILTER_GROUPS = ['Street', 'Accounting', 'Account & team'];
+const FILTER_GROUPS = ['Street', 'Accounting', 'Spectre', 'Account & team'];
 let advFilters = {};
 let filterPanelOpen = (()=>{ try { return localStorage.getItem('supportHubFiltersOpen') === '1'; } catch(e){ return false; } })();
 
@@ -585,6 +615,7 @@ function renderResults(){
         </div>
         <div class="result-actions">
           ${c.redFlag ? fv('redFlag', 'yes', `<span class="badge badge--flag">🚩 Additional support</span>`) : ''}
+          ${isSpectreClient(c) ? fv('spectreClient', 'yes', `<span class="badge badge--spectre">Spectre client</span>`) : ''}
           <span class="view-link">View client →</span>
         </div>
       </div>
@@ -756,6 +787,7 @@ function showDetail(id, {keepScroll=false} = {}){
         ${c.streetPayments && c.streetPayments.customer ? row('Street Payments Verification', val(c.streetPayments.verificationStatus)) : ''}
         ${row('Accounting Restart', val(c.restart && c.restart.status))}
       </div>
+      ${spectrePanel(c)}
   `;
 
   if(c.reconciliation){
@@ -850,6 +882,32 @@ function showDetail(id, {keepScroll=false} = {}){
   document.getElementById('lookup-view').style.display = 'none';
   document.getElementById('detail-view').style.display = 'block';
   if(!keepScroll) window.scrollTo(0,0);
+}
+
+/* Spectre tile: everything from the Account record's Spectre fields. */
+function spectrePanel(c){
+  const s = spec(c);
+  const client = s.spectreClient;
+  const headPill = isYesValue(client)
+    ? `<span class="live-pill is-live">✓ Spectre client</span>`
+    : isNoValue(client)
+      ? `<span class="live-pill is-not-live">Not a Spectre client</span>`
+      : `<span class="live-pill is-not-live">Not recorded</span>`;
+  return `
+      <div class="panel panel--spectre">
+        <div class="panel-head"><h3>Spectre</h3>${headPill}</div>
+        <div class="key-facts">
+          ${row('Spectre Client', spectrePill(client))}
+          ${row('Customer Success Manager (Spectre)', val(s.csmSpectre))}
+        </div>
+        ${row('Spectre products (summary)', val(s.productsSummary))}
+        ${row('Spectre Sales', spectrePill(s.sales))}
+        ${row('Spectre Lettings', spectrePill(s.lettings))}
+        ${row('Spectre Social', spectrePill(s.social))}
+        ${row('Spectre Email', spectrePill(s.email))}
+        ${row('Spectre Property Reports', spectrePill(s.propertyReports))}
+        ${row('HubSpot record (Spectre Deal)', hubspotHtml(s.hubspotDeal))}
+      </div>`;
 }
 
 /* Panel title with a "Live" / "Not live yet" pill so it's visible at a glance. */
