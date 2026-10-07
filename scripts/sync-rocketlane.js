@@ -227,6 +227,25 @@ const COMPANY_EXTRA_FIELD_CANDIDATES = {
 const PROJECT_EXTRA_FIELD_CANDIDATES = {
   customerType: ['Customer Type'],
 };
+// ADDED 7 Oct 2026, per Amy: Spectre details from the Account (Company) record,
+// shown as a Spectre tile on each client's page. Labels given by Amy, NOT yet
+// confirmed against a live run, so they're matched tolerantly like the extras
+// above (case, spacing and trailing punctuation ignored). Field types aren't
+// known either, so getAnyField() works them out. Check
+// syncDiagnostics.spectreFieldMappings after the first run.
+const COMPANY_SPECTRE_FIELD_CANDIDATES = {
+  spectreClient: ['Spectre Client', 'Spectre Client?', 'Spectre Client - Yes or No', 'Is Spectre Client'],
+  csmSpectre: ['Customer Success Manager (Spectre)', 'Customer Success Manager - Spectre', 'Spectre CSM', 'Spectre Customer Success Manager'],
+  productsSummary: ['Spectre products (summary)', 'Spectre Products Summary', 'Spectre Products - Summary', 'Spectre Products'],
+  sales: ['Spectre Sales'],
+  lettings: ['Spectre Lettings'],
+  social: ['Spectre Social'],
+  email: ['Spectre Email'],
+  propertyReports: ['Spectre Property Reports', 'Spectre Property Report'],
+  hubspotDeal: ['HubSpot record (Spectre Deal)', 'HubSpot Record - Spectre Deal', 'HubSpot Spectre Deal', 'Spectre HubSpot Deal', 'Spectre Deal'],
+};
+const SPECTRE_FIELD_HINT_WORDS = ['spectre', 'hubspot'];
+
 // Words used to spot near-miss labels for the diagnostics above.
 const EXTRA_FIELD_HINT_WORDS = ['crm', 'software', 'mrr', 'business development', 'bdm', 'migration', 'bank', 'customer type'];
 
@@ -339,7 +358,7 @@ function normaliseLabel(label) {
  * "three fields all contain 'Internal Status Tag'" trap can't happen here.
  * Returns { ids, report } where report goes into syncDiagnostics.
  */
-function resolveExtraFieldIds(fieldIndex, candidateConfig, objectType) {
+function resolveExtraFieldIds(fieldIndex, candidateConfig, objectType, hintWords = EXTRA_FIELD_HINT_WORDS) {
   const byNormalised = new Map();
   for (const [label, def] of fieldIndex) {
     const n = normaliseLabel(label);
@@ -358,7 +377,7 @@ function resolveExtraFieldIds(fieldIndex, candidateConfig, objectType) {
       report[key] = `${objectType}: "${(def.fieldLabel || '').trim()}" (${def.fieldType || 'type unknown'})`;
     } else {
       const nearMisses = [...fieldIndex.keys()].filter((l) =>
-        EXTRA_FIELD_HINT_WORDS.some((w) => normaliseLabel(l).includes(w))
+        hintWords.some((w) => normaliseLabel(l).includes(w))
       );
       report[key] = `${objectType}: NOT FOUND` + (nearMisses.length ? `. Similar labels: ${nearMisses.slice(0, 12).join(' | ')}` : '');
     }
@@ -670,7 +689,7 @@ function groupProjectsByCompany(projects, projectFieldIds) {
 // never referenced, and never appear below — by omission, not by exclusion.
 // ---------------------------------------------------------------------------
 
-async function buildCompanyRecord(company, projects, projectFieldIds, companyFieldIds, userIndex, extraIds = { company: {}, project: {} }) {
+async function buildCompanyRecord(company, projects, projectFieldIds, companyFieldIds, userIndex, extraIds = { company: {}, project: {}, spectre: {} }) {
   const onboarding = projects.onboarding;
   const reconciliation = projects.reconciliation;
   const training = projects.training;
@@ -844,6 +863,8 @@ async function buildCompanyRecord(company, projects, projectFieldIds, companyFie
     // ADDED 29 Sep 2026: Account-level details for the Support team. See
     // COMPANY_EXTRA_FIELD_CANDIDATES for why these are read tolerantly.
     account: buildAccountDetails(company, projects, extraIds, userIndex),
+    // ADDED 7 Oct 2026: Spectre tile. See COMPANY_SPECTRE_FIELD_CANDIDATES.
+    spectre: buildSpectreDetails(company, extraIds.spectre || {}, userIndex),
     // Never fabricated — filled in only once you confirm Rocketlane's real project URL
     // pattern (open a project in the browser and paste the URL structure here).
     rocketlaneLinks: {
@@ -881,6 +902,23 @@ function buildAccountDetails(company, projects, extraIds, userIndex) {
   };
 }
 
+/** Spectre details off the Account record. Every value is display text (or null). */
+function buildSpectreDetails(company, spectreIds, userIndex) {
+  const out = {};
+  for (const key of Object.keys(COMPANY_SPECTRE_FIELD_CANDIDATES)) {
+    out[key] = spectreIds[key] ? getAnyField(company, spectreIds[key], userIndex) : null;
+  }
+  return out;
+}
+
+function countSpectreFields(records) {
+  const counts = {};
+  for (const r of records) {
+    for (const [k, v] of Object.entries(r.spectre || {})) counts[k] = (counts[k] || 0) + (v ? 1 : 0);
+  }
+  return counts;
+}
+
 function countExtraFields(records) {
   const counts = {};
   for (const r of records) {
@@ -904,7 +942,8 @@ async function main() {
   const companyFieldIds = resolveFieldIds(companyFieldIndex, COMPANY_FIELD_LABELS);
   const companyExtra = resolveExtraFieldIds(companyFieldIndex, COMPANY_EXTRA_FIELD_CANDIDATES, 'Account');
   const projectExtra = resolveExtraFieldIds(projectFieldIndex, PROJECT_EXTRA_FIELD_CANDIDATES, 'Project');
-  const extraIds = { company: companyExtra.ids, project: projectExtra.ids };
+  const spectreExtra = resolveExtraFieldIds(companyFieldIndex, COMPANY_SPECTRE_FIELD_CANDIDATES, 'Account', SPECTRE_FIELD_HINT_WORDS);
+  const extraIds = { company: companyExtra.ids, project: projectExtra.ids, spectre: spectreExtra.ids };
 
   console.log('[sync] Fetching companies…');
   const companies = await fetchCompanies();
@@ -983,6 +1022,8 @@ async function main() {
     // Which Rocketlane label each new Account field matched (or didn't). Check after the first run.
     extraFieldMappings: { ...companyExtra.report, ...projectExtra.report },
     extraFieldsFilledIn: countExtraFields(output.companies),
+    spectreFieldMappings: spectreExtra.report,
+    spectreFieldsFilledIn: countSpectreFields(output.companies),
   };
 
   if (missingStatusDespiteOnboarding > 0) {
