@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T14:00:21.709Z",
+  "generatedAt": "2026-10-08T19:52:38.434Z",
   "companies": [
     {
       "companyId": 122281,
@@ -50213,7 +50213,7 @@
       "companyId": 581005,
       "companyName": "Paton & Co",
       "networkId": null,
-      "units": null,
+      "units": 1,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": null,
@@ -50232,7 +50232,7 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -50248,7 +50248,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -50265,11 +50265,11 @@
         "bdm": null,
         "previousSoftware": null,
         "previousCrm": null,
-        "previousAccountingSoftware": null,
+        "previousAccountingSoftware": "QuickBooks Online",
         "approxMrr": null,
         "migration": null,
         "migrationSource": null,
-        "bankProvider": null
+        "bankProvider": "Bank of Scotland"
       },
       "spectre": {
         "spectreClient": "Yes",
@@ -66519,8 +66519,8 @@
       "csm": null,
       "csmStreet": "Diana Culea",
       "segment": null,
-      "streetStatus": "Onboarding",
-      "agentLiveWithStreet": false,
+      "streetStatus": "Active",
+      "agentLiveWithStreet": true,
       "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
@@ -67746,7 +67746,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": "Lena Dottori-Marchand",
+      "csmStreet": "Lena Dottori-Marchand 507960",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -75042,7 +75042,7 @@
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -75077,8 +75077,8 @@
         "previousCrm": "N/A",
         "previousAccountingSoftware": "N/A",
         "approxMrr": "250",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -77985,9 +77985,9 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": "Max Hornby",
+      "accountingOwner": null,
       "onboardingSpecialist": "Sophie Saunders",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -78002,7 +78002,7 @@
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -78020,11 +78020,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -79818,7 +79814,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -80624,7 +80620,7 @@
       },
       "csm": null,
       "csmStreet": "Adam Jennings",
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
@@ -80703,7 +80699,7 @@
       },
       "csm": null,
       "csmStreet": "Jacob Templeman",
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
@@ -81650,7 +81646,7 @@
       "csm": null,
       "csmStreet": "Adam Jennings",
       "segment": null,
-      "streetStatus": null,
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": null,
@@ -81682,12 +81678,12 @@
         "previousCrm": "Loop",
         "previousAccountingSoftware": "Loop",
         "approxMrr": "250",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual",
+        "migrationSource": "account",
         "bankProvider": null
       },
       "spectre": {
-        "spectreClient": "No",
+        "spectreClient": "Yes",
         "csmSpectre": null,
         "productsSummary": null,
         "sales": null,
@@ -81915,7 +81911,7 @@
     },
     {
       "companyId": 773216,
-      "companyName": "info@inresidencehomes.co.uk",
+      "companyName": "In Residence",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -81986,12 +81982,12 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1149,
-    "projectsFetchedFromRocketlane": 496,
+    "projectsFetchedFromRocketlane": 494,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 159,
+      "onboarding": 158,
       "reconciliation": 0,
-      "training": 334,
+      "training": 333,
       "unknown": 3
     },
     "companiesWrittenToSupportHub": 1149,
@@ -82011,10 +82007,10 @@
       "bdm": 504,
       "previousSoftware": 0,
       "previousCrm": 456,
-      "previousAccountingSoftware": 465,
+      "previousAccountingSoftware": 466,
       "approxMrr": 579,
-      "migration": 159,
-      "bankProvider": 396
+      "migration": 161,
+      "bankProvider": 397
     },
     "spectreFieldMappings": {
       "spectreClient": "Account: \"Spectre Client\" (YES_OR_NO)",
