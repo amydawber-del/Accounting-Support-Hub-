@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T08:23:48.513Z",
+  "generatedAt": "2026-10-13T16:23:45.481Z",
   "companies": [
     {
       "companyId": 122281,
@@ -47635,7 +47635,7 @@
         "date": null
       },
       "training": {
-        "status": "Awaiting Client Response",
+        "status": "Not recorded",
         "completed": false,
         "lastDate": null,
         "trainer": null,
@@ -50829,9 +50829,9 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Max Hornby",
       "onboardingSpecialist": "Karolina Pawlowicz",
-      "accountingStatus": "Not Started",
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -50846,11 +50846,16 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -50859,7 +50864,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -62015,8 +62024,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": null,
-        "formats": "Accounting Training & Go-Live Support"
+        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management, Accounting",
+        "formats": "Bespoke Branch Training"
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-10",
@@ -62520,7 +62529,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE), Post Go-Live Support Day"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -62598,8 +62607,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": null,
-        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
+        "formats": "Bespoke Branch Training, Street Hosted Open Training Event"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -62892,7 +62901,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -65909,7 +65918,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -67668,8 +67677,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": null,
-        "formats": null
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Bespoke Branch Training"
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-22",
@@ -68657,7 +68666,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-22",
@@ -70252,7 +70261,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-02",
@@ -70554,7 +70563,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -70703,7 +70712,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -74669,7 +74678,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -74963,7 +74972,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-13",
@@ -75652,7 +75661,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -76810,7 +76819,7 @@
       "companyId": 754477,
       "companyName": "Woodhead and Co",
       "networkId": null,
-      "units": null,
+      "units": 150,
       "branches": null,
       "accountingOwner": "Max Hornby",
       "onboardingSpecialist": "Emma Cockcroft",
@@ -76845,7 +76854,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -76862,11 +76871,11 @@
         "bdm": "Kathryn Sinclair",
         "previousSoftware": null,
         "previousCrm": "Apex27",
-        "previousAccountingSoftware": "Apex27",
+        "previousAccountingSoftware": "Apex27 Lettspay",
         "approxMrr": "600",
         "migration": "Manual Customer: Onboarding",
         "migrationSource": "project",
-        "bankProvider": null
+        "bankProvider": "Natwest currently, likely to change"
       },
       "spectre": {
         "spectreClient": "No",
@@ -78334,7 +78343,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -79690,7 +79699,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -79978,7 +79987,7 @@
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "A",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -80510,7 +80519,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -80701,7 +80710,7 @@
     },
     {
       "companyId": 769716,
-      "companyName": "Morgan H Lewis ",
+      "companyName": "Morgan H Lewis/Tracy Phillips Estates",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -81081,7 +81090,7 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -81236,7 +81245,7 @@
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "A",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -81927,7 +81936,77 @@
     },
     {
       "companyId": 775789,
-      "companyName": "Halvilla",
+      "companyName": "Parkers Estate Agent",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": null,
+        "previousSoftware": null,
+        "previousCrm": null,
+        "previousAccountingSoftware": null,
+        "approxMrr": null,
+        "migration": null,
+        "migrationSource": null,
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "No",
+        "csmSpectre": null,
+        "productsSummary": null,
+        "sales": null,
+        "lettings": null,
+        "social": null,
+        "email": null,
+        "propertyReports": null,
+        "hubspotDeal": null
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 776848,
+      "companyName": "Crown Luxury Homes",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -81997,17 +82076,17 @@
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1148,
+    "companiesFetchedFromRocketlane": 1149,
     "projectsFetchedFromRocketlane": 453,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 167,
+      "onboarding": 168,
       "reconciliation": 0,
-      "training": 282,
+      "training": 281,
       "unknown": 4
     },
-    "companiesWrittenToSupportHub": 1148,
-    "companiesWithNoAccountingProjectFound": 818,
+    "companiesWrittenToSupportHub": 1149,
+    "companiesWithNoAccountingProjectFound": 819,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 1,
     "extraFieldMappings": {
       "bdm": "Account: \"Business Development Manager (Sales)\" (TEXT)",
@@ -82026,7 +82105,7 @@
       "previousAccountingSoftware": 471,
       "approxMrr": 584,
       "migration": 168,
-      "bankProvider": 402
+      "bankProvider": 403
     },
     "spectreFieldMappings": {
       "spectreClient": "Account: \"Spectre Client\" (YES_OR_NO)",
@@ -82040,7 +82119,7 @@
       "hubspotDeal": "Account: \"HubSpot record (Spectre Deal)\" (TEXT)"
     },
     "spectreFieldsFilledIn": {
-      "spectreClient": 505,
+      "spectreClient": 506,
       "csmSpectre": 351,
       "productsSummary": 351,
       "sales": 287,
