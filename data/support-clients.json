@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T18:58:11.219Z",
+  "generatedAt": "2026-10-13T01:17:14.162Z",
   "companies": [
     {
       "companyId": 122281,
@@ -55808,7 +55808,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-30",
@@ -74928,7 +74928,7 @@
       "companyId": 743616,
       "companyName": "OGPI",
       "networkId": null,
-      "units": null,
+      "units": 15,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": "Saskia Kirkham",
@@ -74947,7 +74947,7 @@
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Onboarding in Progress",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -74980,11 +74980,11 @@
         "bdm": "Kathryn Sinclair",
         "previousSoftware": null,
         "previousCrm": "N/A",
-        "previousAccountingSoftware": "N/A",
+        "previousAccountingSoftware": "N/A Startup – No Accounting in Place",
         "approxMrr": "250",
         "migration": "Manual Customer: Onboarding",
         "migrationSource": "project",
-        "bankProvider": null
+        "bankProvider": "HSBC"
       },
       "spectre": {
         "spectreClient": "No",
@@ -79655,7 +79655,7 @@
       "companyId": 764980,
       "companyName": "AJR Property",
       "networkId": null,
-      "units": null,
+      "units": 0,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Sally Finnigan",
@@ -79690,7 +79690,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -79707,11 +79707,11 @@
         "bdm": "Andy Fisher",
         "previousSoftware": null,
         "previousCrm": "Start up",
-        "previousAccountingSoftware": "Start up",
+        "previousAccountingSoftware": "Start up Arthur Online",
         "approxMrr": "250",
         "migration": "Start Up",
         "migrationSource": "account",
-        "bankProvider": null
+        "bankProvider": "Barclays"
       },
       "spectre": {
         "spectreClient": "No",
@@ -82026,7 +82026,7 @@
       "previousAccountingSoftware": 471,
       "approxMrr": 584,
       "migration": 168,
-      "bankProvider": 400
+      "bankProvider": 402
     },
     "spectreFieldMappings": {
       "spectreClient": "Account: \"Spectre Client\" (YES_OR_NO)",
