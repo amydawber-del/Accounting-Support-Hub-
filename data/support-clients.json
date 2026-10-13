@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T01:17:14.162Z",
+  "generatedAt": "2026-10-13T08:23:48.513Z",
   "companies": [
     {
       "companyId": 122281,
@@ -67668,8 +67668,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Lettings Front-End, Lettings Property Management",
-        "formats": "Bespoke Branch Training"
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-22",
@@ -70326,7 +70326,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-01",
@@ -80183,7 +80183,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
