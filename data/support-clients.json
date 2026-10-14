@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T19:40:49.340Z",
+  "generatedAt": "2026-10-14T23:10:22.192Z",
   "companies": [
     {
       "companyId": 122281,
@@ -63407,7 +63407,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
