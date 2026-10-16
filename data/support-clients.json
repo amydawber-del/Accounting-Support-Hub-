@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T09:16:34.679Z",
+  "generatedAt": "2026-10-16T14:12:56.991Z",
   "companies": [
     {
       "companyId": 122281,
@@ -9356,7 +9356,7 @@
       "account": {
         "bdm": null,
         "previousSoftware": null,
-        "previousCrm": null,
+        "previousCrm": "Vebra Alto",
         "previousAccountingSoftware": null,
         "approxMrr": "472",
         "migration": null,
@@ -56228,7 +56228,7 @@
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Sophie Saunders",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
@@ -56241,9 +56241,9 @@
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-10-01",
       "streetUsage": "A, L, LPM, S",
-      "agentLiveWithAccounting": false,
-      "goLiveDate": null,
-      "internalStatusTag": "Onboarding in Progress",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-10-16",
+      "internalStatusTag": "30 Days Post Go-Live Support",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -62527,7 +62527,7 @@
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Onboarding in Progress",
-      "redFlag": false,
+      "redFlag": true,
       "optOut": null,
       "reconciliation": null,
       "restart": {
@@ -62542,7 +62542,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE), Post Go-Live Support Day"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-11",
@@ -62694,8 +62694,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": null,
-        "formats": "Remote Refresher Training, Bespoke Branch Training"
+        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management, Accounting",
+        "formats": "Bespoke Branch Training"
       },
       "onboardingProject": {
         "targetGoLive": "2026-08-17",
@@ -63486,7 +63486,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -68903,7 +68903,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-06",
@@ -68982,7 +68982,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -69186,7 +69186,7 @@
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Training Phase",
-      "redFlag": false,
+      "redFlag": true,
       "optOut": null,
       "reconciliation": null,
       "restart": null,
@@ -70577,7 +70577,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -70711,7 +70711,7 @@
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Training Phase",
-      "redFlag": false,
+      "redFlag": true,
       "optOut": null,
       "reconciliation": null,
       "restart": {
@@ -71438,7 +71438,7 @@
       "branches": null,
       "accountingOwner": "Max Hornby",
       "onboardingSpecialist": "Sophie Saunders",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
@@ -71451,9 +71451,9 @@
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-09-16",
       "streetUsage": "S, L, LPM, A",
-      "agentLiveWithAccounting": false,
-      "goLiveDate": null,
-      "internalStatusTag": "Onboarding in Progress",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-10-16",
+      "internalStatusTag": "30 Days Post Go-Live Support",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -72952,7 +72952,7 @@
         "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": "2026-10-20",
+        "targetGoLive": "2026-10-21",
         "openingBalanceBooked": true,
         "notes": null
       },
@@ -73013,7 +73013,7 @@
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Training Phase",
-      "redFlag": false,
+      "redFlag": true,
       "optOut": null,
       "reconciliation": null,
       "restart": null,
@@ -74688,7 +74688,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-22",
@@ -75195,7 +75195,7 @@
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Training Phase",
-      "redFlag": false,
+      "redFlag": true,
       "optOut": null,
       "reconciliation": null,
       "restart": {
@@ -75805,7 +75805,7 @@
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
-      "redFlag": false,
+      "redFlag": true,
       "optOut": null,
       "reconciliation": null,
       "restart": {
@@ -76135,7 +76135,7 @@
         "bdm": "Andy Fisher",
         "previousSoftware": null,
         "previousCrm": "Rezi",
-        "previousAccountingSoftware": null,
+        "previousAccountingSoftware": "Rezi",
         "approxMrr": "500",
         "migration": null,
         "migrationSource": null,
@@ -77433,10 +77433,10 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Awaiting Client Response",
+        "status": "Not recorded",
         "completed": false,
         "lastDate": null,
-        "trainer": "Max Hornby",
+        "trainer": null,
         "modules": null,
         "formats": null
       },
@@ -80918,7 +80918,7 @@
         "bdm": "Lee Fleming",
         "previousSoftware": null,
         "previousCrm": "Dezrez",
-        "previousAccountingSoftware": null,
+        "previousAccountingSoftware": "Dezrez",
         "approxMrr": "500",
         "migration": "Manual",
         "migrationSource": "account",
@@ -81050,7 +81050,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training, Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -82271,7 +82271,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -82308,11 +82308,11 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Emma Peake",
         "previousSoftware": null,
         "previousCrm": "Alto (sales), Focus Rent (lettings)",
         "previousAccountingSoftware": "Focus Rent",
-        "approxMrr": null,
+        "approxMrr": "5879.34",
         "migration": null,
         "migrationSource": null,
         "bankProvider": null
@@ -82341,7 +82341,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -82349,7 +82349,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -82378,11 +82378,11 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Kathryn Sinclair",
         "previousSoftware": null,
         "previousCrm": "Google Sheets",
         "previousAccountingSoftware": null,
-        "approxMrr": null,
+        "approxMrr": "972",
         "migration": null,
         "migrationSource": null,
         "bankProvider": null
@@ -82411,7 +82411,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -82419,7 +82419,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -82448,11 +82448,11 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Lewis Bliss",
         "previousSoftware": null,
-        "previousCrm": null,
-        "previousAccountingSoftware": null,
-        "approxMrr": null,
+        "previousCrm": "Alto (Vebra Alto)",
+        "previousAccountingSoftware": "Vebra Alto",
+        "approxMrr": "1934",
         "migration": null,
         "migrationSource": null,
         "bankProvider": null
@@ -82476,7 +82476,7 @@
     },
     {
       "companyId": 779580,
-      "companyName": "accounts@orchardandfox.co.uk",
+      "companyName": "Orchard & Fox",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -82489,7 +82489,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -82518,25 +82518,25 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Thomas Billington",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
-        "approxMrr": null,
+        "approxMrr": "250",
         "migration": null,
         "migrationSource": null,
         "bankProvider": null
       },
       "spectre": {
-        "spectreClient": "No",
+        "spectreClient": "Yes",
         "csmSpectre": null,
-        "productsSummary": null,
-        "sales": null,
+        "productsSummary": "Sales, Social, Property Reports, Websites",
+        "sales": "Yes",
         "lettings": null,
-        "social": null,
+        "social": "Yes",
         "email": null,
-        "propertyReports": null,
-        "hubspotDeal": null
+        "propertyReports": "Yes",
+        "hubspotDeal": "https://app.hubspot.com/contacts/7658438/record/0-3/64668295540"
       },
       "rocketlaneLinks": {
         "accountingProject": null,
@@ -82546,7 +82546,7 @@
     },
     {
       "companyId": 779593,
-      "companyName": "Andrews Resdiential",
+      "companyName": "Andrews Residential",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -82559,7 +82559,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -82588,25 +82588,25 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Kathryn Sinclair",
         "previousSoftware": null,
-        "previousCrm": null,
-        "previousAccountingSoftware": null,
-        "approxMrr": null,
+        "previousCrm": "Jupix",
+        "previousAccountingSoftware": "Jupix",
+        "approxMrr": "873",
         "migration": null,
         "migrationSource": null,
         "bankProvider": null
       },
       "spectre": {
-        "spectreClient": "No",
+        "spectreClient": "Yes",
         "csmSpectre": null,
-        "productsSummary": null,
-        "sales": null,
+        "productsSummary": "Sales",
+        "sales": "Yes",
         "lettings": null,
         "social": null,
         "email": null,
         "propertyReports": null,
-        "hubspotDeal": null
+        "hubspotDeal": "https://app.hubspot.com/contacts/7658438/record/0-3/5860108858"
       },
       "rocketlaneLinks": {
         "accountingProject": null,
@@ -82629,7 +82629,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -82658,25 +82658,25 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Charlie Scotton",
         "previousSoftware": null,
-        "previousCrm": null,
+        "previousCrm": "Alto",
         "previousAccountingSoftware": null,
-        "approxMrr": null,
+        "approxMrr": "650",
         "migration": null,
         "migrationSource": null,
         "bankProvider": null
       },
       "spectre": {
-        "spectreClient": "No",
+        "spectreClient": "Yes",
         "csmSpectre": null,
-        "productsSummary": null,
+        "productsSummary": "Property Reports",
         "sales": null,
         "lettings": null,
         "social": null,
         "email": null,
-        "propertyReports": null,
-        "hubspotDeal": null
+        "propertyReports": "Yes",
+        "hubspotDeal": "https://app.hubspot.com/contacts/7658438/record/0-3/65739860637"
       },
       "rocketlaneLinks": {
         "accountingProject": null,
@@ -82691,7 +82691,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -82699,7 +82699,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Alex Wilson",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -82728,25 +82728,25 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Emma Peake",
         "previousSoftware": null,
-        "previousCrm": null,
-        "previousAccountingSoftware": null,
-        "approxMrr": null,
+        "previousCrm": "Reapit (earlier MRI, Cube and Aspersia)",
+        "previousAccountingSoftware": "Reapit",
+        "approxMrr": "6755.4",
         "migration": null,
         "migrationSource": null,
         "bankProvider": null
       },
       "spectre": {
-        "spectreClient": "No",
+        "spectreClient": "Yes",
         "csmSpectre": null,
-        "productsSummary": null,
-        "sales": null,
-        "lettings": null,
+        "productsSummary": "Sales, Lettings, Property Reports",
+        "sales": "Yes",
+        "lettings": "Yes",
         "social": null,
         "email": null,
-        "propertyReports": null,
-        "hubspotDeal": null
+        "propertyReports": "Yes",
+        "hubspotDeal": "https://app.hubspot.com/contacts/7658438/record/0-3/2311055245"
       },
       "rocketlaneLinks": {
         "accountingProject": null,
@@ -82757,12 +82757,12 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1158,
-    "projectsFetchedFromRocketlane": 471,
+    "projectsFetchedFromRocketlane": 470,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 173,
       "reconciliation": 0,
-      "training": 294,
+      "training": 293,
       "unknown": 4
     },
     "companiesWrittenToSupportHub": 1158,
@@ -82779,11 +82779,11 @@
       "customerType": "Project: \"Customer Type\" (SINGLE_CHOICE)"
     },
     "extraFieldsFilledIn": {
-      "bdm": 521,
+      "bdm": 528,
       "previousSoftware": 0,
-      "previousCrm": 478,
-      "previousAccountingSoftware": 480,
-      "approxMrr": 594,
+      "previousCrm": 483,
+      "previousAccountingSoftware": 485,
+      "approxMrr": 601,
       "migration": 170,
       "bankProvider": 404
     },
@@ -82801,13 +82801,13 @@
     "spectreFieldsFilledIn": {
       "spectreClient": 517,
       "csmSpectre": 351,
-      "productsSummary": 359,
-      "sales": 293,
-      "lettings": 135,
-      "social": 115,
+      "productsSummary": 363,
+      "sales": 296,
+      "lettings": 136,
+      "social": 116,
       "email": 178,
-      "propertyReports": 289,
-      "hubspotDeal": 361
+      "propertyReports": 292,
+      "hubspotDeal": 365
     }
   }
 }
