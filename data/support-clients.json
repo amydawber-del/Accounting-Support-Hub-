@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T14:12:56.991Z",
+  "generatedAt": "2026-10-16T18:20:12.120Z",
   "companies": [
     {
       "companyId": 122281,
@@ -63469,7 +63469,7 @@
       "csm": null,
       "csmStreet": null,
       "segment": "Enterprise & Strategic",
-      "streetStatus": "Active",
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-09-24",
       "streetUsage": "A, L, LPM, S",
@@ -63489,7 +63489,7 @@
         "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
-        "targetGoLive": null,
+        "targetGoLive": "2026-11-02",
         "openingBalanceBooked": true,
         "notes": null
       },
@@ -64337,7 +64337,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
