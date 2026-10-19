@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T05:15:27.778Z",
+  "generatedAt": "2026-10-19T11:12:17.483Z",
   "companies": [
     {
       "companyId": 122281,
@@ -30155,7 +30155,7 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Onboarding in Progress",
+      "internalStatusTag": "Awaiting OB Call Booking",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -50197,7 +50197,7 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Onboarding in Progress",
+      "internalStatusTag": "Awaiting Bridge Second Cut",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -50232,8 +50232,8 @@
         "previousCrm": "Reapit (20+ years)",
         "previousAccountingSoftware": "QuickBooks Online",
         "approxMrr": "650",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Bridge Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": "Bank of Scotland"
       },
       "spectre": {
@@ -50850,7 +50850,7 @@
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": null,
+      "streetGoLiveDate": "2026-10-19",
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
@@ -55234,7 +55234,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": "Emma Cockcroft",
-      "accountingStatus": "Not Started",
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -55249,11 +55249,16 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -55262,7 +55267,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -62542,7 +62551,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE), Post Go-Live Support Day"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-11",
@@ -62879,14 +62888,14 @@
       "companyId": 650069,
       "companyName": "Prism",
       "networkId": null,
-      "units": 43,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
-        "customer": null,
+        "customer": true,
         "verificationStatus": null
       },
       "csm": null,
@@ -62894,7 +62903,7 @@
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-10-08",
+      "streetGoLiveDate": "2026-10-19",
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
@@ -63475,7 +63484,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting OB Call Booking",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -63486,7 +63495,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-02",
@@ -64318,7 +64327,7 @@
       "companyId": 671064,
       "companyName": "IIG Estates",
       "networkId": null,
-      "units": null,
+      "units": 33,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Emma Cockcroft",
@@ -70498,7 +70507,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training, Accounting Training & Go-Live Support"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -71151,7 +71160,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": true,
       "optOut": null,
       "reconciliation": null,
@@ -71806,7 +71815,7 @@
       "companyId": 722109,
       "companyName": "Willars Property Co ",
       "networkId": null,
-      "units": null,
+      "units": 10,
       "branches": null,
       "accountingOwner": "Max Hornby",
       "onboardingSpecialist": "Emma Cockcroft",
@@ -71820,12 +71829,12 @@
       "csmStreet": "Jacob Templeman",
       "segment": "SMB",
       "streetStatus": "Onboarding",
-      "agentLiveWithStreet": false,
-      "streetGoLiveDate": null,
+      "agentLiveWithStreet": true,
+      "streetGoLiveDate": "2026-10-19",
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -71841,11 +71850,11 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Accounting Training & Go-Live Support, Post Go-Live Support Day"
       },
       "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
+        "targetGoLive": "2026-10-22",
+        "openingBalanceBooked": true,
         "notes": null
       },
       "internalNotes": {
@@ -71858,11 +71867,11 @@
         "bdm": "Ryan Erkal",
         "previousSoftware": null,
         "previousCrm": "Street (under Nested's account); Salesforce, Jupix and Reapit in earlier roles",
-        "previousAccountingSoftware": null,
+        "previousAccountingSoftware": "Other",
         "approxMrr": "250",
-        "migration": null,
-        "migrationSource": null,
-        "bankProvider": null
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
+        "bankProvider": "Barclays"
       },
       "spectre": {
         "spectreClient": null,
@@ -75671,7 +75680,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -79713,7 +79722,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -82053,7 +82062,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": "Sam Howat",
-      "accountingStatus": null,
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -82065,14 +82074,19 @@
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -82081,7 +82095,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -82757,16 +82775,16 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1158,
-    "projectsFetchedFromRocketlane": 470,
+    "projectsFetchedFromRocketlane": 472,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 173,
+      "onboarding": 175,
       "reconciliation": 0,
       "training": 293,
       "unknown": 4
     },
     "companiesWrittenToSupportHub": 1158,
-    "companiesWithNoAccountingProjectFound": 816,
+    "companiesWithNoAccountingProjectFound": 815,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 1,
     "extraFieldMappings": {
       "bdm": "Account: \"Business Development Manager (Sales)\" (TEXT)",
@@ -82782,10 +82800,10 @@
       "bdm": 528,
       "previousSoftware": 0,
       "previousCrm": 483,
-      "previousAccountingSoftware": 485,
+      "previousAccountingSoftware": 486,
       "approxMrr": 601,
-      "migration": 170,
-      "bankProvider": 404
+      "migration": 172,
+      "bankProvider": 405
     },
     "spectreFieldMappings": {
       "spectreClient": "Account: \"Spectre Client\" (YES_OR_NO)",
