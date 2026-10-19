@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T11:12:17.483Z",
+  "generatedAt": "2026-10-19T17:45:30.892Z",
   "companies": [
     {
       "companyId": 122281,
@@ -11317,7 +11317,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": "Rob Kenyon",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
@@ -11334,11 +11334,16 @@
       "streetUsage": "A, L, LPM",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Client Accounting Reconciliation",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Restart Requested",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -11347,7 +11352,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -14514,7 +14523,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": "Hayley Seabrook",
+      "accountingOwner": null,
       "onboardingSpecialist": "Rob Kenyon",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
@@ -14531,19 +14540,10 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Client Accounting Reconciliation",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
-      "reconciliation": {
-        "status": "New",
-        "route": null,
-        "specialist": "Hayley Seabrook",
-        "dateRaised": "2026-10-14",
-        "reviewCallBooked": null,
-        "currentDifference": null,
-        "outcome": null,
-        "notes": null
-      },
+      "reconciliation": null,
       "restart": {
         "status": "Restart Requested",
         "route": null,
@@ -14558,11 +14558,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -23235,7 +23231,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": "Hayley Seabrook",
+      "accountingOwner": null,
       "onboardingSpecialist": "Karolina Pawlowicz",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
@@ -23252,19 +23248,10 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Client Accounting Reconciliation",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
-      "reconciliation": {
-        "status": "New",
-        "route": null,
-        "specialist": "Hayley Seabrook",
-        "dateRaised": "2026-10-01",
-        "reviewCallBooked": null,
-        "currentDifference": null,
-        "outcome": null,
-        "notes": null
-      },
+      "reconciliation": null,
       "restart": {
         "status": "Restart Requested",
         "route": null,
@@ -23279,11 +23266,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -38856,7 +38839,7 @@
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Saskia Kirkham",
-      "accountingStatus": "Not Started",
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -38871,7 +38854,7 @@
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -48410,7 +48393,7 @@
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Saskia Kirkham",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
@@ -48423,9 +48406,9 @@
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-10-08",
       "streetUsage": "A",
-      "agentLiveWithAccounting": false,
-      "goLiveDate": null,
-      "internalStatusTag": "Onboarding in Progress",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-10-19",
+      "internalStatusTag": "30 Days Post Go-Live Support",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -51929,7 +51912,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-30",
@@ -55232,7 +55215,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -62750,9 +62733,9 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Emma Cockcroft",
-      "accountingStatus": "Not Started",
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -62767,11 +62750,16 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -62780,7 +62768,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -63421,7 +63413,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -70358,7 +70350,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Remote Refresher Training"
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-01",
@@ -70586,7 +70578,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -71820,7 +71812,7 @@
       "accountingOwner": "Max Hornby",
       "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
-      "clientAccountingEnabled": false,
+      "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
@@ -82060,7 +82052,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -82771,20 +82763,160 @@
         "reconciliationProject": null,
         "trainingProject": null
       }
+    },
+    {
+      "companyId": 780509,
+      "companyName": "David Astburys",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": null,
+        "previousSoftware": null,
+        "previousCrm": null,
+        "previousAccountingSoftware": null,
+        "approxMrr": null,
+        "migration": null,
+        "migrationSource": null,
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "No",
+        "csmSpectre": null,
+        "productsSummary": null,
+        "sales": null,
+        "lettings": null,
+        "social": null,
+        "email": null,
+        "propertyReports": null,
+        "hubspotDeal": null
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 780656,
+      "companyName": "Barney Estates and Auctioneers",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": null,
+        "previousSoftware": null,
+        "previousCrm": null,
+        "previousAccountingSoftware": null,
+        "approxMrr": null,
+        "migration": null,
+        "migrationSource": null,
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "No",
+        "csmSpectre": null,
+        "productsSummary": null,
+        "sales": null,
+        "lettings": null,
+        "social": null,
+        "email": null,
+        "propertyReports": null,
+        "hubspotDeal": null
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1158,
-    "projectsFetchedFromRocketlane": 472,
+    "companiesFetchedFromRocketlane": 1160,
+    "projectsFetchedFromRocketlane": 469,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 175,
       "reconciliation": 0,
-      "training": 293,
+      "training": 290,
       "unknown": 4
     },
-    "companiesWrittenToSupportHub": 1158,
-    "companiesWithNoAccountingProjectFound": 815,
+    "companiesWrittenToSupportHub": 1160,
+    "companiesWithNoAccountingProjectFound": 817,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 1,
     "extraFieldMappings": {
       "bdm": "Account: \"Business Development Manager (Sales)\" (TEXT)",
@@ -82817,7 +82949,7 @@
       "hubspotDeal": "Account: \"HubSpot record (Spectre Deal)\" (TEXT)"
     },
     "spectreFieldsFilledIn": {
-      "spectreClient": 517,
+      "spectreClient": 519,
       "csmSpectre": 351,
       "productsSummary": 363,
       "sales": 296,
