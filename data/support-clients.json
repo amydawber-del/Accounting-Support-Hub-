@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T06:32:48.627Z",
+  "generatedAt": "2026-10-20T12:03:41.194Z",
   "companies": [
     {
       "companyId": 122281,
@@ -11364,9 +11364,9 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Natalie Russell",
         "previousSoftware": null,
-        "previousCrm": null,
+        "previousCrm": "Jupix",
         "previousAccountingSoftware": "Jupix",
         "approxMrr": "500",
         "migration": null,
@@ -11374,15 +11374,15 @@
         "bankProvider": "Natwest"
       },
       "spectre": {
-        "spectreClient": null,
+        "spectreClient": "Yes",
         "csmSpectre": null,
-        "productsSummary": null,
-        "sales": null,
-        "lettings": null,
+        "productsSummary": "Sales, Lettings, Property Reports",
+        "sales": "Yes",
+        "lettings": "Yes",
         "social": null,
         "email": null,
-        "propertyReports": null,
-        "hubspotDeal": null
+        "propertyReports": "Yes",
+        "hubspotDeal": "https://app.hubspot.com/contacts/7658438/record/0-3/45491264953"
       },
       "rocketlaneLinks": {
         "accountingProject": null,
@@ -44969,11 +44969,11 @@
         "bdm": "Kathryn Sinclair",
         "previousSoftware": null,
         "previousCrm": "Rezi",
-        "previousAccountingSoftware": "Alto",
+        "previousAccountingSoftware": "Alto Alto",
         "approxMrr": "1090",
         "migration": "Manual Customer: Onboarding",
         "migrationSource": "project",
-        "bankProvider": "HSBC and Barcleys"
+        "bankProvider": "HSBC and Barcleys HSBC and Barcleys"
       },
       "spectre": {
         "spectreClient": "Yes",
@@ -51912,7 +51912,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-30",
@@ -55272,15 +55272,15 @@
         "bankProvider": "HSBC"
       },
       "spectre": {
-        "spectreClient": null,
+        "spectreClient": "Yes",
         "csmSpectre": null,
-        "productsSummary": null,
+        "productsSummary": "Property Reports, Websites",
         "sales": null,
         "lettings": null,
         "social": null,
         "email": null,
-        "propertyReports": null,
-        "hubspotDeal": null
+        "propertyReports": "Yes",
+        "hubspotDeal": "https://app.hubspot.com/contacts/7658438/record/0-3/61475269716"
       },
       "rocketlaneLinks": {
         "accountingProject": null,
@@ -62029,8 +62029,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management, Accounting",
-        "formats": "Bespoke Branch Training"
+        "modules": null,
+        "formats": "Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-10",
@@ -62612,8 +62612,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
-        "formats": "Bespoke Branch Training, Street Hosted Open Training Event"
+        "modules": null,
+        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -62797,7 +62797,7 @@
         "lettings": "Yes",
         "social": null,
         "email": "Yes",
-        "propertyReports": null,
+        "propertyReports": "Yes",
         "hubspotDeal": "https://app.hubspot.com/contacts/7658438/record/0-2/55374558988"
       },
       "rocketlaneLinks": {
@@ -67692,8 +67692,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Lettings Front-End, Lettings Property Management",
-        "formats": "Bespoke Branch Training"
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-22",
@@ -75719,7 +75719,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -78158,7 +78158,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -82133,7 +82133,7 @@
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Sally Finnigan",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -82771,7 +82771,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -82779,7 +82779,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -82808,25 +82808,25 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Andy Fisher",
         "previousSoftware": null,
-        "previousCrm": null,
-        "previousAccountingSoftware": null,
-        "approxMrr": null,
+        "previousCrm": "Jupix",
+        "previousAccountingSoftware": "Jupix",
+        "approxMrr": "1575",
         "migration": null,
         "migrationSource": null,
         "bankProvider": null
       },
       "spectre": {
-        "spectreClient": "No",
+        "spectreClient": "Yes",
         "csmSpectre": null,
-        "productsSummary": null,
-        "sales": null,
-        "lettings": null,
-        "social": null,
-        "email": null,
-        "propertyReports": null,
-        "hubspotDeal": null
+        "productsSummary": "Sales, Lettings, Social, Email, Property Reports",
+        "sales": "Yes",
+        "lettings": "Yes",
+        "social": "Yes",
+        "email": "Yes",
+        "propertyReports": "Yes",
+        "hubspotDeal": "https://app.hubspot.com/contacts/7658438/record/0-3/64288647560"
       },
       "rocketlaneLinks": {
         "accountingProject": null,
@@ -82849,7 +82849,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -82878,11 +82878,11 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Charlie Scotton",
         "previousSoftware": null,
-        "previousCrm": null,
+        "previousCrm": "Estates IT",
         "previousAccountingSoftware": null,
-        "approxMrr": null,
+        "approxMrr": "587",
         "migration": null,
         "migrationSource": null,
         "bankProvider": null
@@ -82907,16 +82907,16 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1160,
-    "projectsFetchedFromRocketlane": 469,
+    "projectsFetchedFromRocketlane": 467,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 175,
       "reconciliation": 0,
-      "training": 290,
+      "training": 288,
       "unknown": 4
     },
     "companiesWrittenToSupportHub": 1160,
-    "companiesWithNoAccountingProjectFound": 817,
+    "companiesWithNoAccountingProjectFound": 819,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 1,
     "extraFieldMappings": {
       "bdm": "Account: \"Business Development Manager (Sales)\" (TEXT)",
@@ -82929,11 +82929,11 @@
       "customerType": "Project: \"Customer Type\" (SINGLE_CHOICE)"
     },
     "extraFieldsFilledIn": {
-      "bdm": 528,
+      "bdm": 531,
       "previousSoftware": 0,
-      "previousCrm": 483,
-      "previousAccountingSoftware": 486,
-      "approxMrr": 601,
+      "previousCrm": 486,
+      "previousAccountingSoftware": 487,
+      "approxMrr": 603,
       "migration": 172,
       "bankProvider": 405
     },
@@ -82949,15 +82949,15 @@
       "hubspotDeal": "Account: \"HubSpot record (Spectre Deal)\" (TEXT)"
     },
     "spectreFieldsFilledIn": {
-      "spectreClient": 519,
+      "spectreClient": 521,
       "csmSpectre": 351,
-      "productsSummary": 363,
-      "sales": 296,
-      "lettings": 136,
-      "social": 116,
-      "email": 178,
-      "propertyReports": 292,
-      "hubspotDeal": 365
+      "productsSummary": 366,
+      "sales": 298,
+      "lettings": 138,
+      "social": 117,
+      "email": 179,
+      "propertyReports": 296,
+      "hubspotDeal": 368
     }
   }
 }
