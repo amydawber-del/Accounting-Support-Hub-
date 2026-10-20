@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T16:52:12.661Z",
+  "generatedAt": "2026-10-20T20:30:07.648Z",
   "companies": [
     {
       "companyId": 122281,
@@ -67692,8 +67692,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": null,
-        "formats": null
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Bespoke Branch Training"
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-22",
