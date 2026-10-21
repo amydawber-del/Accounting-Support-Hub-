@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T07:29:50.955Z",
+  "generatedAt": "2026-10-21T13:11:32.122Z",
   "companies": [
     {
       "companyId": 122281,
@@ -56434,7 +56434,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": null,
-      "accountingStatus": "Not Started",
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -56442,14 +56442,14 @@
       },
       "csm": null,
       "csmStreet": "Jacob Templeman",
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
       "streetGoLiveDate": null,
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -56467,7 +56467,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -56490,7 +56494,7 @@
         "productsSummary": "Email, Property Reports",
         "sales": null,
         "lettings": null,
-        "social": null,
+        "social": "Yes",
         "email": "Yes",
         "propertyReports": "Yes",
         "hubspotDeal": "https://app.hubspot.com/contacts/7658438/record/0-2/3999606521"
@@ -57454,7 +57458,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-11",
@@ -61162,7 +61166,7 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting OB Call Booking",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -61176,7 +61180,7 @@
         "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": null,
+        "targetGoLive": "2026-10-27",
         "openingBalanceBooked": true,
         "notes": null
       },
@@ -65933,7 +65937,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -68825,7 +68829,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -68904,7 +68908,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-06",
@@ -70276,7 +70280,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-02",
@@ -74952,7 +74956,7 @@
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": "Saskia Kirkham",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Live",
       "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": false,
@@ -74965,9 +74969,9 @@
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-10-16",
       "streetUsage": "S, L, LPM, A",
-      "agentLiveWithAccounting": false,
-      "goLiveDate": null,
-      "internalStatusTag": "Onboarding in Progress",
+      "agentLiveWithAccounting": true,
+      "goLiveDate": "2026-10-21",
+      "internalStatusTag": "30 Days Post Go-Live Support",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -75359,7 +75363,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Request Received",
         "completed": false,
         "lastDate": null,
         "trainer": null,
@@ -75496,9 +75500,9 @@
       "csm": null,
       "csmStreet": "Diana Culea",
       "segment": "SMB",
-      "streetStatus": null,
-      "agentLiveWithStreet": false,
-      "streetGoLiveDate": null,
+      "streetStatus": "Active",
+      "agentLiveWithStreet": true,
+      "streetGoLiveDate": "2026-10-21",
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
@@ -76849,7 +76853,7 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": "Awaiting OB Call Booking",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -78824,10 +78828,10 @@
         "date": null
       },
       "training": {
-        "status": "Not recorded",
+        "status": "Request Received",
         "completed": false,
         "lastDate": null,
-        "trainer": null,
+        "trainer": "Maria Duffy",
         "modules": null,
         "formats": null
       },
@@ -79792,10 +79796,10 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Request Received",
         "completed": false,
         "lastDate": null,
-        "trainer": null,
+        "trainer": "Jess Benjamin Smith",
         "modules": null,
         "formats": null
       },
@@ -80660,7 +80664,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -82140,8 +82144,8 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "accountingOwner": "Maria Duffy",
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -82359,7 +82363,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -82859,6 +82863,76 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
+      "onboardingSpecialist": "Saskia Kirkham",
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": "Diana Culea",
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": "Lee Fleming",
+        "previousSoftware": null,
+        "previousCrm": "AgentOS",
+        "previousAccountingSoftware": "AgentOS",
+        "approxMrr": "700",
+        "migration": null,
+        "migrationSource": null,
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "No",
+        "csmSpectre": null,
+        "productsSummary": null,
+        "sales": null,
+        "lettings": null,
+        "social": null,
+        "email": null,
+        "propertyReports": null,
+        "hubspotDeal": null
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 781275,
+      "companyName": "Street HQ General Training",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
       "onboardingSpecialist": null,
       "accountingStatus": null,
       "clientAccountingEnabled": false,
@@ -82924,16 +82998,16 @@
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1160,
-    "projectsFetchedFromRocketlane": 470,
+    "companiesFetchedFromRocketlane": 1161,
+    "projectsFetchedFromRocketlane": 474,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 177,
+      "onboarding": 178,
       "reconciliation": 0,
-      "training": 289,
+      "training": 292,
       "unknown": 4
     },
-    "companiesWrittenToSupportHub": 1160,
+    "companiesWrittenToSupportHub": 1161,
     "companiesWithNoAccountingProjectFound": 818,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 1,
     "extraFieldMappings": {
@@ -82947,11 +83021,11 @@
       "customerType": "Project: \"Customer Type\" (SINGLE_CHOICE)"
     },
     "extraFieldsFilledIn": {
-      "bdm": 531,
+      "bdm": 532,
       "previousSoftware": 0,
-      "previousCrm": 486,
-      "previousAccountingSoftware": 487,
-      "approxMrr": 603,
+      "previousCrm": 487,
+      "previousAccountingSoftware": 488,
+      "approxMrr": 604,
       "migration": 172,
       "bankProvider": 407
     },
@@ -82967,12 +83041,12 @@
       "hubspotDeal": "Account: \"HubSpot record (Spectre Deal)\" (TEXT)"
     },
     "spectreFieldsFilledIn": {
-      "spectreClient": 521,
+      "spectreClient": 522,
       "csmSpectre": 351,
       "productsSummary": 366,
       "sales": 298,
       "lettings": 138,
-      "social": 117,
+      "social": 118,
       "email": 179,
       "propertyReports": 296,
       "hubspotDeal": 368
