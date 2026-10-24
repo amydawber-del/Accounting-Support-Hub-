@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T07:13:22.021Z",
+  "generatedAt": "2026-10-24T12:13:06.890Z",
   "companies": [
     {
       "companyId": 122281,
@@ -75322,7 +75322,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Awaiting Client Response",
+        "status": "Not recorded",
         "completed": false,
         "lastDate": null,
         "trainer": null,
