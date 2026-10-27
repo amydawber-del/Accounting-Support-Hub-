@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T14:54:01.873Z",
+  "generatedAt": "2026-10-27T20:02:35.816Z",
   "companies": [
     {
       "companyId": 122281,
@@ -76023,7 +76023,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -76839,7 +76839,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-29",
@@ -78062,7 +78062,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -78798,12 +78798,12 @@
         "date": null
       },
       "training": {
-        "status": "Prep in Progress",
+        "status": "Not recorded",
         "completed": false,
-        "lastDate": "2026-11-11",
-        "trainer": "Maria Duffy",
-        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
-        "formats": "Bespoke Branch Training"
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -83242,12 +83242,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Awaiting Client Response",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
+        "lastDate": "2026-11-17",
         "trainer": "Maria Duffy",
-        "modules": null,
-        "formats": null
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Bespoke HQ Training"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -83434,7 +83434,7 @@
     },
     {
       "companyId": 782607,
-      "companyName": "richard.bessant@rblp.uk.com",
+      "companyName": "RBLP ",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -83645,12 +83645,12 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1170,
-    "projectsFetchedFromRocketlane": 471,
+    "projectsFetchedFromRocketlane": 472,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 173,
       "reconciliation": 0,
-      "training": 294,
+      "training": 295,
       "unknown": 4
     },
     "companiesWrittenToSupportHub": 1170,
