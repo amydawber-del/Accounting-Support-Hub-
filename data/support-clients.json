@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T05:28:33.836Z",
+  "generatedAt": "2026-10-28T11:36:12.032Z",
   "companies": [
     {
       "companyId": 122281,
@@ -59299,12 +59299,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Ready for Delivery ⭐",
+        "status": "Not recorded",
         "completed": false,
-        "lastDate": "2026-11-11",
-        "trainer": "Jess Benjamin Smith",
-        "modules": "Sales Modules",
-        "formats": "Bespoke Branch Training"
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -65560,7 +65560,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -69202,15 +69202,15 @@
         "bankProvider": null
       },
       "spectre": {
-        "spectreClient": null,
+        "spectreClient": "Yes",
         "csmSpectre": null,
-        "productsSummary": null,
-        "sales": null,
-        "lettings": null,
-        "social": null,
-        "email": null,
-        "propertyReports": null,
-        "hubspotDeal": null
+        "productsSummary": "Sales, Lettings, Social, Email, Property Reports, Websites",
+        "sales": "Yes",
+        "lettings": "Yes",
+        "social": "Yes",
+        "email": "Yes",
+        "propertyReports": "Yes",
+        "hubspotDeal": "https://app.hubspot.com/contacts/7658438/record/0-3/61267501449"
       },
       "rocketlaneLinks": {
         "accountingProject": null,
@@ -69471,7 +69471,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-30",
@@ -72034,7 +72034,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -74110,7 +74110,7 @@
       "companyId": 739934,
       "companyName": "Webbs Estate Agents",
       "networkId": null,
-      "units": null,
+      "units": 484,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": "Tracy Kettle",
@@ -74162,11 +74162,11 @@
         "bdm": "Emma Peake",
         "previousSoftware": null,
         "previousCrm": "Alto",
-        "previousAccountingSoftware": "Alto",
+        "previousAccountingSoftware": "Alto Alto",
         "approxMrr": null,
         "migration": "Bridge Customer: Onboarding",
         "migrationSource": "project",
-        "bankProvider": null
+        "bankProvider": "Barclays"
       },
       "spectre": {
         "spectreClient": "No",
@@ -75333,7 +75333,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Awaiting Client Response",
         "completed": false,
         "lastDate": null,
         "trainer": null,
@@ -81879,7 +81879,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -83645,16 +83645,16 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1170,
-    "projectsFetchedFromRocketlane": 472,
+    "projectsFetchedFromRocketlane": 473,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 173,
       "reconciliation": 0,
-      "training": 295,
+      "training": 296,
       "unknown": 4
     },
     "companiesWrittenToSupportHub": 1170,
-    "companiesWithNoAccountingProjectFound": 829,
+    "companiesWithNoAccountingProjectFound": 828,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 1,
     "extraFieldMappings": {
       "bdm": "Account: \"Business Development Manager (Sales)\" (TEXT)",
@@ -83673,7 +83673,7 @@
       "previousAccountingSoftware": 494,
       "approxMrr": 610,
       "migration": 165,
-      "bankProvider": 410
+      "bankProvider": 411
     },
     "spectreFieldMappings": {
       "spectreClient": "Account: \"Spectre Client\" (YES_OR_NO)",
@@ -83687,15 +83687,15 @@
       "hubspotDeal": "Account: \"HubSpot record (Spectre Deal)\" (TEXT)"
     },
     "spectreFieldsFilledIn": {
-      "spectreClient": 532,
+      "spectreClient": 533,
       "csmSpectre": 351,
-      "productsSummary": 370,
-      "sales": 301,
-      "lettings": 139,
-      "social": 119,
-      "email": 183,
-      "propertyReports": 300,
-      "hubspotDeal": 372
+      "productsSummary": 371,
+      "sales": 302,
+      "lettings": 140,
+      "social": 120,
+      "email": 184,
+      "propertyReports": 301,
+      "hubspotDeal": 373
     }
   }
 }
