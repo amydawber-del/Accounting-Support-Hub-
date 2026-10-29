@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T15:31:08.843Z",
+  "generatedAt": "2026-10-29T20:32:06.803Z",
   "companies": [
     {
       "companyId": 122281,
@@ -57447,7 +57447,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-11",
@@ -62012,7 +62012,7 @@
         "customer": null,
         "verificationStatus": null
       },
-      "csm": null,
+      "csm": "Diana Culea",
       "csmStreet": "Diana Culea",
       "segment": "SMB",
       "streetStatus": "Active",
@@ -62031,8 +62031,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management, Accounting",
-        "formats": "Bespoke Branch Training"
+        "modules": null,
+        "formats": "Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-10",
@@ -62536,7 +62536,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE), Post Go-Live Support Day"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-11",
@@ -65569,7 +65569,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-20",
@@ -67682,8 +67682,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": null,
-        "formats": null
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Bespoke Branch Training"
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-22",
@@ -68671,7 +68671,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Remote Refresher Training"
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-22",
@@ -70489,7 +70489,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Remote Refresher Training, Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -71138,7 +71138,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": true,
       "goLiveDate": "2026-10-22",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": true,
       "optOut": null,
       "reconciliation": null,
@@ -73403,7 +73403,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -74157,8 +74157,8 @@
         "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
+        "targetGoLive": "2026-12-07",
+        "openingBalanceBooked": true,
         "notes": null
       },
       "internalNotes": {
@@ -76010,8 +76010,8 @@
       "csm": null,
       "csmStreet": "Adam Jennings",
       "segment": "SMB",
-      "streetStatus": null,
-      "agentLiveWithStreet": false,
+      "streetStatus": "Active",
+      "agentLiveWithStreet": true,
       "streetGoLiveDate": null,
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
@@ -76848,7 +76848,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-29",
@@ -79771,12 +79771,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Prep in Progress",
+        "status": "Not recorded",
         "completed": false,
-        "lastDate": "2026-11-24",
-        "trainer": "Jess Benjamin Smith",
-        "modules": "Sales Modules",
-        "formats": "Bespoke Branch Training"
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -80443,7 +80443,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -84232,16 +84232,16 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1178,
-    "projectsFetchedFromRocketlane": 483,
+    "projectsFetchedFromRocketlane": 481,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 176,
       "reconciliation": 0,
-      "training": 303,
+      "training": 301,
       "unknown": 4
     },
     "companiesWrittenToSupportHub": 1178,
-    "companiesWithNoAccountingProjectFound": 828,
+    "companiesWithNoAccountingProjectFound": 830,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 1,
     "extraFieldMappings": {
       "bdm": "Account: \"Business Development Manager (Sales)\" (TEXT)",
