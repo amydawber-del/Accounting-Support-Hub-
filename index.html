@@ -6,22 +6,22 @@
 <title>All clients | Street Support Hub</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%20fill%3D%22%230C0D17%22%20role%3D%22img%22%20aria-label%3D%22Street%22%3E%3Cpath%20d%3D%22M9.89%2C63.02c.36%2C0%2C.66.28.71.63.94%2C6.92%2C6.49%2C11.28%2C15.32%2C11.28%2C9.92%2C0%2C14.75-3.33%2C14.75-10.17%2C0-5.05-3.2-7.88-10.71-9.46l-9.52-2.05c-12.5-2.68-18.33-8.68-18.33-18.84%2C0-11.99%2C8.94-19.14%2C23.91-19.14%2C13.84%2C0%2C23.3%2C7.2%2C24.44%2C19.85.03.41-.3.78-.73.78l-9.09-.03c-.36%2C0-.68-.3-.71-.66-.66-6.06-5.93-10.05-14.09-10.05s-12.78%2C3.11-12.78%2C9.24c0%2C2.72%2C1.04%2C6.56%2C10.15%2C8.53l8.86%2C1.87c12.78%2C2.67%2C19.56%2C9.55%2C19.56%2C19.97%2C0%2C12.34-9.85%2C19.99-25.68%2C19.99S.36%2C77.27%2C0%2C63.83C0%2C63.43.31%2C63.1.73%2C63.08l9.17-.08-.02.02Z%22/%3E%3Cpath%20d%3D%22M76.06%2C56.28v-29.54c0-.4-.33-.73-.73-.73h-11.89c-.4%2C0-.73-.33-.73-.73v-8.45c0-.4.33-.73.73-.73h35.83c.4%2C0%2C.73.33.73.73v8.46c0%2C.4-.33.73-.73.73h-11.82c-.4%2C0-.73.33-.73.73v29.54c0%2C.4-.33.73-.73.73h-9.21c-.4%2C0-.73-.33-.73-.73h-.02l.02-.02Z%22/%3E%3Cpath%20d%3D%22M95.54%2C73.96h-27.37c-.41%2C0-.75.33-.75.75v8.43c0%2C.41.33.75.75.75h27.37c.41%2C0%2C.75-.33.75-.75v-8.43c0-.41-.33-.75-.75-.75Z%22/%3E%3C/svg%3E">
 <meta name="theme-color" content="#0C0D17">
 <style>
 /* =====================================================================
-   STREET SUPPORT HUB — Street Training Operations design system
-   Same shell and tokens as the Training Operations dashboard: ink sidebar
-   with the Street wordmark, cool grey off-white page, white cards,
-   Figtree type, Street purple as the action colour.
+   STREET SUPPORT HUB, themed on the myStreet design system:
+   white top navigation with the Street logo, #f5f5f5 page, white cards,
+   Italian Plate headings, Nunito body text, indigo as the single accent.
    ===================================================================== */
 :root{
-  --ink:#0C0D17; --ink-2:#161827; --ink-3:#24273A; --ink-text:#C9CAD3; --ink-muted:#8C8E9C; --purple-on-ink:#B3AAFF;
-  --page:#F7F8FC; --fill:#EEF0F6; --fill-2:#ECEEF4; --white:#FFFFFF;
-  --line:#E8EAF0; --line-strong:#D4D7E5;
-  --text:#0C0D17; --text-2:#43465A; --muted:#646882; --faint:#9C9EAA;
-  --purple:#5B4BE7; --purple-hover:#4A3BCF; --purple-tint:#EFEDFD; --purple-tint-2:#E2DEFB; --purple-line:#C9C2F7;
+  /* myStreet design system tokens: near-greyscale surfaces with one indigo accent */
+  --ink:#171717; --ink-text:#334155; --ink-muted:#737373;
+  --page:#f5f5f5; --fill:#f4f4f5; --fill-2:#f4f4f5; --white:#FFFFFF;
+  --line:#e5e5e5; --line-strong:#d4d4d8;
+  --text:#171717; --text-2:#334155; --muted:#737373; --faint:#a1a1aa;
+  --purple:#4f46e5; --purple-hover:#4338ca; --purple-tint:#eef2ff; --purple-tint-2:#e0e7ff; --purple-line:#c7d2fe;
   --teal:#026568; --teal-bg:#E5EFEF; --teal-line:#B9D6D7;
   --amber:#8A5300; --amber-bg:#FBF0DA; --amber-line:#F1D59A;
   --red:#B42339; --red-bg:#FBE9EC; --red-line:#F1C1CA;
@@ -30,85 +30,78 @@
   --stone:#5E5240; --stone-bg:#F2EFE9; --stone-line:#DDD6C8;
   --sky:#0B4A66; --sky-bg:#E0F0F8; --sky-line:#9FCFE6;
 
-  --font:'Figtree', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --head:'Gilmer', 'Figtree', ui-sans-serif, system-ui, sans-serif;
-  --radius-sm:6px; --radius-md:8px; --radius-lg:14px; --radius-xl:16px;
-  --shadow-card:0 1px 2px rgba(12,13,23,.04);
-  --shadow-card-hover:0 6px 20px rgba(12,13,23,.07), 0 1px 3px rgba(12,13,23,.04);
-  --shadow-lg:0 20px 50px rgba(12,13,23,.18);
-  --side-w:256px; --side-w-collapsed:76px;
+  --font:'Nunito', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --head:'Italian Plate No2 Expanded', 'Nunito', ui-sans-serif, system-ui, sans-serif;
+  --radius-sm:4px; --radius-md:8px; --radius-lg:12px; --radius-xl:12px;
+  --shadow-card:0 1px 3px 0 rgb(0 0 0 / .08), 0 1px 2px -1px rgb(0 0 0 / .08);
+  --shadow-card-hover:0 4px 6px -1px rgb(0 0 0 / .08), 0 2px 4px -2px rgb(0 0 0 / .08);
+  --shadow-lg:0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+  --nav-h:64px;
 }
+@font-face{font-family:'Italian Plate No2 Expanded'; src:url('assets/fonts/ItalianPlateNo2Expanded-Regular.ttf') format('truetype'); font-weight:400; font-display:swap;}
+@font-face{font-family:'Italian Plate No2 Expanded'; src:url('assets/fonts/ItalianPlateNo2Expanded-Medium.ttf') format('truetype'); font-weight:500; font-display:swap;}
+@font-face{font-family:'Italian Plate No2 Expanded'; src:url('assets/fonts/ItalianPlateNo2Expanded-Demibold.ttf') format('truetype'); font-weight:600; font-display:swap;}
+@font-face{font-family:'Italian Plate No2 Expanded'; src:url('assets/fonts/ItalianPlateNo2Expanded-Bold.ttf') format('truetype'); font-weight:700; font-display:swap;}
 
 *{box-sizing:border-box;}
 html,body{margin:0;}
 body{background:var(--page); color:var(--text-2); font-family:var(--font); font-size:14px; line-height:20px; -webkit-font-smoothing:antialiased;}
-h1,h2,h3,h4{color:var(--text); margin:0; font-family:var(--head); letter-spacing:-.015em;}
+h1,h2,h3,h4{color:var(--text); margin:0; font-family:var(--head); letter-spacing:-.005em;}
 a{color:var(--purple); text-decoration:none;}
 a:hover{text-decoration:underline;}
 button,input,select{font-family:inherit;}
 :focus-visible{outline:2px solid var(--purple); outline-offset:2px; border-radius:4px;}
 
-/* ---------- shell: sidebar ---------- */
-#app-content{display:none; padding-left:var(--side-w); min-height:100vh; transition:padding-left .2s ease;}
-body.st-collapsed #app-content{padding-left:var(--side-w-collapsed);}
-.st-sidebar{position:fixed; inset:0 auto 0 0; width:var(--side-w); height:100vh; background:var(--ink); border-right:1px solid var(--ink-3);
-  display:flex; flex-direction:column; z-index:300; transition:width .2s ease, transform .22s ease; overflow:hidden;}
-.st-brand{padding:22px 20px 18px; border-bottom:1px solid var(--ink-3); flex-shrink:0;}
-.st-brand-logo{display:block; color:#fff; text-decoration:none; border-radius:6px;}
-.st-brand-logo:hover{text-decoration:none;}
-.st-brand-logo:focus-visible{outline:2px solid var(--purple-on-ink); outline-offset:4px;}
-.st-logo-full svg{display:block; width:132px; height:auto;}
-.st-logo-mark{display:none;} .st-logo-mark svg{display:block; width:30px; height:30px;}
-.st-brand-sub{margin-top:10px; font-size:11px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-muted); white-space:nowrap;}
-.st-nav-scroll{flex:1 1 auto; overflow-y:auto; overflow-x:hidden; padding:10px 12px 16px; scrollbar-width:thin; scrollbar-color:var(--ink-3) transparent;}
-.st-nav-label{font-size:10.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-muted); padding:16px 10px 6px; white-space:nowrap;}
-.st-nav-item{position:relative; display:flex; align-items:center; gap:12px; width:100%; height:38px; padding:0 10px; margin:1px 0; border:0; border-radius:8px;
-  background:transparent; color:var(--ink-text); font-size:13.5px; font-weight:500; text-align:left; text-decoration:none; cursor:pointer; white-space:nowrap; transition:background .12s, color .12s;}
-.st-nav-item:hover{background:var(--ink-2); color:#fff; text-decoration:none;}
-.st-nav-item:focus-visible{outline:2px solid var(--purple-on-ink); outline-offset:-2px;}
-.st-nav-item svg{width:18px; height:18px; flex-shrink:0; opacity:.85;}
-.st-nav-item.active{background:var(--purple); color:#fff; font-weight:600;}
-.st-nav-item.active svg{opacity:1;}
-.st-nav-text{overflow:hidden; text-overflow:ellipsis; flex:1;}
-.st-nav-count{margin-left:auto; font-size:11.5px; font-weight:600; color:var(--ink-muted); font-variant-numeric:tabular-nums;}
-.st-nav-item.active .st-nav-count{color:rgba(255,255,255,.8);}
-.st-dot{width:8px; height:8px; border-radius:50%; flex-shrink:0; margin:0 5px;}
-.st-ext{width:13px !important; height:13px !important; margin-left:auto; opacity:0 !important; transition:opacity .12s;}
-.st-nav-item:hover .st-ext{opacity:.6 !important;}
-.st-nav-footer{flex-shrink:0; border-top:1px solid var(--ink-3); padding:12px; display:flex; flex-direction:column; gap:4px;}
-.st-foot-btn{display:flex; align-items:center; text-align:left; width:100%; gap:12px; height:36px; padding:0 10px; border:0; background:transparent; color:var(--ink-muted); font-size:13px; font-weight:500; border-radius:8px; cursor:pointer; white-space:nowrap;}
-.st-foot-btn svg{width:16px; height:16px; flex-shrink:0; transition:transform .2s;}
-.st-foot-btn:hover{background:var(--ink-2); color:#fff;}
-
-/* collapsed */
-body.st-collapsed .st-sidebar{width:var(--side-w-collapsed);}
-body.st-collapsed .st-brand{padding:20px 0 16px; display:flex; justify-content:center;}
-body.st-collapsed .st-logo-full, body.st-collapsed .st-brand-sub, body.st-collapsed .st-nav-text, body.st-collapsed .st-nav-count, body.st-collapsed .st-ext{display:none;}
-body.st-collapsed .st-logo-mark{display:block;}
-body.st-collapsed .st-nav-label{font-size:0; padding:12px 0 6px;}
-body.st-collapsed .st-nav-label::after{content:''; display:block; height:1px; background:var(--ink-3); margin:0 10px;}
-body.st-collapsed .st-nav-item, body.st-collapsed .st-foot-btn{justify-content:center; padding:0;}
-body.st-collapsed #stCollapseBtn svg{transform:rotate(180deg);}
-
-/* ---------- shell: top bar ---------- */
-.st-topbar{position:sticky; top:0; z-index:200; height:72px; padding:0 32px; display:flex; align-items:center; gap:16px;
-  background:rgba(247,248,252,.88); -webkit-backdrop-filter:saturate(1.4) blur(10px); backdrop-filter:saturate(1.4) blur(10px); border-bottom:1px solid var(--line);}
-.st-menu-btn{display:none; width:38px; height:38px; border-radius:8px; border:1px solid var(--line); background:#fff; color:var(--text); align-items:center; justify-content:center; padding:0; cursor:pointer; flex-shrink:0;}
-.st-menu-btn svg{width:20px; height:20px;}
-.st-page-head{flex:1; min-width:0; display:flex; flex-direction:column; line-height:1.15;}
-.st-crumb{font-size:11px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:4px;}
-.st-title{font-family:var(--head); font-size:22px; font-weight:700; color:var(--text); letter-spacing:-.02em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
-.st-top-right{display:flex; align-items:center; gap:10px; flex-shrink:0;}
-.sync-status{display:inline-flex; align-items:center; gap:7px; height:30px; padding:0 12px; border-radius:99px; background:var(--fill); border:1px solid var(--line);
-  font-size:12px; color:var(--muted); cursor:help; white-space:nowrap;}
+/* ---------- shell: top navigation ---------- */
+#app-content{display:none; min-height:100vh;}
+.nav{position:sticky; top:0; z-index:300; background:#fff; border-bottom:1px solid var(--line);}
+.nav-inner{max-width:1280px; margin:0 auto; height:var(--nav-h); padding:0 32px; display:flex; align-items:center; gap:32px;}
+.nav-brand{display:flex; align-items:center; gap:14px; color:var(--text); border-radius:6px; flex-shrink:0;}
+.nav-brand:hover{text-decoration:none;}
+.nav-logo svg{display:block; height:40px; width:auto;}
+.nav-divider{width:1px; height:22px; background:var(--line-strong);}
+.nav-product{font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--purple); white-space:nowrap;}
+.nav-links{display:flex; align-items:center; gap:2px; flex:1; min-width:0;}
+.nav-link, .nav-group{flex-shrink:0;}
+.nav-link{position:relative; display:inline-flex; align-items:center; gap:6px; height:36px; padding:0 12px; border:0; background:transparent; border-radius:8px;
+  font-size:14px; font-weight:600; color:var(--muted); cursor:pointer; white-space:nowrap; text-decoration:none; transition:color .15s ease, background .15s ease;}
+.nav-link:hover{color:var(--text); background:var(--fill); text-decoration:none;}
+.nav-link.active{color:var(--text);}
+.nav-link.active::after{content:''; position:absolute; left:12px; right:12px; bottom:-14px; height:2px; background:var(--purple); border-radius:2px 2px 0 0;}
+.nav-link svg{width:14px; height:14px; flex-shrink:0; transition:transform .15s ease;}
+.nav-group{position:relative;}
+.nav-group.is-open > .nav-link{color:var(--text); background:var(--fill);}
+.nav-group.is-open > .nav-link svg{transform:rotate(180deg);}
+.flyout{display:none; position:absolute; top:calc(100% + 12px); left:0; min-width:270px; padding:8px; background:#fff; border-radius:12px;
+  box-shadow:var(--shadow-lg), 0 0 0 1px rgb(17 24 39 / .05); z-index:310;}
+.nav-group.is-open > .flyout{display:block; animation:flyout-in .18s ease-out;}
+@keyframes flyout-in{from{opacity:0; transform:translateY(-4px);} to{opacity:1; transform:none;}}
+.flyout-label{padding:8px 10px 4px; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--faint);}
+.flyout-item{display:flex; align-items:center; gap:12px; width:100%; padding:9px 10px; border:0; background:transparent; border-radius:8px; cursor:pointer; text-align:left;
+  font-size:14px; font-weight:500; color:var(--text-2); transition:background .12s;}
+.flyout-item:hover{background:var(--fill); color:var(--text);}
+.flyout-item.active{background:var(--purple-tint); color:var(--purple); font-weight:700;}
+.flyout-count{margin-left:auto; font-size:12px; font-weight:700; color:var(--muted); font-variant-numeric:tabular-nums;}
+.flyout-item.active .flyout-count{color:var(--purple);}
+.st-dot{width:8px; height:8px; border-radius:50%; flex-shrink:0;}
+.nav-right{display:flex; align-items:center; gap:8px; flex-shrink:0;}
+.sync-status{display:inline-flex; align-items:center; gap:7px; height:32px; padding:0 12px; border-radius:99px; background:var(--fill); border:1px solid var(--line);
+  font-size:12px; font-weight:600; color:var(--muted); cursor:help; white-space:nowrap;}
 .sync-dot{width:8px; height:8px; border-radius:50%; background:var(--line-strong); flex-shrink:0;}
-.sync-status.is-fresh .sync-dot{background:var(--teal);}
-.sync-status.is-stale{background:var(--amber-bg); border-color:var(--amber-line); color:var(--amber); font-weight:600;}
+.sync-status.is-fresh .sync-dot{background:#16a34a;}
+.sync-status.is-stale{background:var(--amber-bg); border-color:var(--amber-line); color:var(--amber);}
 .sync-status.is-stale .sync-dot{background:#D98A1C;}
-.btn-refresh{height:38px; display:inline-flex; align-items:center; gap:7px; padding:0 14px; background:#fff; border:1px solid var(--line); border-radius:8px;
-  color:var(--text); font-size:13px; font-weight:600; cursor:pointer; box-shadow:var(--shadow-card);}
-.btn-refresh svg{width:16px; height:16px;}
-.btn-refresh:hover{background:var(--fill); border-color:var(--line-strong);}
+.icon-btn{display:inline-flex; align-items:center; justify-content:center; gap:7px; height:36px; min-width:36px; padding:0 10px; background:#fff; border:1px solid var(--line-strong); border-radius:8px;
+  color:var(--text-2); font-size:13px; font-weight:600; cursor:pointer; transition:background .12s, border-color .12s, color .12s;}
+.icon-btn svg{width:16px; height:16px; flex-shrink:0;}
+.icon-btn:hover{background:var(--fill); color:var(--text);}
+.st-menu-btn{display:none;}
+
+/* ---------- page header ---------- */
+.page-head{margin-bottom:20px;}
+.eyebrow{font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--purple);}
+.page-head h1{font-family:var(--head); font-size:28px; line-height:34px; font-weight:700; color:var(--text); letter-spacing:-.005em; margin-top:6px;}
+.page-head .hub-intro{margin:8px 0 0;}
 
 /* ---------- page ---------- */
 .shell{max-width:1160px; margin:0 auto; padding:28px 32px 72px;}
@@ -314,52 +307,21 @@ details.note .note-body{padding:0 16px 14px; font-size:13.5px; color:var(--text-
 .project-link-btn:hover{border-color:var(--purple); background:var(--purple-tint);}
 
 /* ---------- password gate ---------- */
-#gate-overlay{position:fixed; inset:0; z-index:1000; display:flex; align-items:center; justify-content:center; padding:20px;
-  background:radial-gradient(1200px 600px at 50% -10%, #1B1D33 0%, var(--ink) 60%);}
-.gate-wrap{width:100%; max-width:380px;}
-.st-login-brand{text-align:center; margin-bottom:30px; color:#fff;}
-.st-login-brand svg{width:180px; height:auto; display:block; margin:0 auto;}
-.st-login-brand div{margin-top:14px; font-size:12px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-muted);}
-.gate-card{width:100%; background:#fff; border-radius:var(--radius-xl); padding:34px 32px; box-shadow:0 30px 80px rgba(0,0,0,.45);}
-.gate-card h2{font-size:20px; margin-bottom:6px;}
-.gate-card p{color:var(--muted); font-size:13px; margin:0 0 20px;}
-.gate-card label{display:block; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--text-2); margin-bottom:6px;}
-.gate-card input{width:100%; height:44px; padding:0 14px; border-radius:8px; border:1.5px solid var(--line-strong); font-size:14px; margin-bottom:12px; color:var(--text);}
-.gate-card input:focus{outline:none; border-color:var(--purple); box-shadow:0 0 0 4px var(--purple-tint);}
-.gate-card button{width:100%; height:44px; border-radius:8px; border:none; background:var(--purple); color:#fff; font-weight:600; font-size:14px; cursor:pointer;}
-.gate-card button:hover{background:var(--purple-hover);}
+#gate-overlay{position:fixed; inset:0; z-index:1000; display:flex; align-items:center; justify-content:center; padding:20px; background:var(--page);}
+.gate-wrap{width:100%; max-width:400px;}
+.st-login-brand{text-align:center; margin-bottom:28px; color:var(--text);}
+.st-login-brand svg{height:64px; width:auto; display:block; margin:0 auto;}
+.st-login-brand div{margin-top:14px; font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--purple);}
+.gate-card{width:100%; background:#fff; border:1px solid var(--line); border-radius:var(--radius-xl); padding:32px; box-shadow:var(--shadow-card);}
+.gate-card h2{font-size:18px; line-height:24px; margin-bottom:6px;}
+.gate-card p{color:var(--muted); font-size:14px; margin:0 0 20px;}
+.gate-card label{display:block; font-size:12px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--text-2); margin-bottom:6px;}
+.gate-card input{width:100%; height:44px; padding:0 14px; border-radius:8px; border:1px solid var(--line-strong); font-size:14px; margin-bottom:12px; color:var(--text);}
+.gate-card input:focus{outline:none; border-color:var(--purple); box-shadow:0 0 0 3px var(--purple-tint);}
+.gate-card button{width:100%; height:44px; border-radius:8px; border:none; background:var(--ink); color:#fff; font-weight:700; font-size:14px; cursor:pointer;}
+.gate-card button:hover{background:#262626;}
 .gate-error{color:var(--red); font-size:12.5px; margin-top:10px; min-height:16px;}
 
-/* ---------- responsive ---------- */
-.st-nav-overlay{display:none;}
-@media (min-width:961px){ .chips{display:none;} }
-@media (max-width:960px){
-  #app-content, body.st-collapsed #app-content{padding-left:0;}
-  .st-sidebar, body.st-collapsed .st-sidebar{width:var(--side-w); transform:translateX(-100%);}
-  body.st-nav-open .st-sidebar{transform:none; box-shadow:var(--shadow-lg);}
-  body.st-collapsed .st-logo-full, body.st-collapsed .st-brand-sub, body.st-collapsed .st-nav-text, body.st-collapsed .st-nav-count{display:revert;}
-  body.st-collapsed .st-logo-mark{display:none;}
-  body.st-collapsed .st-brand{display:block; padding:22px 20px 18px;}
-  body.st-collapsed .st-nav-item{justify-content:flex-start; padding:0 10px;}
-  body.st-collapsed .st-nav-label{font-size:10.5px; padding:16px 10px 6px;} body.st-collapsed .st-nav-label::after{display:none;}
-  #stCollapseBtn{display:none;}
-  .st-nav-overlay{display:block; position:fixed; inset:0; background:rgba(12,13,23,.5); z-index:290; opacity:0; pointer-events:none; transition:opacity .2s;}
-  body.st-nav-open .st-nav-overlay{opacity:1; pointer-events:auto;}
-  .st-menu-btn{display:inline-flex;}
-  .st-topbar{padding:0 16px; height:64px;}
-  .st-title{font-size:18px;}
-  .shell{padding:20px 16px 48px;}
-  .back-link{top:76px;}
-  .lanes, .lanes--detail{grid-template-columns:1fr;}
-}
-@media (max-width:640px){
-  .st-crumb, .sync-time, .btn-refresh span{display:none;}
-  .sync-status{padding:0 10px;}
-  .btn-refresh{width:38px; padding:0; justify-content:center;}
-  .panel-grid, .panel--account{grid-template-columns:1fr;}
-  .panel--account .field-row:nth-last-child(2){border-bottom:1px solid var(--fill-2);}
-  .result-meta{grid-template-columns:1fr 1fr;}
-}
 /* ---------- smart "contains" filter boxes ---------- */
 .filter-field--text{display:flex; flex-direction:column; gap:4px; font-size:12px; color:var(--text-2); font-weight:600;}
 .combo{position:relative;}
@@ -398,6 +360,73 @@ details.note .note-body{padding:0 16px 14px; font-size:13.5px; color:var(--text-
 .result-card .account-line{margin-top:14px; padding-top:12px; border-top:1px solid var(--line);}
 @media (max-width:900px){ .team-strip{grid-template-columns:repeat(2,minmax(0,1fr));} }
 @media (max-width:520px){ .team-cell{padding:8px 10px;} .team-cell .person{gap:8px;} .team-cell--inline{flex-wrap:wrap;} }
+/* ---------- myStreet theme refinements ---------- */
+.shell{max-width:1280px; padding:32px 32px 80px;}
+.hub-intro{font-size:14px; color:var(--muted); max-width:640px;}
+.search-box{height:52px; border-radius:12px; border-color:var(--line); box-shadow:var(--shadow-card);}
+.search-box:focus-within{border-color:var(--purple); box-shadow:0 0 0 3px var(--purple-tint);}
+.chips{flex-wrap:wrap; margin-top:14px;}
+.chip{flex-shrink:0; height:34px; padding:0 14px; border-radius:8px; border-color:var(--line); font-weight:600; color:var(--text-2); transition:background .12s, color .12s, border-color .12s;}
+.chip:hover{background:var(--fill); color:var(--text);}
+.chip.active{background:var(--ink); border-color:var(--ink); color:#fff;}
+.filter-toggle, .filter-field select, .combo input{border-color:var(--line-strong);}
+.filter-panel{border-radius:12px;}
+.results-count{font-size:13px; font-weight:600; color:var(--muted); margin-top:24px;}
+.result-card{border-radius:12px; padding:22px 24px; border-color:var(--line);}
+.result-card:hover{border-color:var(--line-strong); box-shadow:var(--shadow-card-hover);}
+.result-name{font-size:16px; line-height:22px; font-weight:700; letter-spacing:0;}
+.result-sub{font-size:13px;}
+.view-link{font-weight:700;}
+.badge{height:26px; font-weight:700; font-size:12px;}
+.badge svg, .flag-strip svg{width:13px; height:13px; flex-shrink:0;}
+.team-cell{background:var(--page); border-color:transparent; border-radius:10px;}
+.team-cell.is-empty{background:#fff; border-color:var(--line-strong);}
+.team-cell.is-goto{background:var(--purple-tint); border-color:var(--purple-line);}
+.goto-tag{background:var(--purple);}
+.spectre-strip{background:var(--page); border-color:transparent;}
+.team-cell--inline{background:#fff; border-color:var(--line);}
+.spectre-products{color:var(--text-2);}
+.lane-status, .detail-head h2{font-family:var(--head); letter-spacing:0;}
+.detail-head h2{font-size:24px; line-height:30px;}
+.section-title{letter-spacing:.06em;}
+.panel h3, .conversation-title, .lane-label, .team-cell-label, .lane-contact-label, .filter-group-title{letter-spacing:.06em;}
+.back-link{top:calc(var(--nav-h) + 16px);}
+.banner-cta, .project-link-btn{border-radius:8px;}
+.banner-cta{background:var(--ink);}
+.banner-cta:hover{background:#262626;}
+.show-more{border-radius:8px; font-weight:700;}
+
+/* ---------- responsive ---------- */
+@media (max-width:1180px){ .sync-time{display:none;} .sync-status{padding:0 10px;} }
+@media (max-width:960px){
+  .nav-inner{padding:0 16px; gap:12px;}
+  .nav-product, .nav-divider{display:none;}
+  .nav-logo svg{height:34px;}
+  .st-menu-btn{display:inline-flex;}
+  .nav-right{margin-left:auto;}
+  .nav-links{display:none; position:absolute; top:var(--nav-h); left:0; right:0; flex-direction:column; align-items:stretch; gap:2px; padding:8px 16px 16px;
+    background:#fff; border-bottom:1px solid var(--line); box-shadow:var(--shadow-lg); max-height:calc(100vh - var(--nav-h)); overflow-y:auto;}
+  body.st-nav-open .nav-links{display:flex;}
+  .nav-link{width:100%; height:42px;}
+  .nav-link.active::after{display:none;}
+  .nav-link.active{background:var(--purple-tint); color:var(--purple);}
+  .nav-group > .nav-link{display:none;}
+  .nav-group .flyout{display:block; position:static; min-width:0; padding:0 0 4px; box-shadow:none; animation:none;}
+  .nav-group .flyout::before{content:attr(data-label); display:block; padding:12px 10px 4px; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--faint);}
+  .flyout-label{display:none;}
+  .shell{padding:20px 16px 56px;}
+  .page-head h1{font-size:23px; line-height:29px;}
+  .lanes, .lanes--detail{grid-template-columns:1fr;}
+}
+@media (max-width:640px){
+  .chips{flex-wrap:nowrap; overflow-x:auto; padding-bottom:4px; scrollbar-width:thin;}
+  .btn-refresh span{display:none;}
+  .sync-status{padding:0 10px;}
+  .panel-grid, .panel--account{grid-template-columns:1fr;}
+  .panel--account .field-row:nth-last-child(2){border-bottom:1px solid var(--fill-2);}
+  .result-meta{grid-template-columns:1fr 1fr;}
+  .result-card{padding:18px 16px;}
+}
 @media (prefers-reduced-motion:reduce){ *,*::before,*::after{transition:none !important; animation:none !important;} }
 </style>
 </head>
@@ -405,7 +434,7 @@ details.note .note-body{padding:0 16px 14px; font-size:13.5px; color:var(--text-
 
 <div id="gate-overlay">
   <div class="gate-wrap">
-    <div class="st-login-brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 18.4875" fill="currentColor" role="img" aria-label="Street.co.uk"><path d="M115.218 5.1152C115.151 6.82315 113.718 8.12357 111.886 8.12357C109.611 8.12357 108.141 6.57817 108.141 4.18339C108.141 1.7886 109.611 0.224888 111.886 0.224888C113.695 0.224888 115.023 1.4612 115.229 3.13023C115.243 3.23783 115.156 3.32941 115.046 3.32941L113.269 3.32483C113.182 3.32483 113.109 3.26302 113.091 3.17831C113.024 2.85091 112.777 2.26481 111.884 2.26481C110.874 2.26481 110.364 2.91044 110.364 4.1811C110.364 5.45175 110.874 6.08823 111.884 6.08823C112.802 6.08823 113.063 5.50441 113.132 5.11978"/><path d="M111.873 18.2615C109.863 18.2615 108.563 17.0023 108.563 15.054V10.6353C108.563 10.5345 108.645 10.4521 108.746 10.4521H110.578C110.678 10.4521 110.761 10.5345 110.761 10.6353V15.0334C110.761 15.8667 111.104 16.2376 111.876 16.2376C112.647 16.2376 113 15.8782 113 15.0334V10.6353C113 10.5345 113.082 10.4521 113.183 10.4521H115.024C115.125 10.4521 115.207 10.5345 115.207 10.6353V15.054C115.207 17.0023 113.9 18.2615 111.878 18.2615H111.873Z"/><path d="M120.243 8.12357C117.96 8.12357 116.486 6.57359 116.486 4.17423C116.486 1.77486 117.96 0.224888 120.243 0.224888C122.526 0.224888 124 1.77486 124 4.17423C124 6.57359 122.526 8.12357 120.243 8.12357ZM120.243 2.2671C119.226 2.2671 118.711 2.90815 118.711 4.17423C118.711 5.4403 119.226 6.08136 120.243 6.08136C121.26 6.08136 121.775 5.4403 121.775 4.17423C121.775 2.90815 121.26 2.2671 120.243 2.2671Z"/><path d="M121.197 18.1081L119.325 15.9606C119.251 15.8782 119.116 15.9285 119.116 16.0384V17.9868C119.116 18.0875 119.034 18.1699 118.933 18.1699H117.102C117.001 18.1699 116.918 18.0875 116.918 17.9868V10.6353C116.918 10.5345 117.001 10.4521 117.102 10.4521H118.933C119.034 10.4521 119.116 10.5345 119.116 10.6353V12.3638C119.116 12.4737 119.254 12.5287 119.327 12.4462L121.101 10.5116C121.136 10.475 121.184 10.4521 121.236 10.4521H123.521C123.679 10.4521 123.762 10.6421 123.654 10.7589L120.614 14.0535C120.55 14.1221 120.55 14.2275 120.611 14.2984L123.769 17.87C123.872 17.9868 123.789 18.1722 123.631 18.1722H121.335C121.282 18.1722 121.232 18.1493 121.197 18.1104V18.1081Z"/><path d="M2.62837 12.702C2.72681 12.702 2.80466 12.7753 2.81839 12.8714C3.07023 14.7144 4.54695 15.8729 6.89366 15.8729C9.53343 15.8729 10.8178 14.9869 10.8178 13.1668C10.8178 11.8251 9.96614 11.0719 7.96972 10.6529L5.43527 10.1057C2.10865 9.39141 0.558677 7.79794 0.558677 5.09407C0.558677 1.90484 2.93744 0 6.92114 0C10.6049 0 13.121 1.91629 13.4233 5.28181C13.4324 5.39399 13.3431 5.49015 13.2309 5.49015L10.811 5.48328C10.7125 5.48328 10.6324 5.40544 10.6209 5.30699C10.4469 3.69521 9.04348 2.63518 6.87306 2.63518C4.70263 2.63518 3.47089 3.46168 3.47089 5.09407C3.47089 5.81526 3.75021 6.83636 6.17019 7.36065L8.52835 7.85747C11.9305 8.56491 13.73 10.4011 13.73 13.169C13.73 16.4499 11.1109 18.4875 6.89824 18.4875C2.6856 18.4875 0.0962023 16.4979 4.41743e-05 12.9195C-0.0022453 12.8119 0.0847549 12.7249 0.19236 12.7226L2.63065 12.702H2.62837Z"/><path d="M20.2355 10.9121V3.05238C20.2355 2.94478 20.1485 2.86007 20.0432 2.86007H16.8791C16.7715 2.86007 16.6868 2.77307 16.6868 2.66775V0.417204C16.6868 0.309599 16.7738 0.224888 16.8791 0.224888H26.4102C26.5178 0.224888 26.6025 0.311888 26.6025 0.417204V2.66775C26.6025 2.77536 26.5155 2.86007 26.4102 2.86007H23.2645C23.1569 2.86007 23.0722 2.94707 23.0722 3.05238V10.9121C23.0722 11.0197 22.9852 11.1045 22.8799 11.1045H20.4324C20.3248 11.1045 20.2401 11.0175 20.2401 10.9121H20.2355Z"/><path d="M25.4167 15.6159H18.1362C18.0274 15.6159 17.9393 15.7041 17.9393 15.8128V18.0565C17.9393 18.1652 18.0274 18.2534 18.1362 18.2534H25.4167C25.5255 18.2534 25.6136 18.1652 25.6136 18.0565V15.8128C25.6136 15.7041 25.5255 15.6159 25.4167 15.6159Z"/><path d="M42.372 18.2613C42.3056 18.2613 42.2438 18.2293 42.2072 18.1743L37.6946 11.3884L37.6809 11.3815H34.162C34.0521 11.3815 33.9651 11.4708 33.9651 11.5784V18.0644C33.9651 18.1743 33.8758 18.2613 33.7682 18.2613H31.3528C31.2429 18.2613 31.1559 18.1721 31.1559 18.0644V0.421783C31.1559 0.311888 31.2452 0.224888 31.3528 0.224888H38.3609C41.9073 0.224888 44.199 2.39989 44.199 5.76541C44.199 8.13501 42.9604 10.0147 40.8633 10.8709C40.7465 10.919 40.7007 11.0587 40.7694 11.164L45.2865 17.9568C45.3735 18.0873 45.2797 18.2636 45.1217 18.2636H42.3697L42.372 18.2613ZM38.2372 8.74401C40.2359 8.74401 41.2914 7.72291 41.2914 5.79059C41.2914 3.85828 40.2062 2.86007 38.2372 2.86007H34.1642C34.0544 2.86007 33.9674 2.94936 33.9674 3.05696V8.54712C33.9674 8.65701 34.0566 8.74401 34.1642 8.74401H38.2372Z"/><path d="M49.9677 18.2613H49.7868C49.6769 18.2613 49.5899 18.172 49.5899 18.0644V0.421783C49.5899 0.311888 49.6792 0.224888 49.7868 0.224888H61.2205C61.3303 0.224888 61.4173 0.314178 61.4173 0.421783V2.66317C61.4173 2.77307 61.3281 2.86007 61.2205 2.86007H52.5983C52.4884 2.86007 52.4014 2.94936 52.4014 3.05696V7.45275C52.4014 7.56264 52.4907 7.64964 52.5983 7.64964H60.4512C60.5611 7.64964 60.6481 7.73893 60.6481 7.84653V8.0274V9.90706V10.0902C60.6481 10.1978 60.5588 10.2871 60.4489 10.2871H52.5983C52.4884 10.2871 52.4014 10.3764 52.4014 10.484V15.4522C52.4014 15.562 52.4907 15.649 52.5983 15.649H61.2205C61.3303 15.649 61.4173 15.7383 61.4173 15.8459V18.0621C61.4173 18.172 61.3281 18.259 61.2205 18.259H49.9677V18.2613Z"/><path d="M66.4642 18.2613H66.2833C66.1734 18.2613 66.0864 18.172 66.0864 18.0644V0.421783C66.0864 0.311888 66.1757 0.224888 66.2833 0.224888H77.717C77.8269 0.224888 77.9139 0.314178 77.9139 0.421783V2.66317C77.9139 2.77307 77.8246 2.86007 77.717 2.86007H69.0948C68.9849 2.86007 68.8979 2.94936 68.8979 3.05696V7.45275C68.8979 7.56264 68.9872 7.64964 69.0948 7.64964H76.9477C77.0576 7.64964 77.1446 7.73893 77.1446 7.84653V8.0274V9.90706V10.0902C77.1446 10.1978 77.0553 10.2871 76.9454 10.2871H69.0948C68.9849 10.2871 68.8979 10.3764 68.8979 10.484V15.4522C68.8979 15.562 68.9872 15.649 69.0948 15.649H77.717C77.8269 15.649 77.9139 15.7383 77.9139 15.8459V18.0621C77.9139 18.172 77.8246 18.259 77.717 18.259H66.4642V18.2613Z"/><path d="M86.859 18.2613H86.6781C86.5682 18.2613 86.4812 18.172 86.4812 18.0644V3.05696C86.4812 2.94707 86.3919 2.86007 86.2843 2.86007H81.2887C81.1788 2.86007 81.0918 2.77078 81.0918 2.66317V0.421783C81.0918 0.311888 81.1811 0.224888 81.2887 0.224888H94.5104C94.6203 0.224888 94.7073 0.314178 94.7073 0.421783V2.66317C94.7073 2.77307 94.618 2.86007 94.5104 2.86007H89.5147C89.4049 2.86007 89.3179 2.94936 89.3179 3.05696V18.0644C89.3179 18.1743 89.2286 18.2613 89.121 18.2613H86.8612H86.859Z"/><path d="M96.9444 18.3393C96.8345 18.3393 96.7475 18.25 96.7475 18.1424V15.901C96.7475 15.7911 96.8368 15.7041 96.9444 15.7041H104.225C104.335 15.7041 104.422 15.7934 104.422 15.901V18.1424C104.422 18.2523 104.333 18.3393 104.225 18.3393H96.9444Z"/></svg><div>Support Hub</div></div>
+    <div class="st-login-brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 82" fill="currentColor" role="img" aria-label="Street Group"><path d="M47.17 70.11C50.64 68.73 52.62 65.73 52.62 61.83C52.62 56.38 48.92 52.86 43.18 52.86H32.88C32.54 52.86 32.22 52.99 31.97 53.24C31.73 53.48 31.59 53.81 31.59 54.15V80.44C31.59 80.78 31.72 81.1 31.97 81.35C32.21 81.59 32.53 81.73 32.88 81.73H35.27C35.61 81.73 35.94 81.59 36.18 81.35C36.42 81.11 36.56 80.79 36.56 80.44V70.92H41.99L48.84 81.24L48.96 81.39L49.2 81.53C49.41 81.65 49.64 81.72 49.88 81.72H52.99C53.58 81.72 54.07 81.24 54.07 80.65C54.07 80.44 54.01 80.23 53.89 80.05L47.18 70.13L47.17 70.11ZM36.56 57.54H42.99C45.95 57.54 47.51 59.04 47.51 61.87C47.51 64.7 45.95 66.24 42.99 66.24H36.56V57.55V57.54Z"/><path d="M23.27 66.17H13.47C12.93 66.17 12.49 66.61 12.49 67.15V69.47C12.49 69.81 12.63 70.15 12.87 70.39C13.12 70.64 13.44 70.77 13.79 70.77H19.81C19.66 72.68 18.93 73.82 17.89 74.93C16.61 76.3 14.74 77.02 12.5 77.02C9.9 77.02 7.94 76.03 6.68 74.09C5.59 72.41 5.01 70.01 5.01 67.15C5.01 64.15 5.74 57.16 12.5 57.16C16.2 57.16 18.66 58.99 19.08 62.05C19.11 62.23 19.2 62.4 19.34 62.53L19.49 62.66C19.73 62.87 20.04 62.99 20.37 62.99H22.77C23.14 62.99 23.49 62.83 23.73 62.56L23.88 62.39C24.03 62.22 24.1 62 24.07 61.77C23.36 55.92 19.03 52.43 12.5 52.43C4.79 52.43 0 58.07 0 67.14C0 76.21 4.58 81.6 12.28 81.7H12.5C16.22 81.7 19.3 80.46 21.42 78.1C23.6 75.68 24.57 72.94 24.57 69.22V67.47C24.57 67.12 24.43 66.79 24.19 66.55C23.95 66.31 23.61 66.17 23.27 66.17Z"/><path d="M138.23 55.46C136.47 53.76 133.99 52.86 131.08 52.86H121.52C121.17 52.86 120.84 53 120.6 53.24C120.36 53.49 120.22 53.81 120.22 54.16V80.41C120.22 80.76 120.35 81.08 120.6 81.33C120.85 81.58 121.17 81.71 121.52 81.71H124.53L124.64 81.49L124.81 81.32C125.05 81.07 125.19 80.75 125.19 80.4V71.63H131.1C134 71.63 136.46 70.72 138.23 69.01C139.96 67.33 140.91 64.9 140.91 62.17C140.91 59.44 139.99 57.14 138.25 55.46H138.23ZM135.8 62.17C135.8 65.09 134.35 66.23 130.64 66.23H125.16V57.47H130.64C133.87 57.47 135.8 59.23 135.8 62.17Z"/><path d="M112.27 53.24C112.03 53 111.69 52.86 111.34 52.86H108.96C108.61 52.86 108.28 53 108.03 53.24C107.78 53.49 107.65 53.82 107.65 54.17V70.97C107.65 75.01 105.64 77.06 101.67 77.06C97.7 77.06 95.73 75.01 95.73 70.97V54.15C95.73 53.82 95.6 53.51 95.38 53.27C95.14 53.01 94.79 52.86 94.43 52.86H92.06C91.71 52.86 91.37 53 91.12 53.26C90.88 53.51 90.75 53.83 90.75 54.17V71.06C90.75 74.33 91.75 77.03 93.65 78.89C95.54 80.74 98.32 81.72 101.66 81.72C108.64 81.72 112.64 77.83 112.64 71.06V54.18C112.64 53.83 112.5 53.5 112.25 53.25L112.27 53.24Z"/><path d="M71.67 52.44C67.41 52.44 64.1 53.89 61.83 56.76C59.83 59.29 58.77 62.86 58.77 67.08C58.77 71.3 59.83 74.85 61.83 77.39C64.1 80.26 67.41 81.72 71.67 81.72C79.75 81.72 84.57 76.25 84.57 67.08C84.57 62.86 83.51 59.29 81.49 56.76C79.22 53.9 75.91 52.45 71.67 52.45V52.44ZM79.49 67.08C79.49 70.06 78.73 76.99 71.67 76.99C68.95 76.99 66.9 75.99 65.58 74.03C64.45 72.34 63.85 69.94 63.85 67.08C63.85 64.22 64.44 61.81 65.57 60.13C66.88 58.17 68.94 57.17 71.67 57.17C78.73 57.17 79.49 64.1 79.49 67.08Z"/><path d="M5.97 28.84C6.19 28.84 6.37 29.01 6.4 29.22C6.97 33.4 10.32 36.03 15.65 36.03C21.64 36.03 24.56 34.02 24.56 29.89C24.56 26.84 22.63 25.13 18.09 24.18L12.34 22.94C4.79 21.32 1.27 17.7 1.27 11.56C1.27 4.32 6.67 0 15.71 0C24.07 0 29.78 4.35 30.47 11.99C30.49 12.24 30.29 12.46 30.03 12.46L24.54 12.44C24.32 12.44 24.13 12.26 24.11 12.04C23.71 8.38 20.53 5.97 15.6 5.97C10.67 5.97 7.88 7.85 7.88 11.55C7.88 13.19 8.51 15.51 14.01 16.7L19.36 17.83C27.08 19.44 31.17 23.6 31.17 29.89C31.17 37.34 25.22 41.96 15.66 41.96C6.1 41.96 0.22 37.45 0 29.33C0 29.09 0.19 28.89 0.44 28.88L5.98 28.83L5.97 28.84Z"/><path d="M45.93 24.77V6.93001C45.93 6.69001 45.73 6.49001 45.49 6.49001H38.31C38.07 6.49001 37.87 6.29001 37.87 6.05001V0.95001C37.87 0.71001 38.07 0.51001 38.31 0.51001H59.95C60.19 0.51001 60.39 0.71001 60.39 0.95001V6.06001C60.39 6.30001 60.19 6.50001 59.95 6.50001H52.81C52.57 6.50001 52.37 6.70001 52.37 6.94001V24.78C52.37 25.02 52.17 25.22 51.93 25.22H46.37C46.13 25.22 45.93 25.02 45.93 24.78H45.92L45.93 24.77Z"/><path d="M57.7 35.45H41.17C40.92 35.45 40.72 35.65 40.72 35.9V40.99C40.72 41.24 40.92 41.44 41.17 41.44H57.7C57.95 41.44 58.15 41.24 58.15 40.99V35.9C58.15 35.65 57.95 35.45 57.7 35.45Z"/><path d="M96.19 41.45C96.04 41.45 95.9 41.38 95.82 41.25L85.58 25.84L85.55 25.82H77.56C77.31 25.82 77.11 26.02 77.11 26.27V40.99C77.11 41.24 76.91 41.44 76.66 41.44H71.18C70.93 41.44 70.73 41.24 70.73 40.99V0.96001C70.73 0.71001 70.93 0.51001 71.18 0.51001H87.09C95.14 0.51001 100.34 5.45001 100.34 13.09C100.34 18.47 97.53 22.74 92.77 24.68C92.5 24.79 92.4 25.11 92.56 25.35L102.81 40.77C103.01 41.07 102.79 41.47 102.44 41.47H96.19V41.45ZM86.8 19.85C91.34 19.85 93.73 17.53 93.73 13.15C93.73 8.77001 91.27 6.50001 86.8 6.50001H77.55C77.3 6.50001 77.1 6.70001 77.1 6.95001V19.41C77.1 19.66 77.3 19.86 77.55 19.86H86.8V19.85Z"/><path d="M113.43 41.45H113.02C112.77 41.45 112.57 41.25 112.57 41V0.96001C112.57 0.71001 112.77 0.51001 113.02 0.51001H138.98C139.23 0.51001 139.43 0.71001 139.43 0.96001V6.05001C139.43 6.30001 139.23 6.50001 138.98 6.50001H119.41C119.16 6.50001 118.96 6.70001 118.96 6.95001V16.93C118.96 17.18 119.16 17.38 119.41 17.38H137.24C137.49 17.38 137.69 17.58 137.69 17.83V22.92C137.69 23.16 137.49 23.37 137.24 23.37H119.42C119.17 23.37 118.97 23.57 118.97 23.82V35.1C118.97 35.35 119.17 35.55 119.42 35.55H138.99C139.24 35.55 139.44 35.75 139.44 36V41.03C139.44 41.28 139.24 41.48 138.99 41.48H113.44L113.43 41.45Z"/><path d="M150.88 41.45H150.47C150.22 41.45 150.02 41.25 150.02 41V0.96001C150.02 0.71001 150.22 0.51001 150.47 0.51001H176.43C176.68 0.51001 176.88 0.71001 176.88 0.96001V6.05001C176.88 6.30001 176.68 6.50001 176.43 6.50001H156.86C156.61 6.50001 156.41 6.70001 156.41 6.95001V16.93C156.41 17.18 156.61 17.38 156.86 17.38H174.69C174.94 17.38 175.14 17.58 175.14 17.83V22.92C175.14 23.16 174.94 23.37 174.69 23.37H156.87C156.62 23.37 156.42 23.57 156.42 23.82V35.1C156.42 35.35 156.62 35.55 156.87 35.55H176.44C176.69 35.55 176.89 35.75 176.89 36V41.03C176.89 41.28 176.69 41.48 176.44 41.48H150.9L150.88 41.45Z"/><path d="M197.18 41.45H196.77C196.52 41.45 196.32 41.25 196.32 41V6.94001C196.32 6.69001 196.12 6.49001 195.87 6.49001H184.53C184.28 6.49001 184.08 6.29001 184.08 6.04001V0.96001C184.08 0.71001 184.28 0.51001 184.53 0.51001H214.54C214.79 0.51001 214.99 0.71001 214.99 0.96001V6.05001C214.99 6.30001 214.79 6.50001 214.54 6.50001H203.2C202.95 6.50001 202.75 6.70001 202.75 6.95001V41.02C202.75 41.27 202.55 41.47 202.3 41.47H197.17L197.18 41.45Z"/></svg><div>Accounting Support Hub</div></div>
     <div class="gate-card">
       <h2>Welcome to the Support Hub</h2>
       <p>This is an internal tool. Enter the team password to continue.</p>
@@ -419,45 +448,34 @@ details.note .note-body{padding:0 16px 14px; font-size:13.5px; color:var(--text-
 
 <div id="app-content">
 
-<div class="st-nav-overlay" onclick="stCloseMobileNav()"></div>
-<nav class="st-sidebar" id="stSidebar" aria-label="Main navigation">
-  <div class="st-brand">
-    <a class="st-brand-logo" href="#" onclick="activeFilter='all';showLookup();resetPaging();renderChips();renderResults();stCloseMobileNav();return false;" aria-label="Street.co.uk, show all clients">
-      <span class="st-logo-full"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 18.4875" fill="currentColor" role="img" aria-label="Street.co.uk"><path d="M115.218 5.1152C115.151 6.82315 113.718 8.12357 111.886 8.12357C109.611 8.12357 108.141 6.57817 108.141 4.18339C108.141 1.7886 109.611 0.224888 111.886 0.224888C113.695 0.224888 115.023 1.4612 115.229 3.13023C115.243 3.23783 115.156 3.32941 115.046 3.32941L113.269 3.32483C113.182 3.32483 113.109 3.26302 113.091 3.17831C113.024 2.85091 112.777 2.26481 111.884 2.26481C110.874 2.26481 110.364 2.91044 110.364 4.1811C110.364 5.45175 110.874 6.08823 111.884 6.08823C112.802 6.08823 113.063 5.50441 113.132 5.11978"/><path d="M111.873 18.2615C109.863 18.2615 108.563 17.0023 108.563 15.054V10.6353C108.563 10.5345 108.645 10.4521 108.746 10.4521H110.578C110.678 10.4521 110.761 10.5345 110.761 10.6353V15.0334C110.761 15.8667 111.104 16.2376 111.876 16.2376C112.647 16.2376 113 15.8782 113 15.0334V10.6353C113 10.5345 113.082 10.4521 113.183 10.4521H115.024C115.125 10.4521 115.207 10.5345 115.207 10.6353V15.054C115.207 17.0023 113.9 18.2615 111.878 18.2615H111.873Z"/><path d="M120.243 8.12357C117.96 8.12357 116.486 6.57359 116.486 4.17423C116.486 1.77486 117.96 0.224888 120.243 0.224888C122.526 0.224888 124 1.77486 124 4.17423C124 6.57359 122.526 8.12357 120.243 8.12357ZM120.243 2.2671C119.226 2.2671 118.711 2.90815 118.711 4.17423C118.711 5.4403 119.226 6.08136 120.243 6.08136C121.26 6.08136 121.775 5.4403 121.775 4.17423C121.775 2.90815 121.26 2.2671 120.243 2.2671Z"/><path d="M121.197 18.1081L119.325 15.9606C119.251 15.8782 119.116 15.9285 119.116 16.0384V17.9868C119.116 18.0875 119.034 18.1699 118.933 18.1699H117.102C117.001 18.1699 116.918 18.0875 116.918 17.9868V10.6353C116.918 10.5345 117.001 10.4521 117.102 10.4521H118.933C119.034 10.4521 119.116 10.5345 119.116 10.6353V12.3638C119.116 12.4737 119.254 12.5287 119.327 12.4462L121.101 10.5116C121.136 10.475 121.184 10.4521 121.236 10.4521H123.521C123.679 10.4521 123.762 10.6421 123.654 10.7589L120.614 14.0535C120.55 14.1221 120.55 14.2275 120.611 14.2984L123.769 17.87C123.872 17.9868 123.789 18.1722 123.631 18.1722H121.335C121.282 18.1722 121.232 18.1493 121.197 18.1104V18.1081Z"/><path d="M2.62837 12.702C2.72681 12.702 2.80466 12.7753 2.81839 12.8714C3.07023 14.7144 4.54695 15.8729 6.89366 15.8729C9.53343 15.8729 10.8178 14.9869 10.8178 13.1668C10.8178 11.8251 9.96614 11.0719 7.96972 10.6529L5.43527 10.1057C2.10865 9.39141 0.558677 7.79794 0.558677 5.09407C0.558677 1.90484 2.93744 0 6.92114 0C10.6049 0 13.121 1.91629 13.4233 5.28181C13.4324 5.39399 13.3431 5.49015 13.2309 5.49015L10.811 5.48328C10.7125 5.48328 10.6324 5.40544 10.6209 5.30699C10.4469 3.69521 9.04348 2.63518 6.87306 2.63518C4.70263 2.63518 3.47089 3.46168 3.47089 5.09407C3.47089 5.81526 3.75021 6.83636 6.17019 7.36065L8.52835 7.85747C11.9305 8.56491 13.73 10.4011 13.73 13.169C13.73 16.4499 11.1109 18.4875 6.89824 18.4875C2.6856 18.4875 0.0962023 16.4979 4.41743e-05 12.9195C-0.0022453 12.8119 0.0847549 12.7249 0.19236 12.7226L2.63065 12.702H2.62837Z"/><path d="M20.2355 10.9121V3.05238C20.2355 2.94478 20.1485 2.86007 20.0432 2.86007H16.8791C16.7715 2.86007 16.6868 2.77307 16.6868 2.66775V0.417204C16.6868 0.309599 16.7738 0.224888 16.8791 0.224888H26.4102C26.5178 0.224888 26.6025 0.311888 26.6025 0.417204V2.66775C26.6025 2.77536 26.5155 2.86007 26.4102 2.86007H23.2645C23.1569 2.86007 23.0722 2.94707 23.0722 3.05238V10.9121C23.0722 11.0197 22.9852 11.1045 22.8799 11.1045H20.4324C20.3248 11.1045 20.2401 11.0175 20.2401 10.9121H20.2355Z"/><path d="M25.4167 15.6159H18.1362C18.0274 15.6159 17.9393 15.7041 17.9393 15.8128V18.0565C17.9393 18.1652 18.0274 18.2534 18.1362 18.2534H25.4167C25.5255 18.2534 25.6136 18.1652 25.6136 18.0565V15.8128C25.6136 15.7041 25.5255 15.6159 25.4167 15.6159Z"/><path d="M42.372 18.2613C42.3056 18.2613 42.2438 18.2293 42.2072 18.1743L37.6946 11.3884L37.6809 11.3815H34.162C34.0521 11.3815 33.9651 11.4708 33.9651 11.5784V18.0644C33.9651 18.1743 33.8758 18.2613 33.7682 18.2613H31.3528C31.2429 18.2613 31.1559 18.1721 31.1559 18.0644V0.421783C31.1559 0.311888 31.2452 0.224888 31.3528 0.224888H38.3609C41.9073 0.224888 44.199 2.39989 44.199 5.76541C44.199 8.13501 42.9604 10.0147 40.8633 10.8709C40.7465 10.919 40.7007 11.0587 40.7694 11.164L45.2865 17.9568C45.3735 18.0873 45.2797 18.2636 45.1217 18.2636H42.3697L42.372 18.2613ZM38.2372 8.74401C40.2359 8.74401 41.2914 7.72291 41.2914 5.79059C41.2914 3.85828 40.2062 2.86007 38.2372 2.86007H34.1642C34.0544 2.86007 33.9674 2.94936 33.9674 3.05696V8.54712C33.9674 8.65701 34.0566 8.74401 34.1642 8.74401H38.2372Z"/><path d="M49.9677 18.2613H49.7868C49.6769 18.2613 49.5899 18.172 49.5899 18.0644V0.421783C49.5899 0.311888 49.6792 0.224888 49.7868 0.224888H61.2205C61.3303 0.224888 61.4173 0.314178 61.4173 0.421783V2.66317C61.4173 2.77307 61.3281 2.86007 61.2205 2.86007H52.5983C52.4884 2.86007 52.4014 2.94936 52.4014 3.05696V7.45275C52.4014 7.56264 52.4907 7.64964 52.5983 7.64964H60.4512C60.5611 7.64964 60.6481 7.73893 60.6481 7.84653V8.0274V9.90706V10.0902C60.6481 10.1978 60.5588 10.2871 60.4489 10.2871H52.5983C52.4884 10.2871 52.4014 10.3764 52.4014 10.484V15.4522C52.4014 15.562 52.4907 15.649 52.5983 15.649H61.2205C61.3303 15.649 61.4173 15.7383 61.4173 15.8459V18.0621C61.4173 18.172 61.3281 18.259 61.2205 18.259H49.9677V18.2613Z"/><path d="M66.4642 18.2613H66.2833C66.1734 18.2613 66.0864 18.172 66.0864 18.0644V0.421783C66.0864 0.311888 66.1757 0.224888 66.2833 0.224888H77.717C77.8269 0.224888 77.9139 0.314178 77.9139 0.421783V2.66317C77.9139 2.77307 77.8246 2.86007 77.717 2.86007H69.0948C68.9849 2.86007 68.8979 2.94936 68.8979 3.05696V7.45275C68.8979 7.56264 68.9872 7.64964 69.0948 7.64964H76.9477C77.0576 7.64964 77.1446 7.73893 77.1446 7.84653V8.0274V9.90706V10.0902C77.1446 10.1978 77.0553 10.2871 76.9454 10.2871H69.0948C68.9849 10.2871 68.8979 10.3764 68.8979 10.484V15.4522C68.8979 15.562 68.9872 15.649 69.0948 15.649H77.717C77.8269 15.649 77.9139 15.7383 77.9139 15.8459V18.0621C77.9139 18.172 77.8246 18.259 77.717 18.259H66.4642V18.2613Z"/><path d="M86.859 18.2613H86.6781C86.5682 18.2613 86.4812 18.172 86.4812 18.0644V3.05696C86.4812 2.94707 86.3919 2.86007 86.2843 2.86007H81.2887C81.1788 2.86007 81.0918 2.77078 81.0918 2.66317V0.421783C81.0918 0.311888 81.1811 0.224888 81.2887 0.224888H94.5104C94.6203 0.224888 94.7073 0.314178 94.7073 0.421783V2.66317C94.7073 2.77307 94.618 2.86007 94.5104 2.86007H89.5147C89.4049 2.86007 89.3179 2.94936 89.3179 3.05696V18.0644C89.3179 18.1743 89.2286 18.2613 89.121 18.2613H86.8612H86.859Z"/><path d="M96.9444 18.3393C96.8345 18.3393 96.7475 18.25 96.7475 18.1424V15.901C96.7475 15.7911 96.8368 15.7041 96.9444 15.7041H104.225C104.335 15.7041 104.422 15.7934 104.422 15.901V18.1424C104.422 18.2523 104.333 18.3393 104.225 18.3393H96.9444Z"/></svg></span>
-      <span class="st-logo-mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor" role="img" aria-label="Street"><path d="M9.89,63.02c.36,0,.66.28.71.63.94,6.92,6.49,11.28,15.32,11.28,9.92,0,14.75-3.33,14.75-10.17,0-5.05-3.2-7.88-10.71-9.46l-9.52-2.05c-12.5-2.68-18.33-8.68-18.33-18.84,0-11.99,8.94-19.14,23.91-19.14,13.84,0,23.3,7.2,24.44,19.85.03.41-.3.78-.73.78l-9.09-.03c-.36,0-.68-.3-.71-.66-.66-6.06-5.93-10.05-14.09-10.05s-12.78,3.11-12.78,9.24c0,2.72,1.04,6.56,10.15,8.53l8.86,1.87c12.78,2.67,19.56,9.55,19.56,19.97,0,12.34-9.85,19.99-25.68,19.99S.36,77.27,0,63.83C0,63.43.31,63.1.73,63.08l9.17-.08-.02.02Z"/><path d="M76.06,56.28v-29.54c0-.4-.33-.73-.73-.73h-11.89c-.4,0-.73-.33-.73-.73v-8.45c0-.4.33-.73.73-.73h35.83c.4,0,.73.33.73.73v8.46c0,.4-.33.73-.73.73h-11.82c-.4,0-.73.33-.73.73v29.54c0,.4-.33.73-.73.73h-9.21c-.4,0-.73-.33-.73-.73h-.02l.02-.02Z"/><path d="M95.54,73.96h-27.37c-.41,0-.75.33-.75.75v8.43c0,.41.33.75.75.75h27.37c.41,0,.75-.33.75-.75v-8.43c0-.41-.33-.75-.75-.75Z"/></svg></span>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#" onclick="activeFilter='all';showLookup();resetPaging();renderChips();renderResults();stCloseMobileNav();return false;" aria-label="Street Group Support Hub, show all clients">
+      <span class="nav-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 82" fill="currentColor" role="img" aria-label="Street Group"><path d="M47.17 70.11C50.64 68.73 52.62 65.73 52.62 61.83C52.62 56.38 48.92 52.86 43.18 52.86H32.88C32.54 52.86 32.22 52.99 31.97 53.24C31.73 53.48 31.59 53.81 31.59 54.15V80.44C31.59 80.78 31.72 81.1 31.97 81.35C32.21 81.59 32.53 81.73 32.88 81.73H35.27C35.61 81.73 35.94 81.59 36.18 81.35C36.42 81.11 36.56 80.79 36.56 80.44V70.92H41.99L48.84 81.24L48.96 81.39L49.2 81.53C49.41 81.65 49.64 81.72 49.88 81.72H52.99C53.58 81.72 54.07 81.24 54.07 80.65C54.07 80.44 54.01 80.23 53.89 80.05L47.18 70.13L47.17 70.11ZM36.56 57.54H42.99C45.95 57.54 47.51 59.04 47.51 61.87C47.51 64.7 45.95 66.24 42.99 66.24H36.56V57.55V57.54Z"/><path d="M23.27 66.17H13.47C12.93 66.17 12.49 66.61 12.49 67.15V69.47C12.49 69.81 12.63 70.15 12.87 70.39C13.12 70.64 13.44 70.77 13.79 70.77H19.81C19.66 72.68 18.93 73.82 17.89 74.93C16.61 76.3 14.74 77.02 12.5 77.02C9.9 77.02 7.94 76.03 6.68 74.09C5.59 72.41 5.01 70.01 5.01 67.15C5.01 64.15 5.74 57.16 12.5 57.16C16.2 57.16 18.66 58.99 19.08 62.05C19.11 62.23 19.2 62.4 19.34 62.53L19.49 62.66C19.73 62.87 20.04 62.99 20.37 62.99H22.77C23.14 62.99 23.49 62.83 23.73 62.56L23.88 62.39C24.03 62.22 24.1 62 24.07 61.77C23.36 55.92 19.03 52.43 12.5 52.43C4.79 52.43 0 58.07 0 67.14C0 76.21 4.58 81.6 12.28 81.7H12.5C16.22 81.7 19.3 80.46 21.42 78.1C23.6 75.68 24.57 72.94 24.57 69.22V67.47C24.57 67.12 24.43 66.79 24.19 66.55C23.95 66.31 23.61 66.17 23.27 66.17Z"/><path d="M138.23 55.46C136.47 53.76 133.99 52.86 131.08 52.86H121.52C121.17 52.86 120.84 53 120.6 53.24C120.36 53.49 120.22 53.81 120.22 54.16V80.41C120.22 80.76 120.35 81.08 120.6 81.33C120.85 81.58 121.17 81.71 121.52 81.71H124.53L124.64 81.49L124.81 81.32C125.05 81.07 125.19 80.75 125.19 80.4V71.63H131.1C134 71.63 136.46 70.72 138.23 69.01C139.96 67.33 140.91 64.9 140.91 62.17C140.91 59.44 139.99 57.14 138.25 55.46H138.23ZM135.8 62.17C135.8 65.09 134.35 66.23 130.64 66.23H125.16V57.47H130.64C133.87 57.47 135.8 59.23 135.8 62.17Z"/><path d="M112.27 53.24C112.03 53 111.69 52.86 111.34 52.86H108.96C108.61 52.86 108.28 53 108.03 53.24C107.78 53.49 107.65 53.82 107.65 54.17V70.97C107.65 75.01 105.64 77.06 101.67 77.06C97.7 77.06 95.73 75.01 95.73 70.97V54.15C95.73 53.82 95.6 53.51 95.38 53.27C95.14 53.01 94.79 52.86 94.43 52.86H92.06C91.71 52.86 91.37 53 91.12 53.26C90.88 53.51 90.75 53.83 90.75 54.17V71.06C90.75 74.33 91.75 77.03 93.65 78.89C95.54 80.74 98.32 81.72 101.66 81.72C108.64 81.72 112.64 77.83 112.64 71.06V54.18C112.64 53.83 112.5 53.5 112.25 53.25L112.27 53.24Z"/><path d="M71.67 52.44C67.41 52.44 64.1 53.89 61.83 56.76C59.83 59.29 58.77 62.86 58.77 67.08C58.77 71.3 59.83 74.85 61.83 77.39C64.1 80.26 67.41 81.72 71.67 81.72C79.75 81.72 84.57 76.25 84.57 67.08C84.57 62.86 83.51 59.29 81.49 56.76C79.22 53.9 75.91 52.45 71.67 52.45V52.44ZM79.49 67.08C79.49 70.06 78.73 76.99 71.67 76.99C68.95 76.99 66.9 75.99 65.58 74.03C64.45 72.34 63.85 69.94 63.85 67.08C63.85 64.22 64.44 61.81 65.57 60.13C66.88 58.17 68.94 57.17 71.67 57.17C78.73 57.17 79.49 64.1 79.49 67.08Z"/><path d="M5.97 28.84C6.19 28.84 6.37 29.01 6.4 29.22C6.97 33.4 10.32 36.03 15.65 36.03C21.64 36.03 24.56 34.02 24.56 29.89C24.56 26.84 22.63 25.13 18.09 24.18L12.34 22.94C4.79 21.32 1.27 17.7 1.27 11.56C1.27 4.32 6.67 0 15.71 0C24.07 0 29.78 4.35 30.47 11.99C30.49 12.24 30.29 12.46 30.03 12.46L24.54 12.44C24.32 12.44 24.13 12.26 24.11 12.04C23.71 8.38 20.53 5.97 15.6 5.97C10.67 5.97 7.88 7.85 7.88 11.55C7.88 13.19 8.51 15.51 14.01 16.7L19.36 17.83C27.08 19.44 31.17 23.6 31.17 29.89C31.17 37.34 25.22 41.96 15.66 41.96C6.1 41.96 0.22 37.45 0 29.33C0 29.09 0.19 28.89 0.44 28.88L5.98 28.83L5.97 28.84Z"/><path d="M45.93 24.77V6.93001C45.93 6.69001 45.73 6.49001 45.49 6.49001H38.31C38.07 6.49001 37.87 6.29001 37.87 6.05001V0.95001C37.87 0.71001 38.07 0.51001 38.31 0.51001H59.95C60.19 0.51001 60.39 0.71001 60.39 0.95001V6.06001C60.39 6.30001 60.19 6.50001 59.95 6.50001H52.81C52.57 6.50001 52.37 6.70001 52.37 6.94001V24.78C52.37 25.02 52.17 25.22 51.93 25.22H46.37C46.13 25.22 45.93 25.02 45.93 24.78H45.92L45.93 24.77Z"/><path d="M57.7 35.45H41.17C40.92 35.45 40.72 35.65 40.72 35.9V40.99C40.72 41.24 40.92 41.44 41.17 41.44H57.7C57.95 41.44 58.15 41.24 58.15 40.99V35.9C58.15 35.65 57.95 35.45 57.7 35.45Z"/><path d="M96.19 41.45C96.04 41.45 95.9 41.38 95.82 41.25L85.58 25.84L85.55 25.82H77.56C77.31 25.82 77.11 26.02 77.11 26.27V40.99C77.11 41.24 76.91 41.44 76.66 41.44H71.18C70.93 41.44 70.73 41.24 70.73 40.99V0.96001C70.73 0.71001 70.93 0.51001 71.18 0.51001H87.09C95.14 0.51001 100.34 5.45001 100.34 13.09C100.34 18.47 97.53 22.74 92.77 24.68C92.5 24.79 92.4 25.11 92.56 25.35L102.81 40.77C103.01 41.07 102.79 41.47 102.44 41.47H96.19V41.45ZM86.8 19.85C91.34 19.85 93.73 17.53 93.73 13.15C93.73 8.77001 91.27 6.50001 86.8 6.50001H77.55C77.3 6.50001 77.1 6.70001 77.1 6.95001V19.41C77.1 19.66 77.3 19.86 77.55 19.86H86.8V19.85Z"/><path d="M113.43 41.45H113.02C112.77 41.45 112.57 41.25 112.57 41V0.96001C112.57 0.71001 112.77 0.51001 113.02 0.51001H138.98C139.23 0.51001 139.43 0.71001 139.43 0.96001V6.05001C139.43 6.30001 139.23 6.50001 138.98 6.50001H119.41C119.16 6.50001 118.96 6.70001 118.96 6.95001V16.93C118.96 17.18 119.16 17.38 119.41 17.38H137.24C137.49 17.38 137.69 17.58 137.69 17.83V22.92C137.69 23.16 137.49 23.37 137.24 23.37H119.42C119.17 23.37 118.97 23.57 118.97 23.82V35.1C118.97 35.35 119.17 35.55 119.42 35.55H138.99C139.24 35.55 139.44 35.75 139.44 36V41.03C139.44 41.28 139.24 41.48 138.99 41.48H113.44L113.43 41.45Z"/><path d="M150.88 41.45H150.47C150.22 41.45 150.02 41.25 150.02 41V0.96001C150.02 0.71001 150.22 0.51001 150.47 0.51001H176.43C176.68 0.51001 176.88 0.71001 176.88 0.96001V6.05001C176.88 6.30001 176.68 6.50001 176.43 6.50001H156.86C156.61 6.50001 156.41 6.70001 156.41 6.95001V16.93C156.41 17.18 156.61 17.38 156.86 17.38H174.69C174.94 17.38 175.14 17.58 175.14 17.83V22.92C175.14 23.16 174.94 23.37 174.69 23.37H156.87C156.62 23.37 156.42 23.57 156.42 23.82V35.1C156.42 35.35 156.62 35.55 156.87 35.55H176.44C176.69 35.55 176.89 35.75 176.89 36V41.03C176.89 41.28 176.69 41.48 176.44 41.48H150.9L150.88 41.45Z"/><path d="M197.18 41.45H196.77C196.52 41.45 196.32 41.25 196.32 41V6.94001C196.32 6.69001 196.12 6.49001 195.87 6.49001H184.53C184.28 6.49001 184.08 6.29001 184.08 6.04001V0.96001C184.08 0.71001 184.28 0.51001 184.53 0.51001H214.54C214.79 0.51001 214.99 0.71001 214.99 0.96001V6.05001C214.99 6.30001 214.79 6.50001 214.54 6.50001H203.2C202.95 6.50001 202.75 6.70001 202.75 6.95001V41.02C202.75 41.27 202.55 41.47 202.3 41.47H197.17L197.18 41.45Z"/></svg></span>
+      <span class="nav-divider" aria-hidden="true"></span>
+      <span class="nav-product">Support Hub</span>
     </a>
-    <div class="st-brand-sub">Support Hub</div>
-  </div>
-  <div class="st-nav-scroll">
-    <div id="stNavViews"></div>
-    <div class="st-nav-label">Help</div>
-    <a class="st-nav-item" href="https://intercom.help/streetcouk/en/" target="_blank" rel="noopener" title="Street Help Centre"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/></svg><span class="st-nav-text">Street Help Centre</span><svg class="st-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
-  </div>
-  <div class="st-nav-footer">
-    <button class="st-foot-btn" onclick="stLockHub()" title="Lock the hub on this browser"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span class="st-nav-text">Lock hub</span></button>
-    <button class="st-foot-btn" id="stCollapseBtn" onclick="stToggleCollapse()" title="Collapse menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 17-5-5 5-5M18 17l-5-5 5-5"/></svg><span class="st-nav-text">Collapse menu</span></button>
-  </div>
-</nav>
-
-<header class="st-topbar">
-  <button class="st-menu-btn" id="stMenuBtn" onclick="stOpenMobileNav()" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-  <div class="st-page-head">
-    <div class="st-crumb">Accounting Support Hub</div>
-    <div class="st-title" id="stPageTitle">All clients</div>
-  </div>
-  <div class="st-top-right">
-    <div class="sync-status" id="syncStatus">
-      <span class="sync-dot"></span>
-      <span class="sync-time" id="syncTime">Loading…</span>
+    <nav class="nav-links" id="stNavViews" aria-label="Main navigation"></nav>
+    <div class="nav-right">
+      <div class="sync-status" id="syncStatus">
+        <span class="sync-dot"></span>
+        <span class="sync-time" id="syncTime">Loading…</span>
+      </div>
+      <button class="icon-btn btn-refresh" onclick="refreshData()" title="Check for the latest data"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg><span>Refresh</span></button>
+      <button class="icon-btn" onclick="stLockHub()" title="Lock the hub on this browser" aria-label="Lock the hub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></button>
+      <button class="icon-btn st-menu-btn" id="stMenuBtn" onclick="stToggleMobileNav()" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
     </div>
-    <button class="btn-refresh" onclick="refreshData()" title="Check for the latest data"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg><span>Refresh</span></button>
   </div>
 </header>
 
 <main class="shell">
 
   <section id="lookup-view">
-    <p class="hub-intro">Look up any client to see where they are with Street, Accounting and Spectre, and who's looking after them. Read-only, no Rocketlane access needed.</p>
+    <div class="page-head">
+      <div class="eyebrow">Accounting Support Hub</div>
+      <h1 id="stPageTitle">All clients</h1>
+      <p class="hub-intro">Look up any client to see where they are with Street, Accounting and Spectre, and who is looking after them. Read-only, no Rocketlane access needed.</p>
+    </div>
     <div class="search-wrap">
       <div class="search-box">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -545,6 +563,7 @@ if (localStorage.getItem(GATE_STORAGE_KEY) === '1') {
    running on a schedule via .github/workflows/sync-rocketlane.yml. This file never
    talks to Rocketlane directly and never sees an API key. */
 
+const FLAG_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22V4"/><path d="M4 4h13l-2 4 2 4H4"/></svg>';
 const today = new Date();
 let companies = [];
 let lastGeneratedAt = null;
@@ -656,8 +675,8 @@ function updateSyncTime(){
   const hoursOld = (Date.now() - d.getTime()) / 36e5;
   const stale = hoursOld > STALE_AFTER_HOURS;
   wrap.className = 'sync-status ' + (stale ? 'is-stale' : 'is-fresh');
-  el.textContent = `Updated ${timeAgo(d)} (${stamp})` + (stale ? ' · may be out of date' : '');
-  wrap.title = syncDiagnosticsText();
+  el.textContent = `Updated ${timeAgo(d)}`;
+  wrap.title = `Last synced ${stamp}` + (stale ? '. This may be out of date, try Refresh.' : '.') + '\n' + syncDiagnosticsText();
 }
 
 function syncDiagnosticsText(){
@@ -978,7 +997,8 @@ function softwareTokens(c){
       out.push(alias ? alias[1] : t);
     });
   });
-  return out;
+  const seen = new Set();
+  return out.filter(t=>{ const k = normText(t).replace(/ /g,''); if(seen.has(k)) return false; seen.add(k); return true; });
 }
 const BANK_ALIASES = [
   [/barcl|barcle/i, 'Barclays'],
@@ -1423,7 +1443,7 @@ function renderResults(){
           ${sub ? `<div class="result-sub">${sub}</div>` : ''}
         </div>
         <div class="result-actions">
-          ${c.redFlag ? fv('redFlag', 'yes', `<span class="badge badge--flag">🚩 Additional support</span>`) : ''}
+          ${c.redFlag ? fv('redFlag', 'yes', `<span class="badge badge--flag">${FLAG_ICON}Additional support</span>`) : ''}
           <span class="view-link">View client →</span>
         </div>
       </div>
@@ -1557,7 +1577,7 @@ function showDetail(id, {keepScroll=false} = {}){
       </div>
     </div>
 
-    ${c.redFlag ? `<div class="flag-strip">🚩 Additional support required. Check the notes below before responding.</div>` : ''}
+    ${c.redFlag ? `<div class="flag-strip">${FLAG_ICON}Additional support required. Check the notes below before responding.</div>` : ''}
 
     <h3 class="section-title">Where they are and who to speak to</h3>
     <div class="lanes lanes--detail">
@@ -1812,22 +1832,17 @@ loadData();
 
 </script>
 <script>
-/* Street shell for the Support Hub: sidebar views, page title, collapse, mobile menu */
+/* Street shell for the Support Hub: top navigation, view menus, page title, mobile menu */
 (function(){
   'use strict';
-  var KEY = 'st_hub_sidebar_collapsed';
-  function lsGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
-  function lsSet(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
-  if(lsGet(KEY)==='1') document.body.classList.add('st-collapsed');
-
   var GROUPS = [
-    { label:'Clients', keys:['all'] },
     { label:'Accounting status', keys:['onboarding','recent','recon','restart','slow','live','optout'] },
     { label:'Other views', keys:['flag','streetOnboarding','spectre'] }
   ];
   var DOT = { onboarding:'#7C9BF0', recent:'#E3A33B', recon:'#E5677C', restart:'#9C90F5', slow:'#B8A88A', live:'#2FA8A0',
-              optout:'#6E7080', flag:'#F08A4B', streetOnboarding:'#C9CAD3', spectre:'#4AA8D8' };
-  var ALL_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>';
+              optout:'#6E7080', flag:'#F08A4B', streetOnboarding:'#a1a1aa', spectre:'#4AA8D8' };
+  var CARET = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
+  var EXT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>';
 
   function labelFor(key){ var f = filters.find(function(x){ return x.key===key; }); return f ? f.label : 'All'; }
   var SHORT = { onboarding:'Onboarding', live:'Live' };
@@ -1848,30 +1863,50 @@ loadData();
     var host = document.getElementById('stNavViews'); if(!host) return;
     var routed = [];
     try{ routed = companies.map(function(c){ var t=null; try{ t=getRouting(c).tone; }catch(e){} return {c:c,t:t}; }); }catch(e){}
-    var html = '';
+    var onList = currentDetailId===null;
+    var html = '<button class="nav-link'+((activeFilter==='all' && onList) ? ' active' : '')+'" data-view="all">All clients</button>';
     GROUPS.forEach(function(g){
-      html += '<div class="st-nav-label">'+g.label+'</div>';
+      var groupActive = onList && g.keys.indexOf(activeFilter) !== -1;
+      html += '<div class="nav-group"><button class="nav-link nav-trigger'+(groupActive ? ' active' : '')+'" aria-haspopup="true" aria-expanded="false">'+g.label+CARET+'</button>'+
+              '<div class="flyout" role="menu" data-label="'+g.label+'">';
       g.keys.forEach(function(k){
-        var active = (activeFilter===k && currentDetailId===null) ? ' active' : '';
-        var lead = k==='all' ? ALL_ICON : '<span class="st-dot" style="background:'+DOT[k]+'"></span>';
+        var active = (activeFilter===k && onList) ? ' active' : '';
         var n = routed.length ? countFor(k, routed).toLocaleString('en-GB') : '';
-        html += '<button class="st-nav-item'+active+'" data-view="'+k+'" title="'+viewTitle(k)+'">'+lead+
-                '<span class="st-nav-text">'+navLabel(k)+'</span><span class="st-nav-count">'+n+'</span></button>';
+        html += '<button class="flyout-item'+active+'" role="menuitem" data-view="'+k+'"><span class="st-dot" style="background:'+DOT[k]+'"></span>'+
+                '<span>'+navLabel(k)+'</span><span class="flyout-count">'+n+'</span></button>';
       });
+      html += '</div></div>';
     });
+    html += '<a class="nav-link" href="https://intercom.help/streetcouk/en/" target="_blank" rel="noopener">Help Centre'+EXT+'</a>';
     host.innerHTML = html;
   }
 
+  function closeMenus(){
+    document.querySelectorAll('.nav-group.is-open').forEach(function(g){
+      g.classList.remove('is-open');
+      var t = g.querySelector('.nav-trigger'); if(t) t.setAttribute('aria-expanded','false');
+    });
+  }
   function setTitle(t){ var el=document.getElementById('stPageTitle'); if(el) el.textContent=t; document.title = t + ' | Street Support Hub'; }
 
   document.addEventListener('click', function(e){
-    var b = e.target.closest && e.target.closest('.st-nav-item[data-view]');
-    if(!b) return;
-    activeFilter = b.getAttribute('data-view');
-    if(currentDetailId!==null) showLookup();
-    resetPaging(); renderChips(); renderResults();
-    window.scrollTo({top:0});
-    stCloseMobileNav();
+    var trig = e.target.closest && e.target.closest('.nav-trigger');
+    if(trig){
+      var group = trig.parentElement, wasOpen = group.classList.contains('is-open');
+      closeMenus();
+      if(!wasOpen){ group.classList.add('is-open'); trig.setAttribute('aria-expanded','true'); }
+      return;
+    }
+    var b = e.target.closest && e.target.closest('[data-view]');
+    if(b && b.closest('#stNavViews')){
+      activeFilter = b.getAttribute('data-view');
+      if(currentDetailId!==null) showLookup();
+      resetPaging(); renderChips(); renderResults();
+      window.scrollTo({top:0});
+      closeMenus(); stCloseMobileNav();
+      return;
+    }
+    if(!(e.target.closest && e.target.closest('.nav-group'))) closeMenus();
   });
 
   function wrap(name, after){
@@ -1882,20 +1917,22 @@ loadData();
   wrap('renderChips', function(){ renderNav(); if(currentDetailId===null) setTitle(viewTitle(activeFilter)); });
   wrap('showDetail', function(id){
     var c = companies.find(function(x){ return x.companyId===id; });
-    if(c) setTitle(c.companyName || 'Client');
+    if(c) document.title = (c.companyName || 'Client') + ' | Street Support Hub';
     renderNav();
     if(!arguments[1] || !arguments[1].keepScroll) window.scrollTo({top:0});
   });
   wrap('showLookup', function(){ setTitle(viewTitle(activeFilter)); renderNav(); });
 
-  window.stToggleCollapse = function(){
-    var on = document.body.classList.toggle('st-collapsed'); lsSet(KEY, on?'1':'0');
-    var b=document.getElementById('stCollapseBtn'); if(b){ b.title = on?'Expand menu':'Collapse menu'; }
+  window.stToggleMobileNav = function(){
+    var on = document.body.classList.toggle('st-nav-open');
+    var b = document.getElementById('stMenuBtn'); if(b) b.setAttribute('aria-expanded', on ? 'true' : 'false');
   };
-  window.stOpenMobileNav = function(){ document.body.classList.add('st-nav-open'); };
-  window.stCloseMobileNav = function(){ document.body.classList.remove('st-nav-open'); };
+  window.stCloseMobileNav = function(){
+    document.body.classList.remove('st-nav-open');
+    var b = document.getElementById('stMenuBtn'); if(b) b.setAttribute('aria-expanded','false');
+  };
   window.stLockHub = function(){ try{ localStorage.removeItem(GATE_STORAGE_KEY); }catch(e){} location.reload(); };
-  document.addEventListener('keydown', function(e){ if(e.key==='Escape') stCloseMobileNav(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ closeMenus(); stCloseMobileNav(); } });
   renderNav();
 })();
 </script>
