@@ -146,7 +146,7 @@ body.st-collapsed #stCollapseBtn svg{transform:rotate(180deg);}
 .adv-filters .adv-filters-clear:hover{text-decoration:underline;}
 .filter-panel{margin-top:12px; padding:18px 20px; background:#fff; border:1px solid var(--line); border-radius:var(--radius-lg); display:grid; gap:16px; box-shadow:var(--shadow-card);}
 .filter-group-title{font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.09em; color:var(--muted); margin-bottom:8px;}
-.filter-fields{display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:10px;}
+.filter-fields{display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:10px; align-items:end;}
 .filter-field{display:flex; flex-direction:column; gap:4px; font-size:12px; color:var(--text-2); font-weight:600;}
 .filter-field select{width:100%; border:1px solid var(--line-strong); background:#fff; color:var(--text); height:36px; padding:0 10px; border-radius:8px; font-size:13px; cursor:pointer;}
 .filter-field select:focus{outline:none; border-color:var(--purple); box-shadow:0 0 0 3px var(--purple-tint);}
@@ -188,9 +188,6 @@ body.st-collapsed #stCollapseBtn svg{transform:rotate(180deg);}
 .account-line b{color:var(--muted); font-weight:600;}
 
 .lanes{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px;}
-.lanes--compact{margin-top:14px;}
-.lane-compact{background:var(--page); border:1px solid var(--line); border-radius:10px; padding:12px 14px; display:flex; flex-direction:column; gap:10px;}
-.lane-compact.is-empty{background:#fff; border-style:dashed;}
 .lane-head{display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;}
 .lane-label{font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.09em; color:var(--muted);}
 
@@ -363,6 +360,44 @@ details.note .note-body{padding:0 16px 14px; font-size:13.5px; color:var(--text-
   .panel--account .field-row:nth-last-child(2){border-bottom:1px solid var(--fill-2);}
   .result-meta{grid-template-columns:1fr 1fr;}
 }
+/* ---------- smart "contains" filter boxes ---------- */
+.filter-field--text{display:flex; flex-direction:column; gap:4px; font-size:12px; color:var(--text-2); font-weight:600;}
+.combo{position:relative;}
+.combo input{width:100%; box-sizing:border-box; border:1px solid var(--line-strong); background:#fff; color:var(--text); height:36px; padding:0 30px 0 10px; border-radius:8px; font-family:var(--font); font-size:13px; font-weight:400;}
+.combo input::placeholder{color:var(--faint);}
+.combo input:focus{outline:none; border-color:var(--purple); box-shadow:0 0 0 3px var(--purple-tint);}
+.combo input.active{border-color:var(--purple); color:var(--purple); font-weight:600;}
+.combo-clear{position:absolute; right:5px; top:6px; width:24px; height:24px; border:none; background:none; color:var(--muted); font-size:18px; line-height:1; cursor:pointer; border-radius:6px;}
+.combo-clear:hover{background:var(--fill); color:var(--text);}
+.combo-list{position:absolute; z-index:40; left:0; top:calc(100% + 4px); width:max(100%, 270px); max-height:290px; overflow:auto; background:#fff; border:1px solid var(--line-strong); border-radius:10px; box-shadow:var(--shadow-lg); padding:4px;}
+.combo-head{padding:6px 10px 8px; font-size:12px; font-weight:600; color:var(--purple); border-bottom:1px solid var(--line); margin-bottom:4px;}
+.combo-empty{padding:10px; font-size:12.5px; color:var(--muted); font-weight:400;}
+.combo-option{display:flex; justify-content:space-between; align-items:center; gap:12px; padding:8px 10px; border-radius:7px; font-size:13px; font-weight:500; color:var(--text); cursor:pointer;}
+.combo-option:hover, .combo-option.is-active{background:var(--purple-tint);}
+.combo-option.is-special{color:var(--muted); font-style:italic;}
+.combo-count{font-size:11.5px; color:var(--muted); font-weight:600; background:var(--fill); border-radius:99px; padding:1px 8px; flex-shrink:0;}
+
+/* ---------- client tile: status, team, Spectre ---------- */
+.tile-status{display:flex; flex-wrap:wrap; gap:10px 32px; margin-top:14px;}
+.tile-status-item{display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+.tile-status-detail{font-size:12px; color:var(--muted);}
+.team-strip{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin-top:12px;}
+.team-cell{background:var(--page); border:1px solid var(--line); border-radius:10px; padding:10px 12px; display:flex; flex-direction:column; gap:8px; height:100%; box-sizing:border-box;}
+.team-cell.is-empty{background:#fff; border-style:dashed;}
+.team-cell.is-goto{border-color:var(--purple-line); background:var(--purple-tint);}
+.team-cell-label{min-height:18px; display:flex; align-items:center; justify-content:space-between; gap:6px; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--muted);}
+.team-cell .avatar{width:30px; height:30px; font-size:11.5px;}
+.team-cell .person-name{font-size:13.5px; overflow-wrap:anywhere;}
+.goto-tag{white-space:nowrap; flex-shrink:0; line-height:16px; font-size:10px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; padding:1px 7px; border-radius:99px; background:var(--purple); color:#fff;}
+.team-cell--inline{flex-direction:row; align-items:center; gap:10px; background:rgba(255,255,255,.7); border-color:var(--sky-line); padding:6px 12px; height:auto;}
+.team-cell--inline.is-empty{background:rgba(255,255,255,.5);}
+.team-cell--inline .team-cell-label{white-space:nowrap;}
+.spectre-strip{margin-top:10px; background:var(--sky-bg); border:1px solid var(--sky-line); border-radius:10px; padding:8px 12px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px 24px;}
+.spectre-strip-main{display:flex; align-items:center; flex-wrap:wrap; gap:8px 12px;}
+.spectre-products{font-size:12.5px; color:var(--sky); font-weight:600;}
+.result-card .account-line{margin-top:14px; padding-top:12px; border-top:1px solid var(--line);}
+@media (max-width:900px){ .team-strip{grid-template-columns:repeat(2,minmax(0,1fr));} }
+@media (max-width:520px){ .team-cell{padding:8px 10px;} .team-cell .person{gap:8px;} .team-cell--inline{flex-wrap:wrap;} }
 @media (prefers-reduced-motion:reduce){ *,*::before,*::after{transition:none !important; animation:none !important;} }
 </style>
 </head>
@@ -871,7 +906,7 @@ function teamNames(c){
    Each def: key, group, label, type, getValue(c).
    Types: 'dynamic' (dropdown of values found in the data, plus "Not recorded"),
           'boolean' (Yes / No), 'bands' (fixed ranges), 'presence' (Recorded / Not recorded),
-          'people' (anyone on the client team). */
+          'text' (type-ahead "contains" box, with tidied suggestions). */
 const NONE = '__none__';
 const UNIT_BANDS = ['1 to 99','100 to 249','250 to 499','500 to 999','1,000+'];
 const BRANCH_BANDS = ['1 branch','2 to 5 branches','6+ branches'];
@@ -882,6 +917,120 @@ function unitBand(u){
 function branchBand(b){
   if(!has(b)) return null; const n = Number(b); if(!Number.isFinite(n) || n <= 0) return null;
   return n === 1 ? BRANCH_BANDS[0] : n <= 5 ? BRANCH_BANDS[1] : BRANCH_BANDS[2];
+}
+
+/* ---------------- smart "contains" filters ----------------
+   Some fields (previous software, bank provider, people) hold several values in one
+   box, with inconsistent spelling. Instead of a dropdown with hundreds of near-duplicate
+   options, these use a type-ahead box: type part of a name and every client whose value
+   CONTAINS it is shown. The suggestion list underneath splits combined values apart and
+   tidies spelling, so "Alto", "Alto, Xero" and "Vebra Alto" all count towards "Alto". */
+function normText(s){ return String(s ?? '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim(); }
+function textMatches(haystack, query){
+  const words = normText(query).split(' ').filter(Boolean);
+  if(!words.length) return true;
+  const hay = normText(haystack);
+  const compact = hay.replace(/ /g, '');
+  return words.every(w => hay.includes(w) || compact.includes(w));   // every word must appear, in any order
+}
+/* Split "Alto, Xero", "Alto & Jupix", "Alto; Agency Pilot", "Alto / Rezi" into single names. */
+function splitList(s){
+  // Splits on commas, semicolons, slashes, "&", "+" and "and", but never inside brackets,
+  // so "Vebra Alto (sales/lettings)" stays together.
+  const parts = [];
+  let depth = 0, cur = '';
+  const str = String(s ?? '');
+  for(let i = 0; i < str.length; i++){
+    const ch = str[i];
+    if(ch === '(') depth++;
+    if(ch === ')') depth = Math.max(0, depth - 1);
+    const isAnd = depth === 0 && /^\sand\s/i.test(str.slice(i, i + 5)) ;
+    if(depth === 0 && (',;/&+'.includes(ch))){ parts.push(cur); cur = ''; continue; }
+    if(isAnd){ parts.push(cur); cur = ''; i += 4; continue; }
+    cur += ch;
+  }
+  parts.push(cur);
+  return parts.map(x=>x.trim()).filter(Boolean);
+}
+/* "Alto Alto" or "NatWest NatWest" (a value pasted twice) becomes one. */
+function collapseRepeat(s){
+  const m = String(s).trim().match(/^(.+?)(?:\s+\1)+$/i);
+  return m ? m[1] : String(s).trim();
+}
+function cleanName(n){
+  if(!has(n) || /^not assigned$/i.test(String(n).trim())) return null;
+  return String(n).replace(/\s*\(no longer active\)\s*/i, '').trim() || null;
+}
+function isInactiveName(n){ return has(n) && /\(no longer active\)/i.test(String(n)); }
+
+const SOFTWARE_ALIASES = [
+  [/^start[\s-]*up$/i, 'Start up'],
+  [/^none\s*[\(\/]?\s*start[\s-]*up\)?$/i, 'Start up'],
+  [/^agent\s*os$/i, 'AgentOS'],
+];
+function softwareTokens(c){
+  const a = acct(c);
+  const out = [];
+  [a.previousSoftware, a.previousCrm, a.previousAccountingSoftware].filter(has).forEach(raw=>{
+    splitList(raw).forEach(t=>{
+      t = collapseRepeat(t);
+      const alias = SOFTWARE_ALIASES.find(([re])=>re.test(t));
+      out.push(alias ? alias[1] : t);
+    });
+  });
+  return out;
+}
+const BANK_ALIASES = [
+  [/barcl|barcle/i, 'Barclays'],
+  [/nat\s*west/i, 'NatWest'],
+  [/ll?[oy]{1,2}ds/i, 'Lloyds'],
+  [/hsbc/i, 'HSBC'],
+  [/\bmetro/i, 'Metro Bank'],
+  [/\brbs\b/i, 'RBS'],
+  [/bank[\s_]of[\s_]scotland/i, 'Bank of Scotland'],
+  [/virgin/i, 'Virgin Money'],
+  [/santander/i, 'Santander'],
+  [/coutts/i, 'Coutts'],
+  [/revolut/i, 'Revolut'],
+  [/zempler/i, 'Zempler'],
+  [/handelsbanken/i, 'Handelsbanken'],
+  [/calmony/i, 'Calmony'],
+  [/griffin/i, 'Griffin Bank'],
+  [/pay\s*prop/i, 'PayProp'],
+];
+function bankTokens(c){
+  const raw = acct(c).bankProvider;
+  if(!has(raw)) return [];
+  const found = BANK_ALIASES.filter(([re])=>re.test(raw)).map(([,label])=>label);
+  if(found.length) return found;
+  return splitList(String(raw).replace(/_/g,' ')).map(collapseRepeat);
+}
+/* What the box is searched against: the raw wording (so typos still match what was typed)
+   plus the tidied names (so "barclays" also finds "Barcleys"). */
+function softwareText(c){ const t = softwareTokens(c); return t.length ? [previousSoftwareText(c), ...t].join(' | ') : ''; }
+function bankText(c){ const raw = acct(c).bankProvider; return has(raw) ? [raw, ...bankTokens(c)].join(' | ') : ''; }
+function singleToken(getter){ return c=>{ const n = cleanName(getter(c)); return n ? [n] : []; }; }
+
+function filterOptionIndex(def){
+  const byKey = new Map();
+  companies.forEach(c=>{
+    const seen = new Set();
+    def.getTokens(c).forEach(label=>{
+      const key = normText(label).replace(/ /g,'');
+      if(!key || seen.has(key)) return;
+      seen.add(key);
+      if(!byKey.has(key)) byKey.set(key, { count:0, spellings:new Map() });
+      const e = byKey.get(key);
+      e.count++;
+      e.spellings.set(label, (e.spellings.get(label)||0) + 1);
+    });
+  });
+  const list = [];
+  byKey.forEach(e=>{
+    const label = Array.from(e.spellings.entries()).sort((a,b)=>b[1]-a[1])[0][0];
+    if(label.length <= 40) list.push({ label, count:e.count });   // very long free-text answers stay searchable but aren't suggested
+  });
+  return list.sort((a,b)=>b.count-a.count || a.label.localeCompare(b.label,'en-GB'));
 }
 
 const ADV_FILTER_DEFS = [
@@ -908,13 +1057,29 @@ const ADV_FILTER_DEFS = [
   { key:'spectreSocial', group:'Spectre', label:'Spectre Social', type:'dynamic', getValue:c=>spec(c).social },
   { key:'spectreEmail', group:'Spectre', label:'Spectre Email', type:'dynamic', getValue:c=>spec(c).email },
   { key:'spectrePropertyReports', group:'Spectre', label:'Spectre Property Reports', type:'dynamic', getValue:c=>spec(c).propertyReports },
-  // Account & team
-  { key:'person', group:'Account & team', label:'Anyone on the client team', type:'people' },
-  { key:'previousSoftware', group:'Account & team', label:'Previous software', type:'dynamic', getValue:c=>previousSoftwareText(c) },
-  { key:'migration', group:'Account & team', label:'Migration', type:'dynamic', getValue:c=>acct(c).migration },
-  { key:'bankProvider', group:'Account & team', label:'Bank Provider', type:'dynamic', getValue:c=>acct(c).bankProvider },
+  // Client team (type-ahead boxes)
+  { key:'csmStreet', group:'Client team', label:'Customer Success Manager (Street)', type:'text', placeholder:'Type a name…',
+    getTokens:singleToken(c=>c.csmStreet) },
+  { key:'accountingOwner', group:'Client team', label:'Accounting Owner', type:'text', placeholder:'Type a name…',
+    getTokens:singleToken(c=>c.accountingOwner) },
+  { key:'onboardingSpecialist', group:'Client team', label:'Onboarding Specialist', type:'text', placeholder:'Type a name…',
+    getTokens:singleToken(c=>c.onboardingSpecialist) },
+  { key:'bdm', group:'Client team', label:'BDM (Business Development Manager)', type:'text', placeholder:'Type a name…',
+    getTokens:singleToken(c=>acct(c).bdm) },
+  { key:'person', group:'Client team', label:'Anyone on the client team', type:'text', placeholder:'Type a name…',
+    getTokens:c=>Array.from(new Set(teamNames(c).map(cleanName).filter(Boolean))) },
+  // Account details (type-ahead boxes: "contains" searches)
+  { key:'previousSoftware', group:'Account details', label:'Previous software contains', type:'text', contains:true, placeholder:'e.g. Alto, Jupix, Xero…',
+    getTokens:softwareTokens, getText:softwareText },
+  { key:'migration', group:'Account details', label:'Migration contains', type:'text', contains:true, placeholder:'e.g. Manual…',
+    getTokens:c=>has(acct(c).migration) ? [String(acct(c).migration)] : [] },
+  { key:'bankProvider', group:'Account details', label:'Bank provider contains', type:'text', contains:true, placeholder:'e.g. Barclays, NatWest…',
+    getTokens:bankTokens, getText:bankText },
 ];
-const FILTER_GROUPS = ['Street', 'Accounting', 'Spectre', 'Account & team'];
+ADV_FILTER_DEFS.forEach(d=>{
+  if(d.type === 'text' && !d.getText) d.getText = c=>d.getTokens(c).join(' | ');
+});
+const FILTER_GROUPS = ['Street', 'Accounting', 'Spectre', 'Client team', 'Account details'];
 let advFilters = {};
 let filterPanelOpen = (()=>{ try { return localStorage.getItem('supportHubFiltersOpen') === '1'; } catch(e){ return false; } })();
 
@@ -924,6 +1089,7 @@ function optionText(def, value){
   if(value === NONE) return 'Not recorded';
   if(def.type === 'boolean') return value === 'yes' ? 'Yes' : 'No';
   if(def.type === 'presence') return value === 'yes' ? 'Recorded' : 'Not recorded';
+  if(def.type === 'text' && def.contains) return `contains “${value}”`;
   return value;
 }
 
@@ -933,15 +1099,21 @@ function setFilter(key, value){
   renderAdvFilters();
   renderResults();
 }
+/* Used while typing in a type-ahead box: updates the results and the filter pills
+   without rebuilding the panel, so the cursor stays where it is. */
+function setTextFilterLive(key, value){
+  advFilters[key] = value || '';
+  resetPaging();
+  renderFilterBar();
+  renderResults();
+}
 
-function renderAdvFilters(){
-  const row = document.getElementById('advFilterRow');
-  if(!row) return;
-  row.innerHTML = '';
-
+function renderFilterBar(){
+  const host = document.getElementById('filterBarHost');
+  if(!host) return;
+  host.innerHTML = '';
   const activeKeys = Object.keys(advFilters).filter(k=>advFilters[k]);
 
-  // ---- top bar: toggle, active filter pills, clear ----
   const bar = document.createElement('div');
   bar.className = 'filter-bar';
   const toggle = document.createElement('button');
@@ -960,7 +1132,7 @@ function renderAdvFilters(){
     const pill = document.createElement('button');
     pill.className = 'active-filter';
     pill.title = 'Remove this filter';
-    pill.innerHTML = `<span class="active-filter-label">${esc(def.label)}:</span> ${esc(optionText(def, advFilters[k]))} <span class="active-filter-x" aria-hidden="true">×</span>`;
+    pill.innerHTML = `<span class="active-filter-label">${esc(def.label.replace(/ contains$/, ''))}:</span> ${esc(optionText(def, advFilters[k]))} <span class="active-filter-x" aria-hidden="true">×</span>`;
     pill.onclick = ()=>setFilter(k, '');
     bar.appendChild(pill);
   });
@@ -977,11 +1149,140 @@ function renderAdvFilters(){
     hint.textContent = 'Tip: click any status, person or detail on a client card to filter by it.';
     bar.appendChild(hint);
   }
-  row.appendChild(bar);
+  host.appendChild(bar);
+}
+
+/* One type-ahead box: type to narrow, pick a suggestion or just leave what you typed. */
+function buildTextFilterField(def){
+  const options = filterOptionIndex(def);
+  const wrap = document.createElement('div');
+  wrap.className = 'filter-field filter-field--text';
+  const inputId = 'ff-' + def.key;
+  wrap.innerHTML = `<label for="${esc(inputId)}">${esc(def.label)}</label>`;
+
+  const box = document.createElement('div');
+  box.className = 'combo';
+  const input = document.createElement('input');
+  input.type = 'text';
+  input.id = inputId;
+  input.autocomplete = 'off';
+  input.spellcheck = false;
+  input.placeholder = def.placeholder || 'Type to search…';
+  input.setAttribute('role', 'combobox');
+  input.setAttribute('aria-expanded', 'false');
+  input.setAttribute('aria-autocomplete', 'list');
+  const current = advFilters[def.key];
+  input.value = current === NONE ? 'Not recorded' : (current || '');
+  input.classList.toggle('active', !!current);
+
+  const clear = document.createElement('button');
+  clear.type = 'button';
+  clear.className = 'combo-clear';
+  clear.setAttribute('aria-label', 'Clear this filter');
+  clear.textContent = '×';
+  clear.hidden = !current;
+
+  const list = document.createElement('div');
+  list.className = 'combo-list';
+  list.setAttribute('role', 'listbox');
+  list.hidden = true;
+
+  let activeIdx = -1;
+  let shown = [];
+
+  const currentValue = ()=>{
+    const t = input.value.trim();
+    return normText(t) === 'not recorded' ? NONE : t;
+  };
+  const apply = ()=>{
+    const v = currentValue();
+    input.classList.toggle('active', !!v);
+    clear.hidden = !v;
+    setTextFilterLive(def.key, v);
+  };
+  const countMatches = q=>{
+    let n = 0;
+    companies.forEach(c=>{ if(textMatches(def.getText(c), q)) n++; });
+    return n;
+  };
+  const close = ()=>{ list.hidden = true; input.setAttribute('aria-expanded','false'); activeIdx = -1; };
+  const pick = label=>{ input.value = label; apply(); close(); };
+
+  const renderList = ()=>{
+    const q = input.value.trim();
+    const typing = q && normText(q) !== 'not recorded';
+    shown = options.filter(o=>!typing || textMatches(o.label, q)).slice(0, 60);
+    const items = [];
+    if(!typing || 'not recorded'.includes(normText(q))) items.push({ label:'Not recorded', count:companies.filter(c=>!has(def.getText(c))).length, special:true });
+    shown.forEach(o=>items.push(o));
+    activeIdx = -1;
+    list.innerHTML = '';
+    if(typing){
+      const head = document.createElement('div');
+      head.className = 'combo-head';
+      const n = countMatches(q);
+      head.textContent = `${n.toLocaleString('en-GB')} client${n===1?'':'s'} contain “${q}”`;
+      list.appendChild(head);
+    }
+    if(!items.length){
+      const none = document.createElement('div');
+      none.className = 'combo-empty';
+      none.textContent = 'No suggestions. Whatever you type is still searched for.';
+      list.appendChild(none);
+    }
+    items.forEach(o=>{
+      const opt = document.createElement('div');
+      opt.className = 'combo-option' + (o.special ? ' is-special' : '');
+      opt.setAttribute('role', 'option');
+      opt.innerHTML = `<span>${esc(o.label)}</span><span class="combo-count">${o.count.toLocaleString('en-GB')}</span>`;
+      opt.onmousedown = e=>e.preventDefault();       // keep focus in the box
+      opt.onclick = ()=>pick(o.label);
+      list.appendChild(opt);
+    });
+    list.hidden = false;
+    input.setAttribute('aria-expanded', 'true');
+  };
+  const highlight = ()=>{
+    const opts = list.querySelectorAll('.combo-option');
+    opts.forEach((o,i)=>o.classList.toggle('is-active', i === activeIdx));
+    if(opts[activeIdx]) opts[activeIdx].scrollIntoView({ block:'nearest' });
+  };
+
+  input.addEventListener('focus', renderList);
+  input.addEventListener('input', ()=>{ apply(); renderList(); });
+  input.addEventListener('keydown', e=>{
+    const opts = list.querySelectorAll('.combo-option');
+    if(e.key === 'ArrowDown'){ e.preventDefault(); if(list.hidden) renderList(); activeIdx = Math.min(opts.length-1, activeIdx+1); highlight(); }
+    else if(e.key === 'ArrowUp'){ e.preventDefault(); activeIdx = Math.max(0, activeIdx-1); highlight(); }
+    else if(e.key === 'Enter'){ if(activeIdx >= 0 && opts[activeIdx]){ e.preventDefault(); opts[activeIdx].click(); } else close(); }
+    else if(e.key === 'Escape'){ close(); }
+  });
+  clear.onclick = ()=>{ input.value = ''; apply(); input.focus(); renderList(); };
+
+  box.appendChild(input);
+  box.appendChild(clear);
+  box.appendChild(list);
+  wrap.appendChild(box);
+  return wrap;
+}
+/* Close any open suggestion list when clicking elsewhere. */
+document.addEventListener('mousedown', e=>{
+  document.querySelectorAll('.combo-list').forEach(l=>{
+    if(!l.parentElement.contains(e.target)){ l.hidden = true; const i = l.parentElement.querySelector('input'); if(i) i.setAttribute('aria-expanded','false'); }
+  });
+});
+
+function renderAdvFilters(){
+  const row = document.getElementById('advFilterRow');
+  if(!row) return;
+  row.innerHTML = '';
+  const barHost = document.createElement('div');
+  barHost.id = 'filterBarHost';
+  row.appendChild(barHost);
+  renderFilterBar();
 
   if(!filterPanelOpen) return;
 
-  // ---- expanded panel, grouped ----
   const panel = document.createElement('div');
   panel.className = 'filter-panel';
   FILTER_GROUPS.forEach(group=>{
@@ -992,6 +1293,8 @@ function renderAdvFilters(){
     fields.className = 'filter-fields';
 
     ADV_FILTER_DEFS.filter(d=>d.group===group).forEach(def=>{
+      if(def.type === 'text'){ fields.appendChild(buildTextFilterField(def)); return; }
+
       const select = document.createElement('select');
       const add = (value, text)=>{ const o = document.createElement('option'); o.value = value; o.textContent = text; select.appendChild(o); };
       add('', 'All');
@@ -1003,10 +1306,7 @@ function renderAdvFilters(){
         if(def.type === 'bands') values = def.options;
         else {
           const set = new Set();
-          companies.forEach(c=>{
-            if(def.type === 'people') teamNames(c).forEach(n=>set.add(n));
-            else { const v = def.getValue(c); if(has(v)) set.add(v); }
-          });
+          companies.forEach(c=>{ const v = def.getValue(c); if(has(v)) set.add(v); });
           values = Array.from(set).sort((a,b)=>String(a).localeCompare(String(b),'en-GB'));
         }
         if(!values.length && def.type !== 'bands') return; // nothing synced for this field yet
@@ -1025,8 +1325,10 @@ function renderAdvFilters(){
       fields.appendChild(wrap);
     });
 
-    groupEl.appendChild(fields);
-    panel.appendChild(groupEl);
+    if(fields.children.length){
+      groupEl.appendChild(fields);
+      panel.appendChild(groupEl);
+    }
   });
   row.appendChild(panel);
 }
@@ -1035,9 +1337,9 @@ function matchesAdvFilters(c){
   return ADV_FILTER_DEFS.every(def=>{
     const selected = advFilters[def.key];
     if(!selected) return true;
-    if(def.type === 'people'){
-      const names = teamNames(c);
-      return selected === NONE ? names.length === 0 : names.includes(selected);
+    if(def.type === 'text'){
+      const text = def.getText(c);
+      return selected === NONE ? !has(text) : textMatches(text, selected);
     }
     const v = def.getValue(c);
     if(def.type === 'boolean') return selected === 'yes' ? !!v : !v;
@@ -1122,15 +1424,13 @@ function renderResults(){
         </div>
         <div class="result-actions">
           ${c.redFlag ? fv('redFlag', 'yes', `<span class="badge badge--flag">🚩 Additional support</span>`) : ''}
-          ${isSpectreClient(c) ? fv('spectreClient', 'yes', `<span class="badge badge--spectre">Spectre client</span>`) : ''}
           <span class="view-link">View client →</span>
         </div>
       </div>
+      ${tileStatusRow(c, street, routing)}
+      ${tileTeam(c, street, routing, accContact)}
+      ${spectreStrip(c)}
       ${accountLine(c)}
-      <div class="lanes lanes--compact">
-        ${laneCompact('Street', street.label, street.tone, street.contact, street.empty, 'streetStatus', c.streetStatus, 'streetContact')}
-        ${laneCompact('Accounting', routing.label, routing.tone, accContact, routing.empty, 'accountingStatus', routing.label, 'accountingContact')}
-      </div>
     `;
     list.appendChild(card);
   });
@@ -1156,23 +1456,73 @@ function cardSubLine(c){
 function accountLine(c){
   const a = acct(c);
   const bits = [];
-  const prev = previousSoftwareText(c);
-  if(prev) bits.push(`<span><b>Previously:</b> ${fv('previousSoftware', prev, esc(prev))}</span>`);
+  const software = softwareTokens(c);
+  if(software.length) bits.push(`<span><b>Previously:</b> ${software.map(t=>fv('previousSoftware', t, esc(t))).join(', ')}</span>`);
   if(has(a.migration)) bits.push(`<span><b>Migration:</b> ${fv('migration', a.migration, esc(a.migration))}</span>`);
-  if(has(a.bankProvider)) bits.push(`<span><b>Bank:</b> ${fv('bankProvider', a.bankProvider, esc(a.bankProvider))}</span>`);
+  const banks = bankTokens(c);
+  if(banks.length) bits.push(`<span><b>Bank:</b> ${banks.map(t=>fv('bankProvider', t, esc(t))).join(', ')}</span>`);
   return bits.length ? `<div class="account-line">${bits.join('')}</div>` : '';
 }
 
-function laneCompact(title, label, tone, contact, empty, statusKey, statusValue, contactKey){
-  const pill = `<span class="badge ${TONE_BADGE[tone]}">${esc(label)}</span>`;
-  const statusHtml = has(statusValue) ? fv(statusKey, statusValue, pill) : fv(statusKey, NONE, pill);
-  const personBlock = empty ? '' : (contact ? fv(contactKey, contact.name, personHtml(contact), 'fv--block') : fv(contactKey, NONE, personHtml(null), 'fv--block'));
-  return `<div class="lane-compact ${empty ? 'is-empty' : ''}">
-      <div class="lane-head">
+/* Street and Accounting status, side by side, each with a short detail line (e.g. "Day 12 of 30"). */
+function tileStatusRow(c, street, routing){
+  const item = (title, label, tone, statusKey, statusValue, detail)=>{
+    const pill = `<span class="badge ${TONE_BADGE[tone]}">${esc(label)}</span>`;
+    const statusHtml = has(statusValue) ? fv(statusKey, statusValue, pill) : fv(statusKey, NONE, pill);
+    return `<div class="tile-status-item">
         <span class="lane-label">${title}</span>
         ${statusHtml}
+        ${detail ? `<span class="tile-status-detail">${esc(detail)}</span>` : ''}
+      </div>`;
+  };
+  return `<div class="tile-status">
+      ${item('Street', street.label, street.tone, 'streetStatus', c.streetStatus, street.detail)}
+      ${item('Accounting', routing.label, routing.tone, 'accountingStatus', routing.label, routing.empty ? '' : routing.detail)}
+    </div>`;
+}
+
+/* One person on the tile. Clicking filters by them; an empty one filters for "not assigned". */
+function teamCell({label, raw, key, value, goTo=false, inline=false}){
+  const name = cleanName(raw);
+  const cls = 'team-cell' + (inline ? ' team-cell--inline' : '');
+  if(!name){
+    return fv(key, NONE, `<div class="${cls} is-empty" title="Nobody recorded. Click to find clients with no ${esc(label)}.">
+        <div class="team-cell-label"><span>${esc(label)}</span></div>
+        <div class="person"><span class="avatar avatar--empty">?</span><div class="person-name muted">Not assigned</div></div>
+      </div>`, 'fv--block');
+  }
+  const inactive = isInactiveName(raw);
+  return fv(key, value ?? name, `<div class="${cls}${goTo ? ' is-goto' : ''}">
+      <div class="team-cell-label"><span>${esc(label)}</span>${goTo ? '<span class="goto-tag" title="The person to speak to first">Go-to</span>' : ''}</div>
+      <div class="person">
+        <span class="avatar">${esc(initials(name))}</span>
+        <div><div class="person-name">${esc(name)}</div>${inactive ? '<div class="person-role">No longer active</div>' : ''}</div>
       </div>
-      ${personBlock}
+    </div>`, 'fv--block');
+}
+
+/* The whole client team at a glance: Street CSM, Accounting Owner, Onboarding Specialist and BDM. */
+function tileTeam(c, street, routing, accContact){
+  const streetRole = street.contact && street.contact.role;
+  const accRole = (!routing.empty && accContact) ? accContact.role : null;
+  return `<div class="team-strip">
+      ${teamCell({label:'Street CSM', raw:c.csmStreet, key:'csmStreet', goTo:streetRole === 'Customer Success Manager'})}
+      ${teamCell({label:'Accounting Owner', raw:c.accountingOwner, key:'accountingOwner', goTo:accRole === 'Accounting Owner'})}
+      ${teamCell({label:'Onboarding Specialist', raw:c.onboardingSpecialist, key:'onboardingSpecialist', goTo:streetRole === 'Onboarding Specialist'})}
+      ${teamCell({label:'BDM', raw:acct(c).bdm, key:'bdm'})}
+    </div>`;
+}
+
+/* Only shown for Spectre customers: what they have, and who looks after them. */
+function spectreStrip(c){
+  if(!isSpectreClient(c)) return '';
+  const sp = spec(c);
+  return `<div class="spectre-strip">
+      <div class="spectre-strip-main">
+        ${fv('spectreClient', 'yes', `<span class="badge badge--spectre">Spectre customer</span>`)}
+        ${has(sp.productsSummary) ? `<span class="spectre-products">${esc(sp.productsSummary)}</span>` : ''}
+      </div>
+      ${teamCell({label:'Spectre CSM', raw:sp.csmSpectre, key:'csmSpectre', value:sp.csmSpectre, inline:true})}
     </div>`;
 }
 
