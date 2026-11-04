@@ -344,6 +344,7 @@ details.note .note-body{padding:0 16px 14px; font-size:13.5px; color:var(--text-
 .tile-status-item{display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
 .tile-status-detail{font-size:12px; color:var(--muted);}
 .team-strip{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin-top:12px;}
+.team-strip--5{grid-template-columns:repeat(5,minmax(0,1fr));}
 .team-cell{background:var(--page); border:1px solid var(--line); border-radius:10px; padding:10px 12px; display:flex; flex-direction:column; gap:8px; height:100%; box-sizing:border-box;}
 .team-cell.is-empty{background:#fff; border-style:dashed;}
 .team-cell.is-goto{border-color:var(--purple-line); background:var(--purple-tint);}
@@ -358,7 +359,8 @@ details.note .note-body{padding:0 16px 14px; font-size:13.5px; color:var(--text-
 .spectre-strip-main{display:flex; align-items:center; flex-wrap:wrap; gap:8px 12px;}
 .spectre-products{font-size:12.5px; color:var(--sky); font-weight:600;}
 .result-card .account-line{margin-top:14px; padding-top:12px; border-top:1px solid var(--line);}
-@media (max-width:900px){ .team-strip{grid-template-columns:repeat(2,minmax(0,1fr));} }
+@media (max-width:1100px){ .team-strip--5{grid-template-columns:repeat(3,minmax(0,1fr));} }
+@media (max-width:900px){ .team-strip, .team-strip--5{grid-template-columns:repeat(2,minmax(0,1fr));} }
 @media (max-width:520px){ .team-cell{padding:8px 10px;} .team-cell .person{gap:8px;} .team-cell--inline{flex-wrap:wrap;} }
 /* ---------- myStreet theme refinements ---------- */
 .shell{max-width:1280px; padding:32px 32px 80px;}
@@ -635,6 +637,18 @@ function hasRealRestart(c){
 }
 
 /* ---------------- data loading + auto refresh ---------------- */
+// How much useful information a client record holds (used to list the fullest records first).
+function infoScore(c){
+  const skip = new Set(['companyId','companyName','networkId']);
+  let n = 0;
+  (function walk(v, key){
+    if(skip.has(key)) return;
+    if(Array.isArray(v)){ if(v.length) n += 1; v.forEach(x=>{ if(x && typeof x === 'object') walk(x); }); return; }
+    if(v && typeof v === 'object'){ Object.keys(v).forEach(k=>walk(v[k], k)); return; }
+    if(has(v) && String(v).trim() !== '' && !/^(unknown|n\/a|none|-)$/i.test(String(v).trim())) n += 1;
+  })(c);
+  return n;
+}
 async function loadData({silent=false} = {}){
   const resultsList = document.getElementById('resultsList');
   try {
@@ -643,7 +657,10 @@ async function loadData({silent=false} = {}){
     if(!res.ok) throw new Error('HTTP ' + res.status);
     const payload = await res.json();
     const changed = payload.generatedAt !== lastGeneratedAt;
-    companies = (payload.companies || []).slice().sort((a,b)=>(a.companyName||'').localeCompare(b.companyName||'', 'en-GB'));
+    companies = (payload.companies || []).slice();
+    companies.forEach(c=>{ c._info = infoScore(c); });
+    // Most complete records first; ties fall back to A to Z.
+    companies.sort((a,b)=> (b._info - a._info) || (a.companyName||'').localeCompare(b.companyName||'', 'en-GB'));
     lastGeneratedAt = payload.generatedAt || null;
     syncDiagnostics = payload.syncDiagnostics || null;
     updateSyncTime();
@@ -1449,7 +1466,6 @@ function renderResults(){
       </div>
       ${tileStatusRow(c, street, routing)}
       ${tileTeam(c, street, routing, accContact)}
-      ${spectreStrip(c)}
       ${accountLine(c)}
     `;
     list.appendChild(card);
@@ -1495,9 +1511,21 @@ function tileStatusRow(c, street, routing){
         ${detail ? `<span class="tile-status-detail">${esc(detail)}</span>` : ''}
       </div>`;
   };
+  // Spectre: a plain Yes / No, plus what they have when they are a Spectre client.
+  const sp = spec(c);
+  let spectrePill;
+  if(isSpectreClient(c)) spectrePill = fv('spectreClient', 'yes', `<span class="badge badge--spectre">Yes</span>`);
+  else if(isNoValue(sp.spectreClient)) spectrePill = fv('spectreClient', 'no', `<span class="badge badge--segment">No</span>`);
+  else spectrePill = fv('spectreClient', 'no', `<span class="badge badge--none">Not recorded</span>`);
+  const spectreItem = `<div class="tile-status-item">
+        <span class="lane-label">Spectre</span>
+        ${spectrePill}
+        ${isSpectreClient(c) && has(sp.productsSummary) ? `<span class="tile-status-detail">${esc(sp.productsSummary)}</span>` : ''}
+      </div>`;
   return `<div class="tile-status">
       ${item('Street', street.label, street.tone, 'streetStatus', c.streetStatus, street.detail)}
       ${item('Accounting', routing.label, routing.tone, 'accountingStatus', routing.label, routing.empty ? '' : routing.detail)}
+      ${spectreItem}
     </div>`;
 }
 
@@ -1525,24 +1553,13 @@ function teamCell({label, raw, key, value, goTo=false, inline=false}){
 function tileTeam(c, street, routing, accContact){
   const streetRole = street.contact && street.contact.role;
   const accRole = (!routing.empty && accContact) ? accContact.role : null;
-  return `<div class="team-strip">
+  const spectre = isSpectreClient(c);
+  return `<div class="team-strip${spectre ? ' team-strip--5' : ''}">
       ${teamCell({label:'Street CSM', raw:c.csmStreet, key:'csmStreet', goTo:streetRole === 'Customer Success Manager'})}
       ${teamCell({label:'Accounting Owner', raw:c.accountingOwner, key:'accountingOwner', goTo:accRole === 'Accounting Owner'})}
       ${teamCell({label:'Onboarding Specialist', raw:c.onboardingSpecialist, key:'onboardingSpecialist', goTo:streetRole === 'Onboarding Specialist'})}
       ${teamCell({label:'BDM', raw:acct(c).bdm, key:'bdm'})}
-    </div>`;
-}
-
-/* Only shown for Spectre customers: what they have, and who looks after them. */
-function spectreStrip(c){
-  if(!isSpectreClient(c)) return '';
-  const sp = spec(c);
-  return `<div class="spectre-strip">
-      <div class="spectre-strip-main">
-        ${fv('spectreClient', 'yes', `<span class="badge badge--spectre">Spectre customer</span>`)}
-        ${has(sp.productsSummary) ? `<span class="spectre-products">${esc(sp.productsSummary)}</span>` : ''}
-      </div>
-      ${teamCell({label:'Spectre CSM', raw:sp.csmSpectre, key:'csmSpectre', value:sp.csmSpectre, inline:true})}
+      ${spectre ? teamCell({label:'Spectre CSM', raw:spec(c).csmSpectre, key:'csmSpectre', value:spec(c).csmSpectre}) : ''}
     </div>`;
 }
 
