@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T16:12:35.245Z",
+  "generatedAt": "2026-11-04T22:09:30.719Z",
   "companies": [
     {
       "companyId": 122281,
@@ -1165,7 +1165,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Kathryn Sinclair",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -1375,7 +1375,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Natalie Russell",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -1795,7 +1795,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Lewis Bliss",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -2005,7 +2005,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Kathryn Sinclair",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -2075,7 +2075,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Natalie Russell",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -2285,7 +2285,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Lewis Bliss",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -62573,7 +62573,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE), Post Go-Live Support Day"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-11",
@@ -65606,7 +65606,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-20",
@@ -67278,7 +67278,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Awaiting Client Response",
         "completed": false,
         "lastDate": null,
         "trainer": null,
@@ -69517,7 +69517,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-30",
@@ -71230,26 +71230,26 @@
       "companyId": 718405,
       "companyName": "Mo Move Newquay",
       "networkId": null,
-      "units": 55,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": null,
       "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
       "csmStreet": "Diana Culea",
-      "segment": "SMB",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-10-01",
+      "streetGoLiveDate": null,
       "streetUsage": "S, L, LPM, A",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-10-01",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -71265,13 +71265,9 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": "2026-10-01",
-        "openingBalanceBooked": true,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -71284,8 +71280,8 @@
         "previousCrm": "Alto",
         "previousAccountingSoftware": "Alto",
         "approxMrr": "650",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": "HSBC"
       },
       "spectre": {
@@ -72135,7 +72131,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -72164,7 +72160,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Charlie Scotton",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -72354,7 +72350,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -72383,7 +72379,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Charlie Scotton",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -72792,7 +72788,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -72821,7 +72817,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Charlie Scotton",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -73094,7 +73090,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -73123,7 +73119,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Kathryn Sinclair",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -74931,7 +74927,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -77602,7 +77598,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -77631,7 +77627,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Lee Fleming",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -77966,7 +77962,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -77995,7 +77991,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Andy Fisher",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -78330,7 +78326,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -78359,7 +78355,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Seamus Stanbury",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -78624,7 +78620,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -78653,7 +78649,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "David Cooper",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -78743,7 +78739,7 @@
       },
       "spectre": {
         "spectreClient": "Yes",
-        "csmSpectre": "Not assigned",
+        "csmSpectre": null,
         "productsSummary": "Sales, Lettings, Property Reports",
         "sales": "Yes",
         "lettings": "Yes",
@@ -78773,7 +78769,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -78802,7 +78798,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Charlie Scotton",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -78922,7 +78918,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -78951,7 +78947,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Andy Fisher",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -79137,7 +79133,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -79166,7 +79162,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Charlie Scotton",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -79501,7 +79497,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -79530,7 +79526,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Andy Fisher",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -80917,7 +80913,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
@@ -80946,7 +80942,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Lee Fleming",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -81583,7 +81579,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Alex Wilson",
       "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -81612,7 +81608,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Andy Fisher",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -83367,7 +83363,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": "SMB",
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -83405,7 +83401,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Thomas Billington",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -84336,7 +84332,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -84365,7 +84361,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Andy Fisher",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -84485,7 +84481,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Diana Culea",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -84514,7 +84510,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Chloe Hay",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -84555,7 +84551,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Adam Jennings",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -84584,7 +84580,7 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Lee Fleming",
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
@@ -84837,7 +84833,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": null,
-      "accountingStatus": null,
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -84849,14 +84845,19 @@
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -84865,7 +84866,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -85528,20 +85533,90 @@
         "reconciliationProject": null,
         "trainingProject": null
       }
+    },
+    {
+      "companyId": 789089,
+      "companyName": "kajal@amourestates.co.uk",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": null,
+        "previousSoftware": null,
+        "previousCrm": null,
+        "previousAccountingSoftware": null,
+        "approxMrr": null,
+        "migration": null,
+        "migrationSource": null,
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "No",
+        "csmSpectre": null,
+        "productsSummary": null,
+        "sales": null,
+        "lettings": null,
+        "social": null,
+        "email": null,
+        "propertyReports": null,
+        "hubspotDeal": null
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1195,
-    "projectsFetchedFromRocketlane": 513,
+    "companiesFetchedFromRocketlane": 1196,
+    "projectsFetchedFromRocketlane": 514,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 184,
       "reconciliation": 0,
-      "training": 325,
+      "training": 326,
       "unknown": 4
     },
-    "companiesWrittenToSupportHub": 1195,
-    "companiesWithNoAccountingProjectFound": 830,
+    "companiesWrittenToSupportHub": 1196,
+    "companiesWithNoAccountingProjectFound": 831,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 1,
     "extraFieldMappings": {
       "bdm": "Account: \"Business Development Manager (Sales)\" (TEXT)",
@@ -85554,12 +85629,12 @@
       "customerType": "Project: \"Customer Type\" (SINGLE_CHOICE)"
     },
     "extraFieldsFilledIn": {
-      "bdm": 561,
+      "bdm": 585,
       "previousSoftware": 0,
       "previousCrm": 513,
       "previousAccountingSoftware": 506,
       "approxMrr": 632,
-      "migration": 180,
+      "migration": 179,
       "bankProvider": 414
     },
     "spectreFieldMappings": {
@@ -85574,8 +85649,8 @@
       "hubspotDeal": "Account: \"HubSpot record (Spectre Deal)\" (TEXT)"
     },
     "spectreFieldsFilledIn": {
-      "spectreClient": 558,
-      "csmSpectre": 351,
+      "spectreClient": 559,
+      "csmSpectre": 350,
       "productsSummary": 379,
       "sales": 307,
       "lettings": 144,
