@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T08:54:19.586Z",
+  "generatedAt": "2026-11-05T10:45:01.676Z",
   "companies": [
     {
       "companyId": 122281,
@@ -13925,12 +13925,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
-        "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "status": "Ready for Delivery ⭐",
+        "completed": true,
+        "lastDate": "2026-12-15",
+        "trainer": "Jess Benjamin Smith",
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -56275,12 +56275,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-12-15",
+        "trainer": "Jess Benjamin Smith",
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-16",
@@ -57488,7 +57488,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-11",
@@ -67278,7 +67278,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Awaiting Client Response",
+        "status": "Not recorded",
         "completed": false,
         "lastDate": null,
         "trainer": null,
@@ -69517,7 +69517,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-30",
@@ -70526,7 +70526,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training, Accounting Training & Go-Live Support"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -70749,12 +70749,12 @@
         "date": null
       },
       "training": {
-        "status": "Prep in Progress",
+        "status": "Not recorded",
         "completed": false,
-        "lastDate": "2026-11-09",
-        "trainer": "Jess Benjamin Smith",
-        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
-        "formats": "Bespoke Branch Training"
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": "Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-27",
@@ -72290,12 +72290,12 @@
         "date": null
       },
       "training": {
-        "status": "Request Received",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-12-15",
+        "trainer": "Jess Benjamin Smith",
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -75393,12 +75393,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Not recorded",
+        "status": "Prep in Progress",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-12-01",
+        "trainer": "Maria Duffy",
+        "modules": "Sales Modules",
+        "formats": "Bespoke Branch Training"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -79977,7 +79977,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -80490,7 +80490,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -83754,7 +83754,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Confirmed & Scheduled",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
         "lastDate": "2026-12-15",
         "trainer": "Max Hornby",
@@ -85283,12 +85283,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-12-08",
+        "trainer": "Maria Duffy",
+        "modules": "Sales Modules",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -85353,12 +85353,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-11-15",
+        "trainer": "Jess Benjamin Smith",
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -85423,12 +85423,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-12-15",
+        "trainer": "Jess Benjamin Smith",
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -85493,12 +85493,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-12-08",
+        "trainer": "Maria Duffy",
+        "modules": "Sales Modules",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": null,
       "internalNotes": {
