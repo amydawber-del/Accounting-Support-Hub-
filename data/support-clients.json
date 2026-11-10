@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T07:42:26.059Z",
+  "generatedAt": "2026-11-10T16:23:40.944Z",
   "companies": [
     {
       "companyId": 122281,
@@ -6222,7 +6222,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Karolina Pawlowicz",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
@@ -6239,7 +6239,7 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": "2025-12-16",
-      "internalStatusTag": null,
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -6257,7 +6257,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -17604,12 +17608,12 @@
         "date": "2025-03-18"
       },
       "training": {
-        "status": "Not recorded",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-12-15",
+        "trainer": "Jess Benjamin Smith",
+        "modules": "Lettings Front-End, Lettings Property Management",
+        "formats": "Street Hosted Open Training Event"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-18",
@@ -18222,7 +18226,7 @@
     {
       "companyId": 302871,
       "companyName": "2-move Estates Ltd",
-      "networkId": null,
+      "networkId": 681,
       "units": null,
       "branches": null,
       "accountingOwner": null,
@@ -19425,14 +19429,14 @@
       },
       "csm": null,
       "csmStreet": null,
-      "segment": null,
-      "streetStatus": null,
-      "agentLiveWithStreet": false,
-      "streetGoLiveDate": null,
+      "segment": "SMB",
+      "streetStatus": "Active",
+      "agentLiveWithStreet": true,
+      "streetGoLiveDate": "2026-11-10",
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -19467,8 +19471,8 @@
         "previousCrm": null,
         "previousAccountingSoftware": null,
         "approxMrr": "250",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -47642,12 +47646,12 @@
         "date": null
       },
       "training": {
-        "status": "Awaiting Client Response",
+        "status": "Prep in Progress",
         "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": null
+        "lastDate": "2026-11-24",
+        "trainer": "Max Hornby",
+        "modules": "Sales Modules",
+        "formats": "Bespoke Branch Training"
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -48334,7 +48338,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sam Howat",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -50775,7 +50779,7 @@
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": null,
+      "streetGoLiveDate": "2026-11-10",
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
@@ -51933,7 +51937,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-30",
@@ -51977,7 +51981,7 @@
       "companyId": 592690,
       "companyName": "Ashi Properties",
       "networkId": 1230,
-      "units": 140,
+      "units": 100,
       "branches": null,
       "accountingOwner": "Max Hornby",
       "onboardingSpecialist": "Sam Howat",
@@ -52029,7 +52033,7 @@
         "bdm": "Andy Fisher",
         "previousSoftware": null,
         "previousCrm": "Arthur",
-        "previousAccountingSoftware": "Arthur Online",
+        "previousAccountingSoftware": "Arthur Online Arthur Online",
         "approxMrr": "500",
         "migration": "Manual Customer: Onboarding",
         "migrationSource": "project",
@@ -55817,26 +55821,26 @@
       "companyId": 607944,
       "companyName": "New Adventure Homes",
       "networkId": null,
-      "units": 100,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": null,
       "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
       "csmStreet": "Jacob Templeman",
-      "segment": "SMB",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-09-14",
+      "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-09-30",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -55854,11 +55858,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": "2026-09-30",
-        "openingBalanceBooked": true,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -55871,8 +55871,8 @@
         "previousCrm": "Alto",
         "previousAccountingSoftware": "Alto",
         "approxMrr": "650",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": "NatWest"
       },
       "spectre": {
@@ -57484,7 +57484,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-11",
@@ -58672,24 +58672,24 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": "Hayley Seabrook",
+      "accountingOwner": null,
       "onboardingSpecialist": "Tracy Kettle",
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
       "csmStreet": "Léna Dottori-Marchand",
-      "segment": "Enterprise & Strategic",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-07-23",
+      "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-09-24",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -58702,11 +58702,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": "2026-09-24",
-        "openingBalanceBooked": true,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -58718,9 +58714,9 @@
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
-        "approxMrr": "230",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "approxMrr": "650",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": "lloyds"
       },
       "spectre": {
@@ -58744,26 +58740,26 @@
       "companyId": 625113,
       "companyName": "Newton Fallowell Burton-on-Trent",
       "networkId": null,
-      "units": 442,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Hayley Seabrook",
+      "accountingOwner": null,
       "onboardingSpecialist": null,
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
       "csmStreet": "Léna Dottori-Marchand",
-      "segment": "Enterprise & Strategic",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-07-23",
+      "streetGoLiveDate": null,
       "streetUsage": "A",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-07-23",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -58774,13 +58770,9 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training"
+        "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": "2026-07-23",
-        "openingBalanceBooked": true,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -58792,9 +58784,9 @@
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": "SME",
-        "approxMrr": "230",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "approxMrr": "650",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": "Virgin Money"
       },
       "spectre": {
@@ -58818,26 +58810,26 @@
       "companyId": 625115,
       "companyName": "Newton Fallowell Walsall",
       "networkId": null,
-      "units": 430,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Hayley Seabrook",
+      "accountingOwner": null,
       "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
       "csmStreet": "Léna Dottori-Marchand",
-      "segment": "Enterprise & Strategic",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-05-11",
+      "streetGoLiveDate": null,
       "streetUsage": "A",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-06-24",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -58848,13 +58840,9 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training"
+        "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": "2026-06-24",
-        "openingBalanceBooked": true,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -58866,9 +58854,9 @@
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": "Xero",
-        "approxMrr": "230",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "approxMrr": "650",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": "Lloyds"
       },
       "spectre": {
@@ -59032,26 +59020,26 @@
       "companyId": 625988,
       "companyName": "Newton Fallowell Worksop",
       "networkId": null,
-      "units": 11,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Hayley Seabrook",
+      "accountingOwner": null,
       "onboardingSpecialist": "Tracy Kettle",
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
       "csmStreet": "Léna Dottori-Marchand",
-      "segment": "Enterprise & Strategic",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-09-24",
+      "streetGoLiveDate": null,
       "streetUsage": "A",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-09-24",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -59062,13 +59050,9 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training"
+        "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": "2026-09-24",
-        "openingBalanceBooked": true,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -59080,9 +59064,9 @@
         "previousSoftware": null,
         "previousCrm": "SME",
         "previousAccountingSoftware": "Startup – No Accounting in Place",
-        "approxMrr": "230",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "approxMrr": "650",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": "HSBC"
       },
       "spectre": {
@@ -59178,24 +59162,24 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": "Hayley Seabrook",
+      "accountingOwner": null,
       "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
       "csmStreet": "Léna Dottori-Marchand",
-      "segment": "Enterprise & Strategic",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-06-09",
+      "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-09-30",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -59208,11 +59192,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": "2026-09-30",
-        "openingBalanceBooked": true,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -59224,9 +59204,9 @@
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
-        "approxMrr": "230",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "approxMrr": "650",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": "natwest"
       },
       "spectre": {
@@ -59967,26 +59947,26 @@
       "companyId": 629061,
       "companyName": "Newton Fallowell Oadby",
       "networkId": null,
-      "units": 360,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Hayley Seabrook",
+      "accountingOwner": null,
       "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
       "csmStreet": "Léna Dottori-Marchand",
-      "segment": "Enterprise & Strategic",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-06-02",
+      "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-09-08",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -59997,13 +59977,9 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training, Bespoke Branch Training, Not Sure – Help Me Choose"
+        "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": "2026-09-08",
-        "openingBalanceBooked": true,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -60015,9 +59991,9 @@
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": "SME",
-        "approxMrr": "230",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "approxMrr": "650",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": "Barclays"
       },
       "spectre": {
@@ -60111,26 +60087,26 @@
       "companyId": 629069,
       "companyName": "Newton Fallowell Brownhills T/A Goodchilds Brownhills",
       "networkId": 1162,
-      "units": 161,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Hayley Seabrook",
+      "accountingOwner": null,
       "onboardingSpecialist": "Tracy Kettle",
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
       "csmStreet": "Léna Dottori-Marchand",
-      "segment": "Enterprise & Strategic",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-04-27",
+      "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-07-08",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -60141,13 +60117,9 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training"
+        "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": "2026-07-08",
-        "openingBalanceBooked": true,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -60159,9 +60131,9 @@
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": "SME",
-        "approxMrr": "230",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "approxMrr": "650",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": "Lloyds Bank"
       },
       "spectre": {
@@ -60399,26 +60371,26 @@
       "companyId": 629088,
       "companyName": "Newton Fallowell Grantham",
       "networkId": null,
-      "units": 450,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Hayley Seabrook",
+      "accountingOwner": null,
       "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
       "csmStreet": "Léna Dottori-Marchand",
-      "segment": "Enterprise & Strategic",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-05-19",
+      "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-09-23",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -60431,11 +60403,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": "2026-09-23",
-        "openingBalanceBooked": true,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -60447,9 +60415,9 @@
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": "SME",
-        "approxMrr": "230",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "approxMrr": "650",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": "HSBC.Net"
       },
       "spectre": {
@@ -62547,9 +62515,9 @@
       "csm": null,
       "csmStreet": "Diana Culea",
       "segment": "SMB",
-      "streetStatus": "Onboarding",
+      "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-10-08",
+      "streetGoLiveDate": "2026-11-10",
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
@@ -62569,7 +62537,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE), Post Go-Live Support Day"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-11",
@@ -62781,11 +62749,11 @@
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": null,
+      "streetGoLiveDate": "2026-11-10",
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -62801,7 +62769,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -65571,7 +65539,7 @@
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Sam Howat",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
@@ -65602,7 +65570,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-20",
@@ -66090,7 +66058,7 @@
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": null,
+      "streetGoLiveDate": "2026-11-10",
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
@@ -66174,7 +66142,7 @@
       "agentLiveWithAccounting": true,
       "goLiveDate": "2026-09-30",
       "internalStatusTag": "30 Days Post Go-Live Support",
-      "redFlag": true,
+      "redFlag": false,
       "optOut": null,
       "reconciliation": null,
       "restart": {
@@ -66483,7 +66451,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -70273,26 +70241,26 @@
       "companyId": 712110,
       "companyName": "Aura Property Partners Ltd",
       "networkId": 1443,
-      "units": 100,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": null,
       "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
       "csmStreet": "Jacob Templeman",
-      "segment": "SMB",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-09-01",
+      "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-10-02",
-      "internalStatusTag": "30 Days Post Go-Live Support",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -70305,11 +70273,7 @@
         "modules": "Sales Modules",
         "formats": "Street Hosted Open Training Event"
       },
-      "onboardingProject": {
-        "targetGoLive": "2026-10-02",
-        "openingBalanceBooked": true,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -70322,8 +70286,8 @@
         "previousCrm": "Start Up - should not be migrating from CRM",
         "previousAccountingSoftware": "Startup – No Accounting in Place Startup – No Accounting in Place",
         "approxMrr": "250",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": null
       },
       "spectre": {
@@ -70347,27 +70311,27 @@
       "companyId": 712179,
       "companyName": "Riverside Residential Property Services Ltd",
       "networkId": null,
-      "units": 180,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": null,
       "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Live",
-      "clientAccountingEnabled": true,
+      "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
       "csmStreet": "Adam Jennings",
-      "segment": "SMB",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-09-01",
+      "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
-      "agentLiveWithAccounting": true,
+      "agentLiveWithAccounting": false,
       "goLiveDate": "2026-10-01",
-      "internalStatusTag": "30 Days Post Go-Live Support",
-      "redFlag": true,
+      "internalStatusTag": null,
+      "redFlag": false,
       "optOut": null,
       "reconciliation": null,
       "restart": null,
@@ -70377,13 +70341,9 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training"
+        "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": "2026-10-01",
-        "openingBalanceBooked": true,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -70396,8 +70356,8 @@
         "previousCrm": "1090",
         "previousAccountingSoftware": "TBC",
         "approxMrr": "690",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": "Barclays"
       },
       "spectre": {
@@ -71340,7 +71300,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -75245,7 +75205,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -77885,8 +77845,8 @@
       "csm": null,
       "csmStreet": "Adam Jennings",
       "segment": null,
-      "streetStatus": "Onboarding",
-      "agentLiveWithStreet": false,
+      "streetStatus": "Active",
+      "agentLiveWithStreet": true,
       "streetGoLiveDate": null,
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
@@ -78756,7 +78716,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Lucie de Lison",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -78770,7 +78730,7 @@
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "A",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -78805,23 +78765,23 @@
       "account": {
         "bdm": "Charlie Scotton",
         "previousSoftware": null,
-        "previousCrm": null,
-        "previousAccountingSoftware": null,
-        "approxMrr": null,
+        "previousCrm": "MRI Qube",
+        "previousAccountingSoftware": "MRI",
+        "approxMrr": "1146",
         "migration": null,
         "migrationSource": null,
         "bankProvider": null
       },
       "spectre": {
-        "spectreClient": "No",
+        "spectreClient": "Yes",
         "csmSpectre": "Casey Ryan",
-        "productsSummary": null,
+        "productsSummary": "Lettings, Social, Email, Property Reports",
         "sales": null,
-        "lettings": null,
-        "social": null,
-        "email": null,
-        "propertyReports": null,
-        "hubspotDeal": null
+        "lettings": "Yes",
+        "social": "Yes",
+        "email": "Yes",
+        "propertyReports": "Yes",
+        "hubspotDeal": "https://app.hubspot.com/contacts/7658438/record/0-3/66138013030"
       },
       "rocketlaneLinks": {
         "accountingProject": null,
@@ -79982,7 +79942,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -81012,7 +80972,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Remote Refresher Training, Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -81185,8 +81145,8 @@
         "previousCrm": "Vebra Alto (sales and lettings); Focus Rent licence kept for historic statements",
         "previousAccountingSoftware": "Vebra Alto",
         "approxMrr": null,
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Bridge Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -81362,7 +81322,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": "Sophie Saunders",
+      "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -82240,7 +82200,7 @@
       "companyId": 779213,
       "companyName": "Dawsons",
       "networkId": null,
-      "units": null,
+      "units": 1600,
       "branches": null,
       "accountingOwner": "Max Hornby",
       "onboardingSpecialist": "Lucie de Lison",
@@ -82275,7 +82235,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -82292,11 +82252,11 @@
         "bdm": "Emma Peake",
         "previousSoftware": null,
         "previousCrm": "Alto (sales), Focus Rent (lettings)",
-        "previousAccountingSoftware": "Focus Rent",
+        "previousAccountingSoftware": "Focus Rent TBC",
         "approxMrr": "5879.34",
         "migration": "Bridge Customer: Onboarding",
         "migrationSource": "project",
-        "bankProvider": null
+        "bankProvider": "Barclays Bank"
       },
       "spectre": {
         "spectreClient": "No",
@@ -84040,7 +84000,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sophie Saunders",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -84417,7 +84377,7 @@
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "A",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -84483,7 +84443,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -84930,14 +84890,14 @@
       },
       "csm": null,
       "csmStreet": "Diana Culea",
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -84972,8 +84932,8 @@
         "previousCrm": "Coho and HubSpot",
         "previousAccountingSoftware": null,
         "approxMrr": "650",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -85569,7 +85529,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": "Max Hornby",
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -85582,7 +85542,7 @@
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": "A",
+      "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Awaiting Intro Call",
@@ -85648,7 +85608,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -85717,8 +85677,8 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "accountingOwner": "Maria Duffy",
+      "onboardingSpecialist": "Sally Finnigan",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -85838,76 +85798,6 @@
         "previousSoftware": null,
         "previousCrm": null,
         "previousAccountingSoftware": null,
-        "approxMrr": null,
-        "migration": null,
-        "migrationSource": null,
-        "bankProvider": null
-      },
-      "spectre": {
-        "spectreClient": "No",
-        "csmSpectre": null,
-        "productsSummary": null,
-        "sales": null,
-        "lettings": null,
-        "social": null,
-        "email": null,
-        "propertyReports": null,
-        "hubspotDeal": null
-      },
-      "rocketlaneLinks": {
-        "accountingProject": null,
-        "reconciliationProject": null,
-        "trainingProject": null
-      }
-    },
-    {
-      "companyId": 789672,
-      "companyName": "Briscombe Worsley",
-      "networkId": null,
-      "units": null,
-      "branches": null,
-      "accountingOwner": null,
-      "onboardingSpecialist": null,
-      "accountingStatus": null,
-      "clientAccountingEnabled": false,
-      "streetPayments": {
-        "customer": false,
-        "verificationStatus": null
-      },
-      "csm": null,
-      "csmStreet": null,
-      "segment": null,
-      "streetStatus": null,
-      "agentLiveWithStreet": false,
-      "streetGoLiveDate": null,
-      "streetUsage": null,
-      "agentLiveWithAccounting": false,
-      "goLiveDate": null,
-      "internalStatusTag": null,
-      "redFlag": false,
-      "optOut": null,
-      "reconciliation": null,
-      "restart": null,
-      "training": {
-        "status": "Ready for Delivery ⭐",
-        "completed": false,
-        "lastDate": "2026-12-15",
-        "trainer": "Jess Benjamin Smith",
-        "modules": "Lettings Front-End, Lettings Property Management",
-        "formats": "Street Hosted Open Training Event"
-      },
-      "onboardingProject": null,
-      "internalNotes": {
-        "general": "",
-        "gapAnalysis": ""
-      },
-      "recentMessages": null,
-      "recentEngagementNotes": [],
-      "account": {
-        "bdm": null,
-        "previousSoftware": null,
-        "previousCrm": "Jupix",
-        "previousAccountingSoftware": "Jupix",
         "approxMrr": null,
         "migration": null,
         "migrationSource": null,
@@ -86584,7 +86474,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
+      "csmStreet": "Jacob Templeman",
       "segment": null,
       "streetStatus": null,
       "agentLiveWithStreet": false,
@@ -86613,24 +86503,24 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Lewis Bliss",
         "previousSoftware": null,
-        "previousCrm": null,
-        "previousAccountingSoftware": null,
-        "approxMrr": null,
+        "previousCrm": "Rezi (Dezrez) for sales. Alto for lettings",
+        "previousAccountingSoftware": "Rezi",
+        "approxMrr": "2127.6",
         "migration": null,
         "migrationSource": null,
         "bankProvider": null
       },
       "spectre": {
-        "spectreClient": "No",
+        "spectreClient": "Yes",
         "csmSpectre": null,
-        "productsSummary": null,
-        "sales": null,
+        "productsSummary": "Sales, Property Reports",
+        "sales": "Yes",
         "lettings": null,
         "social": null,
         "email": null,
-        "propertyReports": null,
+        "propertyReports": "Yes",
         "hubspotDeal": null
       },
       "rocketlaneLinks": {
@@ -86711,7 +86601,427 @@
     },
     {
       "companyId": 790780,
-      "companyName": "contactus@charlsonsavory.co.uk",
+      "companyName": "Charlson Savory Sales and Lettings Agent",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": null,
+        "previousSoftware": null,
+        "previousCrm": null,
+        "previousAccountingSoftware": null,
+        "approxMrr": null,
+        "migration": null,
+        "migrationSource": null,
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "No",
+        "csmSpectre": null,
+        "productsSummary": null,
+        "sales": null,
+        "lettings": null,
+        "social": null,
+        "email": null,
+        "propertyReports": null,
+        "hubspotDeal": null
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 790912,
+      "companyName": "Tynings",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": "Adam Jennings",
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": "Charlie Scotton",
+        "previousSoftware": null,
+        "previousCrm": "Expert Agent",
+        "previousAccountingSoftware": "Expert Agent",
+        "approxMrr": "500",
+        "migration": "Bridge Customer: Onboarding",
+        "migrationSource": "project",
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "Yes",
+        "csmSpectre": null,
+        "productsSummary": "Websites",
+        "sales": null,
+        "lettings": null,
+        "social": null,
+        "email": null,
+        "propertyReports": null,
+        "hubspotDeal": "https://app.hubspot.com/contacts/7658438/record/0-3/66966121587"
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 790914,
+      "companyName": "Forest Marble",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": "Liam Sorah",
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": "Adam Jennings",
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": "Lee Fleming",
+        "previousSoftware": null,
+        "previousCrm": "VaultMRI (Vault EA)",
+        "previousAccountingSoftware": "MRI",
+        "approxMrr": "650",
+        "migration": "Bridge Customer: Onboarding",
+        "migrationSource": "project",
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "Yes",
+        "csmSpectre": null,
+        "productsSummary": null,
+        "sales": null,
+        "lettings": null,
+        "social": null,
+        "email": null,
+        "propertyReports": null,
+        "hubspotDeal": "https://app.hubspot.com/contacts/7658438/record/0-3/67078328169"
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 790916,
+      "companyName": "Robert Watts and Signature Homes",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": "Lena Dottori-Marchand",
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": "Emma Peake",
+        "previousSoftware": null,
+        "previousCrm": "Reapit (lettings stays on Reapit for now)",
+        "previousAccountingSoftware": "Reapit",
+        "approxMrr": "2322",
+        "migration": "Bridge Customer: Onboarding",
+        "migrationSource": "project",
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "No",
+        "csmSpectre": null,
+        "productsSummary": null,
+        "sales": null,
+        "lettings": null,
+        "social": null,
+        "email": null,
+        "propertyReports": null,
+        "hubspotDeal": null
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 790917,
+      "companyName": "Leightons Estate Agency",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": "Sam Harvey",
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": "Andy Fisher",
+        "previousSoftware": null,
+        "previousCrm": "Reapit",
+        "previousAccountingSoftware": "Reapit",
+        "approxMrr": "540",
+        "migration": "Bridge Customer: Onboarding",
+        "migrationSource": "project",
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "Yes",
+        "csmSpectre": null,
+        "productsSummary": "Sales, Property Reports",
+        "sales": "Yes",
+        "lettings": null,
+        "social": null,
+        "email": null,
+        "propertyReports": "Yes",
+        "hubspotDeal": "https://app.hubspot.com/contacts/7658438/record/0-3/8578630668"
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 790923,
+      "companyName": "Century 21 Sutton Coldfield",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": null,
+        "previousSoftware": null,
+        "previousCrm": null,
+        "previousAccountingSoftware": null,
+        "approxMrr": null,
+        "migration": null,
+        "migrationSource": null,
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "No",
+        "csmSpectre": null,
+        "productsSummary": null,
+        "sales": null,
+        "lettings": null,
+        "social": null,
+        "email": null,
+        "propertyReports": null,
+        "hubspotDeal": null
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 790969,
+      "companyName": "James Douglas",
       "networkId": null,
       "units": null,
       "branches": null,
@@ -86781,17 +87091,17 @@
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1212,
-    "projectsFetchedFromRocketlane": 523,
+    "companiesFetchedFromRocketlane": 1217,
+    "projectsFetchedFromRocketlane": 520,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 190,
+      "onboarding": 180,
       "reconciliation": 0,
-      "training": 329,
+      "training": 336,
       "unknown": 4
     },
-    "companiesWrittenToSupportHub": 1212,
-    "companiesWithNoAccountingProjectFound": 842,
+    "companiesWrittenToSupportHub": 1217,
+    "companiesWithNoAccountingProjectFound": 850,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 1,
     "extraFieldMappings": {
       "bdm": "Account: \"Business Development Manager (Sales)\" (TEXT)",
@@ -86804,13 +87114,13 @@
       "customerType": "Project: \"Customer Type\" (SINGLE_CHOICE)"
     },
     "extraFieldsFilledIn": {
-      "bdm": 703,
+      "bdm": 708,
       "previousSoftware": 0,
-      "previousCrm": 516,
-      "previousAccountingSoftware": 512,
-      "approxMrr": 637,
-      "migration": 178,
-      "bankProvider": 419
+      "previousCrm": 521,
+      "previousAccountingSoftware": 517,
+      "approxMrr": 643,
+      "migration": 174,
+      "bankProvider": 420
     },
     "spectreFieldMappings": {
       "spectreClient": "Account: \"Spectre Client\" (YES_OR_NO)",
@@ -86824,15 +87134,15 @@
       "hubspotDeal": "Account: \"HubSpot record (Spectre Deal)\" (TEXT)"
     },
     "spectreFieldsFilledIn": {
-      "spectreClient": 575,
+      "spectreClient": 580,
       "csmSpectre": 499,
-      "productsSummary": 382,
-      "sales": 308,
-      "lettings": 145,
-      "social": 125,
-      "email": 188,
-      "propertyReports": 309,
-      "hubspotDeal": 384
+      "productsSummary": 386,
+      "sales": 310,
+      "lettings": 146,
+      "social": 126,
+      "email": 189,
+      "propertyReports": 312,
+      "hubspotDeal": 388
     }
   }
 }
