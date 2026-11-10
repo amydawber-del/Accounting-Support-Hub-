@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T16:23:40.944Z",
+  "generatedAt": "2026-11-10T21:57:03.227Z",
   "companies": [
     {
       "companyId": 122281,
@@ -6224,7 +6224,7 @@
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Karolina Pawlowicz",
-      "accountingStatus": "Live",
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -6239,12 +6239,12 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": "2025-12-16",
-      "internalStatusTag": "Onboarding in Progress",
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
       "restart": {
-        "status": "Restart Completed",
+        "status": "Never Restarted",
         "route": "Nuke / restart of Accounting",
         "reason": null,
         "date": "2025-12-15"
@@ -36021,7 +36021,7 @@
       },
       "csm": null,
       "csmStreet": "Jacob Templeman",
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
       "streetGoLiveDate": null,
@@ -47646,7 +47646,7 @@
         "date": null
       },
       "training": {
-        "status": "Prep in Progress",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
         "lastDate": "2026-11-24",
         "trainer": "Max Hornby",
@@ -55840,7 +55840,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": "2026-09-30",
-      "internalStatusTag": null,
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -55858,7 +55858,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -55871,8 +55875,8 @@
         "previousCrm": "Alto",
         "previousAccountingSoftware": "Alto",
         "approxMrr": "650",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": "NatWest"
       },
       "spectre": {
@@ -61714,11 +61718,11 @@
       "companyId": 641411,
       "companyName": "Woods Homes",
       "networkId": null,
-      "units": 400,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": null,
       "onboardingSpecialist": "Emma Cockcroft",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -61726,14 +61730,14 @@
       },
       "csm": null,
       "csmStreet": "Jacob Templeman",
-      "segment": "SMB",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-10-05",
+      "streetGoLiveDate": null,
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -61744,18 +61748,14 @@
         "date": null
       },
       "training": {
-        "status": "Not recorded",
+        "status": "Awaiting Client Response",
         "completed": false,
         "lastDate": null,
-        "trainer": null,
+        "trainer": "Max Hornby",
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -61768,8 +61768,8 @@
         "previousCrm": "Apex27",
         "previousAccountingSoftware": "CFP Winman",
         "approxMrr": "1395",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": "Lloyds Bank"
       },
       "spectre": {
@@ -62537,7 +62537,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE), Post Go-Live Support Day"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-11",
@@ -66451,7 +66451,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -70486,7 +70486,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Remote Refresher Training, Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -70530,11 +70530,11 @@
       "companyId": 713010,
       "companyName": "Visionary Homes",
       "networkId": null,
-      "units": 10,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": null,
       "onboardingSpecialist": "Emma Cockcroft",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -70542,14 +70542,14 @@
       },
       "csm": null,
       "csmStreet": "Jacob Templeman",
-      "segment": "SMB",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-10-08",
+      "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -70565,13 +70565,9 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -70584,8 +70580,8 @@
         "previousCrm": "Start Up - should not be migrating from CRM",
         "previousAccountingSoftware": "Open View/VTUK Startup – No Accounting in Place",
         "approxMrr": "250",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": "Metro"
       },
       "spectre": {
@@ -75205,7 +75201,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -82726,7 +82722,7 @@
       "companyId": 780509,
       "companyName": "David Astburys",
       "networkId": null,
-      "units": null,
+      "units": 944,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": "Sam Howat",
@@ -82778,11 +82774,11 @@
         "bdm": "Andy Fisher",
         "previousSoftware": null,
         "previousCrm": "Jupix",
-        "previousAccountingSoftware": "Jupix",
+        "previousAccountingSoftware": "Jupix Jupix",
         "approxMrr": "1575",
         "migration": "Bridge Customer: Onboarding",
         "migrationSource": "project",
-        "bankProvider": null
+        "bankProvider": "Barclays Bank Plc"
       },
       "spectre": {
         "spectreClient": "Yes",
@@ -86438,8 +86434,8 @@
         "previousCrm": null,
         "previousAccountingSoftware": null,
         "approxMrr": "250",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -86508,8 +86504,8 @@
         "previousCrm": "Rezi (Dezrez) for sales. Alto for lettings",
         "previousAccountingSoftware": "Rezi",
         "approxMrr": "2127.6",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -86648,8 +86644,8 @@
         "previousCrm": null,
         "previousAccountingSoftware": null,
         "approxMrr": null,
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -87068,8 +87064,8 @@
         "previousCrm": null,
         "previousAccountingSoftware": null,
         "approxMrr": null,
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -87092,16 +87088,16 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1217,
-    "projectsFetchedFromRocketlane": 520,
+    "projectsFetchedFromRocketlane": 519,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 180,
+      "onboarding": 179,
       "reconciliation": 0,
       "training": 336,
       "unknown": 4
     },
     "companiesWrittenToSupportHub": 1217,
-    "companiesWithNoAccountingProjectFound": 850,
+    "companiesWithNoAccountingProjectFound": 851,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 1,
     "extraFieldMappings": {
       "bdm": "Account: \"Business Development Manager (Sales)\" (TEXT)",
@@ -87119,8 +87115,8 @@
       "previousCrm": 521,
       "previousAccountingSoftware": 517,
       "approxMrr": 643,
-      "migration": 174,
-      "bankProvider": 420
+      "migration": 177,
+      "bankProvider": 421
     },
     "spectreFieldMappings": {
       "spectreClient": "Account: \"Spectre Client\" (YES_OR_NO)",
