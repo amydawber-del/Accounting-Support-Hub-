@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T01:52:58.317Z",
+  "generatedAt": "2026-11-11T09:15:49.480Z",
   "companies": [
     {
       "companyId": 122281,
@@ -50766,9 +50766,9 @@
       "networkId": 1210,
       "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": null,
       "onboardingSpecialist": "Sophie Saunders",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -50776,14 +50776,14 @@
       },
       "csm": null,
       "csmStreet": "Jacob Templeman",
-      "segment": "SMB",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-11-10",
+      "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -50801,11 +50801,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -50818,8 +50814,8 @@
         "previousCrm": "10Ninety",
         "previousAccountingSoftware": "10ninety",
         "approxMrr": "678",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": null
       },
       "spectre": {
@@ -55823,7 +55819,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Live",
       "clientAccountingEnabled": false,
@@ -82231,7 +82227,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -87088,10 +87084,10 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1217,
-    "projectsFetchedFromRocketlane": 519,
+    "projectsFetchedFromRocketlane": 518,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 179,
+      "onboarding": 178,
       "reconciliation": 0,
       "training": 336,
       "unknown": 4
@@ -87115,7 +87111,7 @@
       "previousCrm": 521,
       "previousAccountingSoftware": 517,
       "approxMrr": 643,
-      "migration": 177,
+      "migration": 176,
       "bankProvider": 421
     },
     "spectreFieldMappings": {
