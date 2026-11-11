@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T17:25:59.738Z",
+  "generatedAt": "2026-11-11T23:42:02.530Z",
   "companies": [
     {
       "companyId": 122281,
@@ -26988,7 +26988,7 @@
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": "Adam Jennings",
+      "csmStreet": "Adam Jennings 507962",
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
@@ -27010,7 +27010,7 @@
         "notes": null
       },
       "restart": {
-        "status": "Restart Requested",
+        "status": "Restart In Progress",
         "route": "Manual Reconcilation - Client Led",
         "reason": null,
         "date": null
@@ -67060,7 +67060,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -68871,7 +68871,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-06",
@@ -75630,7 +75630,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -76305,12 +76305,12 @@
         "date": null
       },
       "training": {
-        "status": "Ready for Delivery ⭐",
+        "status": "Not recorded",
         "completed": false,
-        "lastDate": "2026-11-24",
-        "trainer": "Maria Duffy",
-        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
-        "formats": "Bespoke Branch Training"
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -78603,7 +78603,7 @@
       "companyId": 762403,
       "companyName": "The Bespoke Agent",
       "networkId": null,
-      "units": null,
+      "units": 40,
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Liam Sorah",
@@ -78655,11 +78655,11 @@
         "bdm": "David Cooper",
         "previousSoftware": null,
         "previousCrm": "Reapit",
-        "previousAccountingSoftware": "Reapit",
+        "previousAccountingSoftware": "Reapit TBC",
         "approxMrr": "650",
         "migration": "Bridge Customer: Onboarding",
         "migrationSource": "project",
-        "bankProvider": null
+        "bankProvider": "Barclays Bank"
       },
       "spectre": {
         "spectreClient": "Yes",
@@ -84629,7 +84629,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Liam Sorah",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -85006,7 +85006,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
+      "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -87227,12 +87227,12 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1219,
-    "projectsFetchedFromRocketlane": 516,
+    "projectsFetchedFromRocketlane": 515,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 175,
       "reconciliation": 0,
-      "training": 337,
+      "training": 336,
       "unknown": 4
     },
     "companiesWrittenToSupportHub": 1219,
@@ -87255,7 +87255,7 @@
       "previousAccountingSoftware": 519,
       "approxMrr": 644,
       "migration": 170,
-      "bankProvider": 423
+      "bankProvider": 424
     },
     "spectreFieldMappings": {
       "spectreClient": "Account: \"Spectre Client\" (YES_OR_NO)",
