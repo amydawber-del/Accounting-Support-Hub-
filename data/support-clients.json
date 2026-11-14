@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T18:51:20.086Z",
+  "generatedAt": "2026-11-14T22:56:52.811Z",
   "companies": [
     {
       "companyId": 122281,
@@ -86815,8 +86815,8 @@
         "previousCrm": "VaultMRI (Vault EA)",
         "previousAccountingSoftware": "MRI",
         "approxMrr": "650",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Bridge Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -87663,7 +87663,7 @@
       "previousCrm": 528,
       "previousAccountingSoftware": 521,
       "approxMrr": 648,
-      "migration": 173,
+      "migration": 174,
       "bankProvider": 427
     },
     "spectreFieldMappings": {
