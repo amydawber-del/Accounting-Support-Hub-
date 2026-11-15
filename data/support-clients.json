@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T17:00:18.922Z",
+  "generatedAt": "2026-11-15T21:42:11.618Z",
   "companies": [
     {
       "companyId": 122281,
@@ -87253,8 +87253,8 @@
         "previousCrm": "Excel spreadsheets",
         "previousAccountingSoftware": null,
         "approxMrr": "250",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -87733,7 +87733,7 @@
       "previousCrm": 528,
       "previousAccountingSoftware": 521,
       "approxMrr": 648,
-      "migration": 175,
+      "migration": 176,
       "bankProvider": 427
     },
     "spectreFieldMappings": {
