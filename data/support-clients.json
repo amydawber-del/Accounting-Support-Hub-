@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T01:54:27.429Z",
+  "generatedAt": "2026-11-16T09:30:04.372Z",
   "companies": [
     {
       "companyId": 122281,
@@ -57481,7 +57481,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-11",
@@ -64608,7 +64608,7 @@
       "companyId": 672215,
       "companyName": "Savoy Lettings",
       "networkId": null,
-      "units": null,
+      "units": 0,
       "branches": null,
       "accountingOwner": "Jess Benjamin Smith",
       "onboardingSpecialist": "Sally Finnigan",
@@ -64643,7 +64643,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -64660,11 +64660,11 @@
         "bdm": "Lee Fleming",
         "previousSoftware": null,
         "previousCrm": "Start Up - should not be migrating from another CRM",
-        "previousAccountingSoftware": "Start up",
+        "previousAccountingSoftware": "Start up Startup – No Accounting in Place",
         "approxMrr": "250",
         "migration": "Manual Customer: Onboarding",
         "migrationSource": "project",
-        "bankProvider": null
+        "bankProvider": "not sure at the moment still waiting to set up"
       },
       "spectre": {
         "spectreClient": "Yes",
@@ -67685,8 +67685,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Lettings Front-End, Lettings Property Management",
-        "formats": "Bespoke Branch Training"
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-22",
@@ -78809,12 +78809,12 @@
         "date": null
       },
       "training": {
-        "status": "Not recorded",
-        "completed": false,
-        "lastDate": null,
-        "trainer": null,
-        "modules": null,
-        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "status": "Follow-Up in Progress",
+        "completed": true,
+        "lastDate": "2026-11-11",
+        "trainer": "Maria Duffy",
+        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
+        "formats": "Bespoke Branch Training"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -87706,12 +87706,12 @@
   ],
   "syncDiagnostics": {
     "companiesFetchedFromRocketlane": 1225,
-    "projectsFetchedFromRocketlane": 526,
+    "projectsFetchedFromRocketlane": 525,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 181,
       "reconciliation": 0,
-      "training": 341,
+      "training": 340,
       "unknown": 4
     },
     "companiesWrittenToSupportHub": 1225,
@@ -87734,7 +87734,7 @@
       "previousAccountingSoftware": 521,
       "approxMrr": 648,
       "migration": 176,
-      "bankProvider": 427
+      "bankProvider": 428
     },
     "spectreFieldMappings": {
       "spectreClient": "Account: \"Spectre Client\" (YES_OR_NO)",
