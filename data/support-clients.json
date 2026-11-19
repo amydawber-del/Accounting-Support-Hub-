@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T01:28:28.304Z",
+  "generatedAt": "2026-11-19T09:27:31.677Z",
   "companies": [
     {
       "companyId": 122281,
@@ -69804,7 +69804,7 @@
       "companyId": 709054,
       "companyName": "Lettings Direct",
       "networkId": null,
-      "units": null,
+      "units": 63,
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Sally Finnigan",
@@ -69823,7 +69823,7 @@
       "streetUsage": "A, L, LPM",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -81720,7 +81720,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
