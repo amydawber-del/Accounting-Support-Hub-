@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T07:22:44.433Z",
+  "generatedAt": "2026-11-22T15:37:57.635Z",
   "companies": [
     {
       "companyId": 122281,
@@ -76347,12 +76347,12 @@
         "date": null
       },
       "training": {
-        "status": "Ready for Delivery ⭐",
+        "status": "Not recorded",
         "completed": false,
-        "lastDate": "2027-01-05",
-        "trainer": "Max Hornby",
-        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
-        "formats": "Bespoke Branch Training"
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": null,
       "internalNotes": {
