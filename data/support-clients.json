@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T01:57:07.180Z",
+  "generatedAt": "2026-11-23T10:39:50.779Z",
   "companies": [
     {
       "companyId": 122281,
@@ -29491,7 +29491,7 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "Reconciliation in Progress",
+        "status": "Waiting On Client",
         "route": "Manual Reconciliation",
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-08-21",
@@ -29531,8 +29531,8 @@
         "previousCrm": "Alto",
         "previousAccountingSoftware": "Alto",
         "approxMrr": "500",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -42193,28 +42193,33 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": null,
-      "onboardingSpecialist": null,
-      "accountingStatus": null,
+      "accountingOwner": "Maria Duffy",
+      "onboardingSpecialist": "Liam Sorah",
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
       },
       "csm": null,
-      "csmStreet": null,
-      "segment": null,
+      "csmStreet": "Diana Culea",
+      "segment": "SMB",
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -42223,7 +42228,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -42231,11 +42240,11 @@
       "recentMessages": null,
       "recentEngagementNotes": [],
       "account": {
-        "bdm": null,
+        "bdm": "Kevin Whatmough",
         "previousSoftware": null,
-        "previousCrm": null,
-        "previousAccountingSoftware": null,
-        "approxMrr": null,
+        "previousCrm": "Vebra Alto",
+        "previousAccountingSoftware": "Vebra Alto",
+        "approxMrr": "650",
         "migration": null,
         "migrationSource": null,
         "bankProvider": null
@@ -62544,7 +62553,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE), Post Go-Live Support Day"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-11",
@@ -68966,7 +68975,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -70487,7 +70496,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Remote Refresher Training, Accounting Training & Go-Live Support"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -73647,7 +73656,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -74534,8 +74543,8 @@
       "csm": null,
       "csmStreet": "Diana Culea",
       "segment": "SMB",
-      "streetStatus": "Onboarding",
-      "agentLiveWithStreet": false,
+      "streetStatus": "Active",
+      "agentLiveWithStreet": true,
       "streetGoLiveDate": null,
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
@@ -76049,7 +76058,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -78096,7 +78105,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -78736,7 +78745,7 @@
       },
       "csm": null,
       "csmStreet": "Diana Culea",
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
@@ -81155,8 +81164,8 @@
         "previousCrm": "Vebra Alto (sales and lettings); Focus Rent licence kept for historic statements",
         "previousAccountingSoftware": "Vebra Alto",
         "approxMrr": "3488",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Bridge Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -81193,8 +81202,8 @@
       "csm": null,
       "csmStreet": "Adam Jennings",
       "segment": null,
-      "streetStatus": "Onboarding",
-      "agentLiveWithStreet": false,
+      "streetStatus": "Active",
+      "agentLiveWithStreet": true,
       "streetGoLiveDate": null,
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
@@ -82609,7 +82618,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -82626,11 +82635,11 @@
         "bdm": "Charlie Scotton",
         "previousSoftware": null,
         "previousCrm": "Alto",
-        "previousAccountingSoftware": "Alto",
+        "previousAccountingSoftware": "Alto Startup – No Accounting in Place",
         "approxMrr": "650",
         "migration": "Manual Customer: Onboarding",
         "migrationSource": "project",
-        "bankProvider": null
+        "bankProvider": "Natwest"
       },
       "spectre": {
         "spectreClient": "Yes",
@@ -83074,7 +83083,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-12-08",
@@ -86832,8 +86841,8 @@
         "previousCrm": "VaultMRI (Vault EA)",
         "previousAccountingSoftware": "MRI",
         "approxMrr": "650",
-        "migration": "Bridge Customer: Onboarding",
-        "migrationSource": "project",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": null
       },
       "spectre": {
@@ -88774,7 +88783,7 @@
       "account": {
         "bdm": null,
         "previousSoftware": null,
-        "previousCrm": null,
+        "previousCrm": "Reapit",
         "previousAccountingSoftware": null,
         "approxMrr": null,
         "migration": null,
@@ -88782,15 +88791,85 @@
         "bankProvider": null
       },
       "spectre": {
-        "spectreClient": "No",
+        "spectreClient": "Yes",
         "csmSpectre": null,
-        "productsSummary": null,
-        "sales": null,
+        "productsSummary": "Sales, Property Reports",
+        "sales": "Yes",
         "lettings": null,
         "social": null,
         "email": null,
-        "propertyReports": null,
+        "propertyReports": "Yes",
         "hubspotDeal": null
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 796166,
+      "companyName": "Elevation Estate Agents",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Request Received",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": "Andy Fisher",
+        "previousSoftware": null,
+        "previousCrm": "Rezi (sales), LetMC (lettings)",
+        "previousAccountingSoftware": "Rezi",
+        "approxMrr": "2250",
+        "migration": null,
+        "migrationSource": null,
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "Yes",
+        "csmSpectre": null,
+        "productsSummary": "Sales, Lettings, Social, Email",
+        "sales": "Yes",
+        "lettings": "Yes",
+        "social": "Yes",
+        "email": "Yes",
+        "propertyReports": null,
+        "hubspotDeal": "https://app.hubspot.com/contacts/7658438/record/0-3/57069762820"
       },
       "rocketlaneLinks": {
         "accountingProject": null,
@@ -88800,17 +88879,17 @@
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1240,
-    "projectsFetchedFromRocketlane": 527,
+    "companiesFetchedFromRocketlane": 1241,
+    "projectsFetchedFromRocketlane": 529,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 178,
+      "onboarding": 179,
       "reconciliation": 0,
-      "training": 345,
+      "training": 346,
       "unknown": 4
     },
-    "companiesWrittenToSupportHub": 1240,
-    "companiesWithNoAccountingProjectFound": 866,
+    "companiesWrittenToSupportHub": 1241,
+    "companiesWithNoAccountingProjectFound": 865,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 1,
     "extraFieldMappings": {
       "bdm": "Account: \"Business Development Manager (Sales)\" (TEXT)",
@@ -88823,13 +88902,13 @@
       "customerType": "Project: \"Customer Type\" (SINGLE_CHOICE)"
     },
     "extraFieldsFilledIn": {
-      "bdm": 731,
+      "bdm": 733,
       "previousSoftware": 0,
-      "previousCrm": 548,
-      "previousAccountingSoftware": 536,
-      "approxMrr": 665,
-      "migration": 189,
-      "bankProvider": 431
+      "previousCrm": 551,
+      "previousAccountingSoftware": 538,
+      "approxMrr": 667,
+      "migration": 190,
+      "bankProvider": 432
     },
     "spectreFieldMappings": {
       "spectreClient": "Account: \"Spectre Client\" (YES_OR_NO)",
@@ -88843,15 +88922,15 @@
       "hubspotDeal": "Account: \"HubSpot record (Spectre Deal)\" (TEXT)"
     },
     "spectreFieldsFilledIn": {
-      "spectreClient": 606,
+      "spectreClient": 607,
       "csmSpectre": 499,
-      "productsSummary": 403,
-      "sales": 320,
-      "lettings": 154,
-      "social": 134,
-      "email": 193,
-      "propertyReports": 325,
-      "hubspotDeal": 405
+      "productsSummary": 405,
+      "sales": 322,
+      "lettings": 155,
+      "social": 135,
+      "email": 194,
+      "propertyReports": 326,
+      "hubspotDeal": 406
     }
   }
 }
