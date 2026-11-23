@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T10:39:50.779Z",
+  "generatedAt": "2026-11-23T22:34:32.565Z",
   "companies": [
     {
       "companyId": 122281,
@@ -5451,7 +5451,7 @@
       "redFlag": true,
       "optOut": null,
       "reconciliation": {
-        "status": "Closed",
+        "status": "Completed / Closed",
         "route": "Clear Accounting & Restart",
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-08-11",
@@ -6791,9 +6791,9 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": "Hayley Seabrook",
+      "accountingOwner": null,
       "onboardingSpecialist": "Rob Kenyon",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -6801,14 +6801,14 @@
       },
       "csm": null,
       "csmStreet": null,
-      "segment": "Enterprise & Strategic",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
       "streetGoLiveDate": null,
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -6821,11 +6821,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -10274,7 +10270,7 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "Reconciliation in Progress",
+        "status": "Awaiting Client Documentation",
         "route": null,
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-08-21",
@@ -11342,8 +11338,8 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "New",
-        "route": null,
+        "status": "Awaiting Client Documentation",
+        "route": "Manual Reconciliation",
         "specialist": null,
         "dateRaised": null,
         "reviewCallBooked": null,
@@ -13839,7 +13835,7 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "Waiting On Client",
+        "status": "Awaiting Client Action",
         "route": "Manual Reconciliation",
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-11-17",
@@ -20154,7 +20150,7 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "Reconciliation in Progress",
+        "status": "Awaiting Client Documentation",
         "route": "Clear Accounting & Restart",
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-08-12",
@@ -25232,8 +25228,8 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "New",
-        "route": null,
+        "status": "Awaiting Client Documentation",
+        "route": "Manual Reconciliation",
         "specialist": "Hayley Seabrook",
         "dateRaised": "2025-12-01",
         "reviewCallBooked": null,
@@ -27915,7 +27911,7 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "Waiting On Client",
+        "status": "Internal Review Required",
         "route": null,
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-08-21",
@@ -28498,10 +28494,10 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "New",
-        "route": null,
+        "status": "Reconciliation in Progress - Client",
+        "route": "Manual Reconciliation",
         "specialist": null,
-        "dateRaised": null,
+        "dateRaised": "2026-10-16",
         "reviewCallBooked": null,
         "currentDifference": null,
         "outcome": null,
@@ -29491,7 +29487,7 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "Waiting On Client",
+        "status": "Awaiting Client Decision",
         "route": "Manual Reconciliation",
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-08-21",
@@ -29501,8 +29497,8 @@
         "notes": null
       },
       "restart": {
-        "status": "Restart Requested",
-        "route": null,
+        "status": "Restart In Progress",
+        "route": "Manual Reconcilation - Client Led",
         "reason": null,
         "date": null
       },
@@ -35278,7 +35274,7 @@
     {
       "companyId": 451855,
       "companyName": "Celtic Property Lettings & Estate Agents",
-      "networkId": null,
+      "networkId": 960,
       "units": null,
       "branches": null,
       "accountingOwner": "Hayley Seabrook",
@@ -35302,10 +35298,10 @@
       "redFlag": true,
       "optOut": null,
       "reconciliation": {
-        "status": "New",
+        "status": "Reconciliation in Progress - Client",
         "route": "Manual Reconciliation",
         "specialist": "Hayley Seabrook",
-        "dateRaised": "2026-09-14",
+        "dateRaised": "2026-09-16",
         "reviewCallBooked": null,
         "currentDifference": null,
         "outcome": null,
@@ -36449,7 +36445,7 @@
       "redFlag": true,
       "optOut": null,
       "reconciliation": {
-        "status": "Waiting On Client",
+        "status": "Awaiting Client Decision",
         "route": null,
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-08-21",
@@ -39658,7 +39654,7 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "Waiting On Client",
+        "status": "Awaiting Client Action",
         "route": null,
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-08-21",
@@ -40796,7 +40792,7 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "Waiting On Client",
+        "status": "Internal Review Required",
         "route": "Manual Reconciliation",
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-08-26",
@@ -42191,7 +42187,7 @@
       "companyId": 514685,
       "companyName": "Burrell's Estate Agency",
       "networkId": null,
-      "units": null,
+      "units": 1,
       "branches": null,
       "accountingOwner": "Maria Duffy",
       "onboardingSpecialist": "Liam Sorah",
@@ -42210,7 +42206,7 @@
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -42245,8 +42241,8 @@
         "previousCrm": "Vebra Alto",
         "previousAccountingSoftware": "Vebra Alto",
         "approxMrr": "650",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -49423,7 +49419,7 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "Investigating",
+        "status": "Investigation in Progress",
         "route": null,
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-08-21",
@@ -50290,7 +50286,7 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "Waiting On Client",
+        "status": "Awaiting Client Documentation",
         "route": null,
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-09-12",
@@ -52925,12 +52921,21 @@
       "internalStatusTag": "Client Accounting Reconciliation",
       "redFlag": false,
       "optOut": null,
-      "reconciliation": null,
+      "reconciliation": {
+        "status": "Action Plan Agreed",
+        "route": "Clear Accounting & Restart",
+        "specialist": null,
+        "dateRaised": "2026-11-12",
+        "reviewCallBooked": null,
+        "currentDifference": null,
+        "outcome": null,
+        "notes": null
+      },
       "restart": {
-        "status": "Restart Requested",
+        "status": "Restart In Progress",
         "route": "Nuke / restart of Accounting",
         "reason": null,
-        "date": "2026-06-15"
+        "date": "2026-11-23"
       },
       "training": {
         "status": "Not recorded",
@@ -54699,7 +54704,7 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "Reconciliation in Progress",
+        "status": "Reconciliation in Progress - Street",
         "route": null,
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-08-21",
@@ -59885,7 +59890,7 @@
       "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": "Saskia Kirkham",
       "accountingStatus": "Onboarding",
-      "clientAccountingEnabled": false,
+      "clientAccountingEnabled": true,
       "streetPayments": {
         "customer": null,
         "verificationStatus": null
@@ -59893,13 +59898,13 @@
       "csm": null,
       "csmStreet": null,
       "segment": "Enterprise & Strategic",
-      "streetStatus": "Active",
+      "streetStatus": "Onboarding",
       "agentLiveWithStreet": true,
       "streetGoLiveDate": "2026-07-20",
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": "Onboarding in Progress",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -59913,8 +59918,8 @@
         "formats": null
       },
       "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
+        "targetGoLive": "2026-12-07",
+        "openingBalanceBooked": true,
         "notes": null
       },
       "internalNotes": {
@@ -62781,7 +62786,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -67016,7 +67021,7 @@
       "redFlag": false,
       "optOut": null,
       "reconciliation": {
-        "status": "Resolved",
+        "status": "Final Review / Validation",
         "route": "Clear Accounting & Restart",
         "specialist": "Hayley Seabrook",
         "dateRaised": "2026-09-30",
@@ -67037,7 +67042,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Not Sure – Help Me Choose"
       },
       "onboardingProject": {
         "targetGoLive": "2026-09-28",
@@ -67240,7 +67245,7 @@
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -67273,11 +67278,11 @@
         "bdm": "Lee Fleming",
         "previousSoftware": null,
         "previousCrm": "Expert Agent",
-        "previousAccountingSoftware": "Expert Agent",
+        "previousAccountingSoftware": "Expert Agent CFP WinMan",
         "approxMrr": "1273",
-        "migration": "Bridge Customer: Onboarding",
+        "migration": "Manual Customer: Onboarding",
         "migrationSource": "project",
-        "bankProvider": null
+        "bankProvider": "Lloyds Bank"
       },
       "spectre": {
         "spectreClient": null,
@@ -70496,7 +70501,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training, Accounting Training & Go-Live Support"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -72603,7 +72608,7 @@
       "networkId": null,
       "units": null,
       "branches": null,
-      "accountingOwner": "Jess Benjamin Smith",
+      "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -74227,9 +74232,9 @@
       "companyId": 740406,
       "companyName": "Martin & Co",
       "networkId": null,
-      "units": 455,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": "Hayley Seabrook",
       "onboardingSpecialist": "Sam Howat",
       "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
@@ -74239,14 +74244,14 @@
       },
       "csm": null,
       "csmStreet": null,
-      "segment": "SMB",
+      "segment": "Enterprise & Strategic",
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": "Training Phase",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -74545,7 +74550,7 @@
       "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": null,
+      "streetGoLiveDate": "2026-11-23",
       "streetUsage": "S, L, LPM, A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
@@ -76874,7 +76879,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": null
+        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
       },
       "onboardingProject": {
         "targetGoLive": "2026-11-11",
@@ -77863,7 +77868,7 @@
       },
       "csm": null,
       "csmStreet": "Adam Jennings",
-      "segment": null,
+      "segment": "SMB",
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
       "streetGoLiveDate": null,
@@ -81719,7 +81724,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -82171,7 +82176,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -86841,8 +86846,8 @@
         "previousCrm": "VaultMRI (Vault EA)",
         "previousAccountingSoftware": "MRI",
         "approxMrr": "650",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Bridge Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -87279,8 +87284,8 @@
         "previousCrm": "Excel spreadsheets",
         "previousAccountingSoftware": null,
         "approxMrr": "250",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -87387,7 +87392,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": "Sophie Saunders",
-      "accountingStatus": null,
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -87399,14 +87404,19 @@
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -87891,7 +87901,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": null,
-      "accountingStatus": null,
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -87903,14 +87913,19 @@
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -88100,7 +88115,7 @@
       "units": null,
       "branches": null,
       "accountingOwner": null,
-      "onboardingSpecialist": null,
+      "onboardingSpecialist": "Emma Cockcroft",
       "accountingStatus": null,
       "clientAccountingEnabled": false,
       "streetPayments": {
@@ -88171,7 +88186,7 @@
       "branches": null,
       "accountingOwner": null,
       "onboardingSpecialist": null,
-      "accountingStatus": null,
+      "accountingStatus": "Onboarding",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": false,
@@ -88183,14 +88198,19 @@
       "streetStatus": null,
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
-      "streetUsage": null,
+      "streetUsage": "A",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": null,
+      "internalStatusTag": "Awaiting Intro Call",
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
-      "restart": null,
+      "restart": {
+        "status": "Never Restarted",
+        "route": null,
+        "reason": null,
+        "date": null
+      },
       "training": {
         "status": "Not recorded",
         "completed": false,
@@ -88199,7 +88219,11 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": null,
+      "onboardingProject": {
+        "targetGoLive": null,
+        "openingBalanceBooked": false,
+        "notes": null
+      },
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -88766,7 +88790,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Awaiting Client Response",
         "completed": false,
         "lastDate": null,
         "trainer": null,
@@ -88836,10 +88860,10 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Request Received",
+        "status": "Awaiting Client Response",
         "completed": false,
         "lastDate": null,
-        "trainer": null,
+        "trainer": "Maria Duffy",
         "modules": null,
         "formats": null
       },
@@ -88876,20 +88900,230 @@
         "reconciliationProject": null,
         "trainingProject": null
       }
+    },
+    {
+      "companyId": 796188,
+      "companyName": "Pure City Living",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": null,
+        "previousSoftware": null,
+        "previousCrm": null,
+        "previousAccountingSoftware": null,
+        "approxMrr": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "No",
+        "csmSpectre": null,
+        "productsSummary": null,
+        "sales": null,
+        "lettings": null,
+        "social": null,
+        "email": null,
+        "propertyReports": null,
+        "hubspotDeal": null
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 796242,
+      "companyName": "Relocation Homes ",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": null,
+        "previousSoftware": null,
+        "previousCrm": null,
+        "previousAccountingSoftware": null,
+        "approxMrr": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "No",
+        "csmSpectre": null,
+        "productsSummary": null,
+        "sales": null,
+        "lettings": null,
+        "social": null,
+        "email": null,
+        "propertyReports": null,
+        "hubspotDeal": null
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
+    },
+    {
+      "companyId": 796326,
+      "companyName": "TEST - Wallace & Jones",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": null,
+        "previousSoftware": null,
+        "previousCrm": null,
+        "previousAccountingSoftware": null,
+        "approxMrr": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "No",
+        "csmSpectre": null,
+        "productsSummary": null,
+        "sales": null,
+        "lettings": null,
+        "social": null,
+        "email": null,
+        "propertyReports": null,
+        "hubspotDeal": null
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1241,
-    "projectsFetchedFromRocketlane": 529,
+    "companiesFetchedFromRocketlane": 1244,
+    "projectsFetchedFromRocketlane": 527,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
       "onboarding": 179,
       "reconciliation": 0,
-      "training": 346,
+      "training": 344,
       "unknown": 4
     },
-    "companiesWrittenToSupportHub": 1241,
-    "companiesWithNoAccountingProjectFound": 865,
+    "companiesWrittenToSupportHub": 1244,
+    "companiesWithNoAccountingProjectFound": 867,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 1,
     "extraFieldMappings": {
       "bdm": "Account: \"Business Development Manager (Sales)\" (TEXT)",
@@ -88907,8 +89141,8 @@
       "previousCrm": 551,
       "previousAccountingSoftware": 538,
       "approxMrr": 667,
-      "migration": 190,
-      "bankProvider": 432
+      "migration": 196,
+      "bankProvider": 433
     },
     "spectreFieldMappings": {
       "spectreClient": "Account: \"Spectre Client\" (YES_OR_NO)",
@@ -88922,7 +89156,7 @@
       "hubspotDeal": "Account: \"HubSpot record (Spectre Deal)\" (TEXT)"
     },
     "spectreFieldsFilledIn": {
-      "spectreClient": 607,
+      "spectreClient": 610,
       "csmSpectre": 499,
       "productsSummary": 405,
       "sales": 322,
