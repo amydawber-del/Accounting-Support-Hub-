@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T15:31:13.433Z",
+  "generatedAt": "2026-11-27T23:41:55.383Z",
   "companies": [
     {
       "companyId": 122281,
@@ -52016,7 +52016,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -52155,12 +52155,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Follow-Up in Progress",
-        "completed": true,
-        "lastDate": "2026-11-26",
-        "trainer": "Max Hornby",
-        "modules": "Sales Modules",
-        "formats": "Bespoke HQ Training"
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
+        "formats": null
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -55260,7 +55260,7 @@
       "companyId": 606414,
       "companyName": "CitiLand Home",
       "networkId": null,
-      "units": null,
+      "units": 12,
       "branches": null,
       "accountingOwner": "Jess Phipps",
       "onboardingSpecialist": "Emma Cockcroft",
@@ -59418,7 +59418,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -61955,11 +61955,11 @@
       "companyId": 642114,
       "companyName": "Bacon and Company",
       "networkId": null,
-      "units": 450,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": null,
       "onboardingSpecialist": "Lucie de Lison",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -61967,14 +61967,14 @@
       },
       "csm": null,
       "csmStreet": "Lena Dottori-Marchand",
-      "segment": "SMB",
+      "segment": null,
       "streetStatus": "Active",
       "agentLiveWithStreet": true,
-      "streetGoLiveDate": "2026-10-08",
+      "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM, S",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Training Phase",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -61987,11 +61987,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -62004,8 +62000,8 @@
         "previousCrm": "Alto & Jupix",
         "previousAccountingSoftware": "TBC",
         "approxMrr": "2647",
-        "migration": "Bridge Customer: Onboarding",
-        "migrationSource": "project",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": "HSBC"
       },
       "spectre": {
@@ -62637,8 +62633,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": null,
-        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
+        "formats": "Bespoke Branch Training, Street Hosted Open Training Event"
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -66457,7 +66453,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -67695,8 +67691,8 @@
         "completed": false,
         "lastDate": null,
         "trainer": null,
-        "modules": "Lettings Front-End, Lettings Property Management",
-        "formats": "Bespoke Branch Training"
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-22",
@@ -69022,7 +69018,7 @@
       "companyId": 704402,
       "companyName": "John Sharples Lettings",
       "networkId": null,
-      "units": null,
+      "units": 75,
       "branches": null,
       "accountingOwner": "Jess Phipps",
       "onboardingSpecialist": "Sophie Saunders",
@@ -69489,7 +69485,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-30",
@@ -70495,7 +70491,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training, Accounting Training & Go-Live Support"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -70614,11 +70610,11 @@
       "companyId": 713649,
       "companyName": "Open Homes Property Management",
       "networkId": null,
-      "units": 200,
+      "units": null,
       "branches": null,
-      "accountingOwner": "Maria Duffy",
+      "accountingOwner": null,
       "onboardingSpecialist": "Sally Finnigan",
-      "accountingStatus": "Onboarding",
+      "accountingStatus": "Not Started",
       "clientAccountingEnabled": false,
       "streetPayments": {
         "customer": null,
@@ -70626,14 +70622,14 @@
       },
       "csm": null,
       "csmStreet": "Jacob Templeman",
-      "segment": "SMB",
+      "segment": null,
       "streetStatus": "Onboarding",
       "agentLiveWithStreet": false,
       "streetGoLiveDate": null,
       "streetUsage": "A, L, LPM",
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
-      "internalStatusTag": "Awaiting Intro Call",
+      "internalStatusTag": null,
       "redFlag": false,
       "optOut": null,
       "reconciliation": null,
@@ -70651,11 +70647,7 @@
         "modules": null,
         "formats": null
       },
-      "onboardingProject": {
-        "targetGoLive": null,
-        "openingBalanceBooked": false,
-        "notes": null
-      },
+      "onboardingProject": null,
       "internalNotes": {
         "general": "",
         "gapAnalysis": ""
@@ -70668,8 +70660,8 @@
         "previousCrm": "MRI - Agency Central",
         "previousAccountingSoftware": "Universal (MRI)",
         "approxMrr": "650",
-        "migration": "Manual Customer: Onboarding",
-        "migrationSource": "project",
+        "migration": null,
+        "migrationSource": null,
         "bankProvider": null
       },
       "spectre": {
@@ -70723,12 +70715,12 @@
         "date": null
       },
       "training": {
-        "status": "Follow-Up in Progress",
-        "completed": true,
-        "lastDate": "2026-11-09",
-        "trainer": "Jess Phipps",
-        "modules": "Sales Modules, Lettings Front-End, Lettings Property Management",
-        "formats": "Bespoke Branch Training"
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-12-17",
@@ -74485,7 +74477,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -74564,7 +74556,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training, Not Sure – Help Me Choose, Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -75680,7 +75672,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -75829,7 +75821,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -76206,7 +76198,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -77446,12 +77438,12 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Ready for Delivery ⭐",
+        "status": "Not recorded",
         "completed": false,
-        "lastDate": "2026-12-09",
-        "trainer": "Max Hornby",
-        "modules": "Sales Modules",
-        "formats": "Bespoke Branch Training"
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
       },
       "onboardingProject": null,
       "internalNotes": {
@@ -78732,7 +78724,7 @@
       "companyId": 762515,
       "companyName": "Roundtree Real Estate",
       "networkId": null,
-      "units": null,
+      "units": 400,
       "branches": null,
       "accountingOwner": "Jess Phipps",
       "onboardingSpecialist": "Lucie de Lison",
@@ -79653,7 +79645,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": "2026-10-27",
@@ -79732,7 +79724,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -79960,7 +79952,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Not Sure – Help Me Choose"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -80986,7 +80978,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Remote Refresher Training, Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -81718,7 +81710,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -82056,7 +82048,7 @@
       "companyId": 778960,
       "companyName": "C.P.I Estate Agents Ltd",
       "networkId": null,
-      "units": 50,
+      "units": 100,
       "branches": null,
       "accountingOwner": "Jess Phipps",
       "onboardingSpecialist": "Sally Finnigan",
@@ -82249,7 +82241,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -82617,7 +82609,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support, Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -82775,7 +82767,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Accounting Training & Go-Live Support"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -83067,7 +83059,7 @@
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Onboarding in Progress",
-      "redFlag": false,
+      "redFlag": true,
       "optOut": null,
       "reconciliation": null,
       "restart": {
@@ -83356,7 +83348,7 @@
       "agentLiveWithAccounting": false,
       "goLiveDate": null,
       "internalStatusTag": "Training Phase",
-      "redFlag": false,
+      "redFlag": true,
       "optOut": null,
       "reconciliation": null,
       "restart": {
@@ -84924,7 +84916,7 @@
         "lastDate": null,
         "trainer": null,
         "modules": null,
-        "formats": "Self-Led Learning (INCLUDED IN SET UP FEE)"
+        "formats": null
       },
       "onboardingProject": {
         "targetGoLive": null,
@@ -88872,7 +88864,7 @@
       "reconciliation": null,
       "restart": null,
       "training": {
-        "status": "Prep in Progress",
+        "status": "Ready for Delivery ⭐",
         "completed": false,
         "lastDate": "2027-01-19",
         "trainer": "Maria Duffy",
@@ -90531,20 +90523,90 @@
         "reconciliationProject": null,
         "trainingProject": null
       }
+    },
+    {
+      "companyId": 798734,
+      "companyName": "Black Katz Camden",
+      "networkId": null,
+      "units": null,
+      "branches": null,
+      "accountingOwner": null,
+      "onboardingSpecialist": null,
+      "accountingStatus": null,
+      "clientAccountingEnabled": false,
+      "streetPayments": {
+        "customer": false,
+        "verificationStatus": null
+      },
+      "csm": null,
+      "csmStreet": null,
+      "segment": null,
+      "streetStatus": null,
+      "agentLiveWithStreet": false,
+      "streetGoLiveDate": null,
+      "streetUsage": null,
+      "agentLiveWithAccounting": false,
+      "goLiveDate": null,
+      "internalStatusTag": null,
+      "redFlag": false,
+      "optOut": null,
+      "reconciliation": null,
+      "restart": null,
+      "training": {
+        "status": "Not recorded",
+        "completed": false,
+        "lastDate": null,
+        "trainer": null,
+        "modules": null,
+        "formats": null
+      },
+      "onboardingProject": null,
+      "internalNotes": {
+        "general": "",
+        "gapAnalysis": ""
+      },
+      "recentMessages": null,
+      "recentEngagementNotes": [],
+      "account": {
+        "bdm": null,
+        "previousSoftware": null,
+        "previousCrm": null,
+        "previousAccountingSoftware": null,
+        "approxMrr": null,
+        "migration": null,
+        "migrationSource": null,
+        "bankProvider": null
+      },
+      "spectre": {
+        "spectreClient": "No",
+        "csmSpectre": null,
+        "productsSummary": null,
+        "sales": null,
+        "lettings": null,
+        "social": null,
+        "email": null,
+        "propertyReports": null,
+        "hubspotDeal": null
+      },
+      "rocketlaneLinks": {
+        "accountingProject": null,
+        "reconciliationProject": null,
+        "trainingProject": null
+      }
     }
   ],
   "syncDiagnostics": {
-    "companiesFetchedFromRocketlane": 1264,
-    "projectsFetchedFromRocketlane": 526,
+    "companiesFetchedFromRocketlane": 1265,
+    "projectsFetchedFromRocketlane": 524,
     "projectsWithNoCompanyLink": 0,
     "projectsByClassification": {
-      "onboarding": 179,
+      "onboarding": 177,
       "reconciliation": 0,
       "training": 343,
       "unknown": 4
     },
-    "companiesWrittenToSupportHub": 1264,
-    "companiesWithNoAccountingProjectFound": 882,
+    "companiesWrittenToSupportHub": 1265,
+    "companiesWithNoAccountingProjectFound": 883,
     "companiesWithOnboardingProjectButNoInternalStatusTag": 1,
     "extraFieldMappings": {
       "bdm": "Account: \"Business Development Manager (Sales)\" (TEXT)",
@@ -90562,7 +90624,7 @@
       "previousCrm": 570,
       "previousAccountingSoftware": 553,
       "approxMrr": 687,
-      "migration": 215,
+      "migration": 213,
       "bankProvider": 441
     },
     "spectreFieldMappings": {
@@ -90577,7 +90639,7 @@
       "hubspotDeal": "Account: \"HubSpot record (Spectre Deal)\" (TEXT)"
     },
     "spectreFieldsFilledIn": {
-      "spectreClient": 630,
+      "spectreClient": 631,
       "csmSpectre": 499,
       "productsSummary": 413,
       "sales": 327,
