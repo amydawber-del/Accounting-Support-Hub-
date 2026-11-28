@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T07:35:06.866Z",
+  "generatedAt": "2026-11-28T16:23:04.353Z",
   "companies": [
     {
       "companyId": 122281,
@@ -90153,8 +90153,8 @@
         "previousCrm": "AgentOS",
         "previousAccountingSoftware": "AgentOS",
         "approxMrr": "1339.2",
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -90573,8 +90573,8 @@
         "previousCrm": null,
         "previousAccountingSoftware": null,
         "approxMrr": null,
-        "migration": null,
-        "migrationSource": null,
+        "migration": "Manual Customer: Onboarding",
+        "migrationSource": "project",
         "bankProvider": null
       },
       "spectre": {
@@ -90624,7 +90624,7 @@
       "previousCrm": 570,
       "previousAccountingSoftware": 553,
       "approxMrr": 687,
-      "migration": 213,
+      "migration": 215,
       "bankProvider": 441
     },
     "spectreFieldMappings": {
